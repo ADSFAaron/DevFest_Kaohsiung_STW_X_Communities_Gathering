@@ -21,7 +21,9 @@ const translations = {
         'track2': '會場2',
         'd1_t1_title': '開放報到',
         'd1_t2_title': '活動開幕',
+        'd1_t2_track': '會場1',
         'd1_t3_title': 'Keynote',
+        'd1_t3_track': '會場1',
         'd1_t4_s1_title': '議程1-1',
         'd1_t4_s2_title': '議程1-2',
         'd1_t5_s1_title': '議程2-1',
@@ -37,8 +39,12 @@ const translations = {
         'd1_t10_s1_title': '議程6-1',
         'd1_t10_s2_title': '議程6-2',
         'd1_t11_title': '活動閉幕',
+        'd1_t11_track': '會場1',
+        'd1_t12_title': 'After Buffet',
+        'd1_t12_track': '高雄商旅 Urban Café 都會美饌',
         'd2_t1_title': '開放報到',
         'd2_t2_title': '活動開幕',
+        'd2_t2_track': '會場1',
         'd2_t3_s1_title': '社群交流',
         'd2_t4_s2_title': '第二屆 AI 生成大賽1',
         'd2_t5_s2_title': '第二屆 AI 生成大賽2',
@@ -121,7 +127,9 @@ const translations = {
         'track2': '會場2',
         'd1_t1_title': '開放報到',
         'd1_t2_title': '活動開幕',
+        'd1_t2_track': '會場1',
         'd1_t3_title': 'Keynote',
+        'd1_t3_track': '會場1',
         'd1_t4_s1_title': '議程1-1',
         'd1_t4_s2_title': '議程1-2',
         'd1_t5_s1_title': '議程2-1',
@@ -137,8 +145,12 @@ const translations = {
         'd1_t10_s1_title': '議程6-1',
         'd1_t10_s2_title': '議程6-2',
         'd1_t11_title': '活動閉幕',
+        'd1_t11_track': '會場1',
+        'd1_t12_title': 'After Buffet',
+        'd1_t12_track': '高雄商旅 Urban Café 都會美饌',
         'd2_t1_title': '開放報到',
         'd2_t2_title': '活動開幕',
+        'd2_t2_track': '會場1',
         'd2_t3_s1_title': '社群交流',
         'd2_t4_s2_title': '第二屆 AI 生成大賽1',
         'd2_t5_s2_title': '第二屆 AI 生成大賽2',
@@ -208,6 +220,26 @@ document.addEventListener('DOMContentLoaded', () => {
     speakerCards.forEach(card => {
         card.addEventListener('click', () => {
             card.classList.toggle('expanded');
+        });
+    });
+
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const scheduleContents = document.querySelectorAll('.schedule-content');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const day = button.dataset.day;
+
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            scheduleContents.forEach(content => {
+                if (content.id === day) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
         });
     });
 });
