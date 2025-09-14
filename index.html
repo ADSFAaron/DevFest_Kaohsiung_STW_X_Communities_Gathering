@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFest Kaohsiung X S. TW Communities Gathering 2025</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+
+    <!-- Material Web Components (Material 3) - Using Skypack to resolve dependencies like tslib -->
+    <script type="module" src="https://cdn.skypack.dev/@material/web"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="#" data-i18n-key="nav_home">首頁</a>
+            <a href="#schedule" data-i18n-key="nav_schedule">議程時間表</a>
+            <a href="#speakers" data-i18n-key="nav_speakers">講者介紹</a>
+            <a href="#sponsors" data-i18n-key="nav_sponsors">贊助夥伴</a>
+            <a href="#booths" data-i18n-key="nav_booths">擺攤夥伴</a>
+            <a href="#tickets" data-i18n-key="nav_tickets">票種介紹</a>
+            <a href="#about" data-i18n-key="nav_about">關於我們</a>
+        </div>
+        <div class="nav-actions">
+            <div class="language-switcher">
+                <button id="lang-tw">🇹🇼 繁體中文</button>
+                <button id="lang-en">🇬🇧 English</button>
+            </div>
+            <a href="#" class="logo">
+                <!-- Placeholder for Logo -->
+                LOGO
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-i18n-key="event_title">DevFest 高雄場 X 南臺灣技術社群大聚 2025</h1>
+            <p class="event-meta">
+                <span data-i18n-key="event_date">日期：2025/11/22 (六) - 11/23 (日)</span><br>
+                <span data-i18n-key="event_location">地點：KO-IN 智高點 (高雄市新興區中正三路 25 號 14 樓)</span>
+            </p>
+            <p class="event-description" data-i18n-key="event_intro">
+                今年 GDG Kaohsiung 和開發者 Buffet 一起在高雄舉辦軟體社群年會，我們聚焦於 「實作
+                (Implements)」，不僅僅是探討理論，更要拿起鍵盤，敲打程式碼，把想法化為現實。
+            </p>
+            <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank" rel="noopener noreferrer"
+               class="hero-cta-link">
+                <md-filled-button data-i18n-key="cta_button">
+                    立即報名
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </md-filled-button>
+            </a>
+        </div>
+        <div class="hero-image">
+            <img src="images/image_banner.png" alt="DevFest Kaohsiung 2025 Banner">
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="content-section">
+        <p class="section-intro" data-i18n-key="schedule_intro">今年 GDG Kaohsiung 和開發者 Buffet
+            一起在高雄舉辦軟體社群年會，英文名稱為「DevFest Kaohsiung X S. TW Communities Gathering 2025」，中文名稱為「DevFest
+            高雄場 X 南臺灣技術社群大聚 2025」。讓我們帶你快速的捕捉這場活動的重點</p>
+        <h2 data-i18n-key="schedule_title">議程時間表</h2>
+
+        <div class="schedule-tabs">
+            <button class="tab-button active" data-day="day1" data-i18n-key="schedule_day1">11/22 (星期六)</button>
+            <button class="tab-button" data-day="day2" data-i18n-key="schedule_day2">11/23 (星期日)</button>
+        </div>
+
+        <!-- Day 1 Schedule -->
+        <div id="day1" class="schedule-content active">
+            <div class="timeline">
+                <div class="time-slot">
+                    <div class="time">08:30</div>
+                    <div class="sessions">
+                        <div class="session single-track break">
+                            <div class="session-info"><h3 class="session-title" data-i18n-key="d1_t1_title">
+                                開放報到</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">09:00 - 09:30</div>
+                    <div class="sessions">
+                        <div class="session single-track break">
+                            <div class="session-info"><h3 class="session-title" data-i18n-key="d1_t2_title">
+                                活動開幕</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">09:30 - 10:10</div>
+                    <div class="sessions">
+                        <div class="session single-track keynote">
+                            <div class="session-info"><h3 class="session-title" data-i18n-key="d1_t3_title">Keynote</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">10:30 - 11:10</div>
+                    <div class="sessions multi-track">
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track1">會場1</span><h4
+                                    class="session-title" data-i18n-key="d1_t4_s1_title">議程1-1</h4></div>
+                        </div>
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
+                                    class="session-title" data-i18n-key="d1_t4_s2_title">議程1-2</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">11:30 - 12:10</div>
+                    <div class="sessions multi-track">
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track1">會場1</span><h4
+                                    class="session-title" data-i18n-key="d1_t5_s1_title">議程2-1</h4></div>
+                        </div>
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
+                                    class="session-title" data-i18n-key="d1_t5_s2_title">議程2-2</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">12:10 - 13:30</div>
+                    <div class="sessions">
+                        <div class="session single-track break">
+                            <div class="session-info"><h3 class="session-title" data-i18n-key="d1_t5a_title">
+                                中午休息</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">13:30 - 14:10</div>
+                    <div class="sessions multi-track">
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track1">會場1</span><h4
+                                    class="session-title" data-i18n-key="d1_t6_s1_title">議程3-1</h4></div>
+                        </div>
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
+                                    class="session-title" data-i18n-key="d1_t6_s2_title">議程3-2</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">14:30 - 15:10</div>
+                    <div class="sessions multi-track">
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track1">會場1</span><h4
+                                    class="session-title" data-i18n-key="d1_t7_s1_title">議程4-1</h4></div>
+                        </div>
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
+                                    class="session-title" data-i18n-key="d1_t7_s2_title">議程4-2</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">15:10 - 15:50</div>
+                    <div class="sessions">
+                        <div class="session single-track break">
+                            <div class="session-info"><h3 class="session-title" data-i18n-key="d1_t8_title">Pizza
+                                Time和交流時間</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">16:00 - 16:40</div>
+                    <div class="sessions multi-track">
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track1">會場1</span><h4
+                                    class="session-title" data-i18n-key="d1_t9_s1_title">議程5-1</h4></div>
+                        </div>
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
+                                    class="session-title" data-i18n-key="d1_t9_s2_title">議程5-2</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">17:00 - 17:40</div>
+                    <div class="sessions multi-track">
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track1">會場1</span><h4
+                                    class="session-title" data-i18n-key="d1_t10_s1_title">議程6-1</h4></div>
+                        </div>
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
+                                    class="session-title" data-i18n-key="d1_t10_s2_title">議程6-2</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">18:00 - 18:20</div>
+                    <div class="sessions">
+                        <div class="session single-track break">
+                            <div class="session-info"><h3 class="session-title" data-i18n-key="d1_t11_title">
+                                活動閉幕</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 2 Schedule -->
+        <div id="day2" class="schedule-content">
+            <div class="timeline">
+                <div class="time-slot">
+                    <div class="time">10:30</div>
+                    <div class="sessions">
+                        <div class="session single-track break">
+                            <div class="session-info"><h3 class="session-title" data-i18n-key="d2_t1_title">
+                                開放報到</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">11:00 - 11:30</div>
+                    <div class="sessions">
+                        <div class="session single-track break">
+                            <div class="session-info"><h3 class="session-title" data-i18n-key="d2_t2_title">
+                                活動開幕</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">11:30 - 17:00</div>
+                    <div class="sessions">
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track1">會場1</span><h4
+                                    class="session-title" data-i18n-key="d2_t3_s1_title">社群交流</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">13:00 - 14:30</div>
+                    <div class="sessions">
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
+                                    class="session-title" data-i18n-key="d2_t4_s2_title">第二屆 AI 生成大賽1</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="time-slot">
+                    <div class="time">15:00 - 16:30</div>
+                    <div class="sessions">
+                        <div class="session">
+                            <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
+                                    class="session-title" data-i18n-key="d2_t5_s2_title">第二屆 AI 生成大賽2</h4></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="content-section">
+        <h2 data-i18n-key="speakers_title">講者介紹</h2>
+        <div class="speakers-grid">
+            <!-- Speaker Card: Simon Liu -->
+            <div class="speaker-card" data-speaker-id="simonliu">
+                <img src="images/SimonLiu.jpg" alt="Photo of Simon Liu" class="speaker-photo">
+                <div class="speaker-info">
+                    <h3 class="speaker-name" data-i18n-key="simonliu_name">劉育維 (Simon Liu)</h3>
+                    <p class="speaker-org" data-i18n-key="simonliu_org">APMIC / Google Developer Expert - AI</p>
+                    <p class="speaker-title" data-i18n-key="simonliu_title">MLOps Engineer</p>
+                    <p class="speaker-topic-category" data-i18n-key="simonliu_topic_category_summary">分類：Gemini AI
+                        的生成式實踐</p>
+                    <div class="speaker-tags summary-tags">
+                        <span>#ADK</span>
+                        <span>#Gemini</span>
+                        <span>#Agent</span>
+                    </div>
+                </div>
+                <div class="speaker-details">
+                    <div class="speaker-details-content">
+                        <p class="speaker-bio-full" data-i18n-key="simonliu_bio_full">大家好，我是 Simon
+                            劉育維，過去曾擔任過電信業的資深工程師和
+                            在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在
+                            Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。</p>
+                        <div class="session-info-block">
+                            <h4 data-i18n-key="session_info_title">議程資訊</h4>
+                            <p><strong data-i18n-key="session_name_label">名稱：</strong><span
+                                    data-i18n-key="simonliu_topic_name">建構 AI Agent：結合 Google Gemini 與 ADK 工具來解放企業生產力</span>
+                            </p>
+                            <p><strong data-i18n-key="session_abstract_label">簡介：</strong></p>
+                            <div class="session-abstract" data-i18n-key="simonliu_topic_abstract">透過 Google
+                                一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：<br>1.
+                                透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. 透過 Google Firebase Studio
+                                來進行平台建置，並且說明如何進行修改
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More speaker cards can be added here -->
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="content-section">
+        <h2 data-i18n-key="sponsors_title">贊助夥伴</h2>
+        <div class="sponsors-grid">
+            <!-- Sponsor Card: Colosscious -->
+            <a href="https://www.colosscious.com/home" target="_blank" rel="noopener noreferrer" class="sponsor-card">
+                <div class="sponsor-logo-container">
+                    <img src="images/sponsor-logo-colosscious.png" alt="Colosscious Teknology Inc. Logo"
+                         class="sponsor-logo">
+                </div>
+                <div class="sponsor-info">
+                    <h3 class="sponsor-name" data-i18n-key="colosscious_name">嵙思科技股份有限公司</h3>
+                    <p class="sponsor-description" data-i18n-key="colosscious_desc">嵙思專為 #生技製藥 打造智慧化實驗室，讓生成式
+                        AI 作為實驗室的智慧代理人。<br>打造 Lab → QA 無縫數位化，協助生技製藥實驗室提升效率與可靠度</p>
+                    <div class="sponsor-tags">
+                        <span data-i18n-key="sponsor_tag_company">公司贊助</span>
+                    </div>
+                </div>
+            </a>
+            <!-- More sponsor cards can be added here -->
+        </div>
+    </section>
+
+    <!-- Booths Section -->
+    <section id="booths" class="content-section">
+        <h2 data-i18n-key="booths_title">擺攤夥伴</h2>
+        <div class="booths-grid">
+            <!-- Booth Card: GDG Kaohsiung -->
+            <a href="https://www.facebook.com/groups/GDGKaohsiung" target="_blank" rel="noopener noreferrer"
+               class="booth-card">
+                <div class="booth-logo-container">
+                    <img src="images/community-logo-gdg_kaohsiung.png" alt="GDG Kaohsiung Logo" class="booth-logo">
+                </div>
+                <div class="booth-info">
+                    <h3 class="booth-name" data-i18n-key="gdg_kaohsiung_name">GDG Kaohsiung</h3>
+                    <p class="booth-description" data-i18n-key="gdg_kaohsiung_desc">GDG Kaohsiung 全名 Google Developer
+                        Groups Kaohsiung，是以研究 Google 以及 Android App
+                        領域的技術、設計、新創或相關產業為主的開發者社群。</p>
+                </div>
+            </a>
+            <!-- More booth cards can be added here -->
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="content-section">
+        <h2 data-i18n-key="tickets_title">票種介紹</h2>
+
+        <!-- Paid Tickets -->
+        <h3 class="subsection-title" data-i18n-key="tickets_paid_title">付費門票</h3>
+        <div class="tickets-grid">
+            <div class="ticket-card paid">
+                <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_2day_name">兩日會眾票</h3>
+                    <p class="ticket-price" data-i18n-key="t_2day_price">TWD $680</p>
+                    <p class="ticket-description" data-i18n-key="t_2day_desc">小孩子才做選擇，我 DevFest 高雄場 &
+                        南臺灣技術社群大聚全都要參加。</p></div>
+                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
+                   rel="noopener noreferrer" class="ticket-button-link">
+                    <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
+                </a></div>
+            <div class="ticket-card paid">
+                <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_sponsor_name">兩日個人贊助票</h3>
+                    <p class="ticket-price" data-i18n-key="t_sponsor_price">TWD $4,400</p>
+                    <p class="ticket-description" data-i18n-key="t_sponsor_desc">限量四位，獨家贈送客製 Badger 2040
+                        電子紙名片顯示器 乙個，還有眾多好禮。</p></div>
+                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
+                   rel="noopener noreferrer" class="ticket-button-link">
+                    <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
+                </a></div>
+            <div class="ticket-card paid">
+                <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_day1_name">第一日會眾票</h3>
+                    <p class="ticket-price" data-i18n-key="t_day1_price">TWD $440</p>
+                    <p class="ticket-description" data-i18n-key="t_day1_desc">只能參加第一天的 DevFest 2025 高雄場。</p>
+                </div>
+                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
+                   rel="noopener noreferrer" class="ticket-button-link">
+                    <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
+                </a></div>
+            <div class="ticket-card paid">
+                <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_day2_name">第二日會眾票</h3>
+                    <p class="ticket-price" data-i18n-key="t_day2_price">TWD $240</p>
+                    <p class="ticket-description" data-i18n-key="t_day2_desc">只能參加第二天的南臺灣技術社群大聚。</p>
+                </div>
+                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
+                   rel="noopener noreferrer" class="ticket-button-link">
+                    <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
+                </a></div>
+        </div>
+
+        <!-- Add-on Tickets -->
+        <h3 class="subsection-title" data-i18n-key="tickets_addon_title">追加購買</h3>
+        <div class="tickets-grid">
+            <div class="ticket-card paid">
+                <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_dinner_name">第一日晚宴票</h3>
+                    <p class="ticket-price" data-i18n-key="t_dinner_price">TWD $740</p>
+                    <p class="ticket-description" data-i18n-key="t_dinner_desc">參加 11/22 星期六晚上的高雄商旅 Urban
+                        Café 都會美饌。</p></div>
+                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
+                   rel="noopener noreferrer" class="ticket-button-link">
+                    <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
+                </a></div>
+            <div class="ticket-card paid">
+                <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_shirt_name">會眾紀念衣服</h3>
+                    <p class="ticket-price" data-i18n-key="t_shirt_price">TWD $340</p>
+                    <p class="ticket-description" data-i18n-key="t_shirt_desc">透氣材質。</p></div>
+                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
+                   rel="noopener noreferrer" class="ticket-button-link">
+                    <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
+                </a></div>
+        </div>
+
+        <!-- Free Tickets -->
+        <h3 class="subsection-title" data-i18n-key="tickets_free_title">免費門票</h3>
+        <div class="tickets-grid">
+            <div class="ticket-card free">
+                <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_free_badge_name">第一日免費票</h3>
+                    <p class="ticket-price" data-i18n-key="t_free_price">$0</p>
+                    <p class="ticket-description" data-i18n-key="t_free_badge_desc">必須使用邀請碼購買。我有 GDG
+                        高雄社群名牌卡。</p></div>
+                <a href="https://forms.gle/Qey7SN8sDgYFzrNK9" target="_blank" rel="noopener noreferrer"
+                   class="ticket-button-link">
+                    <md-outlined-button class="ticket-button" data-i18n-key="ticket_apply_cta">填表申請折扣碼
+                    </md-outlined-button>
+                </a></div>
+            <div class="ticket-card free">
+                <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_free_speaker_name">第一日免費票</h3>
+                    <p class="ticket-price" data-i18n-key="t_free_price">$0</p>
+                    <p class="ticket-description" data-i18n-key="t_free_speaker_desc">必須使用邀請碼購買。我曾經是 GDG
+                        高雄活動的講者。</p></div>
+                <a href="https://forms.gle/Qey7SN8sDgYFzrNK9" target="_blank" rel="noopener noreferrer"
+                   class="ticket-button-link">
+                    <md-outlined-button class="ticket-button" data-i18n-key="ticket_apply_cta">填表申請折扣碼
+                    </md-outlined-button>
+                </a></div>
+            <div class="ticket-card free">
+                <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_free_volunteer_name">第一日免費票</h3>
+                    <p class="ticket-price" data-i18n-key="t_free_price">$0</p>
+                    <p class="ticket-description" data-i18n-key="t_free_volunteer_desc">必須使用邀請碼購買。我當過 GDG
+                        高雄的志工。</p></div>
+                <a href="https://forms.gle/Qey7SN8sDgYFzrNK9" target="_blank" rel="noopener noreferrer"
+                   class="ticket-button-link">
+                    <md-outlined-button class="ticket-button" data-i18n-key="ticket_apply_cta">填表申請折扣碼
+                    </md-outlined-button>
+                </a></div>
+            <div class="ticket-card free">
+                <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_free_oscv_name">第一日免費票</h3>
+                    <p class="ticket-price" data-i18n-key="t_free_price">$0</p>
+                    <p class="ticket-description" data-i18n-key="t_free_oscv_desc">必須使用邀請碼購買。我有 OSCVPass
+                        開源貢獻者快速通關。</p></div>
+                <a href="https://forms.gle/Qey7SN8sDgYFzrNK9" target="_blank" rel="noopener noreferrer"
+                   class="ticket-button-link">
+                    <md-outlined-button class="ticket-button" data-i18n-key="ticket_apply_cta">填表申請折扣碼
+                    </md-outlined-button>
+                </a></div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="content-section">
+        <h2 data-i18n-key="about_title">關於我們</h2>
+        <div class="about-grid">
+            <!-- About Card: GDG Kaohsiung -->
+            <div class="about-card">
+                <div class="about-logo-container">
+                    <img src="images/about-logo-gdg_kaohsiung.png" alt="GDG Kaohsiung Logo" class="about-logo">
+                </div>
+                <div class="about-info">
+                    <h3 class="about-name" data-i18n-key="about_gdg_name">GDG Kaohsiung</h3>
+                    <p class="about-description" data-i18n-key="about_gdg_desc">GDG Kaohsiung 全名 Google Developer
+                        Groups Kaohsiung，是以研究 Google 以及 Android App 領域的技術、設計、新創或相關產業為主的開發者社群。<br><br>Google
+                        Developer Groups Kaohsiung 前身是 Android 高雄開發者社群，誕生於 2014 年 3 月，我們每年定期舉辦
+                        Build with AI、 Google I/O Extended、DevFest 和 TOOCON 天黑黑月會，希望讓高雄對軟體開發有興趣的朋友能夠有實體交流的機會，歡迎加入
+                        Google Developer Groups Kaohsiung 粉絲專業頁和 GDG Kaohsiung 臉書社團，掌握最新活動資訊。</p>
+                    <a href="https://www.facebook.com/groups/GDGKaohsiung/" target="_blank" rel="noopener noreferrer"
+                       class="about-button-link">
+                        <md-filled-button class="about-button" data-i18n-key="about_cta">前往社群</md-filled-button>
+                    </a>
+                </div>
+            </div>
+            <!-- About Card: Developer Buffet -->
+            <div class="about-card">
+                <div class="about-logo-container">
+                    <img src="images/about-logo-dev_buffet.jpg" alt="Developer Buffet Logo" class="about-logo">
+                </div>
+                <div class="about-info">
+                    <h3 class="about-name" data-i18n-key="about_buffet_name">開發者 Buffet</h3>
+                    <p class="about-description" data-i18n-key="about_buffet_desc">
+                        我們是一群在台灣科技研討會結識的夥伴，自疫情期間，我們所在的城市技術社群與聚會逐漸減少。希望能保持討論和交流的熱度，因此我們決定發起聚會。
+                        在這裏會舉辦各種形式的活動，議題大致上包括但不限於前、後端、UI/UX、ML、軟體開發等，希望大家能在這裡找到並盡情享受自己感興趣的事物，因此取名為【開發者
+                        Buffet】<br><br>。目前有線下活動，【開發者 café】每月的最後一個周二晚上 19:00 - 21:00，在高雄的咖啡廳與最多
+                        10 位左右的開發者們一起輕鬆聊聊天，歡迎任何主題 ☕<br><br>以及我們也有不定期舉辦線上讀書會，你可以在
+                        Discord 找到更多詳細資訊，歡迎加入 🙌</p>
+                    <a href="https://www.facebook.com/groups/buffet.dev/" target="_blank" rel="noopener noreferrer"
+                       class="about-button-link">
+                        <md-filled-button class="about-button" data-i18n-key="about_cta">前往社群</md-filled-button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- More content sections will be added here -->
+</main>
+
+<!-- Custom Scripts -->
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
