@@ -387,6 +387,10 @@ main {
     padding: 4px 10px;
     border-radius: 12px;
     font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px; /* Keep the margin for wrapping */
 }
 
 .speaker-details {
