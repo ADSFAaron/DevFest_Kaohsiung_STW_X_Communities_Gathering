@@ -430,30 +430,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Function to switch to a specific page
         const switchToPage = (targetPageId) => {
-            // Remove active class from all sections and nav links
-            pagesSections.forEach(section => section.classList.remove('active'));
-            navLinks.forEach(link => link.classList.remove('active'));
+            // Find current active section
+            const currentSection = document.querySelector('.page-section.active');
 
-            // Find and activate the target page section
-            const targetSection = document.getElementById(targetPageId);
-            if (targetSection) {
-                targetSection.classList.add('active');
+            if (currentSection && currentSection.id !== targetPageId) {
+                // Fade out current section
+                currentSection.style.opacity = '0';
+
+                setTimeout(() => {
+                    // Remove active class from all sections and nav links
+                    pagesSections.forEach(section => section.classList.remove('active'));
+                    navLinks.forEach(link => link.classList.remove('active'));
+
+                    // Find and activate the target page section
+                    const targetSection = document.getElementById(targetPageId);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                        // Force reflow then fade in
+                        targetSection.style.opacity = '0';
+                        requestAnimationFrame(() => {
+                            targetSection.style.opacity = '1';
+                        });
+                    }
+
+                    // Find and activate the corresponding nav link
+                    const targetNavLink = document.querySelector(`[data-page="${targetPageId}"]`);
+                    if (targetNavLink) {
+                        targetNavLink.classList.add('active');
+                    }
+
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('nav-links');
+                    if (mobileMenu) {
+                        mobileMenu.classList.remove('open');
+                    }
+
+                    // Scroll to top
+                    window.scrollTo(0, 0);
+                }, 200); // Wait for fade out to complete
+            } else {
+                // If no current section or same section, just activate directly
+                pagesSections.forEach(section => section.classList.remove('active'));
+                navLinks.forEach(link => link.classList.remove('active'));
+
+                const targetSection = document.getElementById(targetPageId);
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+
+                const targetNavLink = document.querySelector(`[data-page="${targetPageId}"]`);
+                if (targetNavLink) {
+                    targetNavLink.classList.add('active');
+                }
             }
-
-            // Find and activate the corresponding nav link
-            const targetNavLink = document.querySelector(`[data-page="${targetPageId}"]`);
-            if (targetNavLink) {
-                targetNavLink.classList.add('active');
-            }
-
-            // Close mobile menu if open
-            const mobileMenu = document.getElementById('nav-links');
-            if (mobileMenu) {
-                mobileMenu.classList.remove('open');
-            }
-
-            // Scroll to top
-            window.scrollTo(0, 0);
         };
 
         // Add click event listeners to nav links
