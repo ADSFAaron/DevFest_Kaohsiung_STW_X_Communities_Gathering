@@ -576,13 +576,17 @@ main {
 
 .speaker-photo {
     width: 100%;
-    height: 300px; /* This creates the 2:1 visual ratio */
+    height: 300px; /* Image area - 2 parts of 2:1 ratio */
     object-fit: cover;
-    object-position: top center; /* Aligns the image to the top */
+    object-position: top center; /* Keep top alignment for speakers */
 }
 
 .speaker-info {
     padding: 20px;
+    min-height: 150px; /* Text area - 1 part of 2:1 ratio */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .speaker-name {
@@ -704,7 +708,7 @@ main {
 }
 
 .sponsor-logo-container {
-    height: 200px; /* Creates the 2 part of the 2:1 ratio */
+    height: 300px; /* Image area - 2 parts of 2:1 ratio */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -713,13 +717,18 @@ main {
 }
 
 .sponsor-logo {
-    max-width: 100%;
+    width: 100%; /* Scale by width */
     max-height: 100%;
     object-fit: contain;
+    object-position: center; /* Center alignment for sponsors */
 }
 
 .sponsor-info {
-    padding: 20px; /* Creates the 1 part of the 2:1 ratio */
+    padding: 20px;
+    min-height: 150px; /* Text area - 1 part of 2:1 ratio */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .sponsor-name {
@@ -775,7 +784,7 @@ main {
 }
 
 .booth-logo-container {
-    height: 200px;
+    height: 300px; /* Image area - 2 parts of 2:1 ratio */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -784,13 +793,18 @@ main {
 }
 
 .booth-logo {
-    width: 100%;
+    width: 100%; /* Scale by width */
     height: 100%;
-    object-fit: cover;
+    object-fit: contain; /* Change to contain for proper scaling */
+    object-position: center; /* Center alignment for booths */
 }
 
 .booth-info {
     padding: 20px;
+    min-height: 150px; /* Text area - 1 part of 2:1 ratio */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .booth-name {
@@ -900,22 +914,24 @@ main {
 }
 
 .about-logo-container {
-    height: 200px;
+    height: 300px; /* Image area - 2 parts of 2:1 ratio */
     background-color: #f8f9fa;
-    overflow: hidden; /* Ensures the image stays within the rounded corners */
+    overflow: hidden;
 }
 
 .about-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* This will now correctly fill the container */
+    width: 100%; /* Scale by width */
+    max-height: 100%;
+    object-fit: contain; /* Use contain instead of cover to preserve quality */
+    object-position: center; /* Center alignment for about */
 }
 
 .about-info {
     padding: 24px;
+    min-height: 150px; /* Text area - 1 part of 2:1 ratio */
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Use flex-grow instead of height to avoid side-effects */
+    justify-content: flex-start;
 }
 
 .about-name {
