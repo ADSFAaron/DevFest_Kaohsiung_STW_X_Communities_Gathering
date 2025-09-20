@@ -160,6 +160,41 @@ nav {
     font-size: 20px;
 }
 
+/* Event info lines */
+/* Event date and location (medium font) */
+.event-date-location {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Event schedule section (small font) */
+.event-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.schedule-day {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.schedule-day span:first-child {
+    font-weight: 500;
+}
+
+.schedule-day span:last-child {
+    opacity: 0.8;
+}
+
 /* Location map link */
 .location-map-link {
     display: inline-flex;
@@ -168,10 +203,10 @@ nav {
     color: var(--md-sys-color-primary);
     text-decoration: none;
     font-size: 16px;
-    margin-top: 8px;
     padding: 4px 8px;
     border-radius: 12px;
     transition: all 0.2s ease-in-out;
+    white-space: nowrap;
 }
 
 .location-map-link:hover {
@@ -213,8 +248,18 @@ main {
         text-align: center;
     }
 
-    .event-meta {
+    .event-date-location {
+        font-size: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .schedule-day {
         font-size: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
     }
 
     .event-description {
@@ -398,7 +443,7 @@ main {
 
     .carousel-container {
         height: 0;
-        padding-bottom: 43.88%; /* 維持 1960*860 比例 */
+        padding-bottom: 43.88%; /* 手機版維持 1960*860 比例 */
         position: relative;
         overflow: hidden;
     }
@@ -1168,6 +1213,59 @@ html.page-switching {
     color: var(--md-sys-color-on-surface);
 }
 
+/* What is DevFest & S.TW Communities Gathering Section */
+.what-is-section {
+    background-color: #f8f9fa;
+    padding: 64px 24px;
+}
+
+.what-is-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.what-is-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.what-is-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.what-is-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    color: var(--md-sys-color-on-surface);
+}
+
+.what-is-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+    color: var(--md-sys-color-on-surface);
+}
+
+.what-is-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.what-is-list li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: var(--md-sys-color-on-surface);
+}
+
 @media (max-width: 768px) {
     .event-details {
         padding: 32px 16px;
@@ -1176,5 +1274,22 @@ html.page-switching {
     .event-details-text {
         font-size: 16px;
         line-height: 1.5;
+    }
+
+    .what-is-section {
+        padding: 48px 16px;
+    }
+
+    .what-is-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .what-is-card {
+        padding: 24px;
+    }
+
+    .what-is-title {
+        font-size: 20px;
     }
 }
