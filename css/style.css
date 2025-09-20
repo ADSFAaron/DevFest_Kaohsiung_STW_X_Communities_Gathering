@@ -965,6 +965,7 @@ main {
         padding: 16px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         border-top: 1px solid #e0e0e0;
+        z-index: 1000; /* Ensure mobile menu appears above banner */
     }
 
     .nav-links.open {
