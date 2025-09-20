@@ -12,7 +12,7 @@ const translations = {
         'event_title': 'DevFest 高雄場 X 南臺灣技術社群大聚 2025',
         'event_date': '日期：2025/11/22 (六) - 11/23 (日)',
         'event_location': '地點：KO-IN 智高點 (高雄市新興區中正三路25號14樓)',
-        'event_intro': '今年 GDG Kaohsiung 和開發者 Buffet 一起在高雄舉辦軟體社群年會，我們聚焦於 「實作 (Implements)」，不僅僅是探討理論，更要拿起鍵盤，敲打程式碼，把想法化為現實。',
+        'event_intro': '今年 GDG Kaohsiung 和開發者 Buffet 一起在高雄舉辦軟體社群年會，<br>英文名稱為「DevFest Kaohsiung X S. TW Communities Gathering 2025」，<br>中文名稱為「DevFest 高雄場 X 南臺灣技術社群大聚 2025」',
         'cta_button': '報名參加',
         'schedule_title': '議程時間表',
         'schedule_intro': '今年 GDG Kaohsiung 和開發者 Buffet 一起在高雄舉辦軟體社群年會，英文名稱為「DevFest Kaohsiung X S. TW Communities Gathering 2025」，中文名稱為「DevFest 高雄場 X 南臺灣技術社群大聚 2025」。讓我們帶你快速的捕捉這場活動的重點',
@@ -122,6 +122,7 @@ const translations = {
         'about_buffet_desc': '我們是一群在台灣科技研討會結識的夥伴，自疫情期間，我們所在的城市技術社群與聚會逐漸減少。希望能保持討論和交流的熱度，因此我們決定發起聚會。 在這裏會舉辦各種形式的活動，議題大致上包括但不限於前、後端、UI/UX、ML、軟體開發等，希望大家能在這裡找到並盡情享受自己感興趣的事物，因此取名為【開發者 Buffet】。目前有線下活動，【開發者 café】每月的最後一個周二晚上 19:00 - 21:00，在高雄的咖啡廳與最多 10 位左右的開發者們一起輕鬆聊聊天，歡迎任何主題 ☕以及我們也有不定期舉辦線上讀書會，你可以在 Discord 找到更多詳細資訊，歡迎加入 🙌',
         'about_cta': '前往社群',
         'register_cta': '報名參加',
+        'view_map': '查看地圖',
     },
     'en': {
         'nav_home': 'Home',
@@ -245,6 +246,7 @@ const translations = {
         'about_buffet_desc': 'We are a group of partners who met at tech conferences in Taiwan. Since the pandemic, tech community gatherings in our cities have become less frequent. To keep the spirit of discussion and exchange alive, we decided to organize meetups. We host various events covering topics like front-end, back-end, UI/UX, ML, and software development. We hope everyone can find and enjoy their interests here, hence the name "Developer Buffet". We have offline events, "Developer Café," every last Tuesday of the month from 19:00 to 21:00 at a café in Kaohsiung for casual chats with up to 10 developers. All topics are welcome ☕. We also hold online study groups periodically. You can find more details on our Discord. Welcome to join us 🙌',
         'about_cta': 'Visit Community',
         'register_cta': 'Register Now',
+        'view_map': 'View Map',
     },
 };
 

@@ -160,6 +160,29 @@ nav {
     font-size: 20px;
 }
 
+/* Location map link */
+.location-map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--md-sys-color-primary);
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.location-map-link:hover {
+    background-color: rgba(66, 133, 244, 0.08);
+    text-decoration: underline;
+}
+
+.location-map-link .material-symbols-outlined {
+    font-size: 18px;
+}
+
 main {
     padding: 32px;
 }
