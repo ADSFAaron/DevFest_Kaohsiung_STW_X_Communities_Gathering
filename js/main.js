@@ -422,4 +422,72 @@ document.addEventListener('DOMContentLoaded', () => {
         // Start autoplay when page loads
         startAutoplay();
     }
+
+    // --- Page Switching Functionality ---
+    const initPageSwitching = () => {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const pagesSections = document.querySelectorAll('.page-section');
+
+        // Function to switch to a specific page
+        const switchToPage = (targetPageId) => {
+            // Remove active class from all sections and nav links
+            pagesSections.forEach(section => section.classList.remove('active'));
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            // Find and activate the target page section
+            const targetSection = document.getElementById(targetPageId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            // Find and activate the corresponding nav link
+            const targetNavLink = document.querySelector(`[data-page="${targetPageId}"]`);
+            if (targetNavLink) {
+                targetNavLink.classList.add('active');
+            }
+
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('nav-links');
+            if (mobileMenu) {
+                mobileMenu.classList.remove('open');
+            }
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        };
+
+        // Add click event listeners to nav links
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetPage = link.getAttribute('data-page');
+                if (targetPage) {
+                    switchToPage(targetPage);
+                }
+            });
+        });
+
+        // Initialize with home page active
+        switchToPage('home');
+    };
+
+    // Initialize page switching
+    initPageSwitching();
+
+    // --- Mobile Menu Toggle ---
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('nav-links');
+
+    if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileMenu.classList.remove('open');
+            }
+        });
+    }
 });

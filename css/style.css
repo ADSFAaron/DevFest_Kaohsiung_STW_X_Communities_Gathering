@@ -993,3 +993,70 @@ main {
         order: -1; /* Move hamburger to the left */
     }
 }
+
+/* === Page Switching System === */
+/* Hide all page sections by default */
+.page-section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show only the active page section */
+.page-section.active {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade in animation for page transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Navigation active state styling */
+.nav-link {
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.nav-link.active {
+    color: var(--md-sys-color-primary);
+    font-weight: 500;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 2px;
+    background-color: var(--md-sys-color-primary);
+    border-radius: 1px;
+}
+
+/* Mobile navigation active state */
+@media (max-width: 992px) {
+    .nav-link.active::after {
+        display: none;
+    }
+
+    .nav-link.active {
+        background-color: rgba(66, 133, 244, 0.1);
+        border-radius: 8px;
+    }
+}
+
+/* Smooth scrolling override for page switching (disable when switching pages) */
+html.page-switching {
+    scroll-behavior: auto;
+}

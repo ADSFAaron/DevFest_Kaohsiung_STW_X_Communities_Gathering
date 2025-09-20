@@ -30,14 +30,14 @@
             </svg>
         </button>
         <div class="nav-links" id="nav-links">
-            <a href="#" data-i18n-key="nav_home">首頁</a>
-            <a href="#schedule" data-i18n-key="nav_schedule">議程時間表</a>
-            <a href="#speakers" data-i18n-key="nav_speakers">講者介紹</a>
-            <a data-i18n-key="nav_tech_creation_market" href="#tech-creation-market">技術創作市集</a>
-            <a href="#sponsors" data-i18n-key="nav_sponsors">贊助夥伴</a>
-            <a href="#booths" data-i18n-key="nav_booths">擺攤夥伴</a>
-            <a href="#tickets" data-i18n-key="nav_tickets">票種介紹</a>
-            <a href="#about" data-i18n-key="nav_about">關於我們</a>
+            <a href="#" data-page="home" data-i18n-key="nav_home" class="nav-link active">首頁</a>
+            <a href="#" data-page="schedule" data-i18n-key="nav_schedule" class="nav-link">議程時間表</a>
+            <a href="#" data-page="speakers" data-i18n-key="nav_speakers" class="nav-link">講者介紹</a>
+            <a href="#" data-page="tech-creation-market" data-i18n-key="nav_tech_creation_market" class="nav-link">技術創作市集</a>
+            <a href="#" data-page="sponsors" data-i18n-key="nav_sponsors" class="nav-link">贊助夥伴</a>
+            <a href="#" data-page="booths" data-i18n-key="nav_booths" class="nav-link">擺攤夥伴</a>
+            <a href="#" data-page="tickets" data-i18n-key="nav_tickets" class="nav-link">票種介紹</a>
+            <a href="#" data-page="about" data-i18n-key="nav_about" class="nav-link">關於我們</a>
         </div>
         <div class="nav-actions">
             <div class="language-switcher">
@@ -53,7 +53,7 @@
 </header>
 
 <main>
-    <section class="hero">
+    <section id="home" class="hero page-section active">
         <div class="hero-content">
             <h1 data-i18n-key="event_title">DevFest 高雄場 X 南臺灣技術社群大聚 2025</h1>
             <p class="event-meta">
@@ -97,7 +97,7 @@
     </section>
 
     <!-- Schedule Section -->
-    <section id="schedule" class="content-section">
+    <section id="schedule" class="content-section page-section">
         <p class="section-intro" data-i18n-key="schedule_intro">今年 GDG Kaohsiung 和開發者 Buffet
             一起在高雄舉辦軟體社群年會，英文名稱為「DevFest Kaohsiung X S. TW Communities Gathering 2025」，中文名稱為「DevFest
             高雄場 X 南臺灣技術社群大聚 2025」。讓我們帶你快速的捕捉這場活動的重點</p>
@@ -322,7 +322,7 @@
     </section>
 
     <!-- Speakers Section -->
-    <section id="speakers" class="content-section">
+    <section id="speakers" class="content-section page-section">
         <h2 data-i18n-key="speakers_title">講者介紹</h2>
         <div class="speakers-grid">
             <!-- Speaker Card: Simon Liu -->
@@ -367,7 +367,7 @@
     </section>
 
     <!-- Tech Creation Market Section -->
-    <section class="content-section" id="tech-creation-market">
+    <section id="tech-creation-market" class="content-section page-section">
         <h2 data-i18n-key="tech_creation_market_title">技術創作市集</h2>
         <div class="tech-creation-market-grid">
             <div class="section-intro">
@@ -411,7 +411,7 @@
     </section>
 
     <!-- Sponsors Section -->
-    <section id="sponsors" class="content-section">
+    <section id="sponsors" class="content-section page-section">
         <h2 data-i18n-key="sponsors_title">贊助夥伴</h2>
         <div class="sponsors-grid">
             <!-- Sponsor Card: Colosscious -->
@@ -434,7 +434,7 @@
     </section>
 
     <!-- Booths Section -->
-    <section id="booths" class="content-section">
+    <section id="booths" class="content-section page-section">
         <h2 data-i18n-key="booths_title">擺攤夥伴</h2>
         <div class="booths-grid">
             <!-- Booth Card: GDG Kaohsiung -->
@@ -455,7 +455,7 @@
     </section>
 
     <!-- Tickets Section -->
-    <section id="tickets" class="content-section">
+    <section id="tickets" class="content-section page-section">
         <h2 data-i18n-key="tickets_title">票種介紹</h2>
 
         <!-- Paid Tickets -->
@@ -568,7 +568,7 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="content-section">
+    <section id="about" class="content-section page-section">
         <h2 data-i18n-key="about_title">關於我們</h2>
         <div class="about-grid">
             <!-- About Card: GDG Kaohsiung -->
