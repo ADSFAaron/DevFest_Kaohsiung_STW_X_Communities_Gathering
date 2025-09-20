@@ -104,31 +104,128 @@
         </div>
     </section>
 
-    <!-- Event Details Section - Only visible on home page -->
-    <div class="event-details home-only">
-        <div class="container">
-            <p class="event-details-text" data-i18n-key="schedule_intro">今年 GDG Kaohsiung 和開發者 Buffet
-                一起在高雄舉辦軟體社群年會，英文名稱為「DevFest Kaohsiung X S. TW Communities Gathering 2025」，中文名稱為「DevFest
-                高雄場 X 南臺灣技術社群大聚 2025」</p>
-        </div>
-    </div>
-
     <!-- What is DevFest & S.TW Communities Gathering Section - Only visible on home page -->
     <div class="what-is-section home-only">
         <div class="container">
-            <div class="what-is-grid">
-                <!-- DevFest 介紹 -->
-                <div class="what-is-card">
-                    <h3 class="what-is-title" data-i18n-key="devfest_what_title">🧐 DevFest 高雄場 是什麼？</h3>
-                    <p class="what-is-description" data-i18n-key="devfest_what_content">DevFest 是由 GDG (Google Developer Groups) 社群主辦的年度技術盛會，也是全球最大的開發者社群科技大會，因為是全球年會，在字尾增加城市名稱區別不同場次。</p>
-                    <p class="what-is-description" data-i18n-key="devfest_what_detail">DevFest 高雄場是 GDG Kaohsiung 社群舉辦的軟體年會。我們致力將外地的技術大神帶到高雄，讓高雄的開發者不用舟車勞頓就能與頂尖講者交流；我們更希望能打造一個專屬「高雄」的技術年會，邀請高雄在地講者上台分享，有更多曝光的機會！</p>
+            <div class="event-info-grid">
+                <!-- 第1層：關於活動 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-full">
+                        <h3 class="info-title" data-i18n-key="about_event_title">📝 關於活動</h3>
+                        <p class="info-description" data-i18n-key="schedule_intro">今年 GDG Kaohsiung 和開發者 Buffet 一起在高雄舉辦軟體社群年會，英文名稱為「DevFest Kaohsiung X S. TW Communities Gathering 2025」，中文名稱為「DevFest 高雄場 X 南臺灣技術社群大聚 2025」。</p>
+                    </div>
                 </div>
 
-                <!-- 南臺灣技術社群大聚介紹 -->
-                <div class="what-is-card">
-                    <h3 class="what-is-title" data-i18n-key="stw_what_title">🧐 南臺灣技術社群大聚 是什麼？</h3>
-                    <p class="what-is-description" data-i18n-key="stw_what_content">這是一個給技術社群組織者、技術活動參與者的交流活動。大多數在南部的社群都是單打獨鬥，努力經營著聚會維持著科技人的充電環境。我們希望透過這場聚會找到社群們以及參與者，讓社群被發現，同時也讓社群之間有機會交流籌備或經營的經驗，並且從中找到更多夥伴。</p>
-                    <p class="what-is-description" data-i18n-key="stw_what_detail">這場聚會是由眾多社群擔任主辦單位合力舉辦，以互動與趣味為核心安排了許多內容，目標是讓大家更能聚焦在「交流」。</p>
+                <!-- 第2層：是什麼問題 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="devfest_what_title">🧐 DevFest 高雄場 是什麼？</h3>
+                        <p class="info-description" data-i18n-key="devfest_what_content">DevFest 是由 GDG (Google Developer Groups) 社群主辦的年度技術盛會，也是全球最大的開發者社群科技大會。</p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="stw_what_title">🧐 南臺灣技術社群大聚 是什麼？</h3>
+                        <p class="info-description" data-i18n-key="stw_what_content">這是一個給技術社群組織者、技術活動參與者的交流活動。</p>
+                    </div>
+                </div>
+
+                <!-- 第3層：DevFest Kaohsiung -->
+                <div class="info-layer">
+                    <div class="info-card info-card-full">
+                        <h3 class="info-title" data-i18n-key="devfest_section_title">DevFest Kaohsiung</h3>
+                        <p class="info-description" data-i18n-key="devfest_section_content">DevFest 高雄場是 GDG Kaohsiung 社群舉辦的軟體年會。我們致力將外地的技術大神帶到高雄，讓高雄的開發者不用舟車勞頓就能與頂尖講者交流。</p>
+                    </div>
+                </div>
+
+                <!-- 第4層：主題 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="day1_theme_title">🚀 第一日議程主題：實作 (Implements)</h3>
+                        <p class="info-description" data-i18n-key="day1_theme_content">第一天的會議主要聚焦在「實作」，不只是討論理論，而是動手寫 code 把想法變成現實。</p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="day2_theme_title">🏆 第二日工作坊主題：第二屆 AI 生成大賽</h3>
+                        <p class="info-description" data-i18n-key="day2_theme_content">第二天將舉辦第二屆 AI 生成大賽，讓參與者體驗 AI 技術的實際應用。</p>
+                    </div>
+                </div>
+
+                <!-- 第5層：拍立得 Fest | Pizza Time | After Buffet -->
+                <div class="info-layer-three">
+                    <div class="info-card info-card-third">
+                        <h3 class="info-title" data-i18n-key="polaroid_fest_title">📸 拍立得 Fest</h3>
+                        <p class="info-description" data-i18n-key="polaroid_fest_content">活動期間提供拍立得拍照服務，留下珍貴的活動回憶。</p>
+                    </div>
+                    <div class="info-card info-card-third">
+                        <h3 class="info-title" data-i18n-key="pizza_time_title">🍕 Pizza Time</h3>
+                        <p class="info-description" data-i18n-key="pizza_time_content">下午茶時間享用美味 Pizza，為大腦充電繼續精彩議程。</p>
+                    </div>
+                    <div class="info-card info-card-third">
+                        <h3 class="info-title" data-i18n-key="after_buffet_title">🍽️ After Buffet</h3>
+                        <p class="info-description" data-i18n-key="after_buffet_content">第一天活動結束後，我們將在高雄商旅 Urban Café 都會美饌舉辦 After Buffet，讓大家在輕鬆的氣氛中繼續交流和分享。</p>
+                    </div>
+                </div>
+
+                <!-- 第6層：南臺灣技術社群大聚 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-full">
+                        <h3 class="info-title" data-i18n-key="stw_section_title">南臺灣技術社群大聚</h3>
+                        <p class="info-description" data-i18n-key="stw_section_content">這場聚會是由眾多社群擔任主辦單位合力舉辦，以互動與趣味為核心安排了許多內容，目標是讓大家更能聚焦在「交流」。</p>
+                    </div>
+                </div>
+
+                <!-- 第7層：交流和市集 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="networking_title">⭐ 眾多技術人的聊天交流或 Lightning Talk</h3>
+                        <p class="info-description" data-i18n-key="networking_content">提供一個輕鬆的環境讓技術人們互相交流，分享經驗和想法。</p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="tech_market_title">⭐ 首次引入南臺灣的技術創作市集</h3>
+                        <p class="info-description" data-i18n-key="tech_market_content">讓創作者可以展示並販售自己的技術創作作品，促進知識和創意的交流。</p>
+                    </div>
+                </div>
+
+                <!-- 第8層：會議室和食物 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="meeting_room_title">⭐ 主題討論會議室</h3>
+                        <p class="info-description" data-i18n-key="meeting_room_content">提供專門的空間進行深度的技術討論和小組交流。</p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="food_drinks_title">⭐ 食物、點心、飲料</h3>
+                        <p class="info-description" data-i18n-key="food_drinks_content">整天提供豐富的食物和飲料，讓參與者能夠充滿能量地參與活動。</p>
+                    </div>
+                </div>
+
+                <!-- 第9層：活動小撇步 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-full">
+                        <h3 class="info-title" data-i18n-key="event_tips_title">活動小撇步</h3>
+                        <p class="info-description" data-i18n-key="event_tips_content">一些小提示和建議，幫助你更好地享受這次活動。</p>
+                    </div>
+                </div>
+
+                <!-- 第10層：交通和環保 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="transport_title">🚇 離捷運站最近的場地</h3>
+                        <p class="info-description" data-i18n-key="transport_content">場地位於高雄市新興區，靠近捷運站，交通便利。</p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="eco_friendly_title">🥤 請記得自備容器</h3>
+                        <p class="info-description" data-i18n-key="eco_friendly_content">為了環保，請參與者自備環保杯或水瓶。</p>
+                    </div>
+                </div>
+
+                <!-- 第11層：行為準則和隱私 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="code_conduct_title">✨ GDG 活動行為準則 (Code of Conduct)</h3>
+                        <p class="info-description" data-i18n-key="code_conduct_content">我們致力於創造一個包容、尊重的環境。</p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="privacy_title">✔️ 蒐集個人資料告知事項暨個人資料提供同意聲明</h3>
+                        <p class="info-description" data-i18n-key="privacy_content">我們尊重並保護您的個人隱私。</p>
+                    </div>
                 </div>
             </div>
         </div>

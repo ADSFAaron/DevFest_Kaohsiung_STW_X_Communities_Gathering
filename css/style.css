@@ -1199,35 +1199,30 @@ html.page-switching {
 }
 
 /* Event Details Section (moved from schedule to home page) */
-.event-details {
-    background-color: var(--md-sys-color-surface);
-    padding: 48px 24px;
-    text-align: center;
-}
-
-.event-details-text {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 18px;
-    line-height: 1.6;
-    color: var(--md-sys-color-on-surface);
-}
-
 /* What is DevFest & S.TW Communities Gathering Section */
 .what-is-section {
     background-color: #f8f9fa;
     padding: 64px 24px;
 }
 
-.what-is-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+/* 新的事件資訊Grid系統 */
+.event-info-grid {
+    display: flex;
+    flex-direction: column;
     gap: 32px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
-.what-is-card {
+.info-layer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+/* 卡片類型 */
+.info-card {
     background-color: #ffffff;
     border-radius: 16px;
     padding: 32px;
@@ -1235,22 +1230,45 @@ html.page-switching {
     transition: transform 0.2s ease-in-out;
 }
 
-.what-is-card:hover {
+.info-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.what-is-title {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 0 0 16px 0;
-    color: var(--md-sys-color-on-surface);
+.info-card-full {
+    grid-column: span 2; /* 佔滿整行 */
+    text-align: center; /* 全寬卡片內容置中 */
 }
 
-.what-is-description {
-    font-size: 16px;
+.info-card-half {
+    grid-column: span 1; /* 佔一半 */
+}
+
+.info-card-third {
+    grid-column: span 1; /* 佔三分之一 */
+}
+
+/* 三個項目的特殊層 */
+.info-layer-three {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+
+.info-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    color: var(--md-sys-color-on-surface);
+    line-height: 1.3;
+}
+
+.info-description {
+    font-size: 15px;
     line-height: 1.6;
-    margin: 0 0 16px 0;
+    margin: 0;
     color: var(--md-sys-color-on-surface);
 }
 
@@ -1267,29 +1285,41 @@ html.page-switching {
 }
 
 @media (max-width: 768px) {
-    .event-details {
-        padding: 32px 16px;
-    }
-
-    .event-details-text {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-
     .what-is-section {
         padding: 48px 16px;
     }
 
-    .what-is-grid {
+    .info-layer {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 16px;
     }
 
-    .what-is-card {
+    .info-card {
         padding: 24px;
     }
 
-    .what-is-title {
-        font-size: 20px;
+    .info-card-full {
+        grid-column: span 1; /* 手機版重置為單格 */
+    }
+
+    .info-card-half {
+        grid-column: span 1; /* 手機版重置為單格 */
+    }
+
+    .info-card-third {
+        grid-column: span 1; /* 手機版重置為單格 */
+    }
+
+    .info-layer-three {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .info-title {
+        font-size: 18px;
+    }
+
+    .info-description {
+        font-size: 14px;
     }
 }
