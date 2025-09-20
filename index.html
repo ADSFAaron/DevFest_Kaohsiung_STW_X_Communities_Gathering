@@ -73,7 +73,26 @@
             </a>
         </div>
         <div class="hero-image">
-            <img src="images/image_banner.png" alt="DevFest Kaohsiung 2025 Banner">
+            <div class="banner-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="./images/image_banner_devfest.png" alt="DevFest Kaohsiung 2025 Banner" loading="eager">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="./images/image_banner_stw.png" alt="S. TW Communities Gathering 2025 Banner" loading="eager">
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button class="carousel-indicator active" data-slide="0" aria-label="顯示第一張圖片"></button>
+                    <button class="carousel-indicator" data-slide="1" aria-label="顯示第二張圖片"></button>
+                </div>
+                <button class="carousel-nav carousel-prev" aria-label="上一張圖片">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button class="carousel-nav carousel-next" aria-label="下一張圖片">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </div>
         </div>
     </section>
 

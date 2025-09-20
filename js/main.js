@@ -34,7 +34,7 @@ const translations = {
         'd1_t6_s2_title': '議程3-2',
         'd1_t7_s1_title': '議程4-1',
         'd1_t7_s2_title': '議程4-2',
-        'd1_t8_title': 'Pizza Time和交流時間',
+        'd1_t8_title': 'Pizza Time & 交流時間',
         'd1_t9_s1_title': '議程5-1',
         'd1_t9_s2_title': '議程5-2',
         'd1_t10_s1_title': '議程6-1',
@@ -46,9 +46,11 @@ const translations = {
         'd2_t1_title': '開放報到',
         'd2_t2_title': '活動開幕',
         'd2_t2_track': '會場1',
-        'd2_t3_s1_title': '社群交流',
-        'd2_t4_s2_title': '第二屆 AI 生成大賽1',
-        'd2_t5_s2_title': '第二屆 AI 生成大賽2',
+        'd2_t3_s1_title': '交流活動',
+        'd2_t4_s2_title': '第二屆 AI 生成大賽 1',
+        'd2_t5_s2_title': '第二屆 AI 生成大賽 2',
+        'd2_t6_title': '活動閉幕',
+        'd2_t6_track': '會場1',
         'speakers_title': '講者介紹',
         'simonliu_name': '劉育維 (Simon Liu)',
         'simonliu_org': 'APMIC / Google Developer Expert - AI',
@@ -169,6 +171,8 @@ const translations = {
         'd2_t3_s1_title': 'Community Networking',
         'd2_t4_s2_title': '2nd AI Generation Contest 1',
         'd2_t5_s2_title': '2nd AI Generation Contest 2',
+        'd2_t6_title': 'Closing Ceremony',
+        'd2_t6_track': 'Track 1',
         'speakers_title': 'Speakers',
         'simonliu_name': 'Simon Liu',
         'simonliu_org': 'APMIC / Google Developer Expert - AI',
@@ -292,4 +296,130 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Set initial language
     setLanguage('zh-Hant');
+
+    // --- Banner Carousel Functionality ---
+    const carousel = document.querySelector('.banner-carousel');
+    if (carousel) {
+        const slides = carousel.querySelectorAll('.carousel-slide');
+        const indicators = carousel.querySelectorAll('.carousel-indicator');
+        const prevButton = carousel.querySelector('.carousel-prev');
+        const nextButton = carousel.querySelector('.carousel-next');
+
+        let currentSlide = 0;
+        let autoplayInterval;
+
+        // Function to show specific slide
+        const showSlide = (index) => {
+            // Remove active class from all slides and indicators
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+
+            // Add active class to current slide and indicator
+            slides[index].classList.add('active');
+            indicators[index].classList.add('active');
+
+            currentSlide = index;
+        };
+
+        // Function to go to next slide
+        const nextSlide = () => {
+            const next = (currentSlide + 1) % slides.length;
+            showSlide(next);
+        };
+
+        // Function to go to previous slide
+        const prevSlide = () => {
+            const prev = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(prev);
+        };
+
+        // Start autoplay
+        const startAutoplay = () => {
+            autoplayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        };
+
+        // Stop autoplay
+        const stopAutoplay = () => {
+            if (autoplayInterval) {
+                clearInterval(autoplayInterval);
+                autoplayInterval = null;
+            }
+        };
+
+        // Add event listeners for navigation buttons
+        if (nextButton) {
+            nextButton.addEventListener('click', () => {
+                stopAutoplay();
+                nextSlide();
+                startAutoplay();
+            });
+        }
+
+        if (prevButton) {
+            prevButton.addEventListener('click', () => {
+                stopAutoplay();
+                prevSlide();
+                startAutoplay();
+            });
+        }
+
+        // Add event listeners for indicators
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                stopAutoplay();
+                showSlide(index);
+                startAutoplay();
+            });
+        });
+
+        // Pause autoplay when user hovers over carousel
+        carousel.addEventListener('mouseenter', stopAutoplay);
+        carousel.addEventListener('mouseleave', startAutoplay);
+
+        // Touch/swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        carousel.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        carousel.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        const handleSwipe = () => {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                stopAutoplay();
+                if (diff > 0) {
+                    // Swiped left - go to next slide
+                    nextSlide();
+                } else {
+                    // Swiped right - go to previous slide
+                    prevSlide();
+                }
+                startAutoplay();
+            }
+        };
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                stopAutoplay();
+                prevSlide();
+                startAutoplay();
+            } else if (e.key === 'ArrowRight') {
+                stopAutoplay();
+                nextSlide();
+                startAutoplay();
+            }
+        });
+
+        // Start autoplay when page loads
+        startAutoplay();
+    }
 });
