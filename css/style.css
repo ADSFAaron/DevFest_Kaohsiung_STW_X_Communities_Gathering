@@ -97,12 +97,67 @@ nav {
     background-color: rgba(66, 133, 244, 0.08); /* Use primary color with alpha */
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 22px;
+/* Register button - capsule style */
+.register-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
     text-decoration: none;
-    color: var(--md-sys-color-on-surface);
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 24px; /* Capsule shape */
     margin-left: 16px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+
+.register-button:hover {
+    background-color: #1a73e8; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.register-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero register button - larger capsule style for home page */
+.hero-register-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 32px;
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 32px; /* Larger capsule shape */
+    margin-top: 24px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+}
+
+.hero-register-button:hover {
+    background-color: #1a73e8; /* Darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.hero-register-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero-register-button .material-symbols-outlined {
+    font-size: 20px;
 }
 
 main {
@@ -1063,6 +1118,16 @@ main {
 /* Smooth scrolling override for page switching (disable when switching pages) */
 html.page-switching {
     scroll-behavior: auto;
+}
+
+/* Home-only content - only visible when home page is active */
+.home-only {
+    display: none;
+}
+
+/* Show home-only content when home page is active */
+.page-section#home.active ~ .home-only {
+    display: block;
 }
 
 /* Event Details Section (moved from schedule to home page) */
