@@ -377,8 +377,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    langButtons['zh-Hant'].addEventListener('click', () => setLanguage('zh-Hant'));
-    langButtons['en'].addEventListener('click', () => setLanguage('en'));
+    langButtons['zh-Hant'].addEventListener('click', () => {
+        setLanguage('zh-Hant');
+        if (window.dynamicContentManager) {
+            window.dynamicContentManager.onLanguageChange('zh-Hant');
+        }
+    });
+    langButtons['en'].addEventListener('click', () => {
+        setLanguage('en');
+        if (window.dynamicContentManager) {
+            window.dynamicContentManager.onLanguageChange('en');
+        }
+    });
 
     // Set initial language
     setLanguage('zh-Hant');
@@ -388,8 +398,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (carousel) {
         const slides = carousel.querySelectorAll('.carousel-slide');
         const indicators = carousel.querySelectorAll('.carousel-indicator');
-        const prevButton = carousel.querySelector('.carousel-prev');
-        const nextButton = carousel.querySelector('.carousel-next');
 
         let currentSlide = 0;
         let autoplayInterval;
@@ -432,22 +440,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        // Add event listeners for navigation buttons
-        if (nextButton) {
-            nextButton.addEventListener('click', () => {
-                stopAutoplay();
-                nextSlide();
-                startAutoplay();
-            });
-        }
-
-        if (prevButton) {
-            prevButton.addEventListener('click', () => {
-                stopAutoplay();
-                prevSlide();
-                startAutoplay();
-            });
-        }
 
         // Add event listeners for indicators
         indicators.forEach((indicator, index) => {

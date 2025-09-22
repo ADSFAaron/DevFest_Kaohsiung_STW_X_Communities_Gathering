@@ -1,0 +1,39 @@
+{
+  "speakers": [
+    {
+      "id": "simonliu",
+      "name": {
+        "zh": "劉育維 (Simon Liu)",
+        "en": "Simon Liu"
+      },
+      "org": {
+        "zh": "APMIC / Google Developer Expert - AI",
+        "en": "APMIC / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "MLOps Engineer",
+        "en": "MLOps Engineer"
+      },
+      "topic_category": {
+        "zh": "議程分類：Gemini AI 的生成式實踐",
+        "en": "Category: Generative Practices of Gemini AI"
+      },
+      "bio": {
+        "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
+        "en": "Hello everyone, I'm Simon Liu. I have served as a senior engineer in the telecommunications industry and as a customer technical success engineer in the software industry, helping major well-known companies discuss AI architecture planning for topics such as machine learning, deep learning, and large language models. I have published over a hundred technical articles on Medium. I hope to try to use AI for applications and help customers solve their pain points with AI."
+      },
+      "session": {
+        "name": {
+          "zh": "建構 AI Agent：結合 Google Gemini 與 ADK 工具來解放企業生產力",
+          "en": "Building AI Agents: Combining Google Gemini and ADK Tools to Unleash Enterprise Productivity"
+        },
+        "abstract": {
+          "zh": "透過 Google 一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：<br>1. 透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. 透過 Google Firebase Studio 來進行平台建置，並且說明如何進行修改",
+          "en": "Through a series of Google platform tools, everyone can turn past imaginations into present realities. In this session, you will learn about:<br>1. How to plan UI/UX through Google Stitch<br>2. How to build a platform through Google Firebase Studio, and how to modify it"
+        }
+      },
+      "tags": ["中文", "ADK", "Gemini", "Agent"],
+      "photo": "images/SimonLiu.jpg"
+    }
+  ]
+}

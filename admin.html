@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFest 2025 - 內容管理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .admin-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 24px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+        }
+
+        .section h2 {
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .btn {
+            background: #4285f4;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #3367d6;
+            transform: translateY(-2px);
+        }
+
+        .example-usage {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 32px;
+        }
+
+        .example-usage h3 {
+            color: #333;
+            margin-bottom: 16px;
+        }
+
+        .code-block {
+            background: #1a1a1a;
+            color: #f8f8f2;
+            padding: 16px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+
+        .warning h4 {
+            color: #856404;
+            margin-bottom: 8px;
+        }
+
+        .warning p {
+            color: #856404;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1>🎯 DevFest 2025 內容管理系統</h1>
+
+        <div class="warning">
+            <h4>⚠️ 重要提醒</h4>
+            <p>這是一個靜態網站的示範管理介面。在生產環境中，您需要後端 API 來真正儲存資料到 JSON 檔案。目前的變更只會存在於瀏覽器中，重新整理後會消失。</p>
+        </div>
+
+        <!-- 講者管理 -->
+        <div class="section">
+            <h2>👨‍🏫 新增講者</h2>
+            <form id="speaker-form">
+                <div class="form-group">
+                    <label>講者 ID (英文，不可重複)</label>
+                    <input type="text" id="speaker-id" placeholder="例如：johnsmith" required>
+                </div>
+                <div class="form-group">
+                    <label>中文姓名</label>
+                    <input type="text" id="speaker-name-zh" placeholder="例如：張小明" required>
+                </div>
+                <div class="form-group">
+                    <label>英文姓名</label>
+                    <input type="text" id="speaker-name-en" placeholder="例如：John Smith" required>
+                </div>
+                <div class="form-group">
+                    <label>公司/組織 (中文)</label>
+                    <input type="text" id="speaker-org-zh" placeholder="例如：Google Taiwan" required>
+                </div>
+                <div class="form-group">
+                    <label>公司/組織 (英文)</label>
+                    <input type="text" id="speaker-org-en" placeholder="例如：Google Taiwan" required>
+                </div>
+                <div class="form-group">
+                    <label>職稱 (中文)</label>
+                    <input type="text" id="speaker-title-zh" placeholder="例如：軟體工程師" required>
+                </div>
+                <div class="form-group">
+                    <label>職稱 (英文)</label>
+                    <input type="text" id="speaker-title-en" placeholder="例如：Software Engineer" required>
+                </div>
+                <div class="form-group">
+                    <label>講者簡介 (中文)</label>
+                    <textarea id="speaker-bio-zh" placeholder="請輸入講者的詳細簡介..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>講者簡介 (英文)</label>
+                    <textarea id="speaker-bio-en" placeholder="Please enter detailed bio..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>議程名稱 (中文)</label>
+                    <input type="text" id="session-name-zh" placeholder="例如：AI 在現代開發中的應用" required>
+                </div>
+                <div class="form-group">
+                    <label>議程名稱 (英文)</label>
+                    <input type="text" id="session-name-en" placeholder="例如：AI Applications in Modern Development" required>
+                </div>
+                <div class="form-group">
+                    <label>照片路徑</label>
+                    <input type="text" id="speaker-photo" placeholder="例如：images/john-smith.jpg" required>
+                </div>
+                <div class="form-group">
+                    <label>標籤 (用逗號分隔)</label>
+                    <input type="text" id="speaker-tags" placeholder="例如：AI,Python,Machine Learning">
+                </div>
+                <button type="submit" class="btn">新增講者</button>
+            </form>
+        </div>
+
+        <!-- 使用說明 -->
+        <div class="example-usage">
+            <h3>📖 使用說明</h3>
+            <p><strong>1. 新增講者：</strong></p>
+            <div class="code-block">
+// 使用 JavaScript 新增講者
+const newSpeaker = {
+    id: "johnsmith",
+    name: { zh: "張小明", en: "John Smith" },
+    org: { zh: "Google Taiwan", en: "Google Taiwan" },
+    title: { zh: "軟體工程師", en: "Software Engineer" },
+    topic_category: { zh: "議程分類：AI 應用", en: "Category: AI Applications" },
+    bio: {
+        zh: "講者的詳細簡介...",
+        en: "Detailed speaker bio..."
+    },
+    session: {
+        name: { zh: "AI 在現代開發中的應用", en: "AI Applications in Modern Development" },
+        abstract: { zh: "議程簡介...", en: "Session abstract..." }
+    },
+    tags: ["AI", "Python", "Machine Learning"],
+    photo: "images/john-smith.jpg"
+};
+
+// 新增到系統中
+await window.dynamicContentManager.addSpeaker(newSpeaker);
+            </div>
+
+            <p><strong>2. 編輯 JSON 檔案（推薦方式）：</strong></p>
+            <ul>
+                <li>直接編輯 <code>data/speakers.json</code> 檔案</li>
+                <li>直接編輯 <code>data/tech-market.json</code> 檔案</li>
+                <li>直接編輯 <code>data/sponsors.json</code> 檔案</li>
+                <li>直接編輯 <code>data/booths.json</code> 檔案</li>
+                <li>重新整理網頁即可看到更新</li>
+            </ul>
+
+            <p><strong>3. 檔案結構：</strong></p>
+            <div class="code-block">
+data/
+├── speakers.json      # 講者資料
+├── tech-market.json   # 技術創作市集
+├── sponsors.json      # 贊助夥伴
+└── booths.json        # 社群擺攤
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('speaker-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(e.target);
+            const speakerData = {
+                id: document.getElementById('speaker-id').value,
+                name: {
+                    zh: document.getElementById('speaker-name-zh').value,
+                    en: document.getElementById('speaker-name-en').value
+                },
+                org: {
+                    zh: document.getElementById('speaker-org-zh').value,
+                    en: document.getElementById('speaker-org-en').value
+                },
+                title: {
+                    zh: document.getElementById('speaker-title-zh').value,
+                    en: document.getElementById('speaker-title-en').value
+                },
+                topic_category: {
+                    zh: `議程分類：${document.getElementById('session-name-zh').value}`,
+                    en: `Category: ${document.getElementById('session-name-en').value}`
+                },
+                bio: {
+                    zh: document.getElementById('speaker-bio-zh').value,
+                    en: document.getElementById('speaker-bio-en').value
+                },
+                session: {
+                    name: {
+                        zh: document.getElementById('session-name-zh').value,
+                        en: document.getElementById('session-name-en').value
+                    },
+                    abstract: {
+                        zh: "詳細議程摘要待補充",
+                        en: "Detailed session abstract to be added"
+                    }
+                },
+                tags: document.getElementById('speaker-tags').value.split(',').map(tag => tag.trim()),
+                photo: document.getElementById('speaker-photo').value
+            };
+
+            console.log('新講者資料:', speakerData);
+            alert('講者資料已建立！\n\n請查看瀏覽器控制台以獲取完整 JSON 資料。\n\n⚠️ 注意：這只是示範，實際需要後端 API 來儲存資料。');
+
+            // 如果主頁面的動態內容管理器可用，則新增講者
+            if (window.opener && window.opener.dynamicContentManager) {
+                try {
+                    await window.opener.dynamicContentManager.addSpeaker(speakerData);
+                    alert('✅ 講者已成功新增至主頁面！');
+                } catch (error) {
+                    console.error('新增講者時發生錯誤:', error);
+                }
+            }
+
+            // 清空表單
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

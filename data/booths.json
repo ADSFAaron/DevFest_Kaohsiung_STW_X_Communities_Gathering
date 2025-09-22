@@ -1,0 +1,21 @@
+{
+  "booths": [
+    {
+      "id": "gdg_kaohsiung",
+      "name": {
+        "zh": "GDG Kaohsiung",
+        "en": "GDG Kaohsiung"
+      },
+      "description": {
+        "zh": "GDG Kaohsiung 全名 Google Developer Groups Kaohsiung，是以研究 Google 以及 Android App 領域的技術、設計、新創或相關產業為主的開發者社群。",
+        "en": "GDG Kaohsiung (Google Developer Groups Kaohsiung) is a developer community focused on technologies in the Google and Android App domains, including design, startups, and related industries."
+      },
+      "logo": "images/about-logo-gdg_kaohsiung.png",
+      "website": "https://gdgkaohsiung.org",
+      "social": {
+        "facebook": "https://www.facebook.com/groups/GDGKaohsiung",
+        "telegram": "https://t.me/GDGKaohsiung"
+      }
+    }
+  ]
+}
