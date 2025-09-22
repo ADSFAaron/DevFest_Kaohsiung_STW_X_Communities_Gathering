@@ -839,9 +839,9 @@ main {
 
 .speaker-photo {
     width: 100%;
-    height: 300px; /* Image area - 2 parts of 2:1 ratio */
+    aspect-ratio: 1 / 1; /* Square ratio */
     object-fit: cover;
-    object-position: top center; /* Keep top alignment for speakers */
+    object-position: center; /* Center alignment for speakers */
 }
 
 .speaker-info {
@@ -971,7 +971,7 @@ main {
 }
 
 .sponsor-logo-container {
-    height: 300px; /* Image area - 2 parts of 2:1 ratio */
+    aspect-ratio: 1 / 1; /* Square ratio */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -981,8 +981,8 @@ main {
 
 .sponsor-logo {
     width: 100%; /* Scale by width */
-    max-height: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     object-position: center; /* Center alignment for sponsors */
 }
 
@@ -1047,7 +1047,7 @@ main {
 }
 
 .booth-logo-container {
-    height: 300px; /* Image area - 2 parts of 2:1 ratio */
+    aspect-ratio: 1 / 1; /* Square ratio */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1058,7 +1058,7 @@ main {
 .booth-logo {
     width: 100%; /* Scale by width */
     height: 100%;
-    object-fit: contain; /* Change to contain for proper scaling */
+    object-fit: cover; /* Fill the container */
     object-position: center; /* Center alignment for booths */
 }
 
@@ -1177,15 +1177,18 @@ main {
 }
 
 .about-logo-container {
-    height: 300px; /* Image area - 2 parts of 2:1 ratio */
+    aspect-ratio: 1 / 1; /* Square ratio */
     background-color: #f8f9fa;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-logo {
     width: 100%; /* Scale by width */
-    max-height: 100%;
-    object-fit: contain; /* Use contain instead of cover to preserve quality */
+    height: 100%;
+    object-fit: cover; /* Fill the container */
     object-position: center; /* Center alignment for about */
 }
 
@@ -1451,16 +1454,124 @@ html.page-switching {
 }
 
 /* 為三卡片層的每張卡片添加特殊背景色 */
-.info-layer-three .info-card:nth-child(1)::before {
+/* === 特定卡片的背景色設定 === */
+
+/* Blue category - #c3ecf6 */
+/* 關於活動 */
+.info-card:has(.info-title[data-i18n-key="about_event_title"])::before,
+.info-layer:nth-child(1) .info-card::before {
     background-color: #c3ecf6;
 }
 
+/* DevFest 高雄場 是什麼？ */
+.info-card:has(.info-title[data-i18n-key="devfest_what_title"])::before,
+.info-layer:nth-child(2) .info-card:nth-child(1)::before {
+    background-color: #c3ecf6;
+}
+
+/* 南臺灣技術社群大聚 是什麼？ */
+.info-card:has(.info-title[data-i18n-key="stw_what_title"])::before,
+.info-layer:nth-child(2) .info-card:nth-child(2)::before {
+    background-color: #c3ecf6;
+}
+
+/* Green category - #ccf6c5 */
+/* DevFest 2025 高雄場 */
+.info-card:has(.info-title[data-i18n-key="devfest_section_title"])::before,
+.info-layer:nth-child(3) .info-card::before {
+    background-color: #ccf6c5;
+}
+
+/* 第一日議程主題：實作 (Implements) */
+.info-card:has(.info-title[data-i18n-key="day1_theme_title"])::before,
+.info-layer:nth-child(4) .info-card:nth-child(1)::before {
+    background-color: #ccf6c5;
+}
+
+/* 第二日工作坊主題：第二屆 AI 生成大賽 */
+.info-card:has(.info-title[data-i18n-key="day2_theme_title"])::before,
+.info-layer:nth-child(4) .info-card:nth-child(2)::before {
+    background-color: #ccf6c5;
+}
+
+/* 拍立得 Fest */
+.info-card:has(.info-title[data-i18n-key="polaroid_fest_title"])::before,
+.info-layer-three .info-card:nth-child(1)::before {
+    background-color: #ccf6c5;
+}
+
+/* Pizza Time */
+.info-card:has(.info-title[data-i18n-key="pizza_time_title"])::before,
 .info-layer-three .info-card:nth-child(2)::before {
+    background-color: #ccf6c5;
+}
+
+/* After Buffet */
+.info-card:has(.info-title[data-i18n-key="after_buffet_title"])::before,
+.info-layer-three .info-card:nth-child(3)::before {
+    background-color: #ccf6c5;
+}
+
+/* Yellow category - #ffe7a5 */
+/* 南臺灣技術社群大聚 */
+.info-card:has(.info-title[data-i18n-key="stw_section_title"])::before,
+.info-layer:nth-child(6) .info-card::before {
     background-color: #ffe7a5;
 }
 
-.info-layer-three .info-card:nth-child(3)::before {
-    background-color: #ccf6c5;
+/* 眾多技術人的聊天交流或 Lightning Talk */
+.info-card:has(.info-title[data-i18n-key="networking_title"])::before,
+.info-layer:nth-child(7) .info-card:nth-child(1)::before {
+    background-color: #ffe7a5;
+}
+
+/* 首次引入南臺灣的技術創作市集 */
+.info-card:has(.info-title[data-i18n-key="tech_market_title"])::before,
+.info-layer:nth-child(7) .info-card:nth-child(2)::before {
+    background-color: #ffe7a5;
+}
+
+/* 主題討論會議室 */
+.info-card:has(.info-title[data-i18n-key="meeting_room_title"])::before,
+.info-layer:nth-child(8) .info-card:nth-child(1)::before {
+    background-color: #ffe7a5;
+}
+
+/* 食物、點心、飲料 */
+.info-card:has(.info-title[data-i18n-key="food_drinks_title"])::before,
+.info-layer:nth-child(8) .info-card:nth-child(2)::before {
+    background-color: #ffe7a5;
+}
+
+/* Pink category - #f8d8d8 */
+/* 活動小撇步 */
+.info-card:has(.info-title[data-i18n-key="event_tips_title"])::before,
+.info-layer:nth-child(9) .info-card::before {
+    background-color: #f8d8d8;
+}
+
+/* 離捷運站最近的場地 */
+.info-card:has(.info-title[data-i18n-key="transport_title"])::before,
+.info-layer:nth-child(10) .info-card:nth-child(1)::before {
+    background-color: #f8d8d8;
+}
+
+/* 請記得自備容器 */
+.info-card:has(.info-title[data-i18n-key="eco_friendly_title"])::before,
+.info-layer:nth-child(10) .info-card:nth-child(2)::before {
+    background-color: #f8d8d8;
+}
+
+/* GDG 活動行為準則 (Code of Conduct) */
+.info-card:has(.info-title[data-i18n-key="code_conduct_title"])::before,
+.info-layer:nth-child(11) .info-card:nth-child(1)::before {
+    background-color: #f8d8d8;
+}
+
+/* 蒐集個人資料告知事項暨個人資料提供同意聲明 */
+.info-card:has(.info-title[data-i18n-key="privacy_title"])::before,
+.info-layer:nth-child(11) .info-card:nth-child(2)::before {
+    background-color: #f8d8d8;
 }
 
 
