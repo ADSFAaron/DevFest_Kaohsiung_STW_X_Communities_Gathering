@@ -14,12 +14,18 @@ class DynamicContentManager {
 
     // 設定當前語言
     setLanguage(lang) {
-        this.currentLanguage = lang === 'en' ? 'en' : 'zh';
+        if (lang === 'en') {
+            this.currentLanguage = 'en';
+        } else if (lang === 'ja') {
+            this.currentLanguage = 'ja';
+        } else {
+            this.currentLanguage = 'zh';
+        }
     }
 
     // 取得多語言文字
     getText(textObj) {
-        return textObj[this.currentLanguage] || textObj['zh'] || textObj['en'] || '';
+        return textObj[this.currentLanguage] || textObj['zh'] || textObj['en'] || textObj['ja'] || '';
     }
 
     // 載入所有資料
@@ -164,9 +170,24 @@ class DynamicContentManager {
 
         // 判斷贊助類型 (公司 or 個人)
         const sponsorType = sponsor.type || 'company'; // 預設為公司
-        const typeText = sponsorType === 'company' ?
-            (this.currentLanguage === 'zh' ? '公司贊助' : 'Corporate Sponsor') :
-            (this.currentLanguage === 'zh' ? '個人贊助' : 'Individual Sponsor');
+        let typeText;
+        if (sponsorType === 'company') {
+            if (this.currentLanguage === 'zh') {
+                typeText = '公司贊助';
+            } else if (this.currentLanguage === 'ja') {
+                typeText = '企業スポンサー';
+            } else {
+                typeText = 'Corporate Sponsor';
+            }
+        } else {
+            if (this.currentLanguage === 'zh') {
+                typeText = '個人贊助';
+            } else if (this.currentLanguage === 'ja') {
+                typeText = '個人スポンサー';
+            } else {
+                typeText = 'Individual Sponsor';
+            }
+        }
 
         card.innerHTML = `
             <img alt="${this.getText(sponsor.name)} Logo"

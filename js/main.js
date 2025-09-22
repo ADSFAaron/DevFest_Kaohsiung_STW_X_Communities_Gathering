@@ -330,6 +330,31 @@ const translations = {
         'privacy_title': '✔️ 袒集個人資料告知事項暨個人資料提供同意聲明',
         'privacy_content': '我們尊重並保護您的個人隱私<br><br>詳細內容請參閱：https://docs.google.com/document/d/1_rTlfAkLMl5ZfFwxZrNPhwzGQ5xU8g96bXyKZ3siW-4/edit?usp=sharing',
     },
+    'ja': {
+        'nav_home': 'ホーム',
+        'nav_schedule': 'スケジュール',
+        'nav_speakers': 'スピーカー',
+        'nav_sponsors': 'イベントパートナー',
+        'nav_booths': 'コミュニティブース',
+        'nav_tech_creation_market': 'テック創作マーケット',
+        'nav_tickets': 'チケット',
+        'nav_about': '主催団体',
+        'event_title': 'DevFest高雄 X 南台湾技術コミュニティ大集合 2025',
+        'event_date_location': '11/22（土）- 23（日）in KO-IN 智高点',
+        'day1_schedule': '22 - DevFest 2025 高雄',
+        'day1_time': '🕣 08:30 ~ 18:00',
+        'day2_schedule': '23 - 南台湾技術コミュニティ大集合 2025',
+        'day2_time': '🕚 11:00 ~ 17:00',
+        'register_cta': '参加登録',
+        'schedule_title': 'スケジュール',
+        'speakers_title': 'スピーカー紹介',
+        'tech_creation_market_title': 'テック創作マーケット',
+        'sponsors_title': 'イベントパートナー',
+        'booths_title': 'コミュニティブース',
+        'tickets_title': 'チケット紹介',
+        'about_title': '主催団体',
+        'view_map': '📍 地図を見る',
+    },
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -363,7 +388,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const langButtons = {
         'zh-Hant': document.getElementById('lang-tw'),
-        'en': document.getElementById('lang-en')
+        'en': document.getElementById('lang-en'),
+        'ja': document.getElementById('lang-ja')
     };
 
     const setLanguage = (lang) => {
@@ -387,6 +413,12 @@ document.addEventListener('DOMContentLoaded', () => {
         setLanguage('en');
         if (window.dynamicContentManager) {
             window.dynamicContentManager.onLanguageChange('en');
+        }
+    });
+    langButtons['ja'].addEventListener('click', () => {
+        setLanguage('ja');
+        if (window.dynamicContentManager) {
+            window.dynamicContentManager.onLanguageChange('ja');
         }
     });
 
