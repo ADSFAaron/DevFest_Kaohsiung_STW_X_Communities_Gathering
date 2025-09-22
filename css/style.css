@@ -97,6 +97,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 64px;
+    flex-wrap: nowrap;
 }
 
 .nav-links {
@@ -1299,6 +1300,73 @@ main {
     color: var(--md-sys-color-on-surface);
 }
 
+/* Improved RWD: Add intermediate breakpoints for better layout control */
+@media (max-width: 1200px) {
+    /* Large tablets and small laptops - reduce nav link spacing */
+    .nav-links {
+        gap: 16px;
+    }
+
+    .nav-links a {
+        padding: 10px 16px;
+        font-size: 15px;
+    }
+
+    .nav-actions {
+        gap: 12px;
+    }
+
+    .language-dropdown-trigger {
+        min-width: 140px;
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .register-button {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Medium tablets - further reduce spacing and font sizes */
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .language-dropdown-trigger {
+        min-width: 120px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .register-button {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    /* Ensure nav doesn't wrap by forcing flex-wrap: nowrap */
+    nav {
+        flex-wrap: nowrap;
+    }
+
+    .nav-links {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE/Edge */
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+    }
+}
+
 @media (max-width: 992px) {
     /* Breakpoint for tablet and smaller */
     .nav-links {
@@ -1331,10 +1399,24 @@ main {
 
     nav {
         justify-content: space-between;
+        flex-wrap: nowrap;
     }
 
     .nav-actions {
         order: 1; /* Move actions (logo, lang) to the right */
+        gap: 12px;
+    }
+
+    /* Reset language dropdown and register button for mobile */
+    .language-dropdown-trigger {
+        min-width: 140px;
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .register-button {
+        padding: 10px 16px;
+        font-size: 14px;
     }
 
     .mobile-menu-toggle {
