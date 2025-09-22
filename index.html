@@ -41,9 +41,22 @@
         </div>
         <div class="nav-actions">
             <div class="language-switcher">
-                <button id="lang-tw">🇹🇼 繁體中文</button>
-                <button id="lang-en">🇬🇧 English</button>
-                <button id="lang-ja">🇯🇵 日本語</button>
+                <button aria-expanded="false" aria-haspopup="true" class="language-dropdown-trigger"
+                        id="language-dropdown-trigger">
+                    <span class="current-language" id="current-language">🇹🇼 繁體中文</span>
+                    <span class="dropdown-icon material-symbols-outlined">expand_more</span>
+                </button>
+                <div class="language-dropdown-menu" id="language-dropdown-menu">
+                    <button class="language-option active" data-lang="zh-Hant" id="lang-tw">
+                        🇹🇼 繁體中文
+                    </button>
+                    <button class="language-option" data-lang="en" id="lang-en">
+                        🇬🇧 English
+                    </button>
+                    <button class="language-option" data-lang="ja" id="lang-ja">
+                        🇯🇵 日本語
+                    </button>
+                </div>
             </div>
             <a class="register-button" data-i18n-key="register_cta"
                href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025"
