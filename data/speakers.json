@@ -46,7 +46,11 @@
         "session_id": "d1_t4_s1"
       },
       "tags": ["中文", "ADK", "Gemini", "Agent"],
-      "photo": "images/SimonLiu.jpg"
+      "photo": "images/SimonLiu.jpg",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/simon-liu-ai",
+        "medium": "https://medium.com/@simonliu-ai"
+      }
     },
     {
       "id": "speaker2",
@@ -99,7 +103,11 @@
         "Frontend",
         "Performance"
       ],
-      "photo": "images/img-01.svg"
+      "photo": "images/img-01.svg",
+      "social": {
+        "github": "https://github.com/alice-chen",
+        "twitter": "https://twitter.com/alice_chen_dev"
+      }
     },
     {
       "id": "speaker3",
@@ -152,7 +160,11 @@
         "DevOps",
         "Production"
       ],
-      "photo": "images/img-02.svg"
+      "photo": "images/img-02.svg",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/david-wang-devops",
+        "blog": "https://blog.davidwang.dev"
+      }
     },
     {
       "id": "speaker4",
@@ -205,7 +217,11 @@
         "MachineLearning",
         "Analytics"
       ],
-      "photo": "images/img-03.svg"
+      "photo": "images/img-03.svg",
+      "social": {
+        "linkedin": "https://www.linkedin.com/in/michelle-lin-ds",
+        "kaggle": "https://www.kaggle.com/michellelinds"
+      }
     }
   ]
 }

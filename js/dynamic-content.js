@@ -90,6 +90,7 @@ class DynamicContentManager {
         card.setAttribute('data-speaker-id', speaker.id);
 
         const tagsHTML = speaker.tags.map(tag => `<span>#${tag}</span>`).join('');
+        const socialLinks = this.createSocialLinks(speaker.social);
 
         card.innerHTML = `
             <img alt="Photo of ${this.getText(speaker.name)}" class="speaker-photo" src="${speaker.photo}">
@@ -101,6 +102,7 @@ class DynamicContentManager {
                 <div class="speaker-tags summary-tags">
                     ${tagsHTML}
                 </div>
+                ${socialLinks}
             </div>
             <div class="speaker-details">
                 <div class="speaker-details-content">
@@ -210,7 +212,7 @@ class DynamicContentManager {
 
     // 渲染關於我們
     renderAbout() {
-        const container = document.querySelector('#about-communities .about-grid');
+        const container = document.querySelector('#about .about-grid');
         if (!container) return;
 
         container.innerHTML = '';
