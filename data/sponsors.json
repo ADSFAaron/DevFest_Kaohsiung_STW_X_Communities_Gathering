@@ -4,16 +4,19 @@
       "id": "colosscious",
       "name": {
         "zh": "嵙思科技股份有限公司",
-        "en": "Colosscious Teknology Inc."
+        "en": "Colosscious Teknology Inc.",
+        "ja": "嵙思テクノロジー株式会社"
       },
       "type": "company",
       "description": {
         "zh": "嵙思專為 #生技製藥 打造智慧化實驗室，讓生成式 AI 作為實驗室的智慧代理人。<br>打造 Lab → QA 無縫數位化，協助生技製藥實驗室提升效率與可靠度",
-        "en": "Colosscious builds intelligent laboratories for the #biotech and #pharmaceutical industries, enabling generative AI to act as an intelligent agent in the lab.<br>Creating seamless digitalization from Lab → QA, helping biotech and pharmaceutical laboratories improve efficiency and reliability."
+        "en": "Colosscious builds intelligent laboratories for the #biotech and #pharmaceutical industries, enabling generative AI to act as an intelligent agent in the lab.<br>Creating seamless digitalization from Lab → QA, helping biotech and pharmaceutical laboratories improve efficiency and reliability.",
+        "ja": "嵙思は #バイオテクノロジー #製薬業界向けにスマートラボを構築し、生成的AIをラボのスマートエージェントとして機能させます。<br>Lab → QA のシームレスデジタル化を実現し、バイオテクノロジー・製薬ラボの効率性と信頼性向上を支援します。"
       },
       "category": {
         "zh": "金牌贊助",
-        "en": "Gold Sponsor"
+        "en": "Gold Sponsor",
+        "ja": "ゴールドスポンサー"
       },
       "logo": "images/sponsor-logo-colosscious.png",
       "website": "https://colosscious.com",
