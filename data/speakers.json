@@ -1,14 +1,129 @@
 {
   "speakers": [
     {
-      "id": "simonliu",
+      "id": "arturs_vancans",
       "name": {
-        "zh": "劉育維 (Simon Liu)",
-        "en": "Simon Liu",
-        "ja": "劉育維 (Simon Liu)"
+        "zh": "韋亞圖",
+        "en": "Arturs Vancans",
+        "ja": "Arturs Vancans"
       },
       "org": {
-        "zh": "APMIC / Google Developer Expert - AI",
+        "zh": "Second Space",
+        "en": "Second Space",
+        "ja": "Second Space"
+      },
+      "title": {
+        "zh": "Founder",
+        "en": "Founder",
+        "ja": "Founder"
+      },
+      "topic_category": {
+        "zh": "議程分類：Google Cloud 的雲端實踐",
+        "en": "Category: Google Cloud in Practice",
+        "ja": "カテゴリ：Google Cloud のクラウド実践"
+      },
+      "bio": {
+        "zh": "Arturs Vancans 是 Second Space 的創辦人，這是一個專為企業家、數位遊牧者和學生設計，位於高雄的 24/7 會員制共享工作空間（coworking hub）。他擁有英國約克大學（University of York）電子與電腦工程碩士學位，其經驗橫跨物聯網（IoT）、人工智慧/機器學習（AI/ML）、金融科技（fintech）及大規模分散式系統。現在，他將這些專業知識投入於打造一個融合技術與創意協作的活力空間。",
+        "en": "Arturs Vancans is the founder of Second Space, a 24/7 members-only coworking hub in Kaohsiung designed for entrepreneurs, digital nomads, and students. With a Master’s in Electronics and Computer Engineering from the University of York, his experience spans IoT, AI/ML, fintech, and large-scale distributed systems—now channeled into creating a vibrant space that fuses technology with creative collaboration.",
+        "ja": "Arturs Vancans は Second Space の創業者です。Second Space は、起業家、デジタルノマド、学生のために高雄に設けられた 24時間年中無休の会員制コワーキングハブ です。ヨーク大学（University of York）で電子・コンピューター工学の修士号を取得し、IoT、AI/ML、フィンテック、大規模分散システムにわたる経験を持っています。現在は、その経験を活かし、テクノロジーと創造的なコラボレーションを融合させた活気ある空間の創造に注力しています。"
+      },
+      "session": {
+        "name": {
+          "zh": "我如何使用 Firebase 打造 AI 機器人咖啡師！",
+          "en": "I used Firebase to build an AI Robot Barista - here is how!",
+          "ja": "Firebase を使って AI ロボットバリスタを構築した方法をご紹介します！"
+        },
+        "abstract": {
+          "zh": "我使用了 Firebase 和 Google Cloud 服務，將我們的 AI 機器人咖啡師 與跨越多個 IoT 設備（臉部掃描儀、機器人本身和我們的行動應用程式）的即時數據流連接起來。訂單、身份驗證和即時狀態更新全部透過 Firebase 的即時資料庫（Real-time Database） 和 雲端函式（Cloud Functions） 瞬間同步。",
+          "en": "I used Firebase and Google Cloud services to connect our AI Robot Barista with real-time data flow across IoT devices—face scanners, the robot itself, and our mobile app. Orders, authentication, and live status updates all sync instantly through Firebase’s real-time database and cloud functions.",
+          "ja": "私は Firebase と Google Cloud サービスを利用し、当社の AI ロボットバリスタ を、IoT デバイス（顔スキャナー、ロボット本体、モバイルアプリ）を跨るリアルタイムデータフローに接続しました。注文、認証、ライブステータスの更新はすべて、Firebase のリアルタイムデータベースとクラウドファンクション（Cloud Functions） を通じて瞬時に同期されます。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "11:00 - 11:40",
+        "track": "track1",
+        "session_id": "d1_t5_s2_title"
+      },
+      "tags": [
+        "English",
+        "Robotics",
+        "Firebase",
+        "Google Cloud"
+      ],
+      "photo": "images/speak-arturs_vancans.png",
+      "social": {
+        "Homepage": "https://www.secondspace.dev/kubi-robot",
+        "Linkedin": "https://www.linkedin.com/in/avancans/"
+      }
+    },
+    {
+      "id": "steve_yeh",
+      "name": {
+        "zh": "史蒂夫•葉",
+        "en": "Steve Yeh",
+        "ja": "Steve Yeh"
+      },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "topic_category": {
+        "zh": "議程分類：科技向善的實踐之路",
+        "en": "Category: Goodness in Practice",
+        "ja": "カテゴリ：テクノロジーで社会貢献を実現する道"
+      },
+      "bio": {
+        "zh": "現任精誠集團技術處長，致力於 UI/UX 設計與技術開發的整合與創新。2017 年創立 Able Studio，帶領團隊以人本設計為核心，成功為國內上市櫃企業、勞保局 e 化服務系統、零售通路、影音串流平台及矽谷新創企業等多領域客戶打造數位轉型解決方案，並於 2020 年榮獲德國國家設計獎優勝。曾任職於義美聯電與金色三麥餐飲集團，擔任數位內容與創意策劃部門經理，擁有豐富的跨領域產品開發及創新策劃經驗。相信透過深刻的使用者洞察與創新技術，能夠持續為企業創造成長與長遠價值。",
+        "en": "Currently serving as the Technical Director at SYSTEX Group, committed to integrating and innovating UI/UX design with technology development. In 2017, founded Able Studio, leading the team to successfully create digital transformation solutions for clients across multiple sectors, including domestic listed companies, the Labor Insurance Bureau's e-service system, retail channels, video streaming platforms, and Silicon Valley startups, all based on human-centered design. The studio was honored with a German National Design Award in 2020. Previously held management roles at IMC and the Le Blé d'Or brewing group, overseeing digital content and creative planning, and possesses rich cross-disciplinary experience in product development and innovative strategy. Believes that through deep user insights and innovative technology, it's possible to continuously create growth and long-term value for enterprises.",
+        "ja": "現任は SYSTEX Group (精誠集團) の技術部門ディレクターであり、UI/UX デザインと技術開発の統合と革新に尽力しています。2017年に Able Studio を設立し、人間中心の設計を核として、国内の上場企業、労働保険局のe-サービスシステム、小売チャネル、動画ストリーミングプラットフォーム、シリコンバレーのスタートアップなど、多岐にわたるクライアント向けにデジタルトランスフォーメーションソリューションを成功裏に構築しました。2020年にはドイツ国家デザイン賞を受賞しています。以前は IMC および Le Blé d'Or (金色三麥餐飲集團) でデジタルコンテンツおよびクリエイティブ企画部門のマネージャーを務め、クロスドメインな製品開発と革新的な企画において豊富な経験を持っています。深いユーザーインサイトと革新技術を通じて、企業に持続的な成長と長期的価値を創造できると信じています。"
+      },
+      "session": {
+        "name": {
+          "zh": "當設計遇到現實世界 — 荔枝到了，但她沒笑",
+          "en": "When Design Meets the Real World — The Lychee Arrived, But She Didn't Smile",
+          "ja": "デザインが現実世界に出会う時 — ライチは届いたが、彼女は笑わなかった"
+        },
+        "abstract": {
+          "zh": "設計的理想，美得如詩句般優雅：「千里送荔枝，只為博君一笑。」<br>但在真實的專案裡，荔枝送到了，卻沒人笑，甚至沒人發現它來過。<br>煞費苦心打造的無障礙設計、自助服務平台、國際等級的體驗，最終的成果往往是「平順無聲」，就像氧氣一樣重要卻不被察覺。<br><br>本場分享延續 WebConf 2024《人月鬼話》的觀察視角，談設計落地時的各種現實困境與心理落差，從 UI/UX 實作、無障礙體驗到科技向善的內功修煉，邀請大家一起思考：<br>• 設計被看不見，是做對了，還是做錯了？<br>• 當「沒抱怨」成為唯一的回饋，我們還剩下什麼驕傲？<br>• 如何讓科技真正落實「善」，而非淪為漂亮的標籤？<br><br>這不是一場談夢想的演講，而是一場關於「把理想送出去後，它能否真的被接受」的真實練習。",
+          "en": "From UI/UX implementation and accessibility experience to the internal cultivation of Tech for Good, we invite everyone to consider:<br><br>• Is design invisible because it was done right, or because it was done wrong?<br>• When \"no complaints\" becomes the only feedback, what pride do we have left?<br>• How can we make technology truly embody \"good,\" rather than just becoming a pretty label?<br><br>This is not a talk about dreams, but a real-world practice on \"whether an ideal can truly be accepted after it's been sent out.\"",
+          "ja": "UI/UX の実装、アクセシビリティ体験からテクノロジー・フォー・グッド（Tech for Good）の内功修練まで、皆さんと一緒に以下の点を考察したいと思います：<br><br>• デザインが見えないのは、正しく実行されたからでしょうか、それとも間違っているからでしょうか？<br>• 「苦情がない」ことが唯一のフィードバックになったとき、私たちに残る誇りとは何でしょうか？<br>• テクノロジーを単なるきれいなレッテルにせず、いかにして真に**「善」**として実現させるのでしょうか？<br><br>これは夢を語る講演ではなく、「理想を送り出した後、それが本当に受け入れられるかどうか」についての現実的な演習です。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "13:30 - 14:10",
+        "track": "track1",
+        "session_id": "d1_t6_s1_title"
+      },
+      "tags": [
+        "中文",
+        "UI",
+        "UX",
+        "設計工程"
+      ],
+      "photo": "images/speak-steve_yeh.png",
+      "social": {
+        "Facebook": "https://www.facebook.com/steven.yeh",
+        "Threads": "https://www.threads.com/@steven_uiux",
+        "Medium": "https://medium.com/@stevenyeh"
+      }
+    },
+    {
+      "id": "simon_liu",
+      "name": {
+        "zh": "劉育維",
+        "en": "Simon Liu",
+        "ja": "Simon Liu"
+      },
+      "org": {
+        "zh": "APMIC / Google 開發者專家 - AI",
         "en": "APMIC / Google Developer Expert - AI",
         "ja": "APMIC / Google Developer Expert - AI"
       },
@@ -19,208 +134,105 @@
       },
       "topic_category": {
         "zh": "議程分類：Gemini AI 的生成式實踐",
-        "en": "Category: Generative Practices of Gemini AI",
-        "ja": "カテゴリ：Gemini AI の生成的実践"
-      },
-      "bio": {
-        "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
-        "en": "Hello everyone, I'm Simon Liu. I have served as a senior engineer in the telecommunications industry and as a customer technical success engineer in the software industry, helping major well-known companies discuss AI architecture planning for topics such as machine learning, deep learning, and large language models. I have published over a hundred technical articles on Medium. I hope to try to use AI for applications and help customers solve their pain points with AI.",
-        "ja": "皆さん、こんにちは。私はSimon 劉育維です。過去に通信業界のシニアエンジニアやソフトウェア業界でカスタマーテクニカルサクセスエンジニアとして勤務し、機械学習、深層学習、大規模言語モデルなどのAIトピックについて、有名企業のAIアーキテクチャ計画の議論を支援してきました。Mediumで100以上の技術記事を公開しており、AIを応用してお客様の課題を解決することを目指しています。"
-      },
-      "session": {
-        "name": {
-          "zh": "建構 AI Agent：結合 Google Gemini 與 ADK 工具來解放企業生產力",
-          "en": "Building AI Agents: Combining Google Gemini and ADK Tools to Unleash Enterprise Productivity",
-          "ja": "AI エージェントの構築：Google Gemini と ADK ツールを組み合わせて企業の生産性を向上させる"
-        },
-        "abstract": {
-          "zh": "透過 Google 一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：<br>1. 透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. 透過 Google Firebase Studio 來進行平台建置，並且說明如何進行修改",
-          "en": "Through a series of Google platform tools, everyone can turn past imaginations into present realities. In this session, you will learn about:<br>1. How to plan UI/UX through Google Stitch<br>2. How to build a platform through Google Firebase Studio, and how to modify it",
-          "ja": "Googleの一連のプラットフォームツールを通じて、過去の想像を現実のものに変えることができます。このセッションでは以下について学べます：<br>1. Google Stitchを通じてUI/UXの計画方法<br>2. Google Firebase Studioを通じてプラットフォームを構築し、修正方法について"
-        }
-      },
-      "schedule": {
-        "day": 1,
-        "time": "10:00 - 10:40",
-        "track": "track1",
-        "session_id": "d1_t4_s1"
-      },
-      "tags": ["中文", "ADK", "Gemini", "Agent"],
-      "photo": "images/SimonLiu.jpg",
-      "social": {
-        "linkedin": "https://www.linkedin.com/in/simon-liu-ai",
-        "medium": "https://medium.com/@simonliu-ai"
-      }
-    },
-    {
-      "id": "speaker2",
-      "name": {
-        "zh": "陳雅雯 (Alice Chen)",
-        "en": "Alice Chen",
-        "ja": "陳雅雯 (Alice Chen)"
-      },
-      "org": {
-        "zh": "高雄科技大學",
-        "en": "National Kaohsiung University of Science and Technology",
-        "ja": "高雄科技大学"
-      },
-      "title": {
-        "zh": "前端工程師",
-        "en": "Frontend Engineer",
-        "ja": "フロントエンドエンジニア"
-      },
-      "topic_category": {
-        "zh": "議程分類：現代前端開發實踐",
-        "en": "Category: Modern Frontend Development Practices",
-        "ja": "カテゴリ：モダンフロントエンド開発実践"
-      },
-      "bio": {
-        "zh": "專精於 React 和 Vue.js 開發，致力於推廣現代前端開發實踐，在多個開源專案中擔任核心貢獻者。",
-        "en": "Specializing in React and Vue.js development, dedicated to promoting modern frontend development practices, and serving as a core contributor in multiple open source projects.",
-        "ja": "ReactとVue.js開発を専門とし、モダンフロントエンド開発実践の推進に取り組み、複数のオープンソースプロジェクトでコアコントリビューターを務めています。"
-      },
-      "session": {
-        "name": {
-          "zh": "React Server Components 深度實戰",
-          "en": "Deep Dive into React Server Components",
-          "ja": "React Server Components 深度実戦"
-        },
-        "abstract": {
-          "zh": "探索 React Server Components 的核心概念，學習如何在實際專案中應用，提升應用效能與用戶體驗。",
-          "en": "Explore the core concepts of React Server Components and learn how to apply them in real projects to improve application performance and user experience.",
-          "ja": "React Server Componentsのコア概念を探求し、実際のプロジェクトでの応用方法を学び、アプリケーションのパフォーマンスとユーザーエクスペリエンスを向上させます。"
-        }
-      },
-      "schedule": {
-        "day": 1,
-        "time": "10:00 - 10:40",
-        "track": "track2",
-        "session_id": "d1_t4_s2"
-      },
-      "tags": [
-        "中文",
-        "React",
-        "Frontend",
-        "Performance"
-      ],
-      "photo": "images/img-01.svg",
-      "social": {
-        "github": "https://github.com/alice-chen",
-        "twitter": "https://twitter.com/alice_chen_dev"
-      }
-    },
-    {
-      "id": "speaker3",
-      "name": {
-        "zh": "王志明 (David Wang)",
-        "en": "David Wang",
-        "ja": "王志明 (David Wang)"
-      },
-      "org": {
-        "zh": "台積電",
-        "en": "TSMC",
-        "ja": "台積電"
-      },
-      "title": {
-        "zh": "DevOps 工程師",
-        "en": "DevOps Engineer",
-        "ja": "DevOps エンジニア"
-      },
-      "topic_category": {
-        "zh": "議程分類：雲端基礎設施與容器化",
-        "en": "Category: Cloud Infrastructure and Containerization",
-        "ja": "カテゴリ：クラウドインフラとコンテナ化"
+        "en": "Category: Gemini AI in Practice",
+        "ja": "カテゴリ：Gemini AI の生成AI実践"
       },
       "bio": {
         "zh": "擁有10年以上的系統架構與 DevOps 經驗，專精於 Kubernetes 和雲端原生技術，目前負責大型製造業的數位轉型專案。",
         "en": "With over 10 years of system architecture and DevOps experience, specializing in Kubernetes and cloud-native technologies, currently responsible for digital transformation projects in large manufacturing industries.",
-        "ja": "10年以上のシステムアーキテクチャとDevOps経験を持ち、Kubernetesとクラウドネイティブ技術を専門とし、現在大手製造業のデジタル変革プロジェクトを担当しています。"
+        "ja": "AI エージェントの構築：Google Gemini と ADK ツールを組み合わせて企業の生産性を解放する"
       },
       "session": {
         "name": {
-          "zh": "Kubernetes 在生產環境的最佳實踐",
-          "en": "Kubernetes Best Practices in Production",
+          "zh": "建構 AI Agent：結合 Google Gemini 與 ADK 工具來解放企業生產力",
+          "en": "Building an AI Agent: Combining Google Gemini with ADK Tools to Unleash Enterprise Productivity",
           "ja": "本番環境でのKubernetes ベストプラクティス"
         },
         "abstract": {
-          "zh": "分享在大型製造業中導入 Kubernetes 的實戰經驗，包含安全性、監控、災難復原等關鍵議題。",
-          "en": "Share practical experience in implementing Kubernetes in large manufacturing industries, including key topics such as security, monitoring, and disaster recovery.",
-          "ja": "大手製造業でのKubernetes導入の実戦経験を共有し、セキュリティ、監視、災害復旧などの重要なトピックを含みます。"
+          "zh": "在生成式 AI 與多模態技術快速演進的浪潮下，企業正面臨如何有效導入 AI Agent 以提升生產力的關鍵課題。Google Gemini Model 提供強大的理解與推理能力，而 ADK（Agent Developer Kit）則提供開發者可延展、可整合的工具鏈。兩者結合，讓企業能夠從單純的任務自動化，邁向智慧化決策與流程優化。這不僅能釋放人力資源，專注於更高價值的創新活動，同時也能在市場競爭中保持敏捷與領先。建構 AI Agent，不再只是技術實驗，而是推動數位轉型的核心引擎。",
+          "en": "Amidst the rapidly evolving wave of Generative AI and multimodal technology, enterprises are facing the critical challenge of how to effectively integrate AI Agents to boost productivity. The Google Gemini Model provides powerful understanding and reasoning capabilities, while the ADK (Agent Developer Kit) offers developers an extendable and integrable toolchain. The combination of the two enables businesses to move beyond simple task automation towards intelligent decision-making and process optimization. This not only frees up human resources to focus on higher-value innovation activities but also allows the enterprise to remain agile and maintain a market lead. Building an AI Agent is no longer just a technological experiment; it is the core engine driving digital transformation.",
+          "ja": "生成AIとマルチモーダル技術が急速に進展する波の中で、企業はAI エージェントをいかに効果的に導入して生産性を向上させるかという重要な課題に直面しています。Google Gemini Model は強力な理解力と推論能力を提供し、一方、**ADK（Agent Developer Kit）**は開発者に拡張可能で統合可能なツールチェーンを提供します。この二つを組み合わせることで、企業は単純なタスク自動化から、インテリジェントな意思決定とプロセス最適化へと移行できます。これは、人的資源を解放し、より価値の高いイノベーション活動に集中させるだけでなく、市場競争において機敏性と優位性を維持することにも繋がります。AI エージェントの構築は、もはや単なる技術実験ではなく、デジタルトランスフォーメーションを推進する中核エンジンなのです。"
         }
       },
       "schedule": {
         "day": 1,
-        "time": "11:00 - 11:40",
+        "time": "16:30 - 17:10",
         "track": "track1",
-        "session_id": "d1_t5_s1"
+        "session_id": "d1_t10_s2_title"
       },
       "tags": [
         "中文",
-        "Kubernetes",
-        "DevOps",
-        "Production"
+        "ADK",
+        "Gemini",
+        "Agent"
       ],
-      "photo": "images/img-02.svg",
+      "photo": "images/speak-simon_liu.png",
       "social": {
-        "linkedin": "https://www.linkedin.com/in/david-wang-devops",
-        "blog": "https://blog.davidwang.dev"
+        "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
+        "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
+        "Medium": "https://medium.com/@simon3458",
+        "GitHub": "https://github.com/LiuYuWei",
+        "Website": "https://simonliuyuwei-4ndgcf4.gamma.site/"
       }
     },
     {
-      "id": "speaker4",
+      "id": "simon_liu",
       "name": {
-        "zh": "林小美 (Michelle Lin)",
-        "en": "Michelle Lin",
-        "ja": "林小美 (Michelle Lin)"
+        "zh": "劉育維",
+        "en": "Simon Liu",
+        "ja": "Simon Liu"
       },
       "org": {
-        "zh": "Gogoro",
-        "en": "Gogoro",
-        "ja": "Gogoro"
+        "zh": "APMIC / Google 開發者專家 - AI",
+        "en": "APMIC / Google Developer Expert - AI",
+        "ja": "APMIC / Google Developer Expert - AI"
       },
       "title": {
-        "zh": "資料科學家",
-        "en": "Data Scientist",
-        "ja": "データサイエンティスト"
+        "zh": "MLOps Engineer",
+        "en": "MLOps Engineer",
+        "ja": "MLOps Engineer"
       },
       "topic_category": {
-        "zh": "議程分類：機器學習與資料分析",
-        "en": "Category: Machine Learning and Data Analytics",
-        "ja": "カテゴリ：機械学習とデータ分析"
+        "zh": "第二屆 AI 生成大賽",
+        "en": "Category: AI Generative Contest",
+        "ja": "カテゴリ：生成 AI コンテスト"
       },
       "bio": {
-        "zh": "專精於時間序列分析和預測模型，在 IoT 設備數據分析領域有豐富經驗，致力於將機器學習應用於智慧交通領域。",
-        "en": "Specializing in time series analysis and predictive modeling, with extensive experience in IoT device data analysis, dedicated to applying machine learning in smart transportation.",
-        "ja": "時系列分析と予測モデリングを専門とし、IoTデバイスデータ分析分野で豊富な経験を持ち、スマート交通分野での機械学習応用に取り組んでいます。"
+        "zh": "擁有10年以上的系統架構與 DevOps 經驗，專精於 Kubernetes 和雲端原生技術，目前負責大型製造業的數位轉型專案。",
+        "en": "With over 10 years of system architecture and DevOps experience, specializing in Kubernetes and cloud-native technologies, currently responsible for digital transformation projects in large manufacturing industries.",
+        "ja": "AI エージェントの構築：Google Gemini と ADK ツールを組み合わせて企業の生産性を解放する"
       },
       "session": {
         "name": {
-          "zh": "IoT 數據的即時分析與預測",
-          "en": "Real-time Analysis and Prediction of IoT Data",
-          "ja": "IoTデータのリアルタイム分析と予測"
+          "zh": "從 Google Stitch 到 Google Firebase Studio - AI-First Coding 平台撰寫",
+          "en": "",
+          "ja": ""
         },
         "abstract": {
-          "zh": "介紹如何處理大量 IoT 感測器數據，建立即時預測模型，並實際應用於智慧交通系統中。",
-          "en": "Introduce how to process large amounts of IoT sensor data, build real-time prediction models, and apply them practically in smart transportation systems.",
-          "ja": "大量のIoTセンサーデータの処理方法、リアルタイム予測モデルの構築、スマート交通システムでの実際の応用について紹介します。"
+          "zh": "透過 Google 一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：<br>1. 透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. 透過 Google Firebase Studio 來進行平台建置，並且說明如何進行修改<br><br>Hope you enjoy the workshop!",
+          "en": "",
+          "ja": ""
         }
       },
       "schedule": {
-        "day": 1,
-        "time": "11:00 - 11:40",
-        "track": "track2",
-        "session_id": "d1_t5_s2"
+        "day": 2,
+        "time": "12:30 - 14:00",
+        "track": "track1",
+        "session_id": "d2_t4_s2_title"
       },
       "tags": [
         "中文",
-        "IoT",
-        "MachineLearning",
-        "Analytics"
+        "Firebase",
+        "Stitch",
+        "AI"
       ],
-      "photo": "images/img-03.svg",
+      "photo": "images/speak-simon_liu.png",
       "social": {
-        "linkedin": "https://www.linkedin.com/in/michelle-lin-ds",
-        "kaggle": "https://www.kaggle.com/michellelinds"
+        "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
+        "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
+        "Medium": "https://medium.com/@simon3458",
+        "GitHub": "https://github.com/LiuYuWei",
+        "Website": "https://simonliuyuwei-4ndgcf4.gamma.site/"
       }
     }
   ]
