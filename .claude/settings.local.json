@@ -8,7 +8,9 @@
       "Bash(python3:*)",
       "Bash(git commit:*)",
       "WebFetch(domain:mopcon.org)",
-      "WebFetch(domain:gdg-kaohsiung.kktix.cc)"
+      "WebFetch(domain:gdg-kaohsiung.kktix.cc)",
+      "WebFetch(domain:m3.material.io)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
