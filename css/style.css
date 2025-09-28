@@ -1569,7 +1569,41 @@ html.page-switching {
 .info-card:hover {
     transform: translateY(-8px) scale(1.02);
     box-shadow: var(--md-sys-elevation-4);
-    border-color: var(--md-sys-color-primary);
+}
+
+/* 藍色類別卡片 hover 外框 */
+.info-card:has(.info-title[data-i18n-key="about_event_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="devfest_what_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="stw_what_title"]):hover {
+    border-color: #4285f4;
+}
+
+/* 綠色類別卡片 hover 外框 */
+.info-card:has(.info-title[data-i18n-key="devfest_section_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="day1_theme_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="day2_theme_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="polaroid_fest_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="pizza_time_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="after_buffet_title"]):hover {
+    border-color: #34a853;
+}
+
+/* 黃色類別卡片 hover 外框 */
+.info-card:has(.info-title[data-i18n-key="stw_section_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="networking_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="tech_market_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="meeting_room_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="food_drinks_title"]):hover {
+    border-color: #f9ab00;
+}
+
+/* 紅色類別卡片 hover 外框 */
+.info-card:has(.info-title[data-i18n-key="event_tips_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="transport_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="eco_friendly_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="code_conduct_title"]):hover,
+.info-card:has(.info-title[data-i18n-key="privacy_title"]):hover {
+    border-color: #ea4335;
 }
 
 .info-card:hover::before {
