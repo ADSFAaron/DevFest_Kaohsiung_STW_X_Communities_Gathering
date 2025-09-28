@@ -358,17 +358,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     speakerCards.forEach(card => {
         card.addEventListener('click', () => {
-            const isCurrentlyExpanded = card.classList.contains('expanded');
-
-            // Close all speaker cards first
-            speakerCards.forEach(otherCard => {
-                otherCard.classList.remove('expanded');
-            });
-
-            // If the clicked card wasn't expanded, expand it
-            if (!isCurrentlyExpanded) {
-                card.classList.add('expanded');
-            }
+            // Simply toggle the clicked card, don't affect others
+            card.classList.toggle('expanded');
         });
     });
 
