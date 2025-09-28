@@ -328,17 +328,18 @@ class DynamicContentManager {
             // 創建講者資訊元素
             const speakerInfoEl = this.createInlineSpeakerInfo(speaker);
 
+            // 創建可展開的詳細內容
+            const expandableContentEl = this.createExpandableContent(speaker);
+
             // 將講者資訊插入到 session-info 中
             const sessionInfoEl = sessionEl.querySelector('.session-info');
             if (sessionInfoEl) {
                 sessionInfoEl.appendChild(speakerInfoEl);
+                sessionInfoEl.appendChild(expandableContentEl);
             }
 
-            // 添加點擊事件，跳轉到講者詳細頁面
-            sessionEl.style.cursor = 'pointer';
-            sessionEl.addEventListener('click', () => {
-                this.navigateToSpeaker(speaker.id);
-            });
+            // 添加摺疊/展開功能
+            this.addToggleExpandFunctionality(sessionEl, speaker.id);
         });
     }
 
@@ -358,6 +359,78 @@ class DynamicContentManager {
         `;
 
         return speakerInfo;
+    }
+
+    // 創建可展開的議程詳細內容
+    createExpandableContent(speaker) {
+        const expandableContent = document.createElement('div');
+        expandableContent.className = 'session-expandable';
+
+        // 根據當前語言動態設定標籤文字
+        const sessionAbstractLabel = this.currentLanguage === 'en' ? 'Session Overview:' :
+            this.currentLanguage === 'ja' ? 'セッション概要：' : '議程簡介：';
+        const speakerBioLabel = this.currentLanguage === 'en' ? 'Speaker Bio:' :
+            this.currentLanguage === 'ja' ? 'スピーカー紹介：' : '講者簡介：';
+
+        expandableContent.innerHTML = `
+            <div class="session-details-expanded">
+                <div class="session-abstract">
+                    <strong>${sessionAbstractLabel}</strong>
+                    <p>${this.getText(speaker.session.abstract)}</p>
+                </div>
+                <div class="speaker-bio-short">
+                    <strong>${speakerBioLabel}</strong>
+                    <p>${this.getText(speaker.bio).substring(0, 150)}...</p>
+                </div>
+            </div>
+        `;
+
+        return expandableContent;
+    }
+
+    // 添加摺疊/展開功能
+    addToggleExpandFunctionality(sessionEl, speakerId) {
+        sessionEl.style.cursor = 'pointer';
+
+        sessionEl.addEventListener('click', (e) => {
+            // 檢查是否為手機版 (寬度小於768px)
+            if (window.innerWidth <= 768) {
+                e.stopPropagation();
+                this.toggleSessionExpansion(sessionEl);
+            } else {
+                // 桌面版直接跳轉到講者頁面
+                this.navigateToSpeaker(speakerId);
+            }
+        });
+    }
+
+    // 切換議程展開/收合狀態
+    toggleSessionExpansion(sessionEl) {
+        const isExpanded = sessionEl.classList.contains('expanded');
+
+        if (isExpanded) {
+            // 收合
+            sessionEl.classList.remove('expanded');
+        } else {
+            // 先收合其他已展開的議程
+            const expandedSessions = document.querySelectorAll('.session.expanded');
+            expandedSessions.forEach(session => {
+                if (session !== sessionEl) {
+                    session.classList.remove('expanded');
+                }
+            });
+
+            // 展開當前議程
+            sessionEl.classList.add('expanded');
+
+            // 滾動到可視區域
+            setTimeout(() => {
+                sessionEl.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }, 300);
+        }
     }
 
     // 導航到講者詳細頁面
