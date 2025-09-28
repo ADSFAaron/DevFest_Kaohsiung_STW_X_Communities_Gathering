@@ -876,6 +876,7 @@ main {
     gap: 24px;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: start; /* 防止講者卡片被拉伸到相同高度 */
 }
 
 .speaker-card {
