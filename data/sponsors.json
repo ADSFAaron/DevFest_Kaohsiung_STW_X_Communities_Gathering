@@ -4,25 +4,50 @@
       "id": "colosscious",
       "name": {
         "zh": "嵙思科技股份有限公司",
-        "en": "Colosscious Teknology Inc.",
-        "ja": "嵙思テクノロジー株式会社"
+        "en": "嵙思科技股份有限公司",
+        "ja": "嵙思科技股份有限公司"
       },
       "type": "company",
       "description": {
-        "zh": "嵙思專為 #生技製藥 打造智慧化實驗室，讓生成式 AI 作為實驗室的智慧代理人。<br>打造 Lab → QA 無縫數位化，協助生技製藥實驗室提升效率與可靠度",
-        "en": "Colosscious builds intelligent laboratories for the #biotech and #pharmaceutical industries, enabling generative AI to act as an intelligent agent in the lab.<br>Creating seamless digitalization from Lab → QA, helping biotech and pharmaceutical laboratories improve efficiency and reliability.",
-        "ja": "嵙思は #バイオテクノロジー #製薬業界向けにスマートラボを構築し、生成的AIをラボのスマートエージェントとして機能させます。<br>Lab → QA のシームレスデジタル化を実現し、バイオテクノロジー・製薬ラボの効率性と信頼性向上を支援します。"
+        "zh": "嵙思專為 #生技製藥 打造智慧化實驗室，讓生成式 AI 作為實驗室的智慧代理人。<br><br>打造 Lab → QA 無縫數位化，協助生技製藥實驗室提升效率與可靠度<br><br>實驗室智慧化，LIMS 不只是工具，而是下一代研發的核心競爭力。",
+        "en": "Colosscious specializes in creating smart laboratories for the #Biotech and Pharmaceutical industries, enabling Generative AI to act as the laboratory's intelligent agent.<br><br>We build seamless digital integration from Lab to QA, helping biotech and pharmaceutical laboratories enhance efficiency and reliability.<br><br>With lab intelligence, LIMS (Laboratory Information Management System) is not just a tool, but the core competitiveness for next-generation R&D.",
+        "ja": "Colosscious は、#バイオ・製薬業界 向けに特化したスマートなラボを実現し、生成AI をラボのインテリジェントエージェントとして機能させます。<br><br>ラボから QA までのシームレスなデジタル化を構築し、バイオ・製薬ラボの効率と信頼性の向上を支援します。<br><br>ラボのスマート化において、LIMS (Laboratory Information Management System) は単なるツールではなく、次世代の研究開発における核となる競争力です。"
       },
       "category": {
-        "zh": "金牌贊助",
-        "en": "Gold Sponsor",
-        "ja": "ゴールドスポンサー"
+        "zh": "公司贊助",
+        "en": "Company Sponsorship",
+        "ja": "企業スポンサー"
       },
       "logo": "images/sponsor-logo-colosscious.png",
-      "website": "https://colosscious.com",
+      "website": "https://www.colosscious.com/home",
       "social": {
-        "linkedin": "https://www.linkedin.com/company/colosscious"
+        "Homepage": "https://www.colosscious.com/home"
+      }
+    },
+    {
+      "id": "v_lab_online",
+      "name": {
+        "zh": "vLAB Online",
+        "en": "vLAB Online",
+        "ja": "vLAB Online"
+      },
+      "type": "community",
+      "description": {
+        "zh": "vLAB Online（ 台灣路由網路實驗中心 ）是一個由熱愛技術的工程師自發組成的技術社群，早期以 Cisco 與路由網路技術為核心，提供線上交流與實驗環境，協助成員學習與實作。隨著技術演進與社群需求轉變，vLAB 逐步擴大討論主題，涵蓋資安、雲端、開源工具、AI 與數位治理等多元領域，並轉型為以 Line 群為中心的即時交流平台。成員來自各行各業，包含資安研究員、網管工程師、系統架構師與資訊主管，透過日常分享與互助討論，形成高信任度的知識網絡。自 2024 年起，vLAB 啟動「每月聚會計畫」，結合主題演講、書籍導讀與 Social Time，不僅強化技術深度，也促進人脈經營與職涯成長。vLAB 堅持「共學共創」理念，是面對快速變遷技術時代的重要支點，亦是推動在地技術自主與社群韌性的實驗平台。",
+        "en": "vLAB Online (Taiwan Routing Network Lab Center) is a technical community spontaneously formed by engineers passionate about technology. Initially focused on Cisco and routing network technologies, it provided an online exchange and lab environment to help members learn and practice. As technology evolved and community needs changed, vLAB gradually expanded its discussion topics to cover diverse fields such as cybersecurity, cloud, open-source tools, AI, and digital governance, and transitioned into a real-time communication platform centered around a Line group. Members come from various professions, including security researchers, network engineers, system architects, and IT managers, forming a high-trust knowledge network through daily sharing and mutual discussion. Since 2024, vLAB has launched a \"Monthly Meetup Plan,\" combining themed speeches, book readings, and Social Time, which not only deepens technical knowledge but also promotes networking and career growth. vLAB adheres to the philosophy of \"Collaborative Learning and Co-creation,\" serving as a crucial pillar in an era of rapidly changing technology and an experimental platform for fostering local technological autonomy and community resilience.",
+        "ja": "vLAB Online（台湾ルーティングネットワーク実験センター） は、技術を愛するエンジニアが自発的に設立した技術コミュニティです。初期は Cisco とルーティングネットワーク技術を核として、メンバーの学習と実践を支援するためのオンライン交流および実験環境を提供していました。技術の進化とコミュニティのニーズの変化に伴い、vLAB は討議テーマを徐々に拡大し、サイバーセキュリティ、クラウド、オープンソースツール、AI、デジタルガバナンスなど多様な分野を網羅するようになり、現在は Line グループを中心としたリアルタイム交流プラットフォームへと変貌しました。メンバーは、セキュリティ研究者、ネットワークエンジニア、システムアーキテクト、ITマネージャーなど、様々な業界から集まっており、日々の情報共有と相互扶助の議論を通じて、高い信頼性を持つ知識ネットワークを形成しています。2024年からは「月例ミートアップ計画」を開始し、テーマ講演、読書会、およびソーシャルタイムを組み合わせて、技術的な深みを強化するだけでなく、人脈形成とキャリアの成長を促進しています。vLAB は「共に学び、共に創る」という理念を貫き、急速に変化する技術時代において重要な支点であるとともに、地域社会の技術的自律性とコミュニティのレジリエンスを推進する実験プラットフォームでもあります。"
+      },
+      "category": {
+        "zh": "擺攤社群",
+        "en": "Community",
+        "ja": "コミュニティ"
+      },
+      "logo": "images/community-logo-v_lab_online.png",
+      "website": "https://linktr.ee/vLabOnline",
+      "social": {
+        "Linktree": "https://linktr.ee/vLabOnline"
       }
     }
+
   ]
 }
