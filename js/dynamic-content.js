@@ -44,6 +44,7 @@ class DynamicContentManager {
             this.data.about = about.about || [];
 
             this.renderAllContent();
+            this.enhanceScheduleWithSpeakers();
         } catch (error) {
             console.error('載入資料時發生錯誤:', error);
         }
@@ -300,6 +301,86 @@ class DynamicContentManager {
     onLanguageChange(lang) {
         this.setLanguage(lang);
         this.renderAllContent();
+        this.enhanceScheduleWithSpeakers();
+    }
+
+    // 增強議程頁面，加入講者資訊
+    enhanceScheduleWithSpeakers() {
+        // 找到所有議程項目
+        const sessions = document.querySelectorAll('.session:not(.break)');
+
+        sessions.forEach(sessionEl => {
+            // 取得議程標題元素
+            const titleEl = sessionEl.querySelector('.session-title');
+            if (!titleEl) return;
+
+            // 從 data-i18n-key 取得 session_id
+            const sessionId = titleEl.getAttribute('data-i18n-key');
+            if (!sessionId) return;
+
+            // 找到對應的講者
+            const speaker = this.data.speakers.find(s => s.schedule && s.schedule.session_id === sessionId);
+            if (!speaker) return;
+
+            // 檢查是否已經加入講者資訊
+            if (sessionEl.querySelector('.speaker-info-inline')) return;
+
+            // 創建講者資訊元素
+            const speakerInfoEl = this.createInlineSpeakerInfo(speaker);
+
+            // 將講者資訊插入到 session-info 中
+            const sessionInfoEl = sessionEl.querySelector('.session-info');
+            if (sessionInfoEl) {
+                sessionInfoEl.appendChild(speakerInfoEl);
+            }
+
+            // 添加點擊事件，跳轉到講者詳細頁面
+            sessionEl.style.cursor = 'pointer';
+            sessionEl.addEventListener('click', () => {
+                this.navigateToSpeaker(speaker.id);
+            });
+        });
+    }
+
+    // 創建內嵌講者資訊
+    createInlineSpeakerInfo(speaker) {
+        const speakerInfo = document.createElement('div');
+        speakerInfo.className = 'speaker-info-inline';
+
+        speakerInfo.innerHTML = `
+            <div class="speaker-avatar">
+                <img src="${speaker.photo}" alt="${this.getText(speaker.name)}" class="speaker-photo-small">
+            </div>
+            <div class="speaker-details-inline">
+                <div class="speaker-name-small">${this.getText(speaker.name)}</div>
+                <div class="speaker-org-small">${this.getText(speaker.org)}</div>
+            </div>
+        `;
+
+        return speakerInfo;
+    }
+
+    // 導航到講者詳細頁面
+    navigateToSpeaker(speakerId) {
+        // 切換到講者頁面
+        const speakersTab = document.querySelector('[data-page="speakers"]');
+        if (speakersTab) {
+            speakersTab.click();
+        }
+
+        // 等待頁面切換完成後，滾動到對應講者
+        setTimeout(() => {
+            const speakerCard = document.querySelector(`[data-speaker-id="${speakerId}"]`);
+            if (speakerCard) {
+                speakerCard.scrollIntoView({behavior: 'smooth', block: 'center'});
+                speakerCard.classList.add('highlighted');
+
+                // 2秒後移除高亮效果
+                setTimeout(() => {
+                    speakerCard.classList.remove('highlighted');
+                }, 2000);
+            }
+        }, 300);
     }
 }
 

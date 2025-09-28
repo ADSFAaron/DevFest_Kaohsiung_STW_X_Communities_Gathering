@@ -4,36 +4,208 @@
       "id": "simonliu",
       "name": {
         "zh": "劉育維 (Simon Liu)",
-        "en": "Simon Liu"
+        "en": "Simon Liu",
+        "ja": "劉育維 (Simon Liu)"
       },
       "org": {
         "zh": "APMIC / Google Developer Expert - AI",
-        "en": "APMIC / Google Developer Expert - AI"
+        "en": "APMIC / Google Developer Expert - AI",
+        "ja": "APMIC / Google Developer Expert - AI"
       },
       "title": {
         "zh": "MLOps Engineer",
-        "en": "MLOps Engineer"
+        "en": "MLOps Engineer",
+        "ja": "MLOps Engineer"
       },
       "topic_category": {
         "zh": "議程分類：Gemini AI 的生成式實踐",
-        "en": "Category: Generative Practices of Gemini AI"
+        "en": "Category: Generative Practices of Gemini AI",
+        "ja": "カテゴリ：Gemini AI の生成的実践"
       },
       "bio": {
         "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
-        "en": "Hello everyone, I'm Simon Liu. I have served as a senior engineer in the telecommunications industry and as a customer technical success engineer in the software industry, helping major well-known companies discuss AI architecture planning for topics such as machine learning, deep learning, and large language models. I have published over a hundred technical articles on Medium. I hope to try to use AI for applications and help customers solve their pain points with AI."
+        "en": "Hello everyone, I'm Simon Liu. I have served as a senior engineer in the telecommunications industry and as a customer technical success engineer in the software industry, helping major well-known companies discuss AI architecture planning for topics such as machine learning, deep learning, and large language models. I have published over a hundred technical articles on Medium. I hope to try to use AI for applications and help customers solve their pain points with AI.",
+        "ja": "皆さん、こんにちは。私はSimon 劉育維です。過去に通信業界のシニアエンジニアやソフトウェア業界でカスタマーテクニカルサクセスエンジニアとして勤務し、機械学習、深層学習、大規模言語モデルなどのAIトピックについて、有名企業のAIアーキテクチャ計画の議論を支援してきました。Mediumで100以上の技術記事を公開しており、AIを応用してお客様の課題を解決することを目指しています。"
       },
       "session": {
         "name": {
           "zh": "建構 AI Agent：結合 Google Gemini 與 ADK 工具來解放企業生產力",
-          "en": "Building AI Agents: Combining Google Gemini and ADK Tools to Unleash Enterprise Productivity"
+          "en": "Building AI Agents: Combining Google Gemini and ADK Tools to Unleash Enterprise Productivity",
+          "ja": "AI エージェントの構築：Google Gemini と ADK ツールを組み合わせて企業の生産性を向上させる"
         },
         "abstract": {
           "zh": "透過 Google 一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：<br>1. 透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. 透過 Google Firebase Studio 來進行平台建置，並且說明如何進行修改",
-          "en": "Through a series of Google platform tools, everyone can turn past imaginations into present realities. In this session, you will learn about:<br>1. How to plan UI/UX through Google Stitch<br>2. How to build a platform through Google Firebase Studio, and how to modify it"
+          "en": "Through a series of Google platform tools, everyone can turn past imaginations into present realities. In this session, you will learn about:<br>1. How to plan UI/UX through Google Stitch<br>2. How to build a platform through Google Firebase Studio, and how to modify it",
+          "ja": "Googleの一連のプラットフォームツールを通じて、過去の想像を現実のものに変えることができます。このセッションでは以下について学べます：<br>1. Google Stitchを通じてUI/UXの計画方法<br>2. Google Firebase Studioを通じてプラットフォームを構築し、修正方法について"
         }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "10:00 - 10:40",
+        "track": "track1",
+        "session_id": "d1_t4_s1"
       },
       "tags": ["中文", "ADK", "Gemini", "Agent"],
       "photo": "images/SimonLiu.jpg"
+    },
+    {
+      "id": "speaker2",
+      "name": {
+        "zh": "陳雅雯 (Alice Chen)",
+        "en": "Alice Chen",
+        "ja": "陳雅雯 (Alice Chen)"
+      },
+      "org": {
+        "zh": "高雄科技大學",
+        "en": "National Kaohsiung University of Science and Technology",
+        "ja": "高雄科技大学"
+      },
+      "title": {
+        "zh": "前端工程師",
+        "en": "Frontend Engineer",
+        "ja": "フロントエンドエンジニア"
+      },
+      "topic_category": {
+        "zh": "議程分類：現代前端開發實踐",
+        "en": "Category: Modern Frontend Development Practices",
+        "ja": "カテゴリ：モダンフロントエンド開発実践"
+      },
+      "bio": {
+        "zh": "專精於 React 和 Vue.js 開發，致力於推廣現代前端開發實踐，在多個開源專案中擔任核心貢獻者。",
+        "en": "Specializing in React and Vue.js development, dedicated to promoting modern frontend development practices, and serving as a core contributor in multiple open source projects.",
+        "ja": "ReactとVue.js開発を専門とし、モダンフロントエンド開発実践の推進に取り組み、複数のオープンソースプロジェクトでコアコントリビューターを務めています。"
+      },
+      "session": {
+        "name": {
+          "zh": "React Server Components 深度實戰",
+          "en": "Deep Dive into React Server Components",
+          "ja": "React Server Components 深度実戦"
+        },
+        "abstract": {
+          "zh": "探索 React Server Components 的核心概念，學習如何在實際專案中應用，提升應用效能與用戶體驗。",
+          "en": "Explore the core concepts of React Server Components and learn how to apply them in real projects to improve application performance and user experience.",
+          "ja": "React Server Componentsのコア概念を探求し、実際のプロジェクトでの応用方法を学び、アプリケーションのパフォーマンスとユーザーエクスペリエンスを向上させます。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "10:00 - 10:40",
+        "track": "track2",
+        "session_id": "d1_t4_s2"
+      },
+      "tags": [
+        "中文",
+        "React",
+        "Frontend",
+        "Performance"
+      ],
+      "photo": "images/img-01.svg"
+    },
+    {
+      "id": "speaker3",
+      "name": {
+        "zh": "王志明 (David Wang)",
+        "en": "David Wang",
+        "ja": "王志明 (David Wang)"
+      },
+      "org": {
+        "zh": "台積電",
+        "en": "TSMC",
+        "ja": "台積電"
+      },
+      "title": {
+        "zh": "DevOps 工程師",
+        "en": "DevOps Engineer",
+        "ja": "DevOps エンジニア"
+      },
+      "topic_category": {
+        "zh": "議程分類：雲端基礎設施與容器化",
+        "en": "Category: Cloud Infrastructure and Containerization",
+        "ja": "カテゴリ：クラウドインフラとコンテナ化"
+      },
+      "bio": {
+        "zh": "擁有10年以上的系統架構與 DevOps 經驗，專精於 Kubernetes 和雲端原生技術，目前負責大型製造業的數位轉型專案。",
+        "en": "With over 10 years of system architecture and DevOps experience, specializing in Kubernetes and cloud-native technologies, currently responsible for digital transformation projects in large manufacturing industries.",
+        "ja": "10年以上のシステムアーキテクチャとDevOps経験を持ち、Kubernetesとクラウドネイティブ技術を専門とし、現在大手製造業のデジタル変革プロジェクトを担当しています。"
+      },
+      "session": {
+        "name": {
+          "zh": "Kubernetes 在生產環境的最佳實踐",
+          "en": "Kubernetes Best Practices in Production",
+          "ja": "本番環境でのKubernetes ベストプラクティス"
+        },
+        "abstract": {
+          "zh": "分享在大型製造業中導入 Kubernetes 的實戰經驗，包含安全性、監控、災難復原等關鍵議題。",
+          "en": "Share practical experience in implementing Kubernetes in large manufacturing industries, including key topics such as security, monitoring, and disaster recovery.",
+          "ja": "大手製造業でのKubernetes導入の実戦経験を共有し、セキュリティ、監視、災害復旧などの重要なトピックを含みます。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "11:00 - 11:40",
+        "track": "track1",
+        "session_id": "d1_t5_s1"
+      },
+      "tags": [
+        "中文",
+        "Kubernetes",
+        "DevOps",
+        "Production"
+      ],
+      "photo": "images/img-02.svg"
+    },
+    {
+      "id": "speaker4",
+      "name": {
+        "zh": "林小美 (Michelle Lin)",
+        "en": "Michelle Lin",
+        "ja": "林小美 (Michelle Lin)"
+      },
+      "org": {
+        "zh": "Gogoro",
+        "en": "Gogoro",
+        "ja": "Gogoro"
+      },
+      "title": {
+        "zh": "資料科學家",
+        "en": "Data Scientist",
+        "ja": "データサイエンティスト"
+      },
+      "topic_category": {
+        "zh": "議程分類：機器學習與資料分析",
+        "en": "Category: Machine Learning and Data Analytics",
+        "ja": "カテゴリ：機械学習とデータ分析"
+      },
+      "bio": {
+        "zh": "專精於時間序列分析和預測模型，在 IoT 設備數據分析領域有豐富經驗，致力於將機器學習應用於智慧交通領域。",
+        "en": "Specializing in time series analysis and predictive modeling, with extensive experience in IoT device data analysis, dedicated to applying machine learning in smart transportation.",
+        "ja": "時系列分析と予測モデリングを専門とし、IoTデバイスデータ分析分野で豊富な経験を持ち、スマート交通分野での機械学習応用に取り組んでいます。"
+      },
+      "session": {
+        "name": {
+          "zh": "IoT 數據的即時分析與預測",
+          "en": "Real-time Analysis and Prediction of IoT Data",
+          "ja": "IoTデータのリアルタイム分析と予測"
+        },
+        "abstract": {
+          "zh": "介紹如何處理大量 IoT 感測器數據，建立即時預測模型，並實際應用於智慧交通系統中。",
+          "en": "Introduce how to process large amounts of IoT sensor data, build real-time prediction models, and apply them practically in smart transportation systems.",
+          "ja": "大量のIoTセンサーデータの処理方法、リアルタイム予測モデルの構築、スマート交通システムでの実際の応用について紹介します。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "11:00 - 11:40",
+        "track": "track2",
+        "session_id": "d1_t5_s2"
+      },
+      "tags": [
+        "中文",
+        "IoT",
+        "MachineLearning",
+        "Analytics"
+      ],
+      "photo": "images/img-03.svg"
     }
   ]
 }
