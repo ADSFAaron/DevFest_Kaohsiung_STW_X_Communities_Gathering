@@ -12,11 +12,28 @@
         "en": "The Taiwan Kotlin User Group is dedicated to promoting the Kotlin language and its ecosystem. Whether it's backend development, Android, KMP, or the Ktor server framework, you can find practical and interesting applications.<br><br>At the Tech Creation Market, we have prepared Kotlin learning materials and development case studies to help developers get started quickly and experience the elegance and efficiency of Kotlin. We welcome you to come to our booth to exchange ideas, share learning experiences, or discuss how to build better software products with Kotlin!<br><br><b>Expected items for sale:</b> Personal technical zines, custom-designed small items.",
         "ja": "Taiwan Kotlin User Group は Kotlin 言語とエコシステムの推進に取り組んでいます。バックエンド開発、Android、KMP、サーバーフレームワーク Ktor など、実用的で興味深いアプリケーションを見つけることができます。<br><br>技術創作マーケットでは、開発者が素早く始められ、Kotlin の優雅さと効率性を体験できるよう、Kotlin 学習教材と開発事例を用意しています。ぜひブースにお越しいただき、アイデアを交換し、学習経験を共有し、Kotlin でより良いソフトウェア製品を構築する方法について議論しましょう！<br><br><b>販売予定商品：</b>個人技術創作誌、個人デザイン小物。"
       },
-      "logo": "images/twm-logo-taiwan_kotlin_user_group.png",
-      "website": "https://kotlintw.dev",
+      "logo": "images/market-logo-taiwan_kotlin_user_group.png",
+      "website": "",
       "social": {
-        "facebook": "https://www.facebook.com/groups/kotlintw",
-        "discord": "https://discord.gg/kotlintw"
+        "Homepage": ""
+      }
+    },
+    {
+      "id": "anoni_net",
+      "name": {
+        "zh": "匿名網絡社群 anoni.net",
+        "en": "Anonymous Network Community anoni.net",
+        "ja": "匿名ネットワークコミュニティ anoni.net"
+      },
+      "description": {
+        "zh": "關於匿名網路、網路自由，如何介紹 Tor/Tails、OONI 相關的設定與臺灣區域間的網路自由現況。",
+        "en": "Regarding anonymous networks and internet freedom, how to introduce the settings for Tor/Tails and OONI, and the current status of internet freedom in the Taiwan region.",
+        "ja": "匿名ネットワークとインターネットの自由に関して、Tor/Tails や OONI の関連設定、および台湾地域のインターネットの自由の現状をどのように紹介するか。"
+      },
+      "logo": "images/market-logo-default.png",
+      "website": "https://anoni.net",
+      "social": {
+        "Homepage": "https://anoni.net/"
       }
     }
   ]
