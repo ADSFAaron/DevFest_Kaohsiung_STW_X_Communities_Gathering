@@ -10,7 +10,8 @@
       "WebFetch(domain:mopcon.org)",
       "WebFetch(domain:gdg-kaohsiung.kktix.cc)",
       "WebFetch(domain:m3.material.io)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git mv:*)"
     ],
     "deny": [],
     "ask": []

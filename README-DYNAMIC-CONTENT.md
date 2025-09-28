@@ -14,9 +14,9 @@
 /
 ├── data/
 │   ├── speakers.json      # 講者資料
-│   ├── tech-market.json   # 技術創作市集攤位
+│   ├── markets.json       # 技術創作市集攤位
 │   ├── sponsors.json      # 贊助夥伴
-│   └── booths.json        # 社群擺攤
+│   └── about.json         # 關於我們
 ├── js/
 │   ├── dynamic-content.js # 動態內容管理核心
 │   └── main.js           # 主要 JavaScript（已整合）
@@ -72,8 +72,8 @@
 ```
 
 2. **新增贊助商**：編輯 `data/sponsors.json`
-3. **新增社群擺攤**：編輯 `data/booths.json`
-4. **新增技術市集攤位**：編輯 `data/tech-market.json`
+3. **新增關於我們**：編輯 `data/about.json`
+4. **新增技術市集攤位**：編輯 `data/markets.json`
 
 ### 方法2：使用管理介面
 
@@ -99,7 +99,7 @@ await window.dynamicContentManager.addSponsor(sponsorData);
 await window.dynamicContentManager.addBooth(boothData);
 
 // 新增技術市集攤位
-await window.dynamicContentManager.addTechMarketBooth(boothData);
+await window.dynamicContentManager.addMarketBooth(boothData);
 ```
 
 ## 📄 資料格式說明
@@ -139,7 +139,7 @@ await window.dynamicContentManager.addTechMarketBooth(boothData);
 }
 ```
 
-### 社群擺攤 (booths.json)
+### 關於我們 (about.json)
 ```json
 {
   "id": "唯一識別碼",
@@ -158,7 +158,7 @@ await window.dynamicContentManager.addTechMarketBooth(boothData);
 }
 ```
 
-### 技術創作市集 (tech-market.json)
+### 技術創作市集 (markets.json)
 ```json
 {
   "id": "唯一識別碼",

@@ -1058,8 +1058,8 @@ main {
     font-weight: 500;
 }
 
-/* Booths Section */
-.booths-grid {
+/* About Section */
+.about-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 24px;
@@ -1067,7 +1067,7 @@ main {
     margin: 0 auto;
 }
 
-.booth-card {
+.about-card {
     background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1077,12 +1077,12 @@ main {
     color: inherit;
 }
 
-.booth-card:hover {
+.about-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
-.booth-logo-container {
+.about-logo-container {
     aspect-ratio: 1 / 1; /* Square ratio */
     display: flex;
     align-items: center;
@@ -1091,14 +1091,14 @@ main {
     background-color: #f8f9fa;
 }
 
-.booth-logo {
+.about-logo {
     width: 100%; /* Scale by width */
     height: 100%;
     object-fit: cover; /* Fill the container */
     object-position: center; /* Center alignment for booths */
 }
 
-.booth-info {
+.about-info {
     padding: 20px;
     min-height: 150px; /* Text area - 1 part of 2:1 ratio */
     display: flex;
@@ -1106,39 +1106,39 @@ main {
     justify-content: flex-start;
 }
 
-.booth-name {
+.about-name {
     font-size: 20px;
     font-weight: 700;
     margin: 0 0 8px 0;
 }
 
-.booth-description {
+.about-description {
     font-size: 14px;
     line-height: 1.6;
     margin: 0;
 }
 
-.booth-image {
+.about-image {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     object-position: center;
 }
 
-.booth-info-new {
+.about-info-new {
     padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
-.booth-title {
+.about-title {
     font-size: 18px;
     font-weight: 700;
     margin: 0 0 12px 0;
     color: var(--md-sys-color-on-surface);
 }
 
-.booth-description-new {
+.about-description-new {
     font-size: 14px;
     line-height: 1.6;
     margin: 0 0 16px 0;
@@ -2039,7 +2039,7 @@ html.page-switching {
         gap: 16px;
     }
 
-    .booth-header {
+    .about-header {
         flex-direction: column;
         text-align: center;
         gap: 12px;
@@ -2108,34 +2108,34 @@ html.page-switching {
     color: var(--md-sys-color-on-surface-variant);
 }
 
-.booth-header {
+.about-header {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-bottom: 16px;
 }
 
-.booth-logo {
+.about-logo {
     width: 48px;
     height: 48px;
     border-radius: 8px;
     object-fit: cover;
 }
 
-.booth-name {
+.about-name {
     font-size: 18px;
     font-weight: 600;
     margin: 0;
     color: var(--md-sys-color-on-surface);
 }
 
-.booth-content .booth-description {
+.about-content .about-description {
     margin-bottom: 16px;
     line-height: 1.6;
     color: var(--md-sys-color-on-surface-variant);
 }
 
-.booth-items {
+.about-items {
     font-size: 14px;
     color: var(--md-sys-color-on-surface-variant);
     margin-bottom: 16px;
@@ -2276,23 +2276,23 @@ html.page-switching {
     color: var(--md-sys-color-on-primary);
 }
 
-.booth-activities {
+.about-activities {
     margin: 16px 0;
 }
 
-.booth-activities h4 {
+.about-activities h4 {
     font-size: 14px;
     font-weight: 600;
     margin: 0 0 8px 0;
     color: var(--md-sys-color-on-surface);
 }
 
-.booth-activities ul {
+.about-activities ul {
     margin: 0;
     padding-left: 16px;
 }
 
-.booth-activities li {
+.about-activities li {
     font-size: 14px;
     color: var(--md-sys-color-on-surface-variant);
     margin-bottom: 4px;

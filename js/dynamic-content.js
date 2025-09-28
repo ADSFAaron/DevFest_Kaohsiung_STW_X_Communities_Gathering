@@ -6,9 +6,9 @@ class DynamicContentManager {
         this.currentLanguage = 'zh-Hant';
         this.data = {
             speakers: [],
-            techMarket: [],
+            markets: [],
             sponsors: [],
-            booths: []
+            about: []
         };
     }
 
@@ -31,17 +31,17 @@ class DynamicContentManager {
     // 載入所有資料
     async loadAllData() {
         try {
-            const [speakers, techMarket, sponsors, booths] = await Promise.all([
+            const [speakers, markets, sponsors, about] = await Promise.all([
                 this.loadJSON('data/speakers.json'),
-                this.loadJSON('data/tech-market.json'),
+                this.loadJSON('data/markets.json'),
                 this.loadJSON('data/sponsors.json'),
-                this.loadJSON('data/booths.json')
+                this.loadJSON('data/about.json')
             ]);
 
             this.data.speakers = speakers.speakers || [];
-            this.data.techMarket = techMarket.booths || [];
+            this.data.markets = markets.booths || [];
             this.data.sponsors = sponsors.sponsors || [];
-            this.data.booths = booths.booths || [];
+            this.data.about = about.about || [];
 
             this.renderAllContent();
         } catch (error) {
@@ -61,9 +61,9 @@ class DynamicContentManager {
     // 渲染所有內容
     renderAllContent() {
         this.renderSpeakers();
-        this.renderTechMarket();
+        this.renderMarkets();
         this.renderSponsors();
-        this.renderBooths();
+        this.renderAbout();
     }
 
     // 渲染講者
@@ -117,20 +117,20 @@ class DynamicContentManager {
     }
 
     // 渲染技術創作市集
-    renderTechMarket() {
+    renderMarkets() {
         const container = document.querySelector('#tech-creation-market .market-grid');
         if (!container) return;
 
         container.innerHTML = '';
 
-        this.data.techMarket.forEach(booth => {
-            const boothCard = this.createTechMarketCard(booth);
+        this.data.markets.forEach(booth => {
+            const boothCard = this.createMarketCard(booth);
             container.appendChild(boothCard);
         });
     }
 
     // 建立技術市集卡片
-    createTechMarketCard(booth) {
+    createMarketCard(booth) {
         const card = document.createElement('div');
         card.className = 'market-booth-card';
 
@@ -207,31 +207,31 @@ class DynamicContentManager {
         return card;
     }
 
-    // 渲染社群擺攤
-    renderBooths() {
-        const container = document.querySelector('#booths .booths-grid');
+    // 渲染關於我們
+    renderAbout() {
+        const container = document.querySelector('#about-communities .about-grid');
         if (!container) return;
 
         container.innerHTML = '';
 
-        this.data.booths.forEach(booth => {
-            const boothCard = this.createBoothCard(booth);
+        this.data.about.forEach(booth => {
+            const boothCard = this.createAboutCard(booth);
             container.appendChild(boothCard);
         });
     }
 
-    // 建立社群擺攤卡片
-    createBoothCard(booth) {
+    // 建立關於我們卡片
+    createAboutCard(booth) {
         const card = document.createElement('div');
-        card.className = 'booth-card';
+        card.className = 'about-card';
 
         const socialLinks = this.createSocialLinks(booth.social);
 
         card.innerHTML = `
-            <img alt="${this.getText(booth.name)} Logo" class="booth-image" src="${booth.logo}">
-            <div class="booth-info-new">
-                <h3 class="booth-title">${this.getText(booth.name)}</h3>
-                <div class="booth-description-new">${this.getText(booth.description)}</div>
+            <img alt="${this.getText(booth.name)} Logo" class="about-image" src="${booth.logo}">
+            <div class="about-info-new">
+                <h3 class="about-title">${this.getText(booth.name)}</h3>
+                <div class="about-description-new">${this.getText(booth.description)}</div>
                 ${socialLinks}
             </div>
         `;
@@ -269,10 +269,10 @@ class DynamicContentManager {
     }
 
     // 新增技術市集攤位
-    async addTechMarketBooth(boothData) {
-        this.data.techMarket.push(boothData);
-        await this.saveData('tech-market', { booths: this.data.techMarket });
-        this.renderTechMarket();
+    async addMarketBooth(boothData) {
+        this.data.markets.push(boothData);
+        await this.saveData('markets', {booths: this.data.markets});
+        this.renderMarkets();
     }
 
     // 新增贊助商
@@ -282,11 +282,11 @@ class DynamicContentManager {
         this.renderSponsors();
     }
 
-    // 新增社群擺攤
-    async addBooth(boothData) {
-        this.data.booths.push(boothData);
-        await this.saveData('booths', { booths: this.data.booths });
-        this.renderBooths();
+    // 新增關於我們
+    async addAbout(aboutData) {
+        this.data.about.push(aboutData);
+        await this.saveData('about', {about: this.data.about});
+        this.renderAbout();
     }
 
     // 儲存資料（注意：這在靜態網站中不會真的儲存到檔案）
