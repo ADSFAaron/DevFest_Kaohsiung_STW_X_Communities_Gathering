@@ -116,7 +116,63 @@
       }
     },
     {
-      "id": "simon_liu",
+      "id": "denken_chen",
+      "name": {
+        "zh": "Denken Chen",
+        "en": "Denken Chen",
+        "ja": "Denken Chen"
+      },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "topic_category": {
+        "zh": "議程分類：科技向善的實踐之路",
+        "en": "Category: Goodness in Practice",
+        "ja": "カテゴリ：テクノロジーで社会貢献を実現する道"
+      },
+      "bio": {
+        "zh": "數位身分研究者，《數位憑證皮夾》智庫案成員。g0v 社群長期貢獻者，參與《立法院大小聲》、《Ptt 不能亡》等。",
+        "en": "Digital Identity Researcher, member of the \"Digital Credential Wallet\" think tank project. Long-term contributor to the g0v community, participating in projects such as \"Legislative Yuan Voice\" (立法院大小聲) and \"Ptt Cannot Perish\" (Ptt不能亡).",
+        "ja": "デジタルアイデンティティ研究者、シンクタンクプロジェクト**『デジタル証明書ウォレット（數位憑證皮夾）』**のメンバー。g0v コミュニティへの長年の貢献者であり、『立法院の声（立法院大小聲）』、『Pttは滅びない（ Ptt不能亡）』などのプロジェクトに参加。"
+      },
+      "session": {
+        "name": {
+          "zh": "Google 零知識證明：隱私向善之路",
+          "en": "Google's Zero-Knowledge Proof: The Path to Privacy for Good",
+          "ja": "Google のゼロ知識証明：プライバシー・フォー・グッドへの道"
+        },
+        "abstract": {
+          "zh": "Google 推出零知識證明技術 Longfellow，在數位身分領域引發關注，並計畫透過 Google Wallet 於歐盟展開試點。這項可用於出示官方證件、但僅揭露「是否成年」的密碼學隱私技術，背後有哪些關鍵設計與挑戰？",
+          "en": "Google's release of the Zero-Knowledge Proof (ZKP) technology, Longfellow, has garnered significant attention in the digital identity field, with plans for a pilot program via Google Wallet in the EU. This cryptographic privacy technology can be used to display official credentials while only disclosing specific information, such as \"whether the user is an adult.\" What are the key designs and challenges behind this technology?",
+          "ja": "Google が発表したゼロ知識証明技術 Longfellow は、デジタルアイデンティティ分野で注目を集めており、EUで Google Wallet を通じた試験運用が計画されています。この暗号学的プライバシー技術は、公的証明書を提示する際に「成人であるかどうか」など特定の情報のみを開示するために利用されますが、その背後にはどのような重要な設計と課題があるのでしょうか？"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "15:30 - 16:10",
+        "track": "track2",
+        "session_id": "d1_t9_s2_title"
+      },
+      "tags": [
+        "中文",
+        "零知識證明",
+        "數位身分",
+        "Google Wallet"
+      ],
+      "photo": "images/speak-denken_chen.png",
+      "social": {
+        "Homepage": "https://denkeni.org"
+      }
+    },
+    {
+      "id": "simon_liu_1",
       "name": {
         "zh": "劉育維",
         "en": "Simon Liu",
@@ -174,6 +230,281 @@
         "GitHub": "https://github.com/LiuYuWei",
         "Website": "https://simonliuyuwei-4ndgcf4.gamma.site/"
       }
+    },
+    {
+      "id": "simon_liu_2",
+      "name": {
+        "zh": "劉育維",
+        "en": "Simon Liu",
+        "ja": "Simon Liu"
+      },
+      "org": {
+        "zh": "APMIC / Google 開發者專家 - AI",
+        "en": "APMIC / Google Developer Expert - AI",
+        "ja": "APMIC / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "MLOps Engineer",
+        "en": "MLOps Engineer",
+        "ja": "MLOps Engineer"
+      },
+      "topic_category": {
+        "zh": "議程分類：第二屆 AI 生成大賽",
+        "en": "Category: The 2nd AI Generative Contest",
+        "ja": "カテゴリ：第2回 AI 生成コンテスト"
+      },
+      "bio": {
+        "zh": "擁有10年以上的系統架構與 DevOps 經驗，專精於 Kubernetes 和雲端原生技術，目前負責大型製造業的數位轉型專案。",
+        "en": "With over 10 years of system architecture and DevOps experience, specializing in Kubernetes and cloud-native technologies, currently responsible for digital transformation projects in large manufacturing industries.",
+        "ja": "AI エージェントの構築：Google Gemini と ADK ツールを組み合わせて企業の生産性を解放する"
+      },
+      "session": {
+        "name": {
+          "zh": "從 Google Stitch 到 Google Firebase Studio - AI-First Coding 平台撰寫",
+          "en": "From Google Stitch to Google Firebase Studio - Writing the AI-First Coding Platform",
+          "ja": "Google Stitch から Google Firebase Studio へ - AI-First コーディングプラットフォームを記述する"
+        },
+        "abstract": {
+          "zh": "透過 Google 一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：\n1. 透過 Google Stitch 了解到如何進行 UI/UX 的規劃\n2. 透過 Google Firebase Studio 來進行平台建置，並且說明如何進行修改\n\nHope you enjoy the workshop!",
+          "en": "Through a series of platform tools from Google, we can transform past visions into current reality. In this session, you will learn:\n1. How to use Google Stitch for UI/UX planning.\n2. How to build a platform using Google Firebase Studio and how to make modifications.\n\nHope you enjoy the workshop!",
+          "ja": "Google の一連のプラットフォームツールを通じて、過去の構想を現在の実際の形へと変える方法をご紹介します。このセッションでは、以下の点について学べます：\n1. Google Stitch を通じて、UI/UX のプランニングをどのように行うか。\n2. Google Firebase Studio を使ってプラットフォームを構築する方法、および変更を行う方法について。\n\nワークショップを楽しんでください！"
+        }
+      },
+      "schedule": {
+        "day": 2,
+        "time": "12:30 - 14:00",
+        "track": "track2",
+        "session_id": "d2_t4_s2_title"
+      },
+      "tags": [
+        "中文",
+        "Firebase",
+        "Stitch",
+        "AI"
+      ],
+      "photo": "images/speak-simon_liu.png",
+      "social": {
+        "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
+        "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
+        "GitHub": "https://github.com/LiuYuWei",
+        "Medium": "https://medium.com/@simon3458"
+      }
+    },
+    {
+      "id": "kevin_chiu_1",
+      "name": {
+        "zh": "邱哲綸",
+        "en": "Kevin Chiu",
+        "ja": "Kevin Chiu"
+      },
+      "org": {
+        "zh": "GDG 台北 / Google 開發者專家 - AI",
+        "en": "GDG Taipei / Google Developer Expert - AI",
+        "ja": "GDG Taipei / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "GDG 台北 組織者 / AI GDE",
+        "en": "GDG Taipei Organizer / AI GDE",
+        "ja": "GDG Taipei Organizer / AI GDE"
+      },
+      "topic_category": {
+        "zh": "議程分類：Gemini AI 的生成式實踐",
+        "en": "Category: Gemini AI in Practice",
+        "ja": "カテゴリ：Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "AI GDE / GDG 台北 組織者 / Android 工程師\n致力於將 AI 導到在 edge 端上使用",
+        "en": "AI GDE / GDG Taipei Organizer / Android Engineer\nCommitted to bringing AI for use on the edge.",
+        "ja": "AI GDE / GDG Taipei オーガナイザー / Android エンジニア\nエッジでの AI 利用の実現に尽力。"
+      },
+      "session": {
+        "name": {
+          "zh": "Gemini 如何賦能 Android 開發者：從智能助手到應用創新",
+          "en": "How Gemini Empowers Android Developers: From Intelligent Assistants to Application Innovation",
+          "ja": "Gemini が Android 開発者をどのように強化するか：インテリジェントアシスタントからアプリケーションの革新まで"
+        },
+        "abstract": {
+          "zh": "如何使用 Gemini 開發 Android，從 UI 到 Commit 和 DevOps",
+          "en": "How to Use Gemini for Android Development, from UI to Commit and DevOps",
+          "ja": "UI からコミット、DevOps まで、Gemini を活用した Android 開発手法"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "14:30 - 15:10",
+        "track": "track1",
+        "session_id": "d1_t7_s2_title"
+      },
+      "tags": [
+        "中文",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
+      "photo": "images/speak-kevin_chiu.png",
+      "social": {}
+    },
+    {
+      "id": "kevin_chiu_2",
+      "name": {
+        "zh": "邱哲綸",
+        "en": "Kevin Chiu",
+        "ja": "Kevin Chiu"
+      },
+      "org": {
+        "zh": "GDG 台北 / Google 開發者專家 - AI",
+        "en": "GDG Taipei / Google Developer Expert - AI",
+        "ja": "GDG Taipei / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "GDG 台北 組織者 / AI GDE",
+        "en": "GDG Taipei Organizer / AI GDE",
+        "ja": "GDG Taipei Organizer / AI GDE"
+      },
+      "topic_category": {
+        "zh": "議程分類：Gemini AI 的生成式實踐",
+        "en": "Category: Gemini AI in Practice",
+        "ja": "カテゴリ：Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "AI GDE / GDG 台北 組織者 / Android 工程師\n致力於將 AI 導到在 edge 端上使用",
+        "en": "AI GDE / GDG Taipei Organizer / Android Engineer\nCommitted to bringing AI for use on the edge.",
+        "ja": "AI GDE / GDG Taipei オーガナイザー / Android エンジニア\nエッジでの AI 利用の実現に尽力。"
+      },
+      "session": {
+        "name": {
+          "zh": "Gemini 如何賦能 Android 開發者：從智能助手到應用創新",
+          "en": "How Gemini Empowers Android Developers: From Intelligent Assistants to Application Innovation",
+          "ja": "Gemini が Android 開発者をどのように強化するか：インテリジェントアシスタントからアプリケーションの革新まで"
+        },
+        "abstract": {
+          "zh": "如何使用 Gemini 開發 Android，從 UI 到 Commit 和 DevOps",
+          "en": "How to Use Gemini for Android Development, from UI to Commit and DevOps",
+          "ja": "UI からコミット、DevOps まで、Gemini を活用した Android 開発手法"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "14:30 - 15:10",
+        "track": "track1",
+        "session_id": "d1_t7_s2_title"
+      },
+      "tags": [
+        "中文",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
+      "photo": "images/speak-kevin_chiu.png",
+      "social": {}
+    },
+    {
+      "id": "matthias_geisler_1",
+      "name": {
+        "zh": "Matthias Geisler",
+        "en": "Matthias Geisler",
+        "ja": "Matthias Geisler"
+      },
+      "org": {
+        "zh": "Kotlin User Group 柏林 / Airalo",
+        "en": "Kotlin User Group Berlin / Airalo",
+        "ja": "Kotlin User Group ベルリン / Airalo"
+      },
+      "title": {
+        "zh": "Senior Software Engineer",
+        "en": "Senior Software Engineer",
+        "ja": "Senior Software Engineer"
+      },
+      "topic_category": {
+        "zh": "議程分類：科技向善的實踐之路",
+        "en": "Category: Goodness in Practice",
+        "ja": "カテゴリ：テクノロジーで社会貢献を実現する道"
+      },
+      "bio": {
+        "zh": "Kotlin Multiplatform 的堅定支持者，自 2019 年起便致力於相關工作。專門為 Android 構建解決方案。\nKUG Berlin、GDG Android Berlin、XTC Berlin 等社群的組織者。",
+        "en": "True believer in (Kotlin) Multiplatform and working with it since 2019. Builds solutions for Android. \nOrganizer of KUG Berlin, GDG Android Berlin, XTC Berlin and more.",
+        "ja": "Kotlin Multiplatform の真の信奉者であり、2019年からその開発に携わっています。Android 向けソリューションを構築しています。\nKUG Berlin、GDG Android Berlin、XTC Berlin などのコミュニティのオーガナイザー。"
+      },
+      "session": {
+        "name": {
+          "zh": "讓我們來談談無障礙設計 (Accessibility)",
+          "en": "Let's speak about Accessibility",
+          "ja": "アクセシビリティ（A11y）について語りましょう"
+        },
+        "abstract": {
+          "zh": "無障礙設計並非與優秀的 Android 開發脫節—它本就是其中的一部分。當我們從一開始就將無障礙設計納入考量時，我們的應用程式會變得更加穩健，產品也會提升到新的層次。\n\n讓我們探索使 Android 應用程式具備無障礙性的實用方法，以及這項工作如何自然地改善您的開發實務。此外，隨著歐洲無障礙法案 (EAA) 現已生效，理解這些原則不僅是良好的實務，對於許多 Android 應用程式及其背後的企業來說，也變得越來越重要。",
+          "en": "Accessibility isn't separate from good Android development—it's part of it. When we build with accessibility in mind from the start, our apps become more robust and our product elevates to the next level.\n\nLet's explore practical approaches of making Android apps accessible and how this work naturally improves your development practices. Also, with the European Accessibility Act (EAA) now in effect, understanding these principles isn't just good practice—it's becoming essential for many Android applications and the businesses behind them.",
+          "ja": "アクセシビリティは、優れた Android 開発から切り離されたものではなく、その一部です。開発の初期段階からアクセシビリティを念頭に置いて構築することで、私たちのアプリはより堅牢になり、製品は次のレベルへと引き上げられます。\n\nAndroid アプリをアクセシブルにするための実践的なアプローチと、この取り組みがどのように開発プラクティスを自然に改善するかを探ります。また、**欧州アクセシビリティ法（EAA）**が施行された今、これらの原則を理解することは単なる良き実践ではなく、多くの Android アプリケーションとその背後にあるビジネスにとって不可欠なものとなりつつあります。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "13:30 - 14:10",
+        "track": "track2",
+        "session_id": "d1_t6_s2_title"
+      },
+      "tags": [
+        "English",
+        "Android",
+        "Kotlin",
+        "Accessibility"
+      ],
+      "photo": "images/speak-matthias_geisler.png",
+      "social": {}
+    },
+    {
+      "id": "matthias_geisler_2",
+      "name": {
+        "zh": "Matthias Geisler",
+        "en": "Matthias Geisler",
+        "ja": "Matthias Geisler"
+      },
+      "org": {
+        "zh": "Kotlin User Group 柏林 / Airalo",
+        "en": "Kotlin User Group Berlin / Airalo",
+        "ja": "Kotlin User Group ベルリン / Airalo"
+      },
+      "title": {
+        "zh": "Senior Software Engineer",
+        "en": "Senior Software Engineer",
+        "ja": "Senior Software Engineer"
+      },
+      "topic_category": {
+        "zh": "議程分類：Gemini AI 的生成式實踐",
+        "en": "Category: Gemini AI in Practice",
+        "ja": "カテゴリ：Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "Kotlin Multiplatform 的堅定支持者，自 2019 年起便致力於相關工作。專門為 Android 構建解決方案。\nKUG Berlin、GDG Android Berlin、XTC Berlin 等社群的組織者。",
+        "en": "True believer in (Kotlin) Multiplatform and working with it since 2019. Builds solutions for Android. \nOrganizer of KUG Berlin, GDG Android Berlin, XTC Berlin and more.",
+        "ja": "Kotlin Multiplatform の真の信奉者であり、2019年からその開発に携わっています。Android 向けソリューションを構築しています。\nKUG Berlin、GDG Android Berlin、XTC Berlin などのコミュニティのオーガナイザー。"
+      },
+      "session": {
+        "name": {
+          "zh": "XP (極限開發) 遇上 AI？",
+          "en": "Let's speak about Accessibility",
+          "ja": "XP（エクストリーム・プログラミング）と AI？"
+        },
+        "abstract": {
+          "zh": "「AI 革命」的一大承諾是讓工程師的生活更輕鬆。但它真的能實現這個目標嗎？\n\n另一方面，我們有主要屬於極限編程 (eXtreme Programming, XP) 範疇的技術，這些技術強調協作工作。這些實務經驗證實能夠提升軟體開發的生產力與穩定性。\n\nAI 會讓你更快還是更慢？我們真的能靠「說」來產生程式碼嗎？這是一個好的組合嗎？你能擴展你的邊界上下文（Bounded Context） 嗎？它在程式碼審查 (Code Review) 方面表現如何？文件撰寫呢？它對團隊的影響是什麼？XP 是否有助於應對複雜性？這對我們行業的未來意味著什麼？\n\n有這麼多疑問，請坐下來聊一聊吧！讓我們看看 Claude 和 Cursor 這樣的 AI 助理是否能提升開發工作流程，或者 XP 如何做出貢獻。以及軟體工程中 AI 的現況如何。",
+          "en": "Accessibility isn't separate from good Android development—it's part of it. When we build with accessibility in mind from the start, our apps become more robust and our product elevates to the next level.\n\nLet's explore practical approaches of making Android apps accessible and how this work naturally improves your development practices. Also, with the European Accessibility Act (EAA) now in effect, understanding these principles isn't just good practice—it's becoming essential for many Android applications and the businesses behind them.",
+          "ja": "「AI 革命」が掲げる大きな約束の一つは、エンジニアとしての私たちの生活をより楽にすることです。しかし、それは本当に実現可能なのでしょうか？\n\n一方で、私たちは主に**エクストリーム・プログラミング（eXtreme Programming, XP）**の領域に属する、協調作業を重視する手法を持っています。これらのプラクティスは確立されており、実際にソフトウェア開発の生産性と安定性の両方を向上させることが証明されています。\n\nAI はあなたを速くするのか、それとも遅くするのか？私たちは話すだけでコードを生成できるのでしょうか？それは良い組み合わせでしょうか？**境界コンテキスト（Bounded Context）**を拡張できるでしょうか？コードレビューの能力はどれくらい高いでしょうか？ドキュメンテーションについてはどうでしょうか？チームへの影響は？XP は複雑さへの対応に役立つでしょうか？これは私たちの業界の未来にとって何を意味するのでしょうか？\n\n多くの疑問があります。さあ、席について、お話ししましょう！Claude や Cursor のような AI アシスタントが開発ワークフローを強化できるのか、あるいは XP がどのように貢献できるのか。そして、ソフトウェアエンジニアリングにおける AI の現状はどうなっているのかを見ていきましょう。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "15:30 - 16:10",
+        "track": "track2",
+        "session_id": "d1_t9_s1_title"
+      },
+      "tags": [
+        "English",
+        "Android",
+        "AI",
+        "XP"
+      ],
+      "photo": "images/speak-matthias_geisler.png",
+      "social": {}
     }
   ]
 }
