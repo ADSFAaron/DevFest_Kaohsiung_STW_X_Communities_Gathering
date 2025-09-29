@@ -472,7 +472,17 @@
 
                 <div class="form-group">
                     <label>時間</label>
-                    <input id="speaker-time" placeholder="例如：10:00 - 10:40" type="text">
+                    <select id="speaker-time">
+                        <option value="">請選擇時間</option>
+                        <option value="10:00 - 10:40">10:00 - 10:40</option>
+                        <option value="11:00 - 11:40">11:00 - 11:40</option>
+                        <option value="13:30 - 14:10">13:30 - 14:10</option>
+                        <option value="14:30 - 15:10">14:30 - 15:10</option>
+                        <option value="15:30 - 16:10">15:30 - 16:10</option>
+                        <option value="16:30 - 17:10">16:30 - 17:10</option>
+                        <option value="12:30 - 14:00">12:30 - 14:00</option>
+                        <option value="14:30 - 16:00">14:30 - 16:00</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
@@ -491,8 +501,9 @@
                             <option value="d1_t4_s1_title">d1_t4_s1_title (10:00-10:40, Track 1)</option>
                             <option value="d1_t5_s1_title">d1_t5_s1_title (11:00-11:40, Track 1)</option>
                             <option value="d1_t6_s1_title">d1_t6_s1_title (13:30-14:10, Track 1)</option>
-                            <option value="d1_t7_s1_title">d1_t7_s1_title (14:20-15:00, Track 1)</option>
-                            <option value="d1_t9_s1_title">d1_t9_s1_title (15:20-16:00, Track 1)</option>
+                            <option value="d1_t7_s1_title">d1_t7_s1_title (14:30-15:10, Track 1)</option>
+                            <option value="d1_t9_s1_title">d1_t9_s1_title (15:30-16:10, Track 1)</option>
+                            <option value="d1_t10_s1_title">d1_t10_s1_title (16:30-17:10, Track 1)</option>
                         </optgroup>
                         <optgroup label="第一天 - Track 2">
                             <option value="d1_t4_s2_title">d1_t4_s2_title (10:00-10:40, Track 2)</option>
@@ -500,11 +511,11 @@
                             <option value="d1_t6_s2_title">d1_t6_s2_title (13:30-14:10, Track 2)</option>
                             <option value="d1_t7_s2_title">d1_t7_s2_title (14:20-15:00, Track 2)</option>
                             <option value="d1_t9_s2_title">d1_t9_s2_title (15:20-16:00, Track 2)</option>
+                            <option value="d1_t10_s2_title">d1_t10_s2_title (16:30-17:10, Track 2)</option>
                         </optgroup>
                         <optgroup label="第二天">
-                            <option value="d2_t3_s1_title">d2_t3_s1_title (交流活動)</option>
-                            <option value="d2_t4_s2_title">d2_t4_s2_title (第二屆 AI 生成大賽 1)</option>
-                            <option value="d2_t5_s2_title">d2_t5_s2_title (第二屆 AI 生成大賽 2)</option>
+                            <option value="d2_t4_s2_title">d2_t4_s2_title (12:30-14:00, Track 2)</option>
+                            <option value="d2_t5_s2_title">d2_t5_s2_title (14:30-16:00, Track 2)</option>
                         </optgroup>
                     </select>
                 </div>
@@ -1146,6 +1157,12 @@
             return;
         }
 
+        const speakerTime = document.getElementById('speaker-time').value;
+        if (!speakerTime) {
+            alert('請選擇時間');
+            return;
+        }
+
         // 檢查 Session ID 是否重複
         if (speakers.find(s => s.schedule.session_id === sessionId)) {
             alert('此 Session ID 已被使用，請選擇其他時段');
@@ -1189,7 +1206,7 @@
             },
             schedule: {
                 day: parseInt(document.getElementById('speaker-day').value),
-                time: document.getElementById('speaker-time').value.trim(),
+                time: speakerTime,
                 track: document.getElementById('speaker-track').value,
                 session_id: sessionId
             },
