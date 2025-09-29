@@ -42,7 +42,7 @@
       "schedule": {
         "day": 1,
         "time": "11:00 - 11:40",
-        "track": "track1",
+        "track": "track2",
         "session_id": "d1_t5_s2_title"
       },
       "tags": [
@@ -156,75 +156,15 @@
       },
       "schedule": {
         "day": 1,
-        "time": "16:30 - 17:10",
+        "time": "10:00 - 10:40",
         "track": "track1",
-        "session_id": "d1_t10_s2_title"
+        "session_id": "d1_t4_s1_title"
       },
       "tags": [
         "中文",
         "ADK",
         "Gemini",
         "Agent"
-      ],
-      "photo": "images/speak-simon_liu.png",
-      "social": {
-        "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
-        "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
-        "Medium": "https://medium.com/@simon3458",
-        "GitHub": "https://github.com/LiuYuWei",
-        "Website": "https://simonliuyuwei-4ndgcf4.gamma.site/"
-      }
-    },
-    {
-      "id": "simon_liu",
-      "name": {
-        "zh": "劉育維",
-        "en": "Simon Liu",
-        "ja": "Simon Liu"
-      },
-      "org": {
-        "zh": "APMIC / Google 開發者專家 - AI",
-        "en": "APMIC / Google Developer Expert - AI",
-        "ja": "APMIC / Google Developer Expert - AI"
-      },
-      "title": {
-        "zh": "MLOps Engineer",
-        "en": "MLOps Engineer",
-        "ja": "MLOps Engineer"
-      },
-      "topic_category": {
-        "zh": "第二屆 AI 生成大賽",
-        "en": "Category: AI Generative Contest",
-        "ja": "カテゴリ：生成 AI コンテスト"
-      },
-      "bio": {
-        "zh": "擁有10年以上的系統架構與 DevOps 經驗，專精於 Kubernetes 和雲端原生技術，目前負責大型製造業的數位轉型專案。",
-        "en": "With over 10 years of system architecture and DevOps experience, specializing in Kubernetes and cloud-native technologies, currently responsible for digital transformation projects in large manufacturing industries.",
-        "ja": "AI エージェントの構築：Google Gemini と ADK ツールを組み合わせて企業の生産性を解放する"
-      },
-      "session": {
-        "name": {
-          "zh": "從 Google Stitch 到 Google Firebase Studio - AI-First Coding 平台撰寫",
-          "en": "",
-          "ja": ""
-        },
-        "abstract": {
-          "zh": "透過 Google 一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：<br>1. 透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. 透過 Google Firebase Studio 來進行平台建置，並且說明如何進行修改<br><br>Hope you enjoy the workshop!",
-          "en": "",
-          "ja": ""
-        }
-      },
-      "schedule": {
-        "day": 2,
-        "time": "12:30 - 14:00",
-        "track": "track1",
-        "session_id": "d2_t4_s2_title"
-      },
-      "tags": [
-        "中文",
-        "Firebase",
-        "Stitch",
-        "AI"
       ],
       "photo": "images/speak-simon_liu.png",
       "social": {

@@ -423,10 +423,25 @@ class DynamicContentManager {
             // 檢查是否已經加入講者資訊
             if (sessionEl.querySelector('.speaker-info-inline')) return;
 
+            // 更新議程標題為講者的實際議程名稱
+            titleEl.textContent = this.getText(speaker.session.name);
+
+            // 讓議程標題可以點擊連結到講者頁面
+            titleEl.classList.add('clickable');
+
+            titleEl.addEventListener('click', (e) => {
+                e.stopPropagation();
+                this.navigateToSpeaker(speaker.id);
+            });
+
+            // 創建並插入 tags 標籤到標題下方
+            const tagsEl = this.createSessionTags(speaker);
+            titleEl.parentNode.insertBefore(tagsEl, titleEl.nextSibling);
+
             // 創建講者資訊元素
             const speakerInfoEl = this.createInlineSpeakerInfo(speaker);
 
-            // 創建可展開的詳細內容
+            // 創建可展開的詳細內容（不包含簡介文字）
             const expandableContentEl = this.createExpandableContent(speaker);
 
             // 將講者資訊插入到 session-info 中
@@ -459,7 +474,20 @@ class DynamicContentManager {
         return speakerInfo;
     }
 
-    // 創建可展開的議程詳細內容
+    // 創建議程標題下方的 tags 標籤
+    createSessionTags(speaker) {
+        const tagsContainer = document.createElement('div');
+        tagsContainer.className = 'session-tags-container';
+
+        // 創建講者標籤
+        const tagsHTML = speaker.tags.map(tag => `<span class="session-tag">#${tag}</span>`).join('');
+
+        tagsContainer.innerHTML = tagsHTML;
+
+        return tagsContainer;
+    }
+
+    // 創建可展開的議程詳細內容（不包含講者簡介）
     createExpandableContent(speaker) {
         const expandableContent = document.createElement('div');
         expandableContent.className = 'session-expandable';
@@ -467,18 +495,12 @@ class DynamicContentManager {
         // 根據當前語言動態設定標籤文字
         const sessionAbstractLabel = this.currentLanguage === 'en' ? 'Session Overview:' :
             this.currentLanguage === 'ja' ? 'セッション概要：' : '議程簡介：';
-        const speakerBioLabel = this.currentLanguage === 'en' ? 'Speaker Bio:' :
-            this.currentLanguage === 'ja' ? 'スピーカー紹介：' : '講者簡介：';
 
         expandableContent.innerHTML = `
             <div class="session-details-expanded">
                 <div class="session-abstract">
                     <strong>${sessionAbstractLabel}</strong>
                     <p>${this.getText(speaker.session.abstract)}</p>
-                </div>
-                <div class="speaker-bio-short">
-                    <strong>${speakerBioLabel}</strong>
-                    <p>${this.getText(speaker.bio).substring(0, 150)}...</p>
                 </div>
             </div>
         `;
@@ -530,6 +552,7 @@ class DynamicContentManager {
             }, 300);
         }
     }
+
 
     // 導航到講者詳細頁面
     navigateToSpeaker(speakerId) {

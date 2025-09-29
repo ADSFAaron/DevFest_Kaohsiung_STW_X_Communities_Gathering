@@ -869,6 +869,36 @@ main {
     margin: 0;
 }
 
+.session-title.clickable {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--md-sys-color-primary);
+    transition: color 0.2s ease;
+}
+
+.session-title.clickable:hover {
+    color: var(--color-blue);
+    text-decoration: underline;
+}
+
+.session-tags-container {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.session-tag {
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    display: inline-block;
+}
+
 /* Speakers Section - FINAL FIX using max-height */
 .speakers-grid {
     display: grid;
