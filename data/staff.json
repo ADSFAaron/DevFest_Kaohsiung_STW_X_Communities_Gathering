@@ -1,0 +1,26 @@
+{
+  "staff": [
+    {
+      "id": "example_staff",
+      "name": {
+        "zh": "範例志工",
+        "en": "Example Staff",
+        "ja": "例スタッフ"
+      },
+      "description": {
+        "zh": "負責活動現場協助與會眾服務，確保活動順利進行。",
+        "en": "Responsible for on-site assistance and attendee services, ensuring smooth event operation.",
+        "ja": "会場での支援と参加者サービスを担当し、イベントの円滑な運営を確保します。"
+      },
+      "category": {
+        "zh": "活動志工",
+        "en": "Event Volunteer",
+        "ja": "イベントボランティア"
+      },
+      "photo": "images/market-logo-default.png",
+      "social": {
+        "Linktree": "https://linktr.ee/vLabOnline"
+      }
+    }
+  ]
+}
