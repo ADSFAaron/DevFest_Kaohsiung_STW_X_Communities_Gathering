@@ -1289,7 +1289,7 @@ main {
 }
 
 .about-logo-container {
-    aspect-ratio: 4 / 3; /* 4:3 ratio to match booths */
+    aspect-ratio: 1 / 1; /* Square ratio */
     background-color: #f8f9fa;
     overflow: hidden;
     display: flex;
@@ -2123,7 +2123,7 @@ html.page-switching {
 
 .market-booth-image {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;
 }
@@ -2798,7 +2798,7 @@ html.page-switching {
 
 .community-image {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
@@ -2862,7 +2862,7 @@ html.page-switching {
 
 .staff-image {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
