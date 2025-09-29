@@ -2899,3 +2899,26 @@ html.page-switching {
     margin: 0 0 16px 0;
     color: var(--md-sys-color-on-surface-variant);
 }
+
+/* 🔍 線索2：樣式也能藏秘密！看看這個神秘的類別... */
+.treasure-hunt-clue-2::before {
+    content: "AATRFMRJ9H"; /* 第一日免費票 2（官網解謎活動）邀請碼隱藏在這裡 */
+    display: none;
+    /* 這個選擇器不會被任何HTML元素使用，純粹是為了解謎活動 */
+}
+
+/* 彩蛋：如果有人真的想看到這個內容... */
+.reveal-secret:hover .treasure-hunt-clue-2::before {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 9999;
+    font-family: monospace;
+    font-size: 24px;
+}
