@@ -1,0 +1,43 @@
+{
+  "about": [
+    {
+      "id": "gdg_kaohsiung",
+      "name": {
+        "zh": "GDG Kaohsiung",
+        "en": "GDG Kaohsiung",
+        "ja": "GDG Kaohsiung"
+      },
+      "description": {
+        "zh": "GDG Kaohsiung（Google Developer Groups Kaohsiung）前身是 Android 高雄開發者社群，誕生於 2014 年 3 月，我們每年定期舉辦 Build with AI、 Google I/O Extended、DevFest 和 TOOCON 天黑黑月會，希望讓高雄對軟體開發有興趣的朋友能夠有實體交流的機會<br><br>歡迎加入 Google Developer Groups Kaohsiung 粉絲專業頁和 GDG Kaohsiung 臉書社團，掌握最新活動資訊。",
+        "en": "GDG Kaohsiung (Google Developer Groups Kaohsiung) originated from the Android Kaohsiung Developer Community, established in March 2014.<br><br>We regularly host annual events such as Build with AI, Google I/O Extended, DevFest, and the TOOCON. Our goal is to provide a physical platform for friends in Kaohsiung who are interested in software development to meet and exchange ideas.<br><br>Welcome to join the GDG Kaohsiung Facebook Page and the GDG Kaohsiung Facebook Group to get the latest event information!",
+        "ja": "GDG Kaohsiung (Google Developer Groups Kaohsiung) は、2014 年 3 月に設立された Android 高雄開発者コミュニティが前身です。<br><br>毎年、Build with AI、Google I/O Extended、DevFest、および TOOCON などのイベントを定期的に開催しています。私たちの目標は、ソフトウェア開発に興味のある高雄の皆さんに、実際に集まって交流できる場を提供することです。<br><br>最新のイベント情報を把握するために、GDG Kaohsiung ページとGDG Kaohsiung Facebook グループへのご参加を歓迎します！"
+      },
+      "logo": "images/about-logo-gdg_kaohsiung.png",
+      "website": "https://gdg.community.dev/gdg-kaohsiung/",
+      "social": {
+        "GDG Community": "https://gdg.community.dev/gdg-kaohsiung/",
+        "Facebook 社團": "https://www.facebook.com/groups/GDGKaohsiung",
+        "Facebook 粉專": "https://www.facebook.com/GDGKaohsiung",
+        "Linkedin": "https://tw.linkedin.com/company/gdg-kaohsiung"
+      }
+    },
+    {
+      "id": "developer_buffet",
+      "name": {
+        "zh": "開發者 Buffet",
+        "en": "Developer Buffet",
+        "ja": "開発者ビュッフェ"
+      },
+      "description": {
+        "zh": "我們是一群在台灣科技研討會結識的夥伴，自疫情期間，我們所在的城市技術社群與聚會逐漸減少。希望能保持討論和交流的熱度，因此我們決定發起聚會。 在這裏會舉辦各種形式的活動，議題大致上包括但不限於前、後端、UI/UX、ML、軟體開發等，希望大家能在這裡找到並盡情享受自己感興趣的事物，因此取名為【開發者 Buffet】。",
+        "en": "We are a group of partners who met at various tech conferences in Taiwan. During the pandemic, the technical communities and meetups in our city gradually decreased. To keep the passion for discussion and exchange alive, we decided to launch this new meetup.<br><br>We host various types of activities here. Topics broadly include, but are not limited to, Frontend, Backend, UI/UX, Machine Learning (ML), and Software Development. We hope everyone can find and fully enjoy what interests them here, which is why we named ourselves 【Developer Buffet】.",
+        "ja": "私たちは、台湾のテックカンファレンスで出会った仲間たちです。パンデミックの間、私たちの住む都市の技術コミュニティや集まりは徐々に少なくなってしまいました。議論と交流の熱意を維持したいと考え、このミートアップを立ち上げることを決めました。<br><br>ここでは、様々な形式のイベントを開催します。トピックは主に、フロントエンド、バックエンド、UI/UX、機械学習（ML）、ソフトウェア開発などを含みますが、これらに限定されません。皆さんがここで興味のあることを見つけ、存分に楽しめることを願って、**【開発者ビュッフェ (Developer Buffet)】**と名付けました。"
+      },
+      "logo": "images/about-logo-dev_buffet.png",
+      "website": "https://www.facebook.com/groups/buffet.dev",
+      "social": {
+        "Facebook": "https://www.facebook.com/groups/buffet.dev"
+      }
+    }
+  ]
+}

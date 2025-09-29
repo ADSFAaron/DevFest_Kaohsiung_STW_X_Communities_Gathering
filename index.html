@@ -2,49 +2,68 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>DevFest Kaohsiung X S. TW Communities Gathering 2025</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link href="favicon.svg" rel="icon" type="image/svg+xml">
 
     <!-- Material Symbols -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 
     <!-- Material Web Components (Material 3) - Using Skypack to resolve dependencies like tslib -->
-    <script type="module" src="https://cdn.skypack.dev/@material/web"></script>
+    <script src="https://cdn.skypack.dev/@material/web" type="module"></script>
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- 🎯 線索1：恭喜你開始了解謎之旅！第一日免費票 1（官網解謎活動）邀請碼就在這附近... FREHYGCFN3 -->
 </head>
 <body>
 
 <header>
     <nav>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"/>
-                <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"/>
+        <button aria-label="Open menu" class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"/>
+                <path d="M3 6H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"/>
+                <path d="M3 18H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2"/>
             </svg>
         </button>
         <div class="nav-links" id="nav-links">
-            <a href="#" data-page="home" data-i18n-key="nav_home" class="nav-link active">首頁</a>
-            <a href="#" data-page="schedule" data-i18n-key="nav_schedule" class="nav-link">議程時間表</a>
-            <a href="#" data-page="speakers" data-i18n-key="nav_speakers" class="nav-link">講者介紹</a>
-            <a href="#" data-page="tech-creation-market" data-i18n-key="nav_tech_creation_market" class="nav-link">技術創作市集</a>
-            <a href="#" data-page="sponsors" data-i18n-key="nav_sponsors" class="nav-link">贊助夥伴</a>
-            <a href="#" data-page="booths" data-i18n-key="nav_booths" class="nav-link">社群擺攤</a>
-            <a href="#" data-page="tickets" data-i18n-key="nav_tickets" class="nav-link">票種介紹</a>
-            <a href="#" data-page="about" data-i18n-key="nav_about" class="nav-link">關於我們</a>
+            <a class="nav-link active" data-i18n-key="nav_home" data-page="home" href="#">首頁</a>
+            <a class="nav-link" data-i18n-key="nav_schedule" data-page="schedule" href="#">議程時間表</a>
+            <a class="nav-link" data-i18n-key="nav_speakers" data-page="speakers" href="#">講者介紹</a>
+            <a class="nav-link" data-i18n-key="nav_sponsors" data-page="sponsors" href="#">贊助夥伴</a>
+            <a class="nav-link" data-i18n-key="nav_community" data-page="community" href="#">參與社群</a>
+            <a class="nav-link" data-i18n-key="nav_staff" data-page="staff" href="#">志工介紹</a>
+            <a class="nav-link" data-i18n-key="nav_tech_creation_market" data-page="tech-creation-market" href="#">技術創作市集</a>
+            <a class="nav-link" data-i18n-key="nav_tickets" data-page="tickets" href="#">票種介紹</a>
+            <a class="nav-link" data-i18n-key="nav_about" data-page="about" href="#">關於我們</a>
         </div>
         <div class="nav-actions">
             <div class="language-switcher">
-                <button id="lang-tw">🇹🇼 繁體中文</button>
-                <button id="lang-en">🇬🇧 English</button>
+                <button aria-expanded="false" aria-haspopup="true" class="language-dropdown-trigger"
+                        id="language-dropdown-trigger">
+                    <span class="current-language" id="current-language">🇹🇼 繁體中文</span>
+                    <span class="dropdown-icon material-symbols-outlined">expand_more</span>
+                </button>
+                <div class="language-dropdown-menu" id="language-dropdown-menu">
+                    <button class="language-option active" data-lang="zh-Hant" id="lang-tw">
+                        🇹🇼 繁體中文
+                    </button>
+                    <button class="language-option" data-lang="en" id="lang-en">
+                        🇬🇧 English
+                    </button>
+                    <button class="language-option" data-lang="ja" id="lang-ja">
+                        🇯🇵 日本語
+                    </button>
+                </div>
             </div>
-            <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank" rel="noopener noreferrer" class="register-button" data-i18n-key="register_cta">
+            <a class="register-button" data-i18n-key="register_cta"
+               href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025"
+               rel="noopener noreferrer" target="_blank">
                 報名參加
             </a>
         </div>
@@ -52,62 +71,222 @@
 </header>
 
 <main>
-    <section id="home" class="hero page-section active">
+    <section class="hero page-section active" id="home">
         <div class="hero-content">
             <h1 data-i18n-key="event_title">DevFest 高雄場 X 南臺灣技術社群大聚 2025</h1>
-            <p class="event-meta">
-                <span data-i18n-key="event_date">日期：2025/11/22 (六) - 11/23 (日)</span><br>
-                <span data-i18n-key="event_location">地點：KO-IN 智高點 (高雄市新興區中正三路 25 號 14 樓)</span>
-                <a class="location-map-link" data-i18n-key="view_map" href="https://maps.app.goo.gl/b8XVFSexNqeD1aMa8"
-                   rel="noopener noreferrer" target="_blank">
-                    <span class="material-symbols-outlined">location_on</span>
-                    查看地圖
-                </a>
-            </p>
-            <!--            <p class="event-description" data-i18n-key="event_intro">-->
-            <!--                今年 GDG Kaohsiung 和開發者 Buffet 一起在高雄舉辦軟體社群年會，<br>英文名稱為「DevFest Kaohsiung X S. TW Communities Gathering 2025」，<br>中文名稱為「DevFest 高雄場 X 南臺灣技術社群大聚 2025」-->
-            <!--            </p>-->
-            <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank" rel="noopener noreferrer"
-               class="hero-register-button" data-i18n-key="cta_button">
-                報名參加
-                <span class="material-symbols-outlined">arrow_forward</span>
-            </a>
+            <div class="event-meta">
+                <div class="event-date-location">
+                    <span data-i18n-key="event_date_location">11/22（六）- 23（日）in KO-IN 智高點</span>
+                    <a class="location-map-link" data-i18n-key="view_map"
+                       href="https://maps.app.goo.gl/b8XVFSexNqeD1aMa8"
+                       rel="noopener noreferrer" target="_blank">
+                        📍 查看地圖
+                    </a>
+                </div>
+                <div class="event-schedule">
+                    <div class="schedule-day">
+                        <span data-i18n-key="day1_schedule">22 - DevFest 2025 高雄場</span>
+                        <span data-i18n-key="day1_time">🕣 08:30 ~ 18:00</span>
+                    </div>
+                    <div class="schedule-day">
+                        <span data-i18n-key="day2_schedule">23 - 南臺灣技術社群大聚 2025</span>
+                        <span data-i18n-key="day2_time">🕚 11:00 ~ 17:00</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="hero-image">
             <div class="banner-carousel">
                 <div class="carousel-container">
                     <div class="carousel-slide active">
-                        <img src="./images/image_banner_devfest.png" alt="DevFest Kaohsiung 2025 Banner" loading="eager">
+                        <img alt="DevFest Kaohsiung 2025 Banner" loading="eager"
+                             data-event="devfest2025"
+                             data-secret-key="AMF7JG73TC"
+                             src="./images/image_banner_devfest.png"
+                             title="🖼️ 線索5：圖片也有秘密！檢查這張圖片的所有屬性，可以獲得第一日免費票 5（官網解謎活動）邀請碼...">
                     </div>
                     <div class="carousel-slide">
-                        <img src="./images/image_banner_stw.png" alt="S. TW Communities Gathering 2025 Banner" loading="eager">
+                        <img alt="S. TW Communities Gathering 2025 Banner" loading="eager"
+                             src="./images/image_banner_stw.png">
                     </div>
                 </div>
                 <div class="carousel-indicators">
-                    <button class="carousel-indicator active" data-slide="0" aria-label="顯示第一張圖片"></button>
-                    <button class="carousel-indicator" data-slide="1" aria-label="顯示第二張圖片"></button>
+                    <button aria-label="顯示第一張圖片" class="carousel-indicator active" data-slide="0"></button>
+                    <button aria-label="顯示第二張圖片" class="carousel-indicator" data-slide="1"></button>
                 </div>
-                <button class="carousel-nav carousel-prev" aria-label="上一張圖片">
-                    <span class="material-symbols-outlined">chevron_left</span>
-                </button>
-                <button class="carousel-nav carousel-next" aria-label="下一張圖片">
-                    <span class="material-symbols-outlined">chevron_right</span>
-                </button>
             </div>
         </div>
     </section>
 
-    <!-- Event Details Section - Only visible on home page -->
-    <div class="event-details home-only">
+    <!-- What is DevFest & S.TW Communities Gathering Section - Only visible on home page -->
+    <div class="what-is-section home-only">
         <div class="container">
-            <p class="event-details-text" data-i18n-key="schedule_intro">今年 GDG Kaohsiung 和開發者 Buffet
-                一起在高雄舉辦軟體社群年會，英文名稱為「DevFest Kaohsiung X S. TW Communities Gathering 2025」，中文名稱為「DevFest
-                高雄場 X 南臺灣技術社群大聚 2025」</p>
+            <div class="event-info-grid">
+                <!-- 第1層：關於活動 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-full">
+                        <h3 class="info-title" data-i18n-key="about_event_title">📝 關於活動</h3>
+                        <p class="info-description" data-i18n-key="schedule_intro">今年 GDG Kaohsiung 和開發者 Buffet
+                            一起在高雄舉辦軟體社群年會，英文名稱為「DevFest Kaohsiung X S. TW Communities Gathering
+                            2025」，中文名稱為「DevFest 高雄場 X 南臺灣技術社群大聚 2025」。</p>
+                    </div>
+                </div>
+
+                <!-- 第2層：是什麼問題 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="devfest_what_title">🧐 DevFest 高雄場 是什麼？</h3>
+                        <p class="info-description" data-i18n-key="devfest_what_content">DevFest 是由 GDG (Google
+                            Developer Groups) 社群主辦的年度技術盛會，也是全球最大的開發者社群科技大會，因為是全球年會，在字尾增加城市名稱區別不同場次。<br>DevFest
+                            高雄場是 GDG Kaohsiung
+                            社群舉辦的軟體年會。我們致力將外地的技術大神帶到高雄，讓高雄的開發者不用舟車勞頓就能與頂尖講者交流；我們更希望能打造一個專屬「高雄」的技術年會，邀請高雄在地講者上台分享，有更多曝光的機會！
+                        </p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="stw_what_title">🧐 南臺灣技術社群大聚 是什麼？</h3>
+                        <p class="info-description" data-i18n-key="stw_what_content">
+                            這是一個給技術社群組織者、技術活動參與者的交流活動。</p>
+                    </div>
+                </div>
+
+                <!-- 第3層：DevFest Kaohsiung -->
+                <div class="info-layer">
+                    <div class="info-card info-card-full">
+                        <h3 class="info-title" data-i18n-key="devfest_section_title">DevFest Kaohsiung 2025</h3>
+                        <p class="info-description" data-i18n-key="devfest_section_content">11/22（星期六）
+                            08:30~18:00</p>
+                    </div>
+                </div>
+
+                <!-- 第4層：主題 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="day1_theme_title">🚀 第一日議程主題：實作 (Implements)</h3>
+                        <p class="info-description" data-i18n-key="day1_theme_content">從一個想法到一行程式碼，從一次部署到深遠的影響力。2025
+                            年的 DevFest Kaohsiung，我們聚焦於 「實作 (Implements)」！我們不僅僅是探討理論，更要拿起鍵盤，敲打程式碼，把想法化為現實。<br><br>呼應
+                            DevFest 全球主題 "Building Safe, Secure and Scalable Solutions with AI and
+                            Cloud"，您將會看到實戰經驗分享，無論你想學習成功的架構、想知道前人踩過哪些坑，或是想了解如何用技術讓世界更美好，這裡都有能啟發你的內容。
+                        </p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="day2_theme_title">🏆 第二日工作坊主題：第二屆 AI
+                            生成大賽</h3>
+                        <p class="info-description" data-i18n-key="day2_theme_content">廣受好評的 AI
+                            生成大賽又來啦！第二天的活動中，我們有二場生成大賽對應不同主體，先讓講者進行工作坊教學，再依照內容進行生成創作，流程如下<br><br>1.
+                            會前準備：請自行攜帶充飽電的筆記型電腦。<br>2. 現場實作：我們將提供價值 $5 美元的 GCP
+                            抵免額，讓您無負擔進行生成創作。<br>3. 創意挑戰：隨機公布創作主題，請運用該工作坊提供的工具生成對應的創作。<br>4.
+                            優勝獎勵：每個場次的「最佳生成創作者」將可獲得活動紀念品乙個。</p>
+                    </div>
+                </div>
+
+                <!-- 第5層：拍立得 Fest | Pizza Time | After Buffet -->
+                <div class="info-layer-three">
+                    <div class="info-card info-card-third">
+                        <h3 class="info-title" data-i18n-key="polaroid_fest_title">📸 拍立得 Fest</h3>
+                        <p class="info-description" data-i18n-key="polaroid_fest_content">
+                            活動期間每人提供一張免費拍立得拍照服務，留下珍貴的活動回憶。</p>
+                    </div>
+                    <div class="info-card info-card-third">
+                        <h3 class="info-title" data-i18n-key="pizza_time_title">🍕 Pizza Time</h3>
+                        <p class="info-description" data-i18n-key="pizza_time_content">下午茶時間享用美味 Pizza
+                            和現場製作韓式雞蛋燒，為大腦充電繼續精彩議程。</p>
+                    </div>
+                    <div class="info-card info-card-third">
+                        <h3 class="info-title" data-i18n-key="after_buffet_title">🍽️ After Buffet</h3>
+                        <p class="info-description" data-i18n-key="after_buffet_content">議程結束，Buffet 開始！讓我們一起到「高雄商旅
+                            Urban Café 都會美饌」享用美味的 After Buffet，邊吃邊聊邊交流。<br><br>地點：https://maps.app.goo.gl/y9jiDaV2RFedoLkk7
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 第6層：南臺灣技術社群大聚 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-full">
+                        <h3 class="info-title" data-i18n-key="stw_section_title">南臺灣技術社群大聚</h3>
+                        <p class="info-description" data-i18n-key="stw_section_content">11/23（星期日） 11:00~17:00</p>
+                    </div>
+                </div>
+
+                <!-- 第7層：交流和市集 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="networking_title">⭐ 眾多技術人的聊天交流或 Lightning
+                            Talk</h3>
+                        <p class="info-description" data-i18n-key="networking_content">
+                            在這場活動旨在聚集眾多的技術社群組織者、技術工作者們參與 (包括但不限於：
+                            Mobile、前端、後端、AI、敏捷、系統、DevOps、設計、PM、Marketing Tech
+                            等等)，在這個活動中可以有機會與不同領域的參與者們聊天交流、切磋技術、交流辦活動的想法，必定會有滿滿的收穫。<br><br>如果你有一個小議題或專案想要和所有人分享，這場活動中有一個時段與開放式舞台
+                            (含投影設備) 提供登記閃電講，時間約在 3 - 5 分鐘，可以利用這個機會曝光你的議題或專案分享。</p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="tech_market_title">⭐ 首次引入南臺灣的技術創作市集</h3>
+                        <p class="info-description" data-i18n-key="tech_market_content">
+                            發想自日本的「技術書典」，這是一個專為技術社群打造的創作展示平台。透過實體攤位，創作者可以直接與會眾互動，展示並販售自己的技術創作作品，讓知識與創意在社群中流動。<br><br>報名擺攤：https://forms.gle/ZpXHk8VbA7q9bsWQ9
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 第8層：會議室和食物 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="meeting_room_title">⭐ 主題討論會議室</h3>
+                        <p class="info-description" data-i18n-key="meeting_room_content">
+                            提供了兩個會議室，讓參與者可以自行登記，呼朋引伴在會議室中聊天或分享較長的議題。在與他人進行眾多議題的交流中，很有可能會找到一個聚焦的議題和聽眾，此時非常推薦你立刻登記會議室坐下來和大家進行一個時段的議題深度交流。</p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="food_drinks_title">⭐ 食物、點心、飲料</h3>
+                        <p class="info-description" data-i18n-key="food_drinks_content">
+                            知識的交流可能會需要更多的美好零食來刺激，本次活動提供零食點心等下午茶供參與者自由取用。</p>
+                    </div>
+                </div>
+
+                <!-- 第9層：活動小撇步 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-full">
+                        <h3 class="info-title" data-i18n-key="event_tips_title">活動小撇步</h3>
+                        <p class="info-description" data-i18n-key="event_tips_content">
+                            一些小提示和建議，幫助你更好地享受這次活動。</p>
+                    </div>
+                </div>
+
+                <!-- 第10層：交通和環保 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="transport_title">🚇 離捷運站最近的場地</h3>
+                        <p class="info-description" data-i18n-key="transport_content">
+                            今年我們一樣在交通更便利的「KO-IN 智高點」，距離捷運橘線信義國小站 3 號出口僅需 1
+                            分鐘步程，出站即達！</p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="eco_friendly_title">🥤 請記得自備容器</h3>
+                        <p class="info-description" data-i18n-key="eco_friendly_content">
+                            跟往年一樣，我們定時補充飲品，讓您隨時補充能量！別忘了攜帶您的環保杯，現場不提供一次性容器，一起為地球盡一份心力。</p>
+                    </div>
+                </div>
+
+                <!-- 第11層：行為準則和隱私 -->
+                <div class="info-layer">
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="code_conduct_title">✨ GDG 活動行為準則 (Code of
+                            Conduct)</h3>
+                        <p class="info-description" data-i18n-key="code_conduct_content">所有參與者皆需遵守 GDG
+                            活動行為準則，以確保所有人都能在一個安全友善的環境中學習與交流。<br><br>詳細內容請參閱：https://gdg.tw/code_of_conduct/
+                        </p>
+                    </div>
+                    <div class="info-card info-card-half">
+                        <h3 class="info-title" data-i18n-key="privacy_title">✔️
+                            蒐集個人資料告知事項暨個人資料提供同意聲明</h3>
+                        <p class="info-description" data-i18n-key="privacy_content">我們尊重並保護您的個人隱私<br><br>詳細內容請參閱：https://docs.google.com/document/d/1_rTlfAkLMl5ZfFwxZrNPhwzGQ5xU8g96bXyKZ3siW-4/edit?usp=sharing
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Schedule Section -->
-    <section id="schedule" class="content-section page-section">
+    <section class="content-section page-section" id="schedule">
+        <p data-i18n-key="page_test"></p>
         <h2 data-i18n-key="schedule_title">議程時間表</h2>
 
         <div class="schedule-tabs">
@@ -116,12 +295,12 @@
         </div>
 
         <!-- Day 1 Schedule -->
-        <div id="day1" class="schedule-content active">
+        <div class="schedule-content active" id="day1">
             <div class="timeline">
                 <div class="time-slot">
                     <div class="time">08:30</div>
                     <div class="sessions">
-                        <div class="session single-track break">
+                        <div class="session single-track break" data-break-type="registration">
                             <div class="session-info"><h3 class="session-title" data-i18n-key="d1_t1_title">
                                 開放報到</h3></div>
                         </div>
@@ -143,7 +322,8 @@
                     <div class="sessions multi-track">
                         <div class="session">
                             <div class="session-info"><span class="session-track" data-i18n-key="track1">會場1</span><h4
-                                    class="session-title" data-i18n-key="d1_t4_s1_title">議程1-1</h4></div>
+                                    class="session-title" data-i18n-key="d1_t4_s1_title">建構 AI Agent：結合 Google
+                                Gemini 與 ADK 工具來解放企業生產力</h4></div>
                         </div>
                         <div class="session">
                             <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
@@ -160,14 +340,15 @@
                         </div>
                         <div class="session">
                             <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
-                                    class="session-title" data-i18n-key="d1_t5_s2_title">議程2-2</h4></div>
+                                    class="session-title" data-i18n-key="d1_t5_s2_title">我如何使用 Firebase 打造 AI
+                                機器人咖啡師！</h4></div>
                         </div>
                     </div>
                 </div>
                 <div class="time-slot">
                     <div class="time">12:00 - 13:00</div>
                     <div class="sessions">
-                        <div class="session single-track break">
+                        <div class="session single-track break" data-break-type="lunch">
                             <div class="session-info"><h3 class="session-title" data-i18n-key="d1_t5a_title">
                                 中午休息</h3></div>
                         </div>
@@ -178,7 +359,8 @@
                     <div class="sessions multi-track">
                         <div class="session">
                             <div class="session-info"><span class="session-track" data-i18n-key="track1">會場1</span><h4
-                                    class="session-title" data-i18n-key="d1_t6_s1_title">議程3-1</h4></div>
+                                    class="session-title" data-i18n-key="d1_t6_s1_title">當設計遇到現實世界 —
+                                荔枝到了，但她沒笑</h4></div>
                         </div>
                         <div class="session">
                             <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
@@ -202,8 +384,9 @@
                 <div class="time-slot">
                     <div class="time">15:10 - 15:30</div>
                     <div class="sessions">
-                        <div class="session single-track break">
-                            <div class="session-info"><h3 class="session-title" data-i18n-key="d1_t8_title">Pizza Time & 交流時間</h3></div>
+                        <div class="session single-track break" data-break-type="networking">
+                            <div class="session-info"><h3 class="session-title" data-i18n-key="d1_t8_title">Pizza Time &
+                                交流時間</h3></div>
                         </div>
                     </div>
                 </div>
@@ -229,7 +412,8 @@
                         </div>
                         <div class="session">
                             <div class="session-info"><span class="session-track" data-i18n-key="track2">會場2</span><h4
-                                    class="session-title" data-i18n-key="d1_t10_s2_title">議程6-2</h4></div>
+                                    class="session-title" data-i18n-key="d1_t10_s2_title">建構 AI Agent：結合 Google
+                                Gemini 與 ADK 工具來解放企業生產力</h4></div>
                         </div>
                     </div>
                 </div>
@@ -260,12 +444,12 @@
         </div>
 
         <!-- Day 2 Schedule -->
-        <div id="day2" class="schedule-content">
+        <div class="schedule-content" id="day2">
             <div class="timeline">
                 <div class="time-slot">
                     <div class="time">10:30</div>
                     <div class="sessions">
-                        <div class="session single-track break">
+                        <div class="session single-track break" data-break-type="registration">
                             <div class="session-info"><h3 class="session-title" data-i18n-key="d2_t1_title">
                                 開放報到</h3></div>
                         </div>
@@ -329,52 +513,17 @@
     </section>
 
     <!-- Speakers Section -->
-    <section id="speakers" class="content-section page-section">
+    <section class="content-section page-section" id="speakers">
+        <p data-i18n-key="page_test"></p>
         <h2 data-i18n-key="speakers_title">講者介紹</h2>
         <div class="speakers-grid">
-            <!-- Speaker Card: Simon Liu -->
-            <div class="speaker-card" data-speaker-id="simonliu">
-                <img src="images/SimonLiu.jpg" alt="Photo of Simon Liu" class="speaker-photo">
-                <div class="speaker-info">
-                    <h3 class="speaker-name" data-i18n-key="simonliu_name">劉育維 (Simon Liu)</h3>
-                    <p class="speaker-org" data-i18n-key="simonliu_org">APMIC / Google Developer Expert - AI</p>
-                    <p class="speaker-title" data-i18n-key="simonliu_title">MLOps Engineer</p>
-                    <p class="speaker-topic-category" data-i18n-key="simonliu_topic_category_summary">分類：Gemini AI
-                        的生成式實踐</p>
-                    <div class="speaker-tags summary-tags">
-                        <span>#中文</span>
-                        <span>#ADK</span>
-                        <span>#Gemini</span>
-                        <span>#Agent</span>
-                    </div>
-                </div>
-                <div class="speaker-details">
-                    <div class="speaker-details-content">
-                        <p class="speaker-bio-full" data-i18n-key="simonliu_bio_full">大家好，我是 Simon
-                            劉育維，過去曾擔任過電信業的資深工程師和
-                            在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在
-                            Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。</p>
-                        <div class="session-info-block">
-                            <h4 data-i18n-key="session_info_title">議程資訊</h4>
-                            <p><strong data-i18n-key="session_name_label">名稱：</strong><span
-                                    data-i18n-key="simonliu_topic_name">建構 AI Agent：結合 Google Gemini 與 ADK 工具來解放企業生產力</span>
-                            </p>
-                            <p><strong data-i18n-key="session_abstract_label">簡介：</strong></p>
-                            <div class="session-abstract" data-i18n-key="simonliu_topic_abstract">透過 Google
-                                一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：<br>1.
-                                透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. 透過 Google Firebase Studio
-                                來進行平台建置，並且說明如何進行修改
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- More speaker cards can be added here -->
+            <!-- 動態載入的講者內容會在這裡顯示 -->
+            <!-- Dynamic speaker content will be loaded here -->
         </div>
     </section>
 
     <!-- Tech Creation Market Section -->
-    <section id="tech-creation-market" class="content-section page-section">
+    <section class="content-section page-section" id="tech-creation-market">
         <h2 data-i18n-key="tech_creation_market_title">技術創作市集</h2>
         <div class="tech-creation-market-grid">
             <div class="section-intro">
@@ -396,73 +545,45 @@
                 </p>
             </div>
 
-            <div class="booths-grid" style="margin-top: 2rem;"> <!-- Reusing booths-grid style -->
-                <div class="booth-card"> <!-- Using a div instead of 'a' as there's no link -->
-                    <div class="booth-logo-container">
-                        <img alt="Taiwan Kotlin User Group Logo" class="booth-logo"
-                             src="images/twm-logo-taiwan_kotlin_user_group.png">
-                    </div>
-                    <div class="booth-info">
-                        <h3 class="booth-name" data-i18n-key="tKug_booth_name">Taiwan Kotlin User Group 攤位展示</h3>
-                        <p class="booth-description" data-i18n-key="tKug_booth_desc">Taiwan Kotlin User Group 致力於推廣
-                            Kotlin
-                            語言與生態，無論是後端開發、Android、KMP 還是伺服器框架 Ktor，都能找到實用與有趣的應用。<br><br>我們在技術創作市集準備了
-                            Kotlin 教學材料與開發案例，讓開發者快速上手並體驗 Kotlin 的優雅與高效。歡迎來攤位交流、分享學習經驗，或一起討論如何用
-                            Kotlin 打造更好的軟體產品！</p>
-                        <p class="booth-items" data-i18n-key="tKug_booth_items"><b>預計販售物品：</b>個人技術創作本、個人設計小物。
-                        </p>
-                    </div>
-                </div>
+            <div class="market-grid" style="margin-top: 2rem;">
+                <!-- 動態載入的技術創作市集內容會在這裡顯示 -->
+                <!-- Dynamic tech creation market content will be loaded here -->
             </div>
         </div>
     </section>
 
     <!-- Sponsors Section -->
-    <section id="sponsors" class="content-section page-section">
+    <section class="content-section page-section" id="sponsors">
+        <p data-i18n-key="page_test"></p>
         <h2 data-i18n-key="sponsors_title">贊助夥伴</h2>
         <div class="sponsors-grid">
-            <!-- Sponsor Card: Colosscious -->
-            <a href="https://www.colosscious.com/home" target="_blank" rel="noopener noreferrer" class="sponsor-card">
-                <div class="sponsor-logo-container">
-                    <img src="images/sponsor-logo-colosscious.png" alt="Colosscious Teknology Inc. Logo"
-                         class="sponsor-logo">
-                </div>
-                <div class="sponsor-info">
-                    <h3 class="sponsor-name" data-i18n-key="colosscious_name">嵙思科技股份有限公司</h3>
-                    <p class="sponsor-description" data-i18n-key="colosscious_desc">嵙思專為 #生技製藥 打造智慧化實驗室，讓生成式
-                        AI 作為實驗室的智慧代理人。<br>打造 Lab → QA 無縫數位化，協助生技製藥實驗室提升效率與可靠度</p>
-                    <div class="sponsor-tags">
-                        <span data-i18n-key="sponsor_tag_company">公司贊助</span>
-                    </div>
-                </div>
-            </a>
-            <!-- More sponsor cards can be added here -->
+            <!-- 動態載入的贊助夥伴內容會在這裡顯示 -->
+            <!-- Dynamic sponsor content will be loaded here -->
         </div>
     </section>
 
-    <!-- Booths Section -->
-    <section id="booths" class="content-section page-section">
-        <h2 data-i18n-key="booths_title">社群擺攤</h2>
-        <div class="booths-grid">
-            <!-- Booth Card: GDG Kaohsiung -->
-            <a href="https://www.facebook.com/groups/GDGKaohsiung" target="_blank" rel="noopener noreferrer"
-               class="booth-card">
-                <div class="booth-logo-container">
-                    <img src="images/community-logo-gdg_kaohsiung.png" alt="GDG Kaohsiung Logo" class="booth-logo">
-                </div>
-                <div class="booth-info">
-                    <h3 class="booth-name" data-i18n-key="gdg_kaohsiung_name">GDG Kaohsiung</h3>
-                    <p class="booth-description" data-i18n-key="gdg_kaohsiung_desc">GDG Kaohsiung 全名 Google Developer
-                        Groups Kaohsiung，是以研究 Google 以及 Android App
-                        領域的技術、設計、新創或相關產業為主的開發者社群。</p>
-                </div>
-            </a>
-            <!-- More booth cards can be added here -->
+    <!-- Community Section -->
+    <section class="content-section page-section" id="community">
+        <p data-i18n-key="page_test"></p>
+        <h2 data-i18n-key="community_title">參與社群</h2>
+        <div class="community-grid">
+            <!-- 動態載入的社群內容會在這裡顯示 -->
+            <!-- Dynamic community content will be loaded here -->
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section class="content-section page-section" id="staff">
+        <p data-i18n-key="page_test"></p>
+        <h2 data-i18n-key="staff_title">志工介紹</h2>
+        <div class="staff-grid">
+            <!-- 動態載入的志工內容會在這裡顯示 -->
+            <!-- Dynamic staff content will be loaded here -->
         </div>
     </section>
 
     <!-- Tickets Section -->
-    <section id="tickets" class="content-section page-section">
+    <section class="content-section page-section" id="tickets">
         <h2 data-i18n-key="tickets_title">票種介紹</h2>
 
         <!-- Paid Tickets -->
@@ -473,8 +594,8 @@
                     <p class="ticket-price" data-i18n-key="t_2day_price">TWD $680</p>
                     <p class="ticket-description" data-i18n-key="t_2day_desc">小孩子才做選擇，我 DevFest 高雄場 &
                         南臺灣技術社群大聚全都要參加。</p></div>
-                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
-                   rel="noopener noreferrer" class="ticket-button-link">
+                <a class="ticket-button-link" href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025"
+                   rel="noopener noreferrer" target="_blank">
                     <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
                 </a></div>
             <div class="ticket-card paid">
@@ -482,8 +603,8 @@
                     <p class="ticket-price" data-i18n-key="t_sponsor_price">TWD $4,400</p>
                     <p class="ticket-description" data-i18n-key="t_sponsor_desc">限量四位，獨家贈送客製 Badger 2040
                         電子紙名片顯示器 乙個，還有眾多好禮。</p></div>
-                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
-                   rel="noopener noreferrer" class="ticket-button-link">
+                <a class="ticket-button-link" href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025"
+                   rel="noopener noreferrer" target="_blank">
                     <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
                 </a></div>
             <div class="ticket-card paid">
@@ -491,8 +612,8 @@
                     <p class="ticket-price" data-i18n-key="t_day1_price">TWD $440</p>
                     <p class="ticket-description" data-i18n-key="t_day1_desc">只能參加第一天的 DevFest 2025 高雄場。</p>
                 </div>
-                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
-                   rel="noopener noreferrer" class="ticket-button-link">
+                <a class="ticket-button-link" href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025"
+                   rel="noopener noreferrer" target="_blank">
                     <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
                 </a></div>
             <div class="ticket-card paid">
@@ -500,8 +621,8 @@
                     <p class="ticket-price" data-i18n-key="t_day2_price">TWD $240</p>
                     <p class="ticket-description" data-i18n-key="t_day2_desc">只能參加第二天的南臺灣技術社群大聚。</p>
                 </div>
-                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
-                   rel="noopener noreferrer" class="ticket-button-link">
+                <a class="ticket-button-link" href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025"
+                   rel="noopener noreferrer" target="_blank">
                     <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
                 </a></div>
         </div>
@@ -514,16 +635,16 @@
                     <p class="ticket-price" data-i18n-key="t_dinner_price">TWD $740</p>
                     <p class="ticket-description" data-i18n-key="t_dinner_desc">參加 11/22 星期六晚上的高雄商旅 Urban
                         Café 都會美饌。</p></div>
-                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
-                   rel="noopener noreferrer" class="ticket-button-link">
+                <a class="ticket-button-link" href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025"
+                   rel="noopener noreferrer" target="_blank">
                     <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
                 </a></div>
             <div class="ticket-card paid">
                 <div class="ticket-info"><h3 class="ticket-name" data-i18n-key="t_shirt_name">會眾紀念衣服</h3>
                     <p class="ticket-price" data-i18n-key="t_shirt_price">TWD $340</p>
                     <p class="ticket-description" data-i18n-key="t_shirt_desc">透氣材質。</p></div>
-                <a href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025" target="_blank"
-                   rel="noopener noreferrer" class="ticket-button-link">
+                <a class="ticket-button-link" href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025"
+                   rel="noopener noreferrer" target="_blank">
                     <md-filled-button class="ticket-button" data-i18n-key="ticket_cta">立即報名</md-filled-button>
                 </a></div>
         </div>
@@ -536,8 +657,8 @@
                     <p class="ticket-price" data-i18n-key="t_free_price">$0</p>
                     <p class="ticket-description" data-i18n-key="t_free_badge_desc">必須使用邀請碼購買。我有 GDG
                         高雄社群名牌卡。</p></div>
-                <a href="https://forms.gle/Qey7SN8sDgYFzrNK9" target="_blank" rel="noopener noreferrer"
-                   class="ticket-button-link">
+                <a class="ticket-button-link" href="https://forms.gle/Qey7SN8sDgYFzrNK9" rel="noopener noreferrer"
+                   target="_blank">
                     <md-outlined-button class="ticket-button" data-i18n-key="ticket_apply_cta">填表申請折扣碼
                     </md-outlined-button>
                 </a></div>
@@ -546,8 +667,8 @@
                     <p class="ticket-price" data-i18n-key="t_free_price">$0</p>
                     <p class="ticket-description" data-i18n-key="t_free_speaker_desc">必須使用邀請碼購買。我曾經是 GDG
                         高雄活動的講者。</p></div>
-                <a href="https://forms.gle/Qey7SN8sDgYFzrNK9" target="_blank" rel="noopener noreferrer"
-                   class="ticket-button-link">
+                <a class="ticket-button-link" href="https://forms.gle/Qey7SN8sDgYFzrNK9" rel="noopener noreferrer"
+                   target="_blank">
                     <md-outlined-button class="ticket-button" data-i18n-key="ticket_apply_cta">填表申請折扣碼
                     </md-outlined-button>
                 </a></div>
@@ -556,8 +677,8 @@
                     <p class="ticket-price" data-i18n-key="t_free_price">$0</p>
                     <p class="ticket-description" data-i18n-key="t_free_volunteer_desc">必須使用邀請碼購買。我當過 GDG
                         高雄的志工。</p></div>
-                <a href="https://forms.gle/Qey7SN8sDgYFzrNK9" target="_blank" rel="noopener noreferrer"
-                   class="ticket-button-link">
+                <a class="ticket-button-link" href="https://forms.gle/Qey7SN8sDgYFzrNK9" rel="noopener noreferrer"
+                   target="_blank">
                     <md-outlined-button class="ticket-button" data-i18n-key="ticket_apply_cta">填表申請折扣碼
                     </md-outlined-button>
                 </a></div>
@@ -566,8 +687,8 @@
                     <p class="ticket-price" data-i18n-key="t_free_price">$0</p>
                     <p class="ticket-description" data-i18n-key="t_free_oscv_desc">必須使用邀請碼購買。我有 OSCVPass
                         開源貢獻者快速通關。</p></div>
-                <a href="https://forms.gle/Qey7SN8sDgYFzrNK9" target="_blank" rel="noopener noreferrer"
-                   class="ticket-button-link">
+                <a class="ticket-button-link" href="https://forms.gle/Qey7SN8sDgYFzrNK9" rel="noopener noreferrer"
+                   target="_blank">
                     <md-outlined-button class="ticket-button" data-i18n-key="ticket_apply_cta">填表申請折扣碼
                     </md-outlined-button>
                 </a></div>
@@ -575,53 +696,23 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="content-section page-section">
+    <section class="content-section page-section" id="about">
         <h2 data-i18n-key="about_title">關於我們</h2>
         <div class="about-grid">
-            <!-- About Card: GDG Kaohsiung -->
-            <div class="about-card">
-                <div class="about-logo-container">
-                    <img src="images/about-logo-gdg_kaohsiung.png" alt="GDG Kaohsiung Logo" class="about-logo">
-                </div>
-                <div class="about-info">
-                    <h3 class="about-name" data-i18n-key="about_gdg_name">GDG Kaohsiung</h3>
-                    <p class="about-description" data-i18n-key="about_gdg_desc">GDG Kaohsiung 全名 Google Developer
-                        Groups Kaohsiung，是以研究 Google 以及 Android App 領域的技術、設計、新創或相關產業為主的開發者社群。<br><br>Google
-                        Developer Groups Kaohsiung 前身是 Android 高雄開發者社群，誕生於 2014 年 3 月，我們每年定期舉辦
-                        Build with AI、 Google I/O Extended、DevFest 和 TOOCON 天黑黑月會，希望讓高雄對軟體開發有興趣的朋友能夠有實體交流的機會，歡迎加入
-                        Google Developer Groups Kaohsiung 粉絲專業頁和 GDG Kaohsiung 臉書社團，掌握最新活動資訊。</p>
-                    <a href="https://www.facebook.com/groups/GDGKaohsiung/" target="_blank" rel="noopener noreferrer"
-                       class="about-button-link">
-                        <md-filled-button class="about-button" data-i18n-key="about_cta">前往社群</md-filled-button>
-                    </a>
-                </div>
-            </div>
-            <!-- About Card: Developer Buffet -->
-            <div class="about-card">
-                <div class="about-logo-container">
-                    <img src="images/about-logo-dev_buffet.jpg" alt="Developer Buffet Logo" class="about-logo">
-                </div>
-                <div class="about-info">
-                    <h3 class="about-name" data-i18n-key="about_buffet_name">開發者 Buffet</h3>
-                    <p class="about-description" data-i18n-key="about_buffet_desc">
-                        我們是一群在台灣科技研討會結識的夥伴，自疫情期間，我們所在的城市技術社群與聚會逐漸減少。希望能保持討論和交流的熱度，因此我們決定發起聚會。
-                        在這裏會舉辦各種形式的活動，議題大致上包括但不限於前、後端、UI/UX、ML、軟體開發等，希望大家能在這裡找到並盡情享受自己感興趣的事物，因此取名為【開發者
-                        Buffet】<br><br>。目前有線下活動，【開發者 café】每月的最後一個周二晚上 19:00 - 21:00，在高雄的咖啡廳與最多
-                        10 位左右的開發者們一起輕鬆聊聊天，歡迎任何主題 ☕<br><br>以及我們也有不定期舉辦線上讀書會，你可以在
-                        Discord 找到更多詳細資訊，歡迎加入 🙌</p>
-                    <a href="https://www.facebook.com/groups/buffet.dev/" target="_blank" rel="noopener noreferrer"
-                       class="about-button-link">
-                        <md-filled-button class="about-button" data-i18n-key="about_cta">前往社群</md-filled-button>
-                    </a>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- More content sections will be added here -->
 </main>
 
+<!-- 👁️ 線索4：看不見不代表不存在... -->
+<div data-secret="BEPTKNKPWJ" id="hidden-treasure" style="display: none; visibility: hidden; opacity: 0;">
+    <span class="treasure-code">第一日免費票 4（官網解謎活動）邀請碼：BEPTKNKPWJ</span>
+    <p>你找到了隱藏的寶藏！這是給仔細探索原始碼的聰明探險家的獎勵。</p>
+</div>
+
 <!-- Custom Scripts -->
-<script type="module" src="js/main.js"></script>
+<script src="js/dynamic-content.js" type="module"></script>
+<script src="js/main.js" type="module"></script>
 </body>
 </html>

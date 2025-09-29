@@ -1,0 +1,69 @@
+{
+  "staff": [
+    {
+      "id": "andy",
+      "name": {
+        "zh": "戴維廷 / Andy",
+        "en": "Andy",
+        "ja": "Andy"
+      },
+      "description": {
+        "zh": "GDG 高雄組織者、Android 工程師",
+        "en": "GDG Kaohsiung Organizer, Android Engineer",
+        "ja": "GDG 高雄オーガナイザー、Android エンジニア"
+      },
+      "category": {
+        "zh": "第一天 & 第二天志工",
+        "en": "Day 1 & Day 2 Staff",
+        "ja": "1日目・2日目 日目ボランティア"
+      },
+      "photo": "images/staff-andy.png",
+      "social": {
+        "Homepage": "https://www.andyawd.com.tw/",
+        "Facebook": "https://www.facebook.com/anandydy529/",
+        "Linkedin": "https://www.linkedin.com/in/weiting-dai/",
+        "GitHub": "https://github.com/AndyAWD"
+      }
+    },
+    {
+      "id": "leigh",
+      "name": {
+        "zh": "Leigh",
+        "en": "Leigh",
+        "ja": "Leigh"
+      },
+      "description": {
+        "zh": "喜歡上山也喜歡下海，旅行與寫作。",
+        "en": "Enjoys mountaineering and deep-sea activities, traveling and writing.",
+        "ja": "登山と海、旅行と執筆を好む。"
+      },
+      "category": {
+        "zh": "第一天志工",
+        "en": "Day 1 Staff",
+        "ja": "1 日目ボランティア"
+      },
+      "photo": "images/staff-default-woman.png",
+      "social": {}
+    },
+    {
+      "id": "mac",
+      "name": {
+        "zh": "Mac",
+        "en": "Mac",
+        "ja": "Mac"
+      },
+      "description": {
+        "zh": "Just an Engineer",
+        "en": "Just an Engineer",
+        "ja": "Just an Engineer"
+      },
+      "category": {
+        "zh": "第一天 & 第二天志工",
+        "en": "Day 1 & Day 2 Staff",
+        "ja": "1日目・2日目 日目ボランティア"
+      },
+      "photo": "images/staff-mac.png",
+      "social": {}
+    }
+  ]
+}

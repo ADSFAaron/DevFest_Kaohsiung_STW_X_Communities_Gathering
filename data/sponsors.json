@@ -1,0 +1,28 @@
+{
+  "sponsors": [
+    {
+      "id": "colosscious",
+      "name": {
+        "zh": "嵙思科技股份有限公司",
+        "en": "嵙思科技股份有限公司",
+        "ja": "嵙思科技股份有限公司"
+      },
+      "type": "company",
+      "description": {
+        "zh": "嵙思專為 #生技製藥 打造智慧化實驗室，讓生成式 AI 作為實驗室的智慧代理人。<br><br>打造 Lab → QA 無縫數位化，協助生技製藥實驗室提升效率與可靠度<br><br>實驗室智慧化，LIMS 不只是工具，而是下一代研發的核心競爭力。",
+        "en": "Colosscious specializes in creating smart laboratories for the #Biotech and Pharmaceutical industries, enabling Generative AI to act as the laboratory's intelligent agent.<br><br>We build seamless digital integration from Lab to QA, helping biotech and pharmaceutical laboratories enhance efficiency and reliability.<br><br>With lab intelligence, LIMS (Laboratory Information Management System) is not just a tool, but the core competitiveness for next-generation R&D.",
+        "ja": "Colosscious は、#バイオ・製薬業界 向けに特化したスマートなラボを実現し、生成AI をラボのインテリジェントエージェントとして機能させます。<br><br>ラボから QA までのシームレスなデジタル化を構築し、バイオ・製薬ラボの効率と信頼性の向上を支援します。<br><br>ラボのスマート化において、LIMS (Laboratory Information Management System) は単なるツールではなく、次世代の研究開発における核となる競争力です。"
+      },
+      "category": {
+        "zh": "公司贊助",
+        "en": "Company Sponsorship",
+        "ja": "企業スポンサー"
+      },
+      "logo": "images/sponsor-logo-colosscious.png",
+      "website": "https://www.colosscious.com/home",
+      "social": {
+        "Homepage": "https://www.colosscious.com/home"
+      }
+    }
+  ]
+}
