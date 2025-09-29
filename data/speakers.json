@@ -427,21 +427,21 @@
       },
       "session": {
         "name": {
-          "zh": "Vertex AI 多媒體：用 Veo 3 和 Image 4，與您『1314』共創視覺未來",
-          "en": "Vertex AI Multimedia: Creating the Visual Future with Imagen 4 and Veo 3, Hand-in-Hand ('1314')",
-          "ja": "• What are Imagen and Veo on Vertex AI?<br>• Deep Dive into Imagen 4: Features and Examples<br>• Exploring Veo 3: Powerful Creative Capability<br><br>(Note: '1314' in Chinese internet culture is a homophone for \"一生一世,\" meaning \"for a lifetime/forever,\" implying a long-term co-creation.)"
+          "zh": "【第二屆 AI 生成大賽】Vertex AI 多媒體：用 Veo 3 和 Image 4，與您『1314』共創視覺未來",
+          "en": "【The 2nd AI Generative Contest】Vertex AI Multimedia: Creating the Visual Future with Imagen 4 and Veo 3, Hand-in-Hand ('1314')",
+          "ja": "【第2回 AI 生成コンテスト】Vertex AI マルチメディア：Veo 3 および Imagen 4 と共に『1314』ビジュアルの未来を共創"
         },
         "abstract": {
-          "zh": "。什麼是 Vertex AI 上的 Imagen / Veo？<br>。深入了解 Imagen 4：功能與實例<br>。探索 Veo 3 ：強大的創作力",
-          "en": "Vertex AI マルチメディア：Veo 3 および Imagen 4 と共に『1314』ビジュアルの未来を共創<br><br>",
-          "ja": "• Vertex AI の Imagen / Veo とは何ですか？<br>• Imagen 4 の詳細：機能と実例<br>• Veo 3 の探求：強力な創造力<br><br>(注:『1314』は中国語のネット文化で「一生一世（永遠に）」を意味する発音の語呂合わせであり、長期的な共創を表しています。)"
+          "zh": "<br>。什麼是 Vertex AI 上的 Imagen / Veo？<br>。深入了解 Imagen 4：功能與實例<br>。探索 Veo 3 ：強大的創作力",
+          "en": "<br>• What are Imagen and Veo on Vertex AI?<br>• Deep Dive into Imagen 4: Features and Examples<br>• Exploring Veo 3: Powerful Creative Capability",
+          "ja": "<br>• Vertex AI の Imagen / Veo とは何ですか？<br>• Imagen 4 の詳細：機能と実例<br>• Veo 3 の探求：強力な創造力<br><br>(注:『1314』は中国語のネット文化で「一生一世（永遠に）」を意味する発音の語呂合わせであり、長期的な共創を表しています。)"
         }
       },
       "schedule": {
-        "day": 1,
-        "time": "14:30 - 15:10",
-        "track": "track1",
-        "session_id": "d1_t7_s2_title"
+        "day": 2,
+        "time": "14:30 - 16:00",
+        "track": "track2",
+        "session_id": "d2_t5_s2_title"
       },
       "tags": [
         "中文議程",
