@@ -20,6 +20,8 @@ class DynamicContentManager {
             this.currentLanguage = 'en';
         } else if (lang === 'ja') {
             this.currentLanguage = 'ja';
+        } else if (lang === 'zh-Hant' || lang === 'zh') {
+            this.currentLanguage = 'zh';
         } else {
             this.currentLanguage = 'zh';
         }
@@ -399,7 +401,30 @@ class DynamicContentManager {
     onLanguageChange(lang) {
         this.setLanguage(lang);
         this.renderAllContent();
+        // 清理現有的議程增強內容，然後重新增強
+        this.clearScheduleEnhancements();
         this.enhanceScheduleWithSpeakers();
+    }
+
+    // 清理議程增強內容
+    clearScheduleEnhancements() {
+        // 移除所有動態添加的講者資訊和標籤
+        const speakerInfos = document.querySelectorAll('.speaker-info-inline');
+        const sessionTags = document.querySelectorAll('.session-tags-container');
+        const expandableContents = document.querySelectorAll('.session-expandable');
+
+        speakerInfos.forEach(el => el.remove());
+        sessionTags.forEach(el => el.remove());
+        expandableContents.forEach(el => el.remove());
+
+        // 重置議程標題的點擊事件和樣式
+        const sessionTitles = document.querySelectorAll('.session-title.clickable');
+        sessionTitles.forEach(titleEl => {
+            titleEl.classList.remove('clickable');
+            // 移除事件監聽器（通過克隆元素）
+            const newTitleEl = titleEl.cloneNode(true);
+            titleEl.parentNode.replaceChild(newTitleEl, titleEl);
+        });
     }
 
     // 增強議程頁面，加入講者資訊
