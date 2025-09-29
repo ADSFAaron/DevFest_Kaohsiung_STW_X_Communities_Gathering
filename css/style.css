@@ -2359,6 +2359,9 @@ html.page-switching {
 
 .speaker-avatar {
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    align-self: center;
 }
 
 .speaker-photo-small {
@@ -2368,18 +2371,25 @@ html.page-switching {
     object-fit: cover;
     border: 2px solid white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0;
+    vertical-align: middle;
 }
 
 .speaker-details-inline {
     flex-grow: 1;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .speaker-name-small {
     font-size: 14px;
     font-weight: 500;
     color: var(--color-dark-gray);
-    margin-bottom: 2px;
+    margin: 0 0 2px 0;
+    line-height: 1.2;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2388,6 +2398,8 @@ html.page-switching {
 .speaker-org-small {
     font-size: 12px;
     color: #5f6368;
+    margin: 0;
+    line-height: 1.2;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
