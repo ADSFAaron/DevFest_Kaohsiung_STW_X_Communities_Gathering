@@ -400,20 +400,12 @@
 
                 <div class="form-group">
                     <label>演講主題分類</label>
-                    <div class="lang-tabs">
-                        <div class="lang-tab active" onclick="switchLang('speaker-topic', 'zh')">中文</div>
-                        <div class="lang-tab" onclick="switchLang('speaker-topic', 'en')">English</div>
-                        <div class="lang-tab" onclick="switchLang('speaker-topic', 'ja')">日本語</div>
-                    </div>
-                    <div class="lang-content active" data-lang="zh">
-                        <input id="speaker-topic-zh" placeholder="議程分類：例如 Google Cloud 的雲端實踐" type="text">
-                    </div>
-                    <div class="lang-content" data-lang="en">
-                        <input id="speaker-topic-en" placeholder="Category: e.g., Google Cloud in Practice" type="text">
-                    </div>
-                    <div class="lang-content" data-lang="ja">
-                        <input id="speaker-topic-ja" placeholder="カテゴリ：例、Google Cloud のクラウド実践" type="text">
-                    </div>
+                    <select id="speaker-topic-category">
+                        <option value="">請選擇演講主題分類</option>
+                        <option value="gemini_ai">Gemini AI 的生成式實踐 / Gemini AI in Practice</option>
+                        <option value="google_cloud">Google Cloud 的雲端實踐 / Google Cloud in Practice</option>
+                        <option value="tech_for_good">科技向善的實踐之路 / Goodness in Practice</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
@@ -493,7 +485,28 @@
 
                 <div class="form-group">
                     <label>Session ID</label>
-                    <input id="speaker-session-id" placeholder="例如：d1_t4_s1_title" type="text">
+                    <select id="speaker-session-id">
+                        <option value="">請選擇 Session ID</option>
+                        <optgroup label="第一天 - Track 1">
+                            <option value="d1_t4_s1_title">d1_t4_s1_title (10:00-10:40, Track 1)</option>
+                            <option value="d1_t5_s1_title">d1_t5_s1_title (11:00-11:40, Track 1)</option>
+                            <option value="d1_t6_s1_title">d1_t6_s1_title (13:30-14:10, Track 1)</option>
+                            <option value="d1_t7_s1_title">d1_t7_s1_title (14:20-15:00, Track 1)</option>
+                            <option value="d1_t9_s1_title">d1_t9_s1_title (15:20-16:00, Track 1)</option>
+                        </optgroup>
+                        <optgroup label="第一天 - Track 2">
+                            <option value="d1_t4_s2_title">d1_t4_s2_title (10:00-10:40, Track 2)</option>
+                            <option value="d1_t5_s2_title">d1_t5_s2_title (11:00-11:40, Track 2)</option>
+                            <option value="d1_t6_s2_title">d1_t6_s2_title (13:30-14:10, Track 2)</option>
+                            <option value="d1_t7_s2_title">d1_t7_s2_title (14:20-15:00, Track 2)</option>
+                            <option value="d1_t9_s2_title">d1_t9_s2_title (15:20-16:00, Track 2)</option>
+                        </optgroup>
+                        <optgroup label="第二天">
+                            <option value="d2_t3_s1_title">d2_t3_s1_title (交流活動)</option>
+                            <option value="d2_t4_s2_title">d2_t4_s2_title (第二屆 AI 生成大賽 1)</option>
+                            <option value="d2_t5_s2_title">d2_t5_s2_title (第二屆 AI 生成大賽 2)</option>
+                        </optgroup>
+                    </select>
                 </div>
 
                 <div class="form-group">
@@ -539,7 +552,513 @@
             </div>
         </div>
 
-        <!-- 其他 section 的內容會在這裡添加 -->
+        <!-- Sponsors Section -->
+        <div class="section" id="sponsors">
+            <h2>💼 贊助商管理</h2>
+            <div id="sponsor-form">
+                <div class="form-group">
+                    <label>贊助商 ID (英文，用於系統識別)</label>
+                    <input id="sponsor-id" placeholder="例如：google_taiwan" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>名稱</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('sponsor-name', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('sponsor-name', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('sponsor-name', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <input id="sponsor-name-zh" placeholder="贊助商中文名稱" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <input id="sponsor-name-en" placeholder="Sponsor English Name" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <input id="sponsor-name-ja" placeholder="スポンサー日本語名" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>類型</label>
+                    <select id="sponsor-type">
+                        <option value="company">公司</option>
+                        <option value="community">社群</option>
+                        <option value="organization">組織</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>贊助等級</label>
+                    <select id="sponsor-tier">
+                        <option value="gold">金級贊助</option>
+                        <option value="silver">銀級贊助</option>
+                        <option value="bronze">銅級贊助</option>
+                        <option value="community">社群支持</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>描述</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('sponsor-desc', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('sponsor-desc', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('sponsor-desc', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <textarea id="sponsor-desc-zh" placeholder="請輸入中文描述"></textarea>
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <textarea id="sponsor-desc-en" placeholder="Please enter English description"></textarea>
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <textarea id="sponsor-desc-ja" placeholder="日本語の説明を入力してください"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>分類</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('sponsor-category', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('sponsor-category', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('sponsor-category', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <input id="sponsor-category-zh" placeholder="分類" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <input id="sponsor-category-en" placeholder="Category" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <input id="sponsor-category-ja" placeholder="カテゴリ" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Logo 檔案路徑</label>
+                    <input id="sponsor-logo" placeholder="例如：images/sponsor-logo-company.png" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>官網</label>
+                    <input id="sponsor-website" placeholder="公司官網 URL" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>社群連結</label>
+                    <div class="social-inputs">
+                        <input id="sponsor-homepage" placeholder="Homepage URL" type="text">
+                        <input id="sponsor-linkedin" placeholder="LinkedIn URL" type="text">
+                        <input id="sponsor-facebook" placeholder="Facebook URL" type="text">
+                        <input id="sponsor-twitter" placeholder="Twitter URL" type="text">
+                        <input id="sponsor-github" placeholder="GitHub URL" type="text">
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <button class="btn" onclick="addSponsor()">➕ 新增贊助商</button>
+                    <button class="btn btn-secondary" onclick="clearSponsorForm()">🗑️ 清空表單</button>
+                    <button class="btn btn-success" onclick="generateSponsorsJSON()">📄 產生 JSON</button>
+                    <button class="btn btn-secondary" onclick="loadSponsorsFile()">📁 載入現有檔案</button>
+                </div>
+            </div>
+
+            <div class="items-list">
+                <h3>📋 目前贊助商列表</h3>
+                <div id="sponsors-list"></div>
+            </div>
+
+            <div class="output-section">
+                <h3>📄 JSON 輸出</h3>
+                <pre id="sponsors-output">JSON 將在這裡顯示...</pre>
+                <button class="btn" onclick="copySponsorsJSON()">📋 複製 JSON</button>
+                <button class="btn btn-success" onclick="downloadSponsorsJSON()">💾 下載檔案</button>
+            </div>
+        </div>
+
+        <!-- Community Section -->
+        <div class="section" id="community">
+            <h2>🌐 社群管理</h2>
+            <div id="community-form">
+                <div class="form-group">
+                    <label>社群 ID (英文，用於系統識別)</label>
+                    <input id="community-id" placeholder="例如：gdg_kaohsiung" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>名稱</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('community-name', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('community-name', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('community-name', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <input id="community-name-zh" placeholder="社群中文名稱" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <input id="community-name-en" placeholder="Community English Name" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <input id="community-name-ja" placeholder="コミュニティ日本語名" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>描述</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('community-desc', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('community-desc', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('community-desc', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <textarea id="community-desc-zh" placeholder="請輸入中文描述"></textarea>
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <textarea id="community-desc-en" placeholder="Please enter English description"></textarea>
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <textarea id="community-desc-ja" placeholder="日本語の説明を入力してください"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>分類</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('community-category', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('community-category', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('community-category', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <input id="community-category-zh" placeholder="分類" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <input id="community-category-en" placeholder="Category" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <input id="community-category-ja" placeholder="カテゴリ" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Logo 檔案路徑</label>
+                    <input id="community-logo" placeholder="例如：images/community-logo-group.png" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>官網</label>
+                    <input id="community-website" placeholder="社群官網 URL" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>社群連結</label>
+                    <div class="social-inputs">
+                        <input id="community-homepage" placeholder="Homepage URL" type="text">
+                        <input id="community-facebook" placeholder="Facebook URL" type="text">
+                        <input id="community-discord" placeholder="Discord URL" type="text">
+                        <input id="community-telegram" placeholder="Telegram URL" type="text">
+                        <input id="community-linktree" placeholder="Linktree URL" type="text">
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <button class="btn" onclick="addCommunity()">➕ 新增社群</button>
+                    <button class="btn btn-secondary" onclick="clearCommunityForm()">🗑️ 清空表單</button>
+                    <button class="btn btn-success" onclick="generateCommunityJSON()">📄 產生 JSON</button>
+                    <button class="btn btn-secondary" onclick="loadCommunityFile()">📁 載入現有檔案</button>
+                </div>
+            </div>
+
+            <div class="items-list">
+                <h3>📋 目前社群列表</h3>
+                <div id="community-list"></div>
+            </div>
+
+            <div class="output-section">
+                <h3>📄 JSON 輸出</h3>
+                <pre id="community-output">JSON 將在這裡顯示...</pre>
+                <button class="btn" onclick="copyCommunityJSON()">📋 複製 JSON</button>
+                <button class="btn btn-success" onclick="downloadCommunityJSON()">💾 下載檔案</button>
+            </div>
+        </div>
+
+        <!-- Markets Section -->
+        <div class="section" id="markets">
+            <h2>🛒 市集管理</h2>
+            <div id="market-form">
+                <div class="form-group">
+                    <label>攤位 ID (英文，用於系統識別)</label>
+                    <input id="market-id" placeholder="例如：kotlin_booth" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>攤位名稱</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('market-name', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('market-name', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('market-name', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <input id="market-name-zh" placeholder="攤位中文名稱" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <input id="market-name-en" placeholder="Booth English Name" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <input id="market-name-ja" placeholder="ブース日本語名" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>攤位描述</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('market-desc', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('market-desc', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('market-desc', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <textarea id="market-desc-zh" placeholder="請輸入攤位描述，可包含販售物品等資訊"></textarea>
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <textarea id="market-desc-en"
+                                  placeholder="Please enter booth description and items for sale"></textarea>
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <textarea id="market-desc-ja"
+                                  placeholder="ブースの説明と販売アイテムを入力してください"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Logo 檔案路徑</label>
+                    <input id="market-logo" placeholder="例如：images/market-logo-booth.png" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>官網</label>
+                    <input id="market-website" placeholder="攤位相關網站 URL" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>社群連結</label>
+                    <div class="social-inputs">
+                        <input id="market-homepage" placeholder="Homepage URL" type="text">
+                        <input id="market-facebook" placeholder="Facebook URL" type="text">
+                        <input id="market-instagram" placeholder="Instagram URL" type="text">
+                        <input id="market-twitter" placeholder="Twitter URL" type="text">
+                        <input id="market-github" placeholder="GitHub URL" type="text">
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <button class="btn" onclick="addMarket()">➕ 新增攤位</button>
+                    <button class="btn btn-secondary" onclick="clearMarketForm()">🗑️ 清空表單</button>
+                    <button class="btn btn-success" onclick="generateMarketsJSON()">📄 產生 JSON</button>
+                    <button class="btn btn-secondary" onclick="loadMarketsFile()">📁 載入現有檔案</button>
+                </div>
+            </div>
+
+            <div class="items-list">
+                <h3>📋 目前攤位列表</h3>
+                <div id="markets-list"></div>
+            </div>
+
+            <div class="output-section">
+                <h3>📄 JSON 輸出</h3>
+                <pre id="markets-output">JSON 將在這裡顯示...</pre>
+                <button class="btn" onclick="copyMarketsJSON()">📋 複製 JSON</button>
+                <button class="btn btn-success" onclick="downloadMarketsJSON()">💾 下載檔案</button>
+            </div>
+        </div>
+
+        <!-- Staff Section -->
+        <div class="section" id="staff">
+            <h2>👥 工作人員管理</h2>
+            <div id="staff-form">
+                <div class="form-group">
+                    <label>工作人員 ID (英文，用於系統識別)</label>
+                    <input id="staff-id" placeholder="例如：volunteer_john" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>姓名</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('staff-name', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('staff-name', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('staff-name', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <input id="staff-name-zh" placeholder="中文姓名" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <input id="staff-name-en" placeholder="English Name" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <input id="staff-name-ja" placeholder="日本語名前" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>工作描述</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('staff-desc', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('staff-desc', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('staff-desc', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <textarea id="staff-desc-zh" placeholder="請輸入工作職責描述"></textarea>
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <textarea id="staff-desc-en" placeholder="Please enter job responsibilities"></textarea>
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <textarea id="staff-desc-ja" placeholder="職責の説明を入力してください"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>職位分類</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('staff-category', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('staff-category', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('staff-category', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <input id="staff-category-zh" placeholder="例如：活動志工、技術支援" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <input id="staff-category-en" placeholder="e.g., Event Volunteer, Technical Support"
+                               type="text">
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <input id="staff-category-ja" placeholder="例：イベントボランティア、技術サポート" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>照片檔案路徑</label>
+                    <input id="staff-photo" placeholder="例如：images/staff-volunteer.png" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>社群連結</label>
+                    <div class="social-inputs">
+                        <input id="staff-homepage" placeholder="Homepage URL" type="text">
+                        <input id="staff-linkedin" placeholder="LinkedIn URL" type="text">
+                        <input id="staff-github" placeholder="GitHub URL" type="text">
+                        <input id="staff-linktree" placeholder="Linktree URL" type="text">
+                        <input id="staff-twitter" placeholder="Twitter URL" type="text">
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <button class="btn" onclick="addStaff()">➕ 新增工作人員</button>
+                    <button class="btn btn-secondary" onclick="clearStaffForm()">🗑️ 清空表單</button>
+                    <button class="btn btn-success" onclick="generateStaffJSON()">📄 產生 JSON</button>
+                    <button class="btn btn-secondary" onclick="loadStaffFile()">📁 載入現有檔案</button>
+                </div>
+            </div>
+
+            <div class="items-list">
+                <h3>📋 目前工作人員列表</h3>
+                <div id="staff-list"></div>
+            </div>
+
+            <div class="output-section">
+                <h3>📄 JSON 輸出</h3>
+                <pre id="staff-output">JSON 將在這裡顯示...</pre>
+                <button class="btn" onclick="copyStaffJSON()">📋 複製 JSON</button>
+                <button class="btn btn-success" onclick="downloadStaffJSON()">💾 下載檔案</button>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section" id="about">
+            <h2>📋 關於我們管理</h2>
+            <div id="about-form">
+                <div class="form-group">
+                    <label>組織 ID (英文，用於系統識別)</label>
+                    <input id="about-id" placeholder="例如：gdg_kaohsiung" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>組織名稱</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('about-name', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('about-name', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('about-name', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <input id="about-name-zh" placeholder="組織中文名稱" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <input id="about-name-en" placeholder="Organization English Name" type="text">
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <input id="about-name-ja" placeholder="組織日本語名" type="text">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>組織介紹</label>
+                    <div class="lang-tabs">
+                        <div class="lang-tab active" onclick="switchLang('about-desc', 'zh')">中文</div>
+                        <div class="lang-tab" onclick="switchLang('about-desc', 'en')">English</div>
+                        <div class="lang-tab" onclick="switchLang('about-desc', 'ja')">日本語</div>
+                    </div>
+                    <div class="lang-content active" data-lang="zh">
+                        <textarea id="about-desc-zh" placeholder="請輸入組織詳細介紹"></textarea>
+                    </div>
+                    <div class="lang-content" data-lang="en">
+                        <textarea id="about-desc-en"
+                                  placeholder="Please enter detailed organization description"></textarea>
+                    </div>
+                    <div class="lang-content" data-lang="ja">
+                        <textarea id="about-desc-ja" placeholder="組織の詳細説明を入力してください"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Logo 檔案路徑</label>
+                    <input id="about-logo" placeholder="例如：images/about-logo-organization.png" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>官網</label>
+                    <input id="about-website" placeholder="組織官網 URL" type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>社群連結</label>
+                    <div class="social-inputs">
+                        <input id="about-gdg" placeholder="GDG Community URL" type="text">
+                        <input id="about-facebook-group" placeholder="Facebook 社團 URL" type="text">
+                        <input id="about-facebook-page" placeholder="Facebook 粉專 URL" type="text">
+                        <input id="about-linkedin" placeholder="LinkedIn URL" type="text">
+                        <input id="about-discord" placeholder="Discord URL" type="text">
+                        <input id="about-telegram" placeholder="Telegram URL" type="text">
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <button class="btn" onclick="addAbout()">➕ 新增組織</button>
+                    <button class="btn btn-secondary" onclick="clearAboutForm()">🗑️ 清空表單</button>
+                    <button class="btn btn-success" onclick="generateAboutJSON()">📄 產生 JSON</button>
+                    <button class="btn btn-secondary" onclick="loadAboutFile()">📁 載入現有檔案</button>
+                </div>
+            </div>
+
+            <div class="items-list">
+                <h3>📋 目前組織列表</h3>
+                <div id="about-list"></div>
+            </div>
+
+            <div class="output-section">
+                <h3>📄 JSON 輸出</h3>
+                <pre id="about-output">JSON 將在這裡顯示...</pre>
+                <button class="btn" onclick="copyAboutJSON()">📋 複製 JSON</button>
+                <button class="btn btn-success" onclick="downloadAboutJSON()">💾 下載檔案</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -582,6 +1101,25 @@
         inputs.forEach(input => input.value = '');
     }
 
+    // 主題分類對應表
+    const topicCategories = {
+        'gemini_ai': {
+            zh: '議程分類：Gemini AI 的生成式實踐',
+            en: 'Category: Gemini AI in Practice',
+            ja: 'カテゴリ：Gemini AI の生成AI実践'
+        },
+        'google_cloud': {
+            zh: '議程分類：Google Cloud 的雲端實踐',
+            en: 'Category: Google Cloud in Practice',
+            ja: 'カテゴリ：Google Cloud のクラウド実践'
+        },
+        'tech_for_good': {
+            zh: '議程分類：科技向善的實踐之路',
+            en: 'Category: Goodness in Practice',
+            ja: 'カテゴリ：テクノロジーで社会貢献を実現する道'
+        }
+    };
+
     // 添加講者
     function addSpeaker() {
         const id = document.getElementById('speaker-id').value.trim();
@@ -593,6 +1131,24 @@
         // 檢查 ID 是否重複
         if (speakers.find(s => s.id === id)) {
             alert('講者 ID 已存在，請使用不同的 ID');
+            return;
+        }
+
+        const selectedCategory = document.getElementById('speaker-topic-category').value;
+        if (!selectedCategory) {
+            alert('請選擇演講主題分類');
+            return;
+        }
+
+        const sessionId = document.getElementById('speaker-session-id').value;
+        if (!sessionId) {
+            alert('請選擇 Session ID');
+            return;
+        }
+
+        // 檢查 Session ID 是否重複
+        if (speakers.find(s => s.schedule.session_id === sessionId)) {
+            alert('此 Session ID 已被使用，請選擇其他時段');
             return;
         }
 
@@ -613,11 +1169,7 @@
                 en: document.getElementById('speaker-title-en').value.trim(),
                 ja: document.getElementById('speaker-title-ja').value.trim()
             },
-            topic_category: {
-                zh: document.getElementById('speaker-topic-zh').value.trim(),
-                en: document.getElementById('speaker-topic-en').value.trim(),
-                ja: document.getElementById('speaker-topic-ja').value.trim()
-            },
+            topic_category: topicCategories[selectedCategory],
             bio: {
                 zh: document.getElementById('speaker-bio-zh').value.trim(),
                 en: document.getElementById('speaker-bio-en').value.trim(),
@@ -639,7 +1191,7 @@
                 day: parseInt(document.getElementById('speaker-day').value),
                 time: document.getElementById('speaker-time').value.trim(),
                 track: document.getElementById('speaker-track').value,
-                session_id: document.getElementById('speaker-session-id').value.trim()
+                session_id: sessionId
             },
             tags: document.getElementById('speaker-tags').value.split(',').map(tag => tag.trim()).filter(tag => tag),
             photo: document.getElementById('speaker-photo').value.trim(),
@@ -692,6 +1244,8 @@
                     <div style="color: #666; margin: 5px 0;">${speaker.org.zh || speaker.org.en}</div>
                     <div style="color: #666; margin: 5px 0;">📅 第${speaker.schedule.day}天 ${speaker.schedule.time}</div>
                     <div style="color: #666; margin: 5px 0;">🎯 ${speaker.session.name.zh || speaker.session.name.en}</div>
+                    <div style="color: #666; margin: 5px 0;">📂 ${speaker.topic_category.zh || speaker.topic_category.en}</div>
+                    <div style="color: #666; margin: 5px 0;">🔖 ${speaker.schedule.session_id}</div>
                     <div class="item-actions">
                         <button class="btn btn-secondary" onclick="editSpeaker(${index})">✏️ 編輯</button>
                         <button class="btn btn-danger" onclick="deleteSpeaker(${index})">🗑️ 刪除</button>
@@ -711,6 +1265,16 @@
         }
     }
 
+    // 根據主題分類內容找到對應的選項值
+    function findCategoryKey(topicCategory) {
+        for (const [key, value] of Object.entries(topicCategories)) {
+            if (value.zh === topicCategory.zh || value.en === topicCategory.en || value.ja === topicCategory.ja) {
+                return key;
+            }
+        }
+        return '';
+    }
+
     // 編輯講者
     function editSpeaker(index) {
         const speaker = speakers[index];
@@ -726,9 +1290,7 @@
         document.getElementById('speaker-title-zh').value = speaker.title.zh || '';
         document.getElementById('speaker-title-en').value = speaker.title.en || '';
         document.getElementById('speaker-title-ja').value = speaker.title.ja || '';
-        document.getElementById('speaker-topic-zh').value = speaker.topic_category.zh || '';
-        document.getElementById('speaker-topic-en').value = speaker.topic_category.en || '';
-        document.getElementById('speaker-topic-ja').value = speaker.topic_category.ja || '';
+        document.getElementById('speaker-topic-category').value = findCategoryKey(speaker.topic_category);
         document.getElementById('speaker-bio-zh').value = speaker.bio.zh || '';
         document.getElementById('speaker-bio-en').value = speaker.bio.en || '';
         document.getElementById('speaker-bio-ja').value = speaker.bio.ja || '';
@@ -844,10 +1406,926 @@
         }, 5000);
     }
 
+    // ===========================================
+    // SPONSORS 贊助商管理功能
+    // ===========================================
+
+    function clearSponsorForm() {
+        const inputs = document.querySelectorAll('#sponsor-form input, #sponsor-form textarea, #sponsor-form select');
+        inputs.forEach(input => input.value = '');
+    }
+
+    function addSponsor() {
+        const id = document.getElementById('sponsor-id').value.trim();
+        if (!id) {
+            alert('請輸入贊助商 ID');
+            return;
+        }
+
+        if (sponsors.find(s => s.id === id)) {
+            alert('贊助商 ID 已存在，請使用不同的 ID');
+            return;
+        }
+
+        const sponsor = {
+            id: id,
+            name: {
+                zh: document.getElementById('sponsor-name-zh').value.trim(),
+                en: document.getElementById('sponsor-name-en').value.trim(),
+                ja: document.getElementById('sponsor-name-ja').value.trim()
+            },
+            type: document.getElementById('sponsor-type').value,
+            tier: document.getElementById('sponsor-tier').value,
+            description: {
+                zh: document.getElementById('sponsor-desc-zh').value.trim(),
+                en: document.getElementById('sponsor-desc-en').value.trim(),
+                ja: document.getElementById('sponsor-desc-ja').value.trim()
+            },
+            category: {
+                zh: document.getElementById('sponsor-category-zh').value.trim(),
+                en: document.getElementById('sponsor-category-en').value.trim(),
+                ja: document.getElementById('sponsor-category-ja').value.trim()
+            },
+            logo: document.getElementById('sponsor-logo').value.trim(),
+            website: document.getElementById('sponsor-website').value.trim(),
+            social: {}
+        };
+
+        const socialLinks = {
+            'Homepage': 'sponsor-homepage',
+            'Linkedin': 'sponsor-linkedin',
+            'Facebook': 'sponsor-facebook',
+            'Twitter': 'sponsor-twitter',
+            'GitHub': 'sponsor-github'
+        };
+
+        Object.keys(socialLinks).forEach(key => {
+            const value = document.getElementById(socialLinks[key]).value.trim();
+            if (value) {
+                sponsor.social[key] = value;
+            }
+        });
+
+        sponsors.push(sponsor);
+        updateSponsorsList();
+        generateSponsorsJSON();
+        clearSponsorForm();
+        showAlert('success', `贊助商 "${sponsor.name.zh || sponsor.name.en}" 已成功添加！`);
+    }
+
+    function updateSponsorsList() {
+        const listElement = document.getElementById('sponsors-list');
+        listElement.innerHTML = '';
+
+        if (sponsors.length === 0) {
+            listElement.innerHTML = '<p style="text-align: center; color: #666; padding: 20px;">目前沒有贊助商資料</p>';
+            return;
+        }
+
+        sponsors.forEach((sponsor, index) => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'item-card';
+            itemDiv.innerHTML = `
+                <div class="item-header">
+                    <span class="item-id">${sponsor.id}</span>
+                </div>
+                <div class="item-name"><strong>${sponsor.name.zh || sponsor.name.en}</strong></div>
+                <div style="color: #666; margin: 5px 0;">🏢 ${sponsor.type} - ${sponsor.tier}</div>
+                <div class="item-actions">
+                    <button class="btn btn-secondary" onclick="editSponsor(${index})">✏️ 編輯</button>
+                    <button class="btn btn-danger" onclick="deleteSponsor(${index})">🗑️ 刪除</button>
+                </div>
+            `;
+            listElement.appendChild(itemDiv);
+        });
+    }
+
+    function deleteSponsor(index) {
+        if (confirm(`確定要刪除贊助商 "${sponsors[index].name.zh || sponsors[index].name.en}" 嗎？`)) {
+            sponsors.splice(index, 1);
+            updateSponsorsList();
+            generateSponsorsJSON();
+            showAlert('success', '贊助商已成功刪除！');
+        }
+    }
+
+    function editSponsor(index) {
+        const sponsor = sponsors[index];
+        document.getElementById('sponsor-id').value = sponsor.id;
+        document.getElementById('sponsor-name-zh').value = sponsor.name.zh || '';
+        document.getElementById('sponsor-name-en').value = sponsor.name.en || '';
+        document.getElementById('sponsor-name-ja').value = sponsor.name.ja || '';
+        document.getElementById('sponsor-type').value = sponsor.type || 'company';
+        document.getElementById('sponsor-tier').value = sponsor.tier || 'bronze';
+        document.getElementById('sponsor-desc-zh').value = sponsor.description.zh || '';
+        document.getElementById('sponsor-desc-en').value = sponsor.description.en || '';
+        document.getElementById('sponsor-desc-ja').value = sponsor.description.ja || '';
+        document.getElementById('sponsor-category-zh').value = sponsor.category.zh || '';
+        document.getElementById('sponsor-category-en').value = sponsor.category.en || '';
+        document.getElementById('sponsor-category-ja').value = sponsor.category.ja || '';
+        document.getElementById('sponsor-logo').value = sponsor.logo || '';
+        document.getElementById('sponsor-website').value = sponsor.website || '';
+
+        document.getElementById('sponsor-homepage').value = sponsor.social.Homepage || '';
+        document.getElementById('sponsor-linkedin').value = sponsor.social.Linkedin || '';
+        document.getElementById('sponsor-facebook').value = sponsor.social.Facebook || '';
+        document.getElementById('sponsor-twitter').value = sponsor.social.Twitter || '';
+        document.getElementById('sponsor-github').value = sponsor.social.GitHub || '';
+
+        sponsors.splice(index, 1);
+        updateSponsorsList();
+        generateSponsorsJSON();
+        window.scrollTo(0, 0);
+        showAlert('success', '贊助商資料已載入表單，請修改後重新添加');
+    }
+
+    function generateSponsorsJSON() {
+        const output = {sponsors: sponsors};
+        document.getElementById('sponsors-output').textContent = JSON.stringify(output, null, 2);
+    }
+
+    function copySponsorsJSON() {
+        const jsonText = document.getElementById('sponsors-output').textContent;
+        navigator.clipboard.writeText(jsonText).then(() => {
+            showAlert('success', 'JSON 已複製到剪貼簿！');
+        });
+    }
+
+    function downloadSponsorsJSON() {
+        const jsonText = document.getElementById('sponsors-output').textContent;
+        const blob = new Blob([jsonText], {type: 'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'sponsors.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showAlert('success', 'sponsors.json 檔案已下載！');
+    }
+
+    function loadSponsorsFile() {
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json';
+        input.onchange = function (e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    if (data.sponsors && Array.isArray(data.sponsors)) {
+                        sponsors = data.sponsors;
+                        updateSponsorsList();
+                        generateSponsorsJSON();
+                        showAlert('success', `已載入 ${sponsors.length} 個贊助商資料！`);
+                    } else {
+                        showAlert('error', '檔案格式不正確，請確認是有效的 sponsors.json 檔案');
+                    }
+                } catch (error) {
+                    showAlert('error', '無法解析 JSON 檔案，請確認檔案格式是否正確');
+                }
+            };
+            reader.readAsText(file);
+        };
+        input.click();
+    }
+
+    // ===========================================
+    // COMMUNITY 社群管理功能
+    // ===========================================
+
+    function clearCommunityForm() {
+        const inputs = document.querySelectorAll('#community-form input, #community-form textarea');
+        inputs.forEach(input => input.value = '');
+    }
+
+    function addCommunity() {
+        const id = document.getElementById('community-id').value.trim();
+        if (!id) {
+            alert('請輸入社群 ID');
+            return;
+        }
+
+        if (communities.find(c => c.id === id)) {
+            alert('社群 ID 已存在，請使用不同的 ID');
+            return;
+        }
+
+        const community = {
+            id: id,
+            name: {
+                zh: document.getElementById('community-name-zh').value.trim(),
+                en: document.getElementById('community-name-en').value.trim(),
+                ja: document.getElementById('community-name-ja').value.trim()
+            },
+            description: {
+                zh: document.getElementById('community-desc-zh').value.trim(),
+                en: document.getElementById('community-desc-en').value.trim(),
+                ja: document.getElementById('community-desc-ja').value.trim()
+            },
+            category: {
+                zh: document.getElementById('community-category-zh').value.trim(),
+                en: document.getElementById('community-category-en').value.trim(),
+                ja: document.getElementById('community-category-ja').value.trim()
+            },
+            logo: document.getElementById('community-logo').value.trim(),
+            website: document.getElementById('community-website').value.trim(),
+            social: {}
+        };
+
+        const socialLinks = {
+            'Homepage': 'community-homepage',
+            'Facebook': 'community-facebook',
+            'Discord': 'community-discord',
+            'Telegram': 'community-telegram',
+            'Linktree': 'community-linktree'
+        };
+
+        Object.keys(socialLinks).forEach(key => {
+            const value = document.getElementById(socialLinks[key]).value.trim();
+            if (value) {
+                community.social[key] = value;
+            }
+        });
+
+        communities.push(community);
+        updateCommunityList();
+        generateCommunityJSON();
+        clearCommunityForm();
+        showAlert('success', `社群 "${community.name.zh || community.name.en}" 已成功添加！`);
+    }
+
+    function updateCommunityList() {
+        const listElement = document.getElementById('community-list');
+        listElement.innerHTML = '';
+
+        if (communities.length === 0) {
+            listElement.innerHTML = '<p style="text-align: center; color: #666; padding: 20px;">目前沒有社群資料</p>';
+            return;
+        }
+
+        communities.forEach((community, index) => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'item-card';
+            itemDiv.innerHTML = `
+                <div class="item-header">
+                    <span class="item-id">${community.id}</span>
+                </div>
+                <div class="item-name"><strong>${community.name.zh || community.name.en}</strong></div>
+                <div style="color: #666; margin: 5px 0;">🏷️ ${community.category.zh || community.category.en}</div>
+                <div class="item-actions">
+                    <button class="btn btn-secondary" onclick="editCommunity(${index})">✏️ 編輯</button>
+                    <button class="btn btn-danger" onclick="deleteCommunity(${index})">🗑️ 刪除</button>
+                </div>
+            `;
+            listElement.appendChild(itemDiv);
+        });
+    }
+
+    function deleteCommunity(index) {
+        if (confirm(`確定要刪除社群 "${communities[index].name.zh || communities[index].name.en}" 嗎？`)) {
+            communities.splice(index, 1);
+            updateCommunityList();
+            generateCommunityJSON();
+            showAlert('success', '社群已成功刪除！');
+        }
+    }
+
+    function editCommunity(index) {
+        const community = communities[index];
+        document.getElementById('community-id').value = community.id;
+        document.getElementById('community-name-zh').value = community.name.zh || '';
+        document.getElementById('community-name-en').value = community.name.en || '';
+        document.getElementById('community-name-ja').value = community.name.ja || '';
+        document.getElementById('community-desc-zh').value = community.description.zh || '';
+        document.getElementById('community-desc-en').value = community.description.en || '';
+        document.getElementById('community-desc-ja').value = community.description.ja || '';
+        document.getElementById('community-category-zh').value = community.category.zh || '';
+        document.getElementById('community-category-en').value = community.category.en || '';
+        document.getElementById('community-category-ja').value = community.category.ja || '';
+        document.getElementById('community-logo').value = community.logo || '';
+        document.getElementById('community-website').value = community.website || '';
+
+        document.getElementById('community-homepage').value = community.social.Homepage || '';
+        document.getElementById('community-facebook').value = community.social.Facebook || '';
+        document.getElementById('community-discord').value = community.social.Discord || '';
+        document.getElementById('community-telegram').value = community.social.Telegram || '';
+        document.getElementById('community-linktree').value = community.social.Linktree || '';
+
+        communities.splice(index, 1);
+        updateCommunityList();
+        generateCommunityJSON();
+        window.scrollTo(0, 0);
+        showAlert('success', '社群資料已載入表單，請修改後重新添加');
+    }
+
+    function generateCommunityJSON() {
+        const output = {community: communities};
+        document.getElementById('community-output').textContent = JSON.stringify(output, null, 2);
+    }
+
+    function copyCommunityJSON() {
+        const jsonText = document.getElementById('community-output').textContent;
+        navigator.clipboard.writeText(jsonText).then(() => {
+            showAlert('success', 'JSON 已複製到剪貼簿！');
+        });
+    }
+
+    function downloadCommunityJSON() {
+        const jsonText = document.getElementById('community-output').textContent;
+        const blob = new Blob([jsonText], {type: 'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'community.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showAlert('success', 'community.json 檔案已下載！');
+    }
+
+    function loadCommunityFile() {
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json';
+        input.onchange = function (e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    if (data.community && Array.isArray(data.community)) {
+                        communities = data.community;
+                        updateCommunityList();
+                        generateCommunityJSON();
+                        showAlert('success', `已載入 ${communities.length} 個社群資料！`);
+                    } else {
+                        showAlert('error', '檔案格式不正確，請確認是有效的 community.json 檔案');
+                    }
+                } catch (error) {
+                    showAlert('error', '無法解析 JSON 檔案，請確認檔案格式是否正確');
+                }
+            };
+            reader.readAsText(file);
+        };
+        input.click();
+    }
+
+    // ===========================================
+    // MARKETS 市集管理功能
+    // ===========================================
+
+    function clearMarketForm() {
+        const inputs = document.querySelectorAll('#market-form input, #market-form textarea');
+        inputs.forEach(input => input.value = '');
+    }
+
+    function addMarket() {
+        const id = document.getElementById('market-id').value.trim();
+        if (!id) {
+            alert('請輸入攤位 ID');
+            return;
+        }
+
+        if (markets.find(m => m.id === id)) {
+            alert('攤位 ID 已存在，請使用不同的 ID');
+            return;
+        }
+
+        const market = {
+            id: id,
+            name: {
+                zh: document.getElementById('market-name-zh').value.trim(),
+                en: document.getElementById('market-name-en').value.trim(),
+                ja: document.getElementById('market-name-ja').value.trim()
+            },
+            description: {
+                zh: document.getElementById('market-desc-zh').value.trim(),
+                en: document.getElementById('market-desc-en').value.trim(),
+                ja: document.getElementById('market-desc-ja').value.trim()
+            },
+            logo: document.getElementById('market-logo').value.trim(),
+            website: document.getElementById('market-website').value.trim(),
+            social: {}
+        };
+
+        const socialLinks = {
+            'Homepage': 'market-homepage',
+            'Facebook': 'market-facebook',
+            'Instagram': 'market-instagram',
+            'Twitter': 'market-twitter',
+            'GitHub': 'market-github'
+        };
+
+        Object.keys(socialLinks).forEach(key => {
+            const value = document.getElementById(socialLinks[key]).value.trim();
+            if (value) {
+                market.social[key] = value;
+            }
+        });
+
+        markets.push(market);
+        updateMarketsList();
+        generateMarketsJSON();
+        clearMarketForm();
+        showAlert('success', `攤位 "${market.name.zh || market.name.en}" 已成功添加！`);
+    }
+
+    function updateMarketsList() {
+        const listElement = document.getElementById('markets-list');
+        listElement.innerHTML = '';
+
+        if (markets.length === 0) {
+            listElement.innerHTML = '<p style="text-align: center; color: #666; padding: 20px;">目前沒有攤位資料</p>';
+            return;
+        }
+
+        markets.forEach((market, index) => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'item-card';
+            itemDiv.innerHTML = `
+                <div class="item-header">
+                    <span class="item-id">${market.id}</span>
+                </div>
+                <div class="item-name"><strong>${market.name.zh || market.name.en}</strong></div>
+                <div class="item-actions">
+                    <button class="btn btn-secondary" onclick="editMarket(${index})">✏️ 編輯</button>
+                    <button class="btn btn-danger" onclick="deleteMarket(${index})">🗑️ 刪除</button>
+                </div>
+            `;
+            listElement.appendChild(itemDiv);
+        });
+    }
+
+    function deleteMarket(index) {
+        if (confirm(`確定要刪除攤位 "${markets[index].name.zh || markets[index].name.en}" 嗎？`)) {
+            markets.splice(index, 1);
+            updateMarketsList();
+            generateMarketsJSON();
+            showAlert('success', '攤位已成功刪除！');
+        }
+    }
+
+    function editMarket(index) {
+        const market = markets[index];
+        document.getElementById('market-id').value = market.id;
+        document.getElementById('market-name-zh').value = market.name.zh || '';
+        document.getElementById('market-name-en').value = market.name.en || '';
+        document.getElementById('market-name-ja').value = market.name.ja || '';
+        document.getElementById('market-desc-zh').value = market.description.zh || '';
+        document.getElementById('market-desc-en').value = market.description.en || '';
+        document.getElementById('market-desc-ja').value = market.description.ja || '';
+        document.getElementById('market-logo').value = market.logo || '';
+        document.getElementById('market-website').value = market.website || '';
+
+        document.getElementById('market-homepage').value = market.social.Homepage || '';
+        document.getElementById('market-facebook').value = market.social.Facebook || '';
+        document.getElementById('market-instagram').value = market.social.Instagram || '';
+        document.getElementById('market-twitter').value = market.social.Twitter || '';
+        document.getElementById('market-github').value = market.social.GitHub || '';
+
+        markets.splice(index, 1);
+        updateMarketsList();
+        generateMarketsJSON();
+        window.scrollTo(0, 0);
+        showAlert('success', '攤位資料已載入表單，請修改後重新添加');
+    }
+
+    function generateMarketsJSON() {
+        const output = {booths: markets};
+        document.getElementById('markets-output').textContent = JSON.stringify(output, null, 2);
+    }
+
+    function copyMarketsJSON() {
+        const jsonText = document.getElementById('markets-output').textContent;
+        navigator.clipboard.writeText(jsonText).then(() => {
+            showAlert('success', 'JSON 已複製到剪貼簿！');
+        });
+    }
+
+    function downloadMarketsJSON() {
+        const jsonText = document.getElementById('markets-output').textContent;
+        const blob = new Blob([jsonText], {type: 'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'markets.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showAlert('success', 'markets.json 檔案已下載！');
+    }
+
+    function loadMarketsFile() {
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json';
+        input.onchange = function (e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    if (data.booths && Array.isArray(data.booths)) {
+                        markets = data.booths;
+                        updateMarketsList();
+                        generateMarketsJSON();
+                        showAlert('success', `已載入 ${markets.length} 個攤位資料！`);
+                    } else {
+                        showAlert('error', '檔案格式不正確，請確認是有效的 markets.json 檔案');
+                    }
+                } catch (error) {
+                    showAlert('error', '無法解析 JSON 檔案，請確認檔案格式是否正確');
+                }
+            };
+            reader.readAsText(file);
+        };
+        input.click();
+    }
+
+    // ===========================================
+    // STAFF 工作人員管理功能
+    // ===========================================
+
+    function clearStaffForm() {
+        const inputs = document.querySelectorAll('#staff-form input, #staff-form textarea');
+        inputs.forEach(input => input.value = '');
+    }
+
+    function addStaff() {
+        const id = document.getElementById('staff-id').value.trim();
+        if (!id) {
+            alert('請輸入工作人員 ID');
+            return;
+        }
+
+        if (staff.find(s => s.id === id)) {
+            alert('工作人員 ID 已存在，請使用不同的 ID');
+            return;
+        }
+
+        const staffMember = {
+            id: id,
+            name: {
+                zh: document.getElementById('staff-name-zh').value.trim(),
+                en: document.getElementById('staff-name-en').value.trim(),
+                ja: document.getElementById('staff-name-ja').value.trim()
+            },
+            description: {
+                zh: document.getElementById('staff-desc-zh').value.trim(),
+                en: document.getElementById('staff-desc-en').value.trim(),
+                ja: document.getElementById('staff-desc-ja').value.trim()
+            },
+            category: {
+                zh: document.getElementById('staff-category-zh').value.trim(),
+                en: document.getElementById('staff-category-en').value.trim(),
+                ja: document.getElementById('staff-category-ja').value.trim()
+            },
+            photo: document.getElementById('staff-photo').value.trim(),
+            social: {}
+        };
+
+        const socialLinks = {
+            'Homepage': 'staff-homepage',
+            'Linkedin': 'staff-linkedin',
+            'GitHub': 'staff-github',
+            'Linktree': 'staff-linktree',
+            'Twitter': 'staff-twitter'
+        };
+
+        Object.keys(socialLinks).forEach(key => {
+            const value = document.getElementById(socialLinks[key]).value.trim();
+            if (value) {
+                staffMember.social[key] = value;
+            }
+        });
+
+        staff.push(staffMember);
+        updateStaffList();
+        generateStaffJSON();
+        clearStaffForm();
+        showAlert('success', `工作人員 "${staffMember.name.zh || staffMember.name.en}" 已成功添加！`);
+    }
+
+    function updateStaffList() {
+        const listElement = document.getElementById('staff-list');
+        listElement.innerHTML = '';
+
+        if (staff.length === 0) {
+            listElement.innerHTML = '<p style="text-align: center; color: #666; padding: 20px;">目前沒有工作人員資料</p>';
+            return;
+        }
+
+        staff.forEach((staffMember, index) => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'item-card';
+            itemDiv.innerHTML = `
+                <div class="item-header">
+                    <span class="item-id">${staffMember.id}</span>
+                </div>
+                <div class="item-name"><strong>${staffMember.name.zh || staffMember.name.en}</strong></div>
+                <div style="color: #666; margin: 5px 0;">🏷️ ${staffMember.category.zh || staffMember.category.en}</div>
+                <div class="item-actions">
+                    <button class="btn btn-secondary" onclick="editStaff(${index})">✏️ 編輯</button>
+                    <button class="btn btn-danger" onclick="deleteStaff(${index})">🗑️ 刪除</button>
+                </div>
+            `;
+            listElement.appendChild(itemDiv);
+        });
+    }
+
+    function deleteStaff(index) {
+        if (confirm(`確定要刪除工作人員 "${staff[index].name.zh || staff[index].name.en}" 嗎？`)) {
+            staff.splice(index, 1);
+            updateStaffList();
+            generateStaffJSON();
+            showAlert('success', '工作人員已成功刪除！');
+        }
+    }
+
+    function editStaff(index) {
+        const staffMember = staff[index];
+        document.getElementById('staff-id').value = staffMember.id;
+        document.getElementById('staff-name-zh').value = staffMember.name.zh || '';
+        document.getElementById('staff-name-en').value = staffMember.name.en || '';
+        document.getElementById('staff-name-ja').value = staffMember.name.ja || '';
+        document.getElementById('staff-desc-zh').value = staffMember.description.zh || '';
+        document.getElementById('staff-desc-en').value = staffMember.description.en || '';
+        document.getElementById('staff-desc-ja').value = staffMember.description.ja || '';
+        document.getElementById('staff-category-zh').value = staffMember.category.zh || '';
+        document.getElementById('staff-category-en').value = staffMember.category.en || '';
+        document.getElementById('staff-category-ja').value = staffMember.category.ja || '';
+        document.getElementById('staff-photo').value = staffMember.photo || '';
+
+        document.getElementById('staff-homepage').value = staffMember.social.Homepage || '';
+        document.getElementById('staff-linkedin').value = staffMember.social.Linkedin || '';
+        document.getElementById('staff-github').value = staffMember.social.GitHub || '';
+        document.getElementById('staff-linktree').value = staffMember.social.Linktree || '';
+        document.getElementById('staff-twitter').value = staffMember.social.Twitter || '';
+
+        staff.splice(index, 1);
+        updateStaffList();
+        generateStaffJSON();
+        window.scrollTo(0, 0);
+        showAlert('success', '工作人員資料已載入表單，請修改後重新添加');
+    }
+
+    function generateStaffJSON() {
+        const output = {staff: staff};
+        document.getElementById('staff-output').textContent = JSON.stringify(output, null, 2);
+    }
+
+    function copyStaffJSON() {
+        const jsonText = document.getElementById('staff-output').textContent;
+        navigator.clipboard.writeText(jsonText).then(() => {
+            showAlert('success', 'JSON 已複製到剪貼簿！');
+        });
+    }
+
+    function downloadStaffJSON() {
+        const jsonText = document.getElementById('staff-output').textContent;
+        const blob = new Blob([jsonText], {type: 'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'staff.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showAlert('success', 'staff.json 檔案已下載！');
+    }
+
+    function loadStaffFile() {
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json';
+        input.onchange = function (e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    if (data.staff && Array.isArray(data.staff)) {
+                        staff = data.staff;
+                        updateStaffList();
+                        generateStaffJSON();
+                        showAlert('success', `已載入 ${staff.length} 位工作人員資料！`);
+                    } else {
+                        showAlert('error', '檔案格式不正確，請確認是有效的 staff.json 檔案');
+                    }
+                } catch (error) {
+                    showAlert('error', '無法解析 JSON 檔案，請確認檔案格式是否正確');
+                }
+            };
+            reader.readAsText(file);
+        };
+        input.click();
+    }
+
+    // ===========================================
+    // ABOUT 關於我們管理功能
+    // ===========================================
+
+    function clearAboutForm() {
+        const inputs = document.querySelectorAll('#about-form input, #about-form textarea');
+        inputs.forEach(input => input.value = '');
+    }
+
+    function addAbout() {
+        const id = document.getElementById('about-id').value.trim();
+        if (!id) {
+            alert('請輸入組織 ID');
+            return;
+        }
+
+        if (about.find(a => a.id === id)) {
+            alert('組織 ID 已存在，請使用不同的 ID');
+            return;
+        }
+
+        const organization = {
+            id: id,
+            name: {
+                zh: document.getElementById('about-name-zh').value.trim(),
+                en: document.getElementById('about-name-en').value.trim(),
+                ja: document.getElementById('about-name-ja').value.trim()
+            },
+            description: {
+                zh: document.getElementById('about-desc-zh').value.trim(),
+                en: document.getElementById('about-desc-en').value.trim(),
+                ja: document.getElementById('about-desc-ja').value.trim()
+            },
+            logo: document.getElementById('about-logo').value.trim(),
+            website: document.getElementById('about-website').value.trim(),
+            social: {}
+        };
+
+        const socialLinks = {
+            'GDG Community': 'about-gdg',
+            'Facebook 社團': 'about-facebook-group',
+            'Facebook 粉專': 'about-facebook-page',
+            'Linkedin': 'about-linkedin',
+            'Discord': 'about-discord',
+            'Telegram': 'about-telegram'
+        };
+
+        Object.keys(socialLinks).forEach(key => {
+            const value = document.getElementById(socialLinks[key]).value.trim();
+            if (value) {
+                organization.social[key] = value;
+            }
+        });
+
+        about.push(organization);
+        updateAboutList();
+        generateAboutJSON();
+        clearAboutForm();
+        showAlert('success', `組織 "${organization.name.zh || organization.name.en}" 已成功添加！`);
+    }
+
+    function updateAboutList() {
+        const listElement = document.getElementById('about-list');
+        listElement.innerHTML = '';
+
+        if (about.length === 0) {
+            listElement.innerHTML = '<p style="text-align: center; color: #666; padding: 20px;">目前沒有組織資料</p>';
+            return;
+        }
+
+        about.forEach((organization, index) => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'item-card';
+            itemDiv.innerHTML = `
+                <div class="item-header">
+                    <span class="item-id">${organization.id}</span>
+                </div>
+                <div class="item-name"><strong>${organization.name.zh || organization.name.en}</strong></div>
+                <div class="item-actions">
+                    <button class="btn btn-secondary" onclick="editAbout(${index})">✏️ 編輯</button>
+                    <button class="btn btn-danger" onclick="deleteAbout(${index})">🗑️ 刪除</button>
+                </div>
+            `;
+            listElement.appendChild(itemDiv);
+        });
+    }
+
+    function deleteAbout(index) {
+        if (confirm(`確定要刪除組織 "${about[index].name.zh || about[index].name.en}" 嗎？`)) {
+            about.splice(index, 1);
+            updateAboutList();
+            generateAboutJSON();
+            showAlert('success', '組織已成功刪除！');
+        }
+    }
+
+    function editAbout(index) {
+        const organization = about[index];
+        document.getElementById('about-id').value = organization.id;
+        document.getElementById('about-name-zh').value = organization.name.zh || '';
+        document.getElementById('about-name-en').value = organization.name.en || '';
+        document.getElementById('about-name-ja').value = organization.name.ja || '';
+        document.getElementById('about-desc-zh').value = organization.description.zh || '';
+        document.getElementById('about-desc-en').value = organization.description.en || '';
+        document.getElementById('about-desc-ja').value = organization.description.ja || '';
+        document.getElementById('about-logo').value = organization.logo || '';
+        document.getElementById('about-website').value = organization.website || '';
+
+        document.getElementById('about-gdg').value = organization.social['GDG Community'] || '';
+        document.getElementById('about-facebook-group').value = organization.social['Facebook 社團'] || '';
+        document.getElementById('about-facebook-page').value = organization.social['Facebook 粉專'] || '';
+        document.getElementById('about-linkedin').value = organization.social.Linkedin || '';
+        document.getElementById('about-discord').value = organization.social.Discord || '';
+        document.getElementById('about-telegram').value = organization.social.Telegram || '';
+
+        about.splice(index, 1);
+        updateAboutList();
+        generateAboutJSON();
+        window.scrollTo(0, 0);
+        showAlert('success', '組織資料已載入表單，請修改後重新添加');
+    }
+
+    function generateAboutJSON() {
+        const output = {about: about};
+        document.getElementById('about-output').textContent = JSON.stringify(output, null, 2);
+    }
+
+    function copyAboutJSON() {
+        const jsonText = document.getElementById('about-output').textContent;
+        navigator.clipboard.writeText(jsonText).then(() => {
+            showAlert('success', 'JSON 已複製到剪貼簿！');
+        });
+    }
+
+    function downloadAboutJSON() {
+        const jsonText = document.getElementById('about-output').textContent;
+        const blob = new Blob([jsonText], {type: 'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'about.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showAlert('success', 'about.json 檔案已下載！');
+    }
+
+    function loadAboutFile() {
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.json';
+        input.onchange = function (e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    if (data.about && Array.isArray(data.about)) {
+                        about = data.about;
+                        updateAboutList();
+                        generateAboutJSON();
+                        showAlert('success', `已載入 ${about.length} 個組織資料！`);
+                    } else {
+                        showAlert('error', '檔案格式不正確，請確認是有效的 about.json 檔案');
+                    }
+                } catch (error) {
+                    showAlert('error', '無法解析 JSON 檔案，請確認檔案格式是否正確');
+                }
+            };
+            reader.readAsText(file);
+        };
+        input.click();
+    }
+
     // 初始化
     document.addEventListener('DOMContentLoaded', function () {
         updateSpeakersList();
         generateSpeakersJSON();
+        updateSponsorsList();
+        generateSponsorsJSON();
+        updateCommunityList();
+        generateCommunityJSON();
+        updateMarketsList();
+        generateMarketsJSON();
+        updateStaffList();
+        generateStaffJSON();
+        updateAboutList();
+        generateAboutJSON();
     });
 </script>
 </body>
