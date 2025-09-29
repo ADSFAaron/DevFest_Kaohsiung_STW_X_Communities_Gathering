@@ -2723,3 +2723,131 @@ html.page-switching {
         }
     }
 }
+
+/* Community Section */
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 32px auto 0;
+}
+
+.community-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+
+.community-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.community-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.community-image:hover {
+    opacity: 0.8;
+}
+
+.community-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.community-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: var(--md-sys-color-on-surface);
+}
+
+.community-category {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+    color: var(--md-sys-color-primary);
+}
+
+.community-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+/* Staff Section */
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 32px auto 0;
+}
+
+.staff-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.staff-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.staff-image:hover {
+    opacity: 0.8;
+}
+
+.staff-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.staff-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: var(--md-sys-color-on-surface);
+}
+
+.staff-category {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+    color: var(--md-sys-color-primary);
+}
+
+.staff-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+    color: var(--md-sys-color-on-surface-variant);
+}

@@ -8,6 +8,8 @@ class DynamicContentManager {
             speakers: [],
             markets: [],
             sponsors: [],
+            community: [],
+            staff: [],
             about: []
         };
     }
@@ -31,16 +33,20 @@ class DynamicContentManager {
     // 載入所有資料
     async loadAllData() {
         try {
-            const [speakers, markets, sponsors, about] = await Promise.all([
+            const [speakers, markets, sponsors, community, staff, about] = await Promise.all([
                 this.loadJSON('data/speakers.json'),
                 this.loadJSON('data/markets.json'),
                 this.loadJSON('data/sponsors.json'),
+                this.loadJSON('data/community.json'),
+                this.loadJSON('data/staff.json'),
                 this.loadJSON('data/about.json')
             ]);
 
             this.data.speakers = speakers.speakers || [];
             this.data.markets = markets.booths || [];
             this.data.sponsors = sponsors.sponsors || [];
+            this.data.community = community.community || [];
+            this.data.staff = staff.staff || [];
             this.data.about = about.about || [];
 
             this.renderAllContent();
@@ -64,6 +70,8 @@ class DynamicContentManager {
         this.renderSpeakers();
         this.renderMarkets();
         this.renderSponsors();
+        this.renderCommunity();
+        this.renderStaff();
         this.renderAbout();
     }
 
@@ -210,6 +218,43 @@ class DynamicContentManager {
         return card;
     }
 
+    // 渲染參與社群
+    renderCommunity() {
+        const container = document.querySelector('#community .community-grid');
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        this.data.community.forEach(community => {
+            const communityCard = this.createCommunityCard(community);
+            container.appendChild(communityCard);
+        });
+    }
+
+    // 建立社群卡片
+    createCommunityCard(community) {
+        const card = document.createElement('div');
+        card.className = 'community-card';
+
+        const socialLinks = this.createSocialLinks(community.social);
+
+        card.innerHTML = `
+            <img alt="${this.getText(community.name)} Logo"
+                 class="community-image"
+                 src="${community.logo}"
+                 onclick="window.open('${community.website}', '_blank')"
+                 style="cursor: pointer;">
+            <div class="community-info">
+                <h3 class="community-title">${this.getText(community.name)}</h3>
+                <div class="community-category">${this.getText(community.category)}</div>
+                <div class="community-description">${this.getText(community.description)}</div>
+                ${socialLinks}
+            </div>
+        `;
+
+        return card;
+    }
+
     // 渲染關於我們
     renderAbout() {
         const container = document.querySelector('#about .about-grid');
@@ -284,6 +329,56 @@ class DynamicContentManager {
         this.data.sponsors.push(sponsorData);
         await this.saveData('sponsors', { sponsors: this.data.sponsors });
         this.renderSponsors();
+    }
+
+    // 新增參與社群
+    async addCommunity(communityData) {
+        this.data.community.push(communityData);
+        await this.saveData('community', {community: this.data.community});
+        this.renderCommunity();
+    }
+
+    // 渲染志工介紹
+    renderStaff() {
+        const container = document.querySelector('#staff .staff-grid');
+        if (!container) return;
+
+        container.innerHTML = '';
+
+        this.data.staff.forEach(staff => {
+            const staffCard = this.createStaffCard(staff);
+            container.appendChild(staffCard);
+        });
+    }
+
+    // 建立志工卡片
+    createStaffCard(staff) {
+        const card = document.createElement('div');
+        card.className = 'staff-card';
+
+        const socialLinks = this.createSocialLinks(staff.social);
+
+        card.innerHTML = `
+            <img alt="${this.getText(staff.name)} Photo"
+                 class="staff-image"
+                 src="${staff.photo}"
+                 style="cursor: pointer;">
+            <div class="staff-info">
+                <h3 class="staff-title">${this.getText(staff.name)}</h3>
+                <div class="staff-category">${this.getText(staff.category)}</div>
+                <div class="staff-description">${this.getText(staff.description)}</div>
+                ${socialLinks}
+            </div>
+        `;
+
+        return card;
+    }
+
+    // 新增志工
+    async addStaff(staffData) {
+        this.data.staff.push(staffData);
+        await this.saveData('staff', {staff: this.data.staff});
+        this.renderStaff();
     }
 
     // 新增關於我們
