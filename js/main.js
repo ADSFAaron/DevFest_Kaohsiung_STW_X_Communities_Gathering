@@ -152,6 +152,7 @@ const translations = {
         'code_conduct_content': '所有參與者皆需遵守 GDG 活動行為準則，以確保所有人都能在一個安全友善的環境中學習與交流。<br><br>詳細內容請參閱：<a href="https://gdg.tw/code_of_conduct/" target="_blank" rel="noopener noreferrer">GDG 行為準則</a>',
         'privacy_title': '✔️ 蒐集個人資料告知事項暨個人資料提供同意聲明',
         'privacy_content': '我們尊重並保護您的個人隱私<br><br>詳細內容請參閱：<a href="https://docs.google.com/document/d/1_rTlfAkLMl5ZfFwxZrNPhwzGQ5xU8g96bXyKZ3siW-4" target="_blank" rel="noopener noreferrer">隱私權政策</a>',
+        'page_test': '頁面測試中，敬請期待',
     },
     'en': {
         'nav_home': 'Home',
@@ -296,6 +297,7 @@ const translations = {
         'code_conduct_content': 'All participants must follow the GDG Event Code of Conduct to ensure everyone can learn and network in a safe and friendly environment.<br><br>For details, please refer to: <a href="https://gdg.tw/code_of_conduct/" target="_blank" rel="noopener noreferrer">GDG Code of Conduct</a>',
         'privacy_title': '✔️ Personal Data Collection Notice and Consent Statement',
         'privacy_content': 'We respect and protect your personal privacy<br><br>For details, please refer to: <a href="https://docs.google.com/document/d/1_rTlfAkLMl5ZfFwxZrNPhwzGQ5xU8g96bXyKZ3siW-4" target="_blank" rel="noopener noreferrer">Privacy Policy</a>',
+        'page_test': 'The page is under testing, please stay tuned',
     },
     'ja': {
         'nav_home': 'ホーム',
@@ -440,6 +442,7 @@ const translations = {
         'code_conduct_content': 'すべての参加者はGDGイベント行動規範を遵守し、すべての人が安全で友好的な環境で学習・交流できることを保証する必要があります。<br><br>詳細内容は以下をご参照ください：<a href="https://gdg.tw/code_of_conduct/" target="_blank" rel="noopener noreferrer">GDG行動規範</a>',
         'privacy_title': '✔️ 個人データ収集通知事項および個人データ提供同意声明',
         'privacy_content': '私たちはあなたの個人プライバシーを尊重し保護します<br><br>詳細内容は以下をご参照ください：<a href="https://docs.google.com/document/d/1_rTlfAkLMl5ZfFwxZrNPhwzGQ5xU8g96bXyKZ3siW-4" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>',
+        'page_test': 'このページは現在テスト中です。しばらくお待ちください。',
     },
 };
 
