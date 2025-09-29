@@ -2676,7 +2676,8 @@ html.page-switching {
 
     .session.expanded .session-expandable {
         opacity: 1;
-        max-height: 200px;
+        max-height: 500px;
+        overflow-y: auto;
     }
 
     .session-details-expanded {
@@ -2684,6 +2685,8 @@ html.page-switching {
         background: rgba(255, 255, 255, 0.95);
         border-radius: 8px;
         border: 1px solid rgba(66, 133, 244, 0.2);
+        overflow: visible;
+        height: auto;
     }
 
     .session-abstract,
@@ -2703,9 +2706,12 @@ html.page-switching {
     .session-abstract p,
     .speaker-bio-short p {
         font-size: 12px;
-        line-height: 1.4;
+        line-height: 1.5;
         color: #333;
         margin: 0;
+        word-wrap: break-word;
+        white-space: normal;
+        overflow-wrap: break-word;
     }
 
     /* 響應式調整：更小的手機 */
