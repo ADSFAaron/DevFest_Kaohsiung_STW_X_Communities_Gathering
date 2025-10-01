@@ -42,8 +42,8 @@
       "schedule": {
         "day": 1,
         "time": "11:00 - 11:40",
-        "track": "track2",
-        "session_id": "d1_t5_s2_title"
+        "track": "track1",
+        "session_id": "d1_t5_s1_title"
       },
       "tags": [
         "English Agenda",
@@ -100,7 +100,7 @@
         "day": 1,
         "time": "13:30 - 14:10",
         "track": "track1",
-        "session_id": "d1_t6_s1_title"
+        "session_id": "d1_t7_s1_title"
       },
       "tags": [
         "中文議程",
@@ -111,7 +111,6 @@
       "photo": "images/speak-steve_yeh.png",
       "social": {
         "Facebook": "https://www.facebook.com/steven.yeh",
-        "Threads": "https://www.threads.com/@steven_uiux",
         "Medium": "https://medium.com/@stevenyeh"
       }
     },
@@ -226,9 +225,8 @@
       "social": {
         "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
         "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
-        "Medium": "https://medium.com/@simon3458",
         "GitHub": "https://github.com/LiuYuWei",
-        "Website": "https://simonliuyuwei-4ndgcf4.gamma.site/"
+        "Medium": "https://medium.com/@simon3458"
       }
     },
     {
@@ -333,7 +331,7 @@
         "day": 1,
         "time": "15:30 - 16:10",
         "track": "track2",
-        "session_id": "d1_t9_s1_title"
+        "session_id": "d1_t6_s2_title"
       },
       "tags": [
         "English Agenda",
@@ -378,7 +376,7 @@
           "ja": "Gemini が Android 開発者をどのように強化するか：インテリジェントアシスタントからアプリケーションの革新まで"
         },
         "abstract": {
-          "zh": "如何使用 Gemini 開發 Android，從 UI 到 Commit 和 DevOps",
+          "zh": "如何使用 Gemini CLI 開發 Android，從 UI 到 Commit 和 DevOps",
           "en": "How to Use Gemini for Android Development, from UI to Commit and DevOps",
           "ja": "UI からコミット、DevOps まで、Gemini を活用した Android 開発手法"
         }
@@ -427,7 +425,7 @@
       },
       "session": {
         "name": {
-          "zh": "【第二屆 AI 生成大賽】Vertex AI 多媒體：用 Veo 3 和 Image 4，與您『1314』共創視覺未來",
+          "zh": "Vertex AI 多媒體：用 Veo 3 和 Image 4，與您『1314』共創視覺未來",
           "en": "【The 2nd AI Generative Contest】Vertex AI Multimedia: Creating the Visual Future with Imagen 4 and Veo 3, Hand-in-Hand ('1314')",
           "ja": "【第2回 AI 生成コンテスト】Vertex AI マルチメディア：Veo 3 および Imagen 4 と共に『1314』ビジュアルの未来を共創"
         },
@@ -451,6 +449,119 @@
       ],
       "photo": "images/speak-kevin_chiu.png",
       "social": {}
+    },
+    {
+      "id": "ray_yuan_liu",
+      "name": {
+        "zh": "劉瑞元 / RayYuan Liu",
+        "en": "RayYuan Liu",
+        "ja": "RayYuan Liu"
+      },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "topic_category": {
+        "zh": "議程分類：Gemini AI 的生成式實踐",
+        "en": "Category: Gemini AI in Practice",
+        "ja": "カテゴリ：Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "從 Android 2.3 時代開發到現在，Android 開發者。喜歡分享所學及技術，也喜歡摸索酷東西。",
+        "en": "An Android Developer who has been developing since the Android 2.3 era. Loves to share knowledge and technology, and enjoys exploring cool new things.",
+        "ja": "Android 2.3 時代から開発に携わっている Android 開発者。学んだことや技術を共有するのが好きで、クールなものを探求することも楽しんでいます。"
+      },
+      "session": {
+        "name": {
+          "zh": "Gemini in Android development",
+          "en": "",
+          "ja": ""
+        },
+        "abstract": {
+          "zh": "今年 Gemini 整合更多功能到 Android Studio 裡頭了，這些新功能如何增加工作的效率、改變工作的方式呢？Gemini 還能怎麼協助軟體開發？這個議程將會介紹 Gemini in Android Studio 的各種功能，以及用 Google 提供的工具來改善我們工作的每一天。",
+          "en": "Gemini has integrated more features into Android Studio this year. How do these new features increase work efficiency and change the way we work? How else can Gemini assist software development? This session will introduce the various functionalities of Gemini in Android Studio and demonstrate how to use tools provided by Google to improve our daily work.",
+          "ja": "今年、Gemini は Android Studio にさらに多くの機能を統合しました。これらの新機能は、どのように業務効率を高め、働き方を変えるのでしょうか？ Gemini はソフトウェア開発を他にどのように支援できるのでしょうか？ このセッションでは、Android Studio における Gemini の様々な機能と、Google が提供するツールを使って私たちの毎日の業務を改善する方法を紹介します。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "10:00 - 10:40",
+        "track": "track1",
+        "session_id": "d1_t6_s1_title"
+      },
+      "tags": [
+        "中文議程",
+        "Android",
+        "Gemini",
+        "AI"
+      ],
+      "photo": "images/speak-ray_yuan_liu.png",
+      "social": {
+        "Homepage": "https://ithelp.ithome.com.tw/users/20141615/ironman/8135"
+      }
+    },
+    {
+      "id": "yung_chun",
+      "name": {
+        "zh": "瓦特老師 / CHENG, YUNG-CHUN",
+        "en": "CHENG, YUNG-CHUN",
+        "ja": "CHENG, YUNG-CHUN"
+      },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "topic_category": {
+        "zh": "議程分類：Gemini AI 的生成式實踐",
+        "en": "Category: Gemini AI in Practice",
+        "ja": "カテゴリ：Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "桃園市大勇國小教師<br>桃園市LDS科技藝術社群<br>親子天下創新100教師",
+        "en": "Teacher at Dayong Elementary School, Taoyuan City<br>LDS Tech Arts Community, Taoyuan City<br>CommonWealth Magazine Parenting & Education Innovation 100 Teacher",
+        "ja": "桃園市大勇小学校 教師<br>桃園市 LDS テクノロジー・アートコミュニティ<br>親子天下イノベーション100 教師"
+      },
+      "session": {
+        "name": {
+          "zh": "老師，我覺得 AI 生圖不是我的作品。",
+          "en": "Teacher, I feel that the image generated by AI is not my own work.",
+          "ja": "先生、AI が生成した画像は私の作品ではないように感じます。"
+        },
+        "abstract": {
+          "zh": "<br>1.一個在電腦教室教藝術的老師；了解當小智說：「皮卡丘，就是你了！」皮卡丘的心情<br>2.對一切好奇的小學生：求學歷程中，學生從動物變植物最後變成礦物的台灣教育<br>3.老師我覺得 AI 生出來的圖，不是我的作品<br>4.最好的有感方式就是 - 創作<br>5.創作來自於生活中的點滴<br>6.Gemini AI輔助生成式藝術（Generative Art）創作<br>7.PBL是AI時代教育的好方法",
+          "en": "<br>1.　A teacher who teaches art in a computer lab; understands how Pikachu feels when Ash says, \"Pikachu, I choose you!\"<br>2.　Curious elementary school students: The Taiwanese education system where students transform from animals to plants and finally to minerals throughout their schooling (a humorous commentary on declining vitality).<br>3.　Teacher, I feel that the image generated by AI is not my own work.<br>4.　The best way to truly feel something is through creation.<br>5.　Creation comes from the small moments in daily life.<br>6.　Gemini AI-Assisted Generative Art Creation<br>7.　PBL (Project-Based Learning) is an excellent method for education in the AI era.",
+          "ja": "<br>1.　コンピューター教室で美術を教える教師； サトシが「ピカチュウ、きみにきめた！」と言う時のピカチュウの気持ちがわかる<br>2.　すべてに好奇心旺盛な小学生：生徒が学歴を重ねる中で、動物から植物、最終的に鉱物へと変化していく台湾の教育（活力が失われることへのユーモラスな批評）。<br>3.　先生、AI が生成した画像は私の作品ではないように感じます。<br>4.　最も良い「実感」する方法は、創造です。<br>5.　創造は、日常生活のささいな瞬間から生まれます。<br>6.　Gemini AI 支援によるジェネレーティブ・アート（Generative Art）創作<br>7.　PBL（プロジェクト・ベースド・ラーニング） は AI 時代の教育における良い方法である。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "15:30 - 16:10",
+        "track": "track1",
+        "session_id": "d1_t9_s1_title"
+      },
+      "tags": [
+        "中文議程",
+        "教育",
+        "Gemini",
+        "科技藝術"
+      ],
+      "photo": "images/speak-yung_chun.png",
+      "social": {
+        "Linkedin": "https://www.linkedin.com/in/%E7%89%B9-%E7%93%A6-7a345224b/",
+        "Facebook": "https://www.facebook.com/blurwater64/"
+      }
     }
   ]
 }
