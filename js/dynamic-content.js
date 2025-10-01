@@ -102,6 +102,27 @@ class DynamicContentManager {
         const tagsHTML = speaker.tags.map(tag => `<span>#${tag}</span>`).join('');
         const socialLinks = this.createSocialLinks(speaker.social);
 
+        // 取得「查看更多」和「顯示較少」的多語言文字
+        let viewMoreText = '查看更多';
+        let collapseText = '顯示較少';
+        let sessionInfoTitle = '議程資訊';
+        let sessionNameLabel = '名稱：';
+        let sessionAbstractLabel = '簡介：';
+
+        if (this.currentLanguage === 'en') {
+            viewMoreText = 'View More';
+            collapseText = 'Show Less';
+            sessionInfoTitle = 'Session Info';
+            sessionNameLabel = 'Title: ';
+            sessionAbstractLabel = 'Abstract: ';
+        } else if (this.currentLanguage === 'ja') {
+            viewMoreText = 'もっと見る';
+            collapseText = '表示を減らす';
+            sessionInfoTitle = 'セッション情報';
+            sessionNameLabel = 'タイトル：';
+            sessionAbstractLabel = '概要：';
+        }
+
         card.innerHTML = `
             <img alt="Photo of ${this.getText(speaker.name)}" class="speaker-photo" src="${speaker.photo}">
             <div class="speaker-info">
@@ -118,11 +139,17 @@ class DynamicContentManager {
                 <div class="speaker-details-content">
                     <p class="speaker-bio-full">${this.getText(speaker.bio)}</p>
                     <div class="session-info-block">
-                        <h4>議程資訊</h4>
-                        <p><strong>名稱：</strong><span>${this.getText(speaker.session.name)}</span></p>
-                        <p><strong>簡介：</strong><span>${this.getText(speaker.session.abstract)}</span></p>
+                        <h4>${sessionInfoTitle}</h4>
+                        <p><strong>${sessionNameLabel}</strong><span>${this.getText(speaker.session.name)}</span></p>
+                        <p><strong>${sessionAbstractLabel}</strong><span>${this.getText(speaker.session.abstract)}</span></p>
                     </div>
                 </div>
+            </div>
+            <div class="speaker-expand-hint" data-view-more="${viewMoreText}" data-collapse="${collapseText}">
+                <span class="expand-text">${viewMoreText}</span>
+                <svg class="expand-arrow" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 11L3 6h10l-5 5z"/>
+                </svg>
             </div>
         `;
 
@@ -306,8 +333,18 @@ class DynamicContentManager {
         const speakerCards = document.querySelectorAll('.speaker-card');
         speakerCards.forEach(card => {
             card.addEventListener('click', () => {
-                // Simply toggle the clicked card, don't affect others
-                card.classList.toggle('expanded');
+                // Toggle the clicked card
+                const isExpanded = card.classList.toggle('expanded');
+
+                // 更新提示文字
+                const hint = card.querySelector('.speaker-expand-hint');
+                const expandText = hint.querySelector('.expand-text');
+
+                if (isExpanded) {
+                    expandText.textContent = hint.getAttribute('data-collapse');
+                } else {
+                    expandText.textContent = hint.getAttribute('data-view-more');
+                }
             });
         });
     }

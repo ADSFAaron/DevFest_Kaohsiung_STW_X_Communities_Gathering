@@ -914,13 +914,19 @@ main {
     border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
     overflow: hidden;
+    border: 2px solid transparent;
 }
 
 .speaker-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    border-color: var(--color-blue);
+}
+
+.speaker-card:hover .speaker-expand-hint {
+    color: var(--color-blue);
 }
 
 .speaker-photo {
@@ -975,6 +981,29 @@ main {
     margin-bottom: 8px; /* Keep the margin for wrapping */
 }
 
+/* 查看更多提示 */
+.speaker-expand-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 16px 20px;
+    border-top: 1px solid #e0e0e0;
+    color: #5f6368;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+    background-color: #fafafa;
+}
+
+.expand-arrow {
+    transition: transform 0.3s ease;
+}
+
+.speaker-card.expanded .expand-arrow {
+    transform: rotate(180deg);
+}
+
 .speaker-details {
     max-height: 0;
     overflow: hidden;
@@ -982,7 +1011,7 @@ main {
 }
 
 .speaker-card.expanded .speaker-details {
-    max-height: 1000px; /* Should be larger than the content */
+    max-height: 3000px; /* Increased to accommodate longer content in different languages */
 }
 
 .speaker-details-content {
