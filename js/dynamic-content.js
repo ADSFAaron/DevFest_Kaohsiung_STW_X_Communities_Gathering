@@ -558,8 +558,18 @@ class DynamicContentManager {
         const sessionAbstractLabel = this.currentLanguage === 'en' ? 'Session Overview:' :
             this.currentLanguage === 'ja' ? 'セッション概要：' : '議程簡介：';
 
+        // 取得分類文字
+        const categoryText = speaker.topic_category ? this.getText(speaker.topic_category) : '';
+        const categoryHTML = categoryText ? `
+            <div class="session-category-expanded">
+                <strong>${sessionAbstractLabel.replace('議程簡介', '議程分類').replace('Session Overview', 'Category').replace('セッション概要', 'カテゴリ')}</strong>
+                <p>${categoryText}</p>
+            </div>
+        ` : '';
+
         expandableContent.innerHTML = `
             <div class="session-details-expanded">
+                ${categoryHTML}
                 <div class="session-abstract">
                     <strong>${sessionAbstractLabel}</strong>
                     <p>${this.getText(speaker.session.abstract)}</p>

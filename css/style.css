@@ -1042,6 +1042,12 @@ main {
     margin-top: 8px;
 }
 
+.session-category-expanded {
+    line-height: 1.6;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
 .speaker-tags {
     display: flex;
     gap: 8px;
@@ -2731,11 +2737,13 @@ html.page-switching {
     }
 
     .session-abstract,
+    .session-category-expanded,
     .speaker-bio-short {
         margin-bottom: 12px;
     }
 
     .session-abstract strong,
+    .session-category-expanded strong,
     .speaker-bio-short strong {
         display: block;
         color: var(--color-blue);
@@ -2745,6 +2753,7 @@ html.page-switching {
     }
 
     .session-abstract p,
+    .session-category-expanded p,
     .speaker-bio-short p {
         font-size: 12px;
         line-height: 1.5;
