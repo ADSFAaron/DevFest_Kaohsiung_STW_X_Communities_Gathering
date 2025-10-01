@@ -18,9 +18,9 @@
         "ja": "Founder"
       },
       "topic_category": {
-        "zh": "議程分類：Google Cloud 的雲端實踐",
-        "en": "Category: Google Cloud in Practice",
-        "ja": "カテゴリ：Google Cloud のクラウド実践"
+        "zh": "Google Cloud 的雲端實踐",
+        "en": "Google Cloud in Practice",
+        "ja": "Google Cloud のクラウド実践"
       },
       "bio": {
         "zh": "Arturs Vancans 是 Second Space 的創辦人，這是一個專為企業家、數位遊牧者和學生設計，位於高雄的 24/7 會員制共享工作空間（coworking hub）。他擁有英國約克大學（University of York）電子與電腦工程碩士學位，其經驗橫跨物聯網（IoT）、人工智慧/機器學習（AI/ML）、金融科技（fintech）及大規模分散式系統。現在，他將這些專業知識投入於打造一個融合技術與創意協作的活力空間。",
@@ -75,9 +75,9 @@
         "ja": ""
       },
       "topic_category": {
-        "zh": "議程分類：科技向善的實踐之路",
-        "en": "Category: Goodness in Practice",
-        "ja": "カテゴリ：テクノロジーで社会貢献を実現する道"
+        "zh": "科技向善的實踐之路",
+        "en": "Goodness in Practice",
+        "ja": "テクノロジーで社会貢献を実現する道"
       },
       "bio": {
         "zh": "現任精誠集團技術處長，致力於 UI/UX 設計與技術開發的整合與創新。2017 年創立 Able Studio，帶領團隊以人本設計為核心，成功為國內上市櫃企業、勞保局 e 化服務系統、零售通路、影音串流平台及矽谷新創企業等多領域客戶打造數位轉型解決方案，並於 2020 年榮獲德國國家設計獎優勝。曾任職於義美聯電與金色三麥餐飲集團，擔任數位內容與創意策劃部門經理，擁有豐富的跨領域產品開發及創新策劃經驗。相信透過深刻的使用者洞察與創新技術，能夠持續為企業創造成長與長遠價值。",
@@ -132,9 +132,9 @@
         "ja": ""
       },
       "topic_category": {
-        "zh": "議程分類：科技向善的實踐之路",
-        "en": "Category: Goodness in Practice",
-        "ja": "カテゴリ：テクノロジーで社会貢献を実現する道"
+        "zh": "科技向善的實踐之路",
+        "en": "Goodness in Practice",
+        "ja": "テクノロジーで社会貢献を実現する道"
       },
       "bio": {
         "zh": "數位身分研究者，《數位憑證皮夾》智庫案成員。g0v 社群長期貢獻者，參與《立法院大小聲》、《Ptt 不能亡》等。",
@@ -188,9 +188,9 @@
         "ja": "MLOps Engineer"
       },
       "topic_category": {
-        "zh": "議程分類：Gemini AI 的生成式實踐",
-        "en": "Category: Gemini AI in Practice",
-        "ja": "カテゴリ：Gemini AI の生成AI実践"
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
       },
       "bio": {
         "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
@@ -247,9 +247,9 @@
         "ja": "MLOps Engineer"
       },
       "topic_category": {
-        "zh": "議程分類：第二屆 AI 生成大賽",
-        "en": "Category: The 2nd AI Generative Contest",
-        "ja": "カテゴリ：第2回 AI 生成コンテスト"
+        "zh": "第二屆 AI 生成大賽",
+        "en": "The 2nd AI Generative Contest",
+        "ja": "第2回 AI 生成コンテスト"
       },
       "bio": {
         "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
@@ -306,9 +306,9 @@
         "ja": "Senior Software Engineer"
       },
       "topic_category": {
-        "zh": "議程分類：Gemini AI 的生成式實踐",
-        "en": "Category: Gemini AI in Practice",
-        "ja": "カテゴリ：Gemini AI の生成AI実践"
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
       },
       "bio": {
         "zh": "Kotlin Multiplatform 的信眾，自 2019 年起便致力於相關工作。專門為 Android 構建解決方案。<br>KUG Berlin、GDG Android Berlin、XTC Berlin 等社群的組織者。",
@@ -360,9 +360,9 @@
         "ja": "GDG Taipei Organizer / AI GDE"
       },
       "topic_category": {
-        "zh": "議程分類：Gemini AI 的生成式實踐",
-        "en": "Category: Gemini AI in Practice",
-        "ja": "カテゴリ：Gemini AI の生成AI実践"
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
       },
       "bio": {
         "zh": "AI GDE / GDG 台北 組織者 / Android 工程師<br>致力於將 AI 導到在 edge 端上使用",
@@ -414,9 +414,9 @@
         "ja": "GDG Taipei Organizer / AI GDE"
       },
       "topic_category": {
-        "zh": "議程分類：第二屆 AI 生成大賽",
-        "en": "Category: The 2nd AI Generative Contest",
-        "ja": "カテゴリ：第2回 AI 生成コンテスト"
+        "zh": "第二屆 AI 生成大賽",
+        "en": "The 2nd AI Generative Contest",
+        "ja": "第2回 AI 生成コンテスト"
       },
       "bio": {
         "zh": "AI GDE / GDG 台北 組織者 / Android 工程師<br>致力於將 AI 導到在 edge 端上使用",
@@ -468,9 +468,9 @@
         "ja": ""
       },
       "topic_category": {
-        "zh": "議程分類：Gemini AI 的生成式實踐",
-        "en": "Category: Gemini AI in Practice",
-        "ja": "カテゴリ：Gemini AI の生成AI実践"
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
       },
       "bio": {
         "zh": "從 Android 2.3 時代開發到現在，Android 開發者。喜歡分享所學及技術，也喜歡摸索酷東西。",
@@ -524,9 +524,9 @@
         "ja": ""
       },
       "topic_category": {
-        "zh": "議程分類：Gemini AI 的生成式實踐",
-        "en": "Category: Gemini AI in Practice",
-        "ja": "カテゴリ：Gemini AI の生成AI実践"
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
       },
       "bio": {
         "zh": "桃園市大勇國小教師<br>桃園市LDS科技藝術社群<br>親子天下創新100教師",
