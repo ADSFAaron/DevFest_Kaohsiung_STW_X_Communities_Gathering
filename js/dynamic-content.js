@@ -105,12 +105,22 @@ class DynamicContentManager {
         // 取得「查看更多」和「顯示較少」的多語言文字
         let viewMoreText = '查看更多';
         let collapseText = '顯示較少';
+        let sessionInfoTitle = '議程資訊';
+        let sessionNameLabel = '名稱：';
+        let sessionAbstractLabel = '簡介：';
+
         if (this.currentLanguage === 'en') {
             viewMoreText = 'View More';
             collapseText = 'Show Less';
+            sessionInfoTitle = 'Session Info';
+            sessionNameLabel = 'Title: ';
+            sessionAbstractLabel = 'Abstract: ';
         } else if (this.currentLanguage === 'ja') {
             viewMoreText = 'もっと見る';
             collapseText = '表示を減らす';
+            sessionInfoTitle = 'セッション情報';
+            sessionNameLabel = 'タイトル：';
+            sessionAbstractLabel = '概要：';
         }
 
         card.innerHTML = `
@@ -129,9 +139,9 @@ class DynamicContentManager {
                 <div class="speaker-details-content">
                     <p class="speaker-bio-full">${this.getText(speaker.bio)}</p>
                     <div class="session-info-block">
-                        <h4>議程資訊</h4>
-                        <p><strong>名稱：</strong><span>${this.getText(speaker.session.name)}</span></p>
-                        <p><strong>簡介：</strong><span>${this.getText(speaker.session.abstract)}</span></p>
+                        <h4>${sessionInfoTitle}</h4>
+                        <p><strong>${sessionNameLabel}</strong><span>${this.getText(speaker.session.name)}</span></p>
+                        <p><strong>${sessionAbstractLabel}</strong><span>${this.getText(speaker.session.abstract)}</span></p>
                     </div>
                 </div>
             </div>

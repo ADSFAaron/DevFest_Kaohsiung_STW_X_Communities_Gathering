@@ -1011,7 +1011,7 @@ main {
 }
 
 .speaker-card.expanded .speaker-details {
-    max-height: 1000px; /* Should be larger than the content */
+    max-height: 3000px; /* Increased to accommodate longer content in different languages */
 }
 
 .speaker-details-content {
