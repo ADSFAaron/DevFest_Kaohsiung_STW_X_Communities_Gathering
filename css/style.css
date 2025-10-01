@@ -956,13 +956,6 @@ main {
     color: #5f6368;
 }
 
-.speaker-topic-category {
-    font-size: 14px;
-    margin: 8px 0 8px 0;
-    color: var(--md-sys-color-primary);
-    font-weight: 500;
-}
-
 .summary-tags {
     display: flex;
     gap: 8px;

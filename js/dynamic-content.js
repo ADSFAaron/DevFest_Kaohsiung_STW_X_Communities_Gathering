@@ -106,6 +106,7 @@ class DynamicContentManager {
         let viewMoreText = '查看更多';
         let collapseText = '顯示較少';
         let sessionInfoTitle = '議程資訊';
+        let sessionCategoryLabel = '分類：';
         let sessionNameLabel = '名稱：';
         let sessionAbstractLabel = '簡介：';
 
@@ -113,12 +114,14 @@ class DynamicContentManager {
             viewMoreText = 'View More';
             collapseText = 'Show Less';
             sessionInfoTitle = 'Session Info';
+            sessionCategoryLabel = 'Category: ';
             sessionNameLabel = 'Title: ';
             sessionAbstractLabel = 'Abstract: ';
         } else if (this.currentLanguage === 'ja') {
             viewMoreText = 'もっと見る';
             collapseText = '表示を減らす';
             sessionInfoTitle = 'セッション情報';
+            sessionCategoryLabel = 'カテゴリ：';
             sessionNameLabel = 'タイトル：';
             sessionAbstractLabel = '概要：';
         }
@@ -129,7 +132,6 @@ class DynamicContentManager {
                 <h3 class="speaker-name">${this.getText(speaker.name)}</h3>
                 <p class="speaker-org">${this.getText(speaker.org)}</p>
                 <p class="speaker-title">${this.getText(speaker.title)}</p>
-                <p class="speaker-topic-category">${this.getText(speaker.topic_category)}</p>
                 <div class="speaker-tags summary-tags">
                     ${tagsHTML}
                 </div>
@@ -140,6 +142,7 @@ class DynamicContentManager {
                     <p class="speaker-bio-full">${this.getText(speaker.bio)}</p>
                     <div class="session-info-block">
                         <h4>${sessionInfoTitle}</h4>
+                        <p><strong>${sessionCategoryLabel}</strong><span>${this.getText(speaker.topic_category)}</span></p>
                         <p><strong>${sessionNameLabel}</strong><span>${this.getText(speaker.session.name)}</span></p>
                         <p><strong>${sessionAbstractLabel}</strong><span>${this.getText(speaker.session.abstract)}</span></p>
                     </div>
