@@ -92,48 +92,335 @@
 
 <main>
     <section class="hero page-section active" id="home">
-        <div class="hero-content">
-            <h1 data-i18n-key="event_title">DevFest 高雄場 X 南臺灣技術社群大聚 2025</h1>
-            <div class="event-meta">
-                <div class="event-date-location">
-                    <span data-i18n-key="event_date_location">11/22（六）- 23（日）in KO-IN 智高點</span>
-                    <a class="location-map-link" data-i18n-key="view_map"
+        <!-- Engineer's Desk Scene -->
+        <div class="desk-scene">
+            <!-- Background: Monitor with Presentation Slides -->
+            <div class="monitor">
+                <div class="monitor-frame">
+                    <div class="monitor-screen">
+                        <div class="slides-carousel">
+                            <div class="slide active">
+                                <img alt="DevFest Kaohsiung 2025 Banner" loading="eager"
+                                     data-event="devfest2025"
+                                     data-secret-key="AMF7JG73TC"
+                                     src="./images/image_banner_devfest.png"
+                                     title="🖼️ 線索5：圖片也有秘密！檢查這張圖片的所有屬性，可以獲得第一日免費票 5（官網解謎活動）邀請碼...">
+                            </div>
+                            <div class="slide">
+                                <img alt="S. TW Communities Gathering 2025 Banner" loading="eager"
+                                     src="./images/image_banner_stw.png">
+                            </div>
+                        </div>
+                        <div class="slide-indicators">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                    <div class="monitor-stand"></div>
+                </div>
+            </div>
+
+            <!-- Desk Surface with Items -->
+            <div class="desk-surface">
+                <!-- Keyboard -->
+                <div class="desk-item keyboard">
+                    <svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="200" height="80" rx="8" fill="#E8EAED"/>
+                        <rect x="5" y="5" width="190" height="70" rx="4" fill="#DADCE0"/>
+                        <!-- Key rows -->
+                        <g class="keys" fill="#fff">
+                            <!-- Top row -->
+                            <rect x="10" y="10" width="12" height="12" rx="2"/>
+                            <rect x="25" y="10" width="12" height="12" rx="2"/>
+                            <rect x="40" y="10" width="12" height="12" rx="2"/>
+                            <rect x="55" y="10" width="12" height="12" rx="2"/>
+                            <rect x="70" y="10" width="12" height="12" rx="2"/>
+                            <rect x="85" y="10" width="12" height="12" rx="2"/>
+                            <rect x="100" y="10" width="12" height="12" rx="2"/>
+                            <rect x="115" y="10" width="12" height="12" rx="2"/>
+                            <rect x="130" y="10" width="12" height="12" rx="2"/>
+                            <rect x="145" y="10" width="12" height="12" rx="2"/>
+                            <rect x="160" y="10" width="12" height="12" rx="2"/>
+                            <rect x="175" y="10" width="12" height="12" rx="2"/>
+
+                            <!-- Second row - DEVFEST -->
+                            <rect x="10" y="27" width="12" height="12" rx="2"/>
+                            <rect x="25" y="27" width="12" height="12" rx="2"/>
+                            <rect x="40" y="27" width="12" height="12" rx="2"/>
+                            <rect x="55" y="27" width="12" height="12" rx="2"/>
+                            <rect x="70" y="27" width="12" height="12" rx="2"/>
+                            <rect x="85" y="27" width="12" height="12" rx="2"/>
+                            <rect x="100" y="27" width="12" height="12" rx="2"/>
+                            <rect x="115" y="27" width="12" height="12" rx="2"/>
+                            <rect x="130" y="27" width="12" height="12" rx="2"/>
+                            <rect x="145" y="27" width="12" height="12" rx="2"/>
+                            <rect x="160" y="27" width="12" height="12" rx="2"/>
+                            <rect x="175" y="27" width="12" height="12" rx="2"/>
+
+                            <!-- Third row -->
+                            <rect x="15" y="44" width="12" height="12" rx="2"/>
+                            <rect x="30" y="44" width="12" height="12" rx="2"/>
+                            <rect x="45" y="44" width="12" height="12" rx="2"/>
+                            <rect x="60" y="44" width="12" height="12" rx="2"/>
+                            <rect x="75" y="44" width="12" height="12" rx="2"/>
+                            <rect x="90" y="44" width="12" height="12" rx="2"/>
+                            <rect x="105" y="44" width="12" height="12" rx="2"/>
+                            <rect x="120" y="44" width="12" height="12" rx="2"/>
+                            <rect x="135" y="44" width="12" height="12" rx="2"/>
+                            <rect x="150" y="44" width="12" height="12" rx="2"/>
+                            <rect x="165" y="44" width="12" height="12" rx="2"/>
+
+                            <!-- Space bar -->
+                            <rect x="30" y="61" width="120" height="12" rx="2"/>
+                        </g>
+
+                        <!-- Key labels text -->
+                        <g class="key-labels" fill="#5F6368" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">
+                            <!-- First row: DEVFEST (left) and STW (right) -->
+                            <text x="16" y="18" font-size="7">D</text>
+                            <text x="31" y="18" font-size="7">E</text>
+                            <text x="46" y="18" font-size="7">V</text>
+                            <text x="61" y="18" font-size="7">F</text>
+                            <text x="76" y="18" font-size="7">E</text>
+                            <text x="91" y="18" font-size="7">S</text>
+                            <text x="106" y="18" font-size="7">T</text>
+                            <text x="151" y="18" font-size="7">S</text>
+                            <text x="166" y="18" font-size="7">T</text>
+                            <text x="181" y="18" font-size="7">W</text>
+
+                            <!-- Second row: KH (left) and COMMUNIT (right aligned) -->
+                            <text x="16" y="35" font-size="7">K</text>
+                            <text x="31" y="35" font-size="7">H</text>
+                            <text x="76" y="35" font-size="7">C</text>
+                            <text x="91" y="35" font-size="7">O</text>
+                            <text x="106" y="35" font-size="7">M</text>
+                            <text x="121" y="35" font-size="7">M</text>
+                            <text x="136" y="35" font-size="7">U</text>
+                            <text x="151" y="35" font-size="7">N</text>
+                            <text x="166" y="35" font-size="7">I</text>
+                            <text x="181" y="35" font-size="7">T</text>
+
+                            <!-- Third row: GATHERING (right aligned) -->
+                            <text x="51" y="52" font-size="7">G</text>
+                            <text x="66" y="52" font-size="7">A</text>
+                            <text x="81" y="52" font-size="7">T</text>
+                            <text x="96" y="52" font-size="7">H</text>
+                            <text x="111" y="52" font-size="7">E</text>
+                            <text x="126" y="52" font-size="7">R</text>
+                            <text x="141" y="52" font-size="7">I</text>
+                            <text x="156" y="52" font-size="7">N</text>
+                            <text x="171" y="52" font-size="7">G</text>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- Mouse -->
+                <div class="desk-item mouse">
+                    <svg viewBox="0 0 40 60" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="20" cy="30" rx="18" ry="28" fill="#DADCE0"/>
+                        <ellipse cx="20" cy="30" rx="16" ry="26" fill="#E8EAED"/>
+                        <line x1="20" y1="8" x2="20" y2="25" stroke="#BDC1C6" stroke-width="1.5"/>
+                    </svg>
+                </div>
+
+                <!-- Bubble Tea -->
+                <div class="desk-item bubble-tea">
+                    <svg viewBox="0 0 80 120" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Cup body (trapezoid shape) -->
+                        <defs>
+                            <linearGradient id="teaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#F9AB00;stop-opacity:0.3" />
+                                <stop offset="50%" style="stop-color:#FBBC04;stop-opacity:0.5" />
+                                <stop offset="100%" style="stop-color:#F9AB00;stop-opacity:0.7" />
+                            </linearGradient>
+                        </defs>
+
+                        <!-- Transparent cup -->
+                        <path d="M 25 35 L 20 95 Q 20 100 25 100 L 55 100 Q 60 100 60 95 L 55 35 Z"
+                              fill="#fff" stroke="#BDC1C6" stroke-width="2.5"/>
+
+                        <!-- Tea liquid -->
+                        <path d="M 25.5 37 L 21 90 Q 21 95 25 95 L 55 95 Q 59 95 59 90 L 54.5 37 Z"
+                              fill="url(#teaGradient)"/>
+
+                        <!-- Lid -->
+                        <ellipse cx="40" cy="35" rx="17" ry="5" fill="#F9AB00" stroke="#F9AB00" stroke-width="1"/>
+                        <ellipse cx="40" cy="33" rx="17" ry="4" fill="#FBBC04"/>
+
+                        <!-- Straw -->
+                        <rect x="36" y="5" width="5" height="45" rx="2" fill="#EA4335" opacity="0.9"/>
+                        <rect x="37" y="6" width="3" height="43" rx="1" fill="#EA4335"/>
+
+                        <!-- Straw top opening -->
+                        <ellipse cx="38.5" cy="5" rx="2.5" ry="1.5" fill="#C5221F"/>
+
+                        <!-- Straw diagonal stripes -->
+                        <line x1="36.5" y1="12" x2="40.5" y2="12" stroke="#fff" stroke-width="0.5" opacity="0.6"/>
+                        <line x1="36.5" y1="20" x2="40.5" y2="20" stroke="#fff" stroke-width="0.5" opacity="0.6"/>
+                        <line x1="36.5" y1="28" x2="40.5" y2="28" stroke="#fff" stroke-width="0.5" opacity="0.6"/>
+
+                        <!-- Bubble pearls at bottom -->
+                        <circle cx="30" cy="85" r="3.5" fill="#3C4043"/>
+                        <circle cx="38" cy="88" r="3.5" fill="#3C4043"/>
+                        <circle cx="46" cy="86" r="3.5" fill="#3C4043"/>
+                        <circle cx="52" cy="90" r="3.5" fill="#3C4043"/>
+                        <circle cx="34" cy="92" r="3.5" fill="#3C4043"/>
+                        <circle cx="42" cy="93" r="3.5" fill="#3C4043"/>
+                        <circle cx="26" cy="90" r="3" fill="#3C4043"/>
+
+                        <!-- Shine effect on cup -->
+                        <path d="M 27 40 Q 28 45 27 55 L 26 55 Q 27 45 26 40 Z" fill="#fff" opacity="0.4"/>
+                        <ellipse cx="50" cy="50" rx="3" ry="8" fill="#fff" opacity="0.2"/>
+                    </svg>
+                </div>
+
+                <!-- Yellow Duck -->
+                <div class="desk-item duck">
+                    <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Body -->
+                        <ellipse cx="55" cy="50" rx="30" ry="25" fill="#FBBC04"/>
+
+                        <!-- Head -->
+                        <circle cx="30" cy="30" r="20" fill="#FBBC04"/>
+
+                        <!-- Beak -->
+                        <ellipse cx="12" cy="30" rx="8" ry="6" fill="#F9AB00"/>
+                        <ellipse cx="10" cy="30" rx="6" ry="4" fill="#EA4335" opacity="0.3"/>
+
+                        <!-- Eye -->
+                        <circle cx="28" cy="25" r="3.5" fill="#202124"/>
+                        <circle cx="29" cy="24" r="1.5" fill="#fff"/>
+
+                        <!-- Wing -->
+                        <ellipse cx="60" cy="48" rx="18" ry="12" fill="#F9AB00" opacity="0.8" transform="rotate(-20 60 48)"/>
+
+                        <!-- Tail feathers -->
+                        <ellipse cx="78" cy="50" rx="8" ry="12" fill="#F9AB00" transform="rotate(30 78 50)"/>
+                        <ellipse cx="82" cy="45" rx="6" ry="10" fill="#FBBC04" transform="rotate(45 82 45)"/>
+
+                        <!-- Bottom/feet hint -->
+                        <ellipse cx="50" cy="70" rx="12" ry="5" fill="#F9AB00" opacity="0.5"/>
+
+                        <!-- Highlight -->
+                        <ellipse cx="35" cy="35" rx="8" ry="10" fill="#fff" opacity="0.3"/>
+                        <ellipse cx="60" cy="45" rx="10" ry="8" fill="#fff" opacity="0.2"/>
+                    </svg>
+                </div>
+
+                <!-- Polaroid Photo -->
+                <div class="desk-item polaroid">
+                    <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Polaroid frame -->
+                        <rect width="100" height="120" rx="4" fill="#fff"/>
+                        <rect x="5" y="5" width="90" height="90" fill="#E8F0FE"/>
+
+                        <!-- UFO -->
+                        <ellipse cx="50" cy="25" rx="18" ry="6" fill="#5F6368"/>
+                        <ellipse cx="50" cy="23" rx="18" ry="6" fill="#BDC1C6"/>
+                        <ellipse cx="50" cy="20" rx="10" ry="5" fill="#4285F4" opacity="0.6"/>
+                        <circle cx="50" cy="18" r="4" fill="#FBBC04"/>
+
+                        <!-- UFO lights -->
+                        <circle cx="40" cy="24" r="1.5" fill="#FBBC04"/>
+                        <circle cx="50" cy="25" r="1.5" fill="#EA4335"/>
+                        <circle cx="60" cy="24" r="1.5" fill="#34A853"/>
+
+                        <!-- Beam of light -->
+                        <path d="M 45 28 L 35 65 L 65 65 L 55 28 Z" fill="#FBBC04" opacity="0.3"/>
+                        <path d="M 46 28 L 38 65 L 62 65 L 54 28 Z" fill="#FBBC04" opacity="0.2"/>
+
+                        <!-- Cow being abducted -->
+                        <!-- Cow body -->
+                        <ellipse cx="50" cy="58" rx="10" ry="7" fill="#fff"/>
+                        <!-- Cow head -->
+                        <ellipse cx="44" cy="54" rx="5" ry="4" fill="#fff"/>
+                        <!-- Cow spots -->
+                        <ellipse cx="48" cy="57" rx="2" ry="1.5" fill="#202124"/>
+                        <ellipse cx="54" cy="59" rx="2.5" ry="2" fill="#202124"/>
+                        <!-- Cow legs -->
+                        <rect x="44" y="63" width="2" height="4" fill="#fff"/>
+                        <rect x="48" y="63" width="2" height="4" fill="#fff"/>
+                        <rect x="52" y="63" width="2" height="4" fill="#fff"/>
+                        <rect x="56" y="63" width="2" height="4" fill="#fff"/>
+
+                        <!-- Ground -->
+                        <ellipse cx="50" cy="85" rx="25" ry="4" fill="#34A853" opacity="0.4"/>
+
+                        <!-- Caption -->
+                        <text x="50" y="110" font-size="12" text-anchor="middle" fill="#5F6368" font-weight="bold">DevFest</text>
+                    </svg>
+                </div>
+
+                <!-- Sticky Note -->
+                <div class="desk-item sticky-note">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" fill="#FBBC04"/>
+                        <text x="50" y="45" font-size="16" font-weight="bold" text-anchor="middle" fill="#202124">11/22</text>
+                        <text x="50" y="65" font-size="16" font-weight="bold" text-anchor="middle" fill="#202124">11/23</text>
+                    </svg>
+                </div>
+
+                <!-- Pizza Slice -->
+                <div class="desk-item pizza">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M 50 90 L 10 20 Q 50 10 90 20 Z" fill="#F9AB00"/>
+                        <path d="M 50 90 L 10 20 Q 50 10 90 20 Z" fill="#FBBC04" opacity="0.3"/>
+                        <circle cx="35" cy="45" r="5" fill="#EA4335"/>
+                        <circle cx="55" cy="50" r="5" fill="#EA4335"/>
+                        <circle cx="45" cy="65" r="5" fill="#EA4335"/>
+                        <ellipse cx="30" cy="60" rx="6" ry="4" fill="#fff"/>
+                        <ellipse cx="60" cy="65" rx="6" ry="4" fill="#fff"/>
+                    </svg>
+                </div>
+
+                <!-- Countdown Clock -->
+                <div class="desk-item countdown-clock">
+                    <div class="clock-display">
+                        <div class="clock-screen">
+                            <div id="countdown-timer">
+                                <div class="countdown-segment">
+                                    <span class="countdown-number" id="days">00</span>
+                                    <span class="countdown-label" data-i18n-key="countdown_days">天</span>
+                                </div>
+                                <span class="countdown-separator">:</span>
+                                <div class="countdown-segment">
+                                    <span class="countdown-number" id="hours">00</span>
+                                    <span class="countdown-label" data-i18n-key="countdown_hours">時</span>
+                                </div>
+                                <span class="countdown-separator">:</span>
+                                <div class="countdown-segment">
+                                    <span class="countdown-number" id="minutes">00</span>
+                                    <span class="countdown-label" data-i18n-key="countdown_minutes">分</span>
+                                </div>
+                                <span class="countdown-separator">:</span>
+                                <div class="countdown-segment">
+                                    <span class="countdown-number" id="seconds">00</span>
+                                    <span class="countdown-label" data-i18n-key="countdown_seconds">秒</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foreground: Event Information -->
+            <div class="hero-info">
+                <h1 data-i18n-key="event_title">DevFest 高雄場 X 南臺灣技術社群大聚 2025</h1>
+                <div class="event-details">
+                    <p class="event-date" data-i18n-key="event_date_location">
+                        11/22（六）- 23（日）in KO-IN 智高點
+                    </p>
+                    <a class="location-link" data-i18n-key="view_map"
                        href="https://maps.app.goo.gl/b8XVFSexNqeD1aMa8"
                        rel="noopener noreferrer" target="_blank">
                         📍 查看地圖
                     </a>
                 </div>
-                <div class="event-schedule">
-                    <div class="schedule-day">
-                        <span data-i18n-key="day1_schedule">22 - DevFest 2025 高雄場</span>
-                        <span data-i18n-key="day1_time">🕣 08:30 ~ 18:00</span>
-                    </div>
-                    <div class="schedule-day">
-                        <span data-i18n-key="day2_schedule">23 - 南臺灣技術社群大聚 2025</span>
-                        <span data-i18n-key="day2_time">🕚 11:00 ~ 17:00</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-image">
-            <div class="banner-carousel">
-                <div class="carousel-container">
-                    <div class="carousel-slide active">
-                        <img alt="DevFest Kaohsiung 2025 Banner" loading="eager"
-                             data-event="devfest2025"
-                             data-secret-key="AMF7JG73TC"
-                             src="./images/image_banner_devfest.png"
-                             title="🖼️ 線索5：圖片也有秘密！檢查這張圖片的所有屬性，可以獲得第一日免費票 5（官網解謎活動）邀請碼...">
-                    </div>
-                    <div class="carousel-slide">
-                        <img alt="S. TW Communities Gathering 2025 Banner" loading="eager"
-                             src="./images/image_banner_stw.png">
-                    </div>
-                </div>
-                <div class="carousel-indicators">
-                    <button aria-label="顯示第一張圖片" class="carousel-indicator active" data-slide="0"></button>
-                    <button aria-label="顯示第二張圖片" class="carousel-indicator" data-slide="1"></button>
-                </div>
+                <a class="cta-button" data-i18n-key="register_cta"
+                   href="https://gdg-kaohsiung.kktix.cc/events/devfest2025scs2025"
+                   rel="noopener noreferrer" target="_blank">
+                    立即報名
+                </a>
             </div>
         </div>
     </section>
