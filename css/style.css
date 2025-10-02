@@ -480,7 +480,9 @@ main {
     position: relative;
     max-width: 1600px;
     margin: 0 auto;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: auto auto 1fr;
     grid-template-rows: auto auto 1fr;
     gap: 32px;
 }
@@ -533,7 +535,8 @@ main {
 .slides-carousel {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9/16 = 0.5625) */
+    height: 0;
     overflow: hidden;
     border-radius: 8px;
     background: #fff;
@@ -585,7 +588,9 @@ main {
 /* Desk Surface with Items */
 .desk-surface {
     position: relative;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (minmax(80px, 1fr))[auto-fit];
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 24px;
     padding: 40px 20px;
@@ -711,11 +716,11 @@ main {
     font-weight: 700;
     line-height: 1.3;
     margin: 0 0 24px;
-    color: #202124;
     background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC04 75%, #EA4335 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: #202124; /* Fallback for browsers that don't support background-clip: text */
 }
 
 .event-details {
