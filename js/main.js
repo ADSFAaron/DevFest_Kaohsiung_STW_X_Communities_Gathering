@@ -113,6 +113,10 @@ const translations = {
         't_free_oscv_desc': '必須使用邀請碼購買。我有 OSCVPass 開源貢獻者快速通關。',
         'register_cta': '報名參加',
         'view_map': '📍 查看地圖',
+        'countdown_days': '天',
+        'countdown_hours': '時',
+        'countdown_minutes': '分',
+        'countdown_seconds': '秒',
         'devfest_what_title': '🧐 DevFest 高雄場 是什麼？',
         'devfest_what_content': 'DevFest 是由 GDG (Google Developer Groups) 社群主辦的年度技術盛會，也是全球最大的開發者社群科技大會，因為是全球年會，在字尾增加城市名稱區別不同場次。<br><br>DevFest 高雄場是 GDG Kaohsiung 社群舉辦的軟體年會。我們致力將外地的技術大神帶到高雄，讓高雄的開發者不用舟車勞頓就能與頂尖講者交流；我們更希望能打造一個專屬「高雄」的技術年會，邀請高雄在地講者上台分享，有更多曝光的機會！',
         'devfest_what_detail': 'DevFest 高雄場是 GDG Kaohsiung 社群舉辦的軟體年會。我們致力將外地的技術大神帶到高雄，讓高雄的開發者不用舟車勞頓就能與頂尖講者交流；我們更希望能打造一個專屬「高雄」的技術年會，邀請高雄在地講者上台分享，有更多曝光的機會！',
@@ -258,6 +262,10 @@ const translations = {
         't_free_oscv_desc': 'Must use invitation code to purchase. I have OSCVPass open source contributor fast pass.',
         'register_cta': 'Register Now',
         'view_map': '📍 View Map',
+        'countdown_days': 'Days',
+        'countdown_hours': 'Hrs',
+        'countdown_minutes': 'Mins',
+        'countdown_seconds': 'Secs',
         'devfest_what_title': '🧐 What is DevFest Kaohsiung?',
         'devfest_what_content': 'DevFest is an annual technology event hosted by GDG (Google Developer Groups) communities, and is the world\'s largest developer community tech conference. Since it\'s a global annual event, city names are added to distinguish different venues.<br><br>DevFest Kaohsiung is a software annual conference organized by the GDG Kaohsiung community. We are committed to bringing tech experts from other cities to Kaohsiung, allowing Kaohsiung developers to interact with top speakers without long travels; we also hope to create a unique "Kaohsiung" tech annual conference, inviting local Kaohsiung speakers to share on stage for more exposure opportunities!',
         'devfest_what_detail': 'DevFest Kaohsiung is a software annual conference organized by the GDG Kaohsiung community. We are committed to bringing tech experts from other cities to Kaohsiung, allowing Kaohsiung developers to interact with top speakers without long travels; we also hope to create a unique "Kaohsiung" tech annual conference, inviting local Kaohsiung speakers to share on stage for more exposure opportunities!',
@@ -403,6 +411,10 @@ const translations = {
         't_free_oscv_desc': '招待コード使用必須。OSCVPass オープンソース貢献者ファストパスを持っています。',
         'register_cta': '参加申込',
         'view_map': '📍 地図を見る',
+        'countdown_days': '日',
+        'countdown_hours': '時間',
+        'countdown_minutes': '分',
+        'countdown_seconds': '秒',
         'devfest_what_title': '🧐 DevFest高雄とは？',
         'devfest_what_content': 'DevFestはGDG（Google Developer Groups）コミュニティが主催する年次技術イベントで、世界最大の開発者コミュニティ技術大会でもあります。世界年次大会であるため、異なる開催地を区別するために都市名を追加しています。<br><br>DevFest高雄はGDG Kaohsiungコミュニティが開催するソフトウェア年次大会です。私たちは他都市の技術エキスパートを高雄に招き、高雄の開発者が長距離移動することなくトップスピーカーと交流できるようにすることを目指しています。また、「高雄」独自の技術年次大会を創造し、高雄地元のスピーカーにステージで共有する機会を提供し、より多くの露出機会を得られることを期待しています！',
         'devfest_what_detail': 'DevFest高雄はGDG Kaohsiungコミュニティが開催するソフトウェア年次大会です。私たちは他都市の技術エキスパートを高雄に招き、高雄の開発者が長距離移動することなくトップスピーカーと交流できるようにすることを目指しています。また、「高雄」独自の技術年次大会を創造し、高雄地元のスピーカーにステージで共有する機会を提供し、より多くの露出機会を得られることを期待しています！',
@@ -773,4 +785,81 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // --- Countdown Timer ---
+    function initCountdownTimer() {
+        const targetDate = new Date('2025-11-22T09:00:00+08:00').getTime();
+
+        const daysEl = document.getElementById('days');
+        const hoursEl = document.getElementById('hours');
+        const minutesEl = document.getElementById('minutes');
+        const secondsEl = document.getElementById('seconds');
+
+        if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                daysEl.textContent = '00';
+                hoursEl.textContent = '00';
+                minutesEl.textContent = '00';
+                secondsEl.textContent = '00';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            daysEl.textContent = String(days).padStart(2, '0');
+            hoursEl.textContent = String(hours).padStart(2, '0');
+            minutesEl.textContent = String(minutes).padStart(2, '0');
+            secondsEl.textContent = String(seconds).padStart(2, '0');
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    }
+
+    // --- Slides Carousel ---
+    function initSlidesCarousel() {
+        const slides = document.querySelectorAll('.slides-carousel .slide');
+        const indicators = document.querySelectorAll('.slide-indicators .indicator');
+
+        if (slides.length === 0 || indicators.length === 0) return;
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            indicators.forEach((indicator, i) => {
+                indicator.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Auto-advance slides every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Click indicators to change slides
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentSlide = index;
+                showSlide(currentSlide);
+            });
+        });
+    }
+
+    // Initialize new hero features
+    initCountdownTimer();
+    initSlidesCarousel();
 });
