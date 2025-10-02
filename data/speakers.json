@@ -312,14 +312,14 @@
       },
       "session": {
         "name": {
-          "zh": "Gemini 如何賦能 Android 開發者：從智能助手到應用創新",
-          "en": "How Gemini Empowers Android Developers: From Intelligent Assistants to Application Innovation",
-          "ja": "Gemini が Android 開発者をどのように強化するか：インテリジェントアシスタントからアプリケーションの革新まで"
+          "zh": "Gemini CLI 如何賦能 Android 開發者：從智能助手到應用創新",
+          "en": "How Gemini CLI Empowers Android Developers: From Intelligent Assistants to Application Innovation",
+          "ja": "Gemini CLI が Android 開発者をどのように強化するか：インテリジェントアシスタントからアプリケーションの革新まで"
         },
         "abstract": {
           "zh": "如何使用 Gemini CLI 開發 Android，從 UI 到 Commit 和 DevOps",
-          "en": "How to Use Gemini for Android Development, from UI to Commit and DevOps",
-          "ja": "UI からコミット、DevOps まで、Gemini を活用した Android 開発手法"
+          "en": "How to Use Gemini CLI for Android Development, from UI to Commit and DevOps",
+          "ja": "UI からコミット、DevOps まで、Gemini CLI を活用した Android 開発手法"
         }
       },
       "schedule": {
