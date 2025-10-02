@@ -108,7 +108,7 @@ class DynamicContentManager {
         let sessionInfoTitle = '議程資訊';
         let sessionCategoryLabel = '分類：';
         let sessionNameLabel = '名稱：';
-        let sessionAbstractLabel = '簡介：';
+        let sessionAbstractLabel = '簡介：<br>';
 
         if (this.currentLanguage === 'en') {
             viewMoreText = 'View More';
@@ -116,14 +116,14 @@ class DynamicContentManager {
             sessionInfoTitle = 'Session Info';
             sessionCategoryLabel = 'Category: ';
             sessionNameLabel = 'Title: ';
-            sessionAbstractLabel = 'Abstract: ';
+            sessionAbstractLabel = 'Abstract:<br>';
         } else if (this.currentLanguage === 'ja') {
             viewMoreText = 'もっと見る';
             collapseText = '表示を減らす';
             sessionInfoTitle = 'セッション情報';
             sessionCategoryLabel = 'カテゴリ：';
             sessionNameLabel = 'タイトル：';
-            sessionAbstractLabel = '概要：';
+            sessionAbstractLabel = '概要：<br>';
         }
 
         card.innerHTML = `
@@ -559,13 +559,13 @@ class DynamicContentManager {
 
         // 根據當前語言動態設定標籤文字
         const sessionAbstractLabel = this.currentLanguage === 'en' ? 'Session Overview:' :
-            this.currentLanguage === 'ja' ? 'セッション概要：' : '議程簡介：';
+            this.currentLanguage === 'ja' ? '概要：' : '簡介：';
 
         // 取得分類文字
         const categoryText = speaker.topic_category ? this.getText(speaker.topic_category) : '';
         const categoryHTML = categoryText ? `
             <div class="session-category-expanded">
-                <strong>${sessionAbstractLabel.replace('議程簡介', '議程分類').replace('Session Overview', 'Category').replace('セッション概要', 'カテゴリ')}</strong>
+                <strong>${sessionAbstractLabel.replace('簡介', '分類').replace('Session Overview', 'Category').replace('概要', 'カテゴリ')}</strong>
                 <p>${categoryText}</p>
             </div>
         ` : '';
