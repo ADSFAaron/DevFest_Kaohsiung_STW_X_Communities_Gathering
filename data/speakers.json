@@ -1,6 +1,63 @@
 {
   "speakers": [
     {
+      "id": "steve_yeh",
+      "name": {
+        "zh": "史蒂夫•葉 / Steve Yeh",
+        "en": "Steve Yeh",
+        "ja": "Steve Yeh"
+      },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "topic_category": {
+        "zh": "科技向善的實踐之路",
+        "en": "Goodness in Practice",
+        "ja": "テクノロジーで社会貢献を実現する道"
+      },
+      "bio": {
+        "zh": "現任精誠集團技術處長，致力於 UI/UX 設計與技術開發的整合與創新。2017 年創立 Able Studio，帶領團隊以人本設計為核心，成功為國內上市櫃企業、勞保局 e 化服務系統、零售通路、影音串流平台及矽谷新創企業等多領域客戶打造數位轉型解決方案，並於 2020 年榮獲德國國家設計獎優勝。曾任職於義美聯電與金色三麥餐飲集團，擔任數位內容與創意策劃部門經理，擁有豐富的跨領域產品開發及創新策劃經驗。相信透過深刻的使用者洞察與創新技術，能夠持續為企業創造成長與長遠價值。",
+        "en": "Currently serving as the Technology Director at SYSTEX, with a focus on integrating and innovating UI/UX design and technical development. Founded Able Studio in 2017, leading the team in delivering user-centered digital transformation solutions for diverse clients, including publicly listed companies, the Bureau of Labor Insurance’s digital service system, retail channels, video streaming platforms, and Silicon Valley startups. Also earned the German Design Award in 2020. Previous roles include managing digital content and creative planning at I-Mei and Lebledor, with extensive experience in cross-industry product development and innovation. Committed to leveraging deep user insights and cutting-edge technology to drive sustainable business growth.",
+        "ja": "現任は SYSTEX Group (精誠集團) の技術部門ディレクターであり、UI/UX デザインと技術開発の統合と革新に尽力しています。2017年に Able Studio を設立し、人間中心の設計を核として、国内の上場企業、労働保険局のe-サービスシステム、小売チャネル、動画ストリーミングプラットフォーム、シリコンバレーのスタートアップなど、多岐にわたるクライアント向けにデジタルトランスフォーメーションソリューションを成功裏に構築しました。2020年にはドイツ国家デザイン賞を受賞しています。以前は IMC および Le Blé d'Or (金色三麥餐飲集團) でデジタルコンテンツおよびクリエイティブ企画部門のマネージャーを務め、クロスドメインな製品開発と革新的な企画において豊富な経験を持っています。深いユーザーインサイトと革新技術を通じて、企業に持続的な成長と長期的価値を創造できると信じています。"
+      },
+      "session": {
+        "name": {
+          "zh": "當設計遇到現實世界 — 荔枝到了，但她沒笑",
+          "en": "When Design Meets the Real World — The Lychee Arrived, But She Didn't Smile",
+          "ja": "デザインが現実世界に出会う時 — ライチは届いたが、彼女は笑わなかった"
+        },
+        "abstract": {
+          "zh": "設計的理想，美得如詩句般優雅：「千里送荔枝，只為博君一笑。」<br>但在真實的專案裡，荔枝送到了，卻沒人笑，甚至沒人發現它來過。<br>煞費苦心打造的無障礙設計、自助服務平台、國際等級的體驗，最終的成果往往是「平順無聲」，就像氧氣一樣重要卻不被察覺。<br><br>本場分享延續 WebConf 2024《人月鬼話》的觀察視角，談設計落地時的各種現實困境與心理落差，從 UI/UX 實作、無障礙體驗到科技向善的內功修煉，邀請大家一起思考：<br>• 設計被看不見，是做對了，還是做錯了？<br>• 當「沒抱怨」成為唯一的回饋，我們還剩下什麼驕傲？<br>• 如何讓科技真正落實「善」，而非淪為漂亮的標籤？<br><br>這不是一場談夢想的演講，而是一場關於「把理想送出去後，它能否真的被接受」的真實練習。",
+          "en": "From UI/UX implementation and accessibility experience to the internal cultivation of Tech for Good, we invite everyone to consider:<br><br>• Is design invisible because it was done right, or because it was done wrong?<br>• When \"no complaints\" becomes the only feedback, what pride do we have left?<br>• How can we make technology truly embody \"good,\" rather than just becoming a pretty label?<br><br>This is not a talk about dreams, but a real-world practice on \"whether an ideal can truly be accepted after it's been sent out.\"",
+          "ja": "UI/UX の実装、アクセシビリティ体験からテクノロジー・フォー・グッド（Tech for Good）の内功修練まで、皆さんと一緒に以下の点を考察したいと思います：<br><br>• デザインが見えないのは、正しく実行されたからでしょうか、それとも間違っているからでしょうか？<br>• 「苦情がない」ことが唯一のフィードバックになったとき、私たちに残る誇りとは何でしょうか？<br>• テクノロジーを単なるきれいなレッテルにせず、いかにして真に**「善」**として実現させるのでしょうか？<br><br>これは夢を語る講演ではなく、「理想を送り出した後、それが本当に受け入れられるかどうか」についての現実的な演習です。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "13:30 - 14:10",
+        "track": "track1",
+        "session_id": "d1_t7_s1_title"
+      },
+      "tags": [
+        "中文議程",
+        "UI",
+        "UX",
+        "設計工程"
+      ],
+      "photo": "images/speak-steve_yeh.png",
+      "social": {
+        "Facebook": "https://www.facebook.com/steven.yeh",
+        "Medium": "https://medium.com/@stevenyeh"
+      }
+    },
+    {
       "id": "arturs_vancans",
       "name": {
         "zh": "韋亞圖 / Arturs Vancans",
@@ -55,63 +112,6 @@
       "social": {
         "Homepage": "https://www.secondspace.dev/kubi-robot",
         "Linkedin": "https://www.linkedin.com/in/avancans/"
-      }
-    },
-    {
-      "id": "steve_yeh",
-      "name": {
-        "zh": "史蒂夫•葉 / Steve Yeh",
-        "en": "Steve Yeh",
-        "ja": "Steve Yeh"
-      },
-      "org": {
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "title": {
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "topic_category": {
-        "zh": "科技向善的實踐之路",
-        "en": "Goodness in Practice",
-        "ja": "テクノロジーで社会貢献を実現する道"
-      },
-      "bio": {
-        "zh": "現任精誠集團技術處長，致力於 UI/UX 設計與技術開發的整合與創新。2017 年創立 Able Studio，帶領團隊以人本設計為核心，成功為國內上市櫃企業、勞保局 e 化服務系統、零售通路、影音串流平台及矽谷新創企業等多領域客戶打造數位轉型解決方案，並於 2020 年榮獲德國國家設計獎優勝。曾任職於義美聯電與金色三麥餐飲集團，擔任數位內容與創意策劃部門經理，擁有豐富的跨領域產品開發及創新策劃經驗。相信透過深刻的使用者洞察與創新技術，能夠持續為企業創造成長與長遠價值。",
-        "en": "Currently serving as the Technical Director at SYSTEX Group, committed to integrating and innovating UI/UX design with technology development. In 2017, founded Able Studio, leading the team to successfully create digital transformation solutions for clients across multiple sectors, including domestic listed companies, the Labor Insurance Bureau's e-service system, retail channels, video streaming platforms, and Silicon Valley startups, all based on human-centered design. The studio was honored with a German National Design Award in 2020. Previously held management roles at IMC and the Le Blé d'Or brewing group, overseeing digital content and creative planning, and possesses rich cross-disciplinary experience in product development and innovative strategy. Believes that through deep user insights and innovative technology, it's possible to continuously create growth and long-term value for enterprises.",
-        "ja": "現任は SYSTEX Group (精誠集團) の技術部門ディレクターであり、UI/UX デザインと技術開発の統合と革新に尽力しています。2017年に Able Studio を設立し、人間中心の設計を核として、国内の上場企業、労働保険局のe-サービスシステム、小売チャネル、動画ストリーミングプラットフォーム、シリコンバレーのスタートアップなど、多岐にわたるクライアント向けにデジタルトランスフォーメーションソリューションを成功裏に構築しました。2020年にはドイツ国家デザイン賞を受賞しています。以前は IMC および Le Blé d'Or (金色三麥餐飲集團) でデジタルコンテンツおよびクリエイティブ企画部門のマネージャーを務め、クロスドメインな製品開発と革新的な企画において豊富な経験を持っています。深いユーザーインサイトと革新技術を通じて、企業に持続的な成長と長期的価値を創造できると信じています。"
-      },
-      "session": {
-        "name": {
-          "zh": "當設計遇到現實世界 — 荔枝到了，但她沒笑",
-          "en": "When Design Meets the Real World — The Lychee Arrived, But She Didn't Smile",
-          "ja": "デザインが現実世界に出会う時 — ライチは届いたが、彼女は笑わなかった"
-        },
-        "abstract": {
-          "zh": "設計的理想，美得如詩句般優雅：「千里送荔枝，只為博君一笑。」<br>但在真實的專案裡，荔枝送到了，卻沒人笑，甚至沒人發現它來過。<br>煞費苦心打造的無障礙設計、自助服務平台、國際等級的體驗，最終的成果往往是「平順無聲」，就像氧氣一樣重要卻不被察覺。<br><br>本場分享延續 WebConf 2024《人月鬼話》的觀察視角，談設計落地時的各種現實困境與心理落差，從 UI/UX 實作、無障礙體驗到科技向善的內功修煉，邀請大家一起思考：<br>• 設計被看不見，是做對了，還是做錯了？<br>• 當「沒抱怨」成為唯一的回饋，我們還剩下什麼驕傲？<br>• 如何讓科技真正落實「善」，而非淪為漂亮的標籤？<br><br>這不是一場談夢想的演講，而是一場關於「把理想送出去後，它能否真的被接受」的真實練習。",
-          "en": "From UI/UX implementation and accessibility experience to the internal cultivation of Tech for Good, we invite everyone to consider:<br><br>• Is design invisible because it was done right, or because it was done wrong?<br>• When \"no complaints\" becomes the only feedback, what pride do we have left?<br>• How can we make technology truly embody \"good,\" rather than just becoming a pretty label?<br><br>This is not a talk about dreams, but a real-world practice on \"whether an ideal can truly be accepted after it's been sent out.\"",
-          "ja": "UI/UX の実装、アクセシビリティ体験からテクノロジー・フォー・グッド（Tech for Good）の内功修練まで、皆さんと一緒に以下の点を考察したいと思います：<br><br>• デザインが見えないのは、正しく実行されたからでしょうか、それとも間違っているからでしょうか？<br>• 「苦情がない」ことが唯一のフィードバックになったとき、私たちに残る誇りとは何でしょうか？<br>• テクノロジーを単なるきれいなレッテルにせず、いかにして真に**「善」**として実現させるのでしょうか？<br><br>これは夢を語る講演ではなく、「理想を送り出した後、それが本当に受け入れられるかどうか」についての現実的な演習です。"
-        }
-      },
-      "schedule": {
-        "day": 1,
-        "time": "13:30 - 14:10",
-        "track": "track1",
-        "session_id": "d1_t7_s1_title"
-      },
-      "tags": [
-        "中文議程",
-        "UI",
-        "UX",
-        "設計工程"
-      ],
-      "photo": "images/speak-steve_yeh.png",
-      "social": {
-        "Facebook": "https://www.facebook.com/steven.yeh",
-        "Medium": "https://medium.com/@stevenyeh"
       }
     },
     {
@@ -230,65 +230,6 @@
       }
     },
     {
-      "id": "simon_liu_2",
-      "name": {
-        "zh": "劉育維 / Simon Liu",
-        "en": "Simon Liu",
-        "ja": "Simon Liu"
-      },
-      "org": {
-        "zh": "APMIC / Google 開發者專家 - AI",
-        "en": "APMIC / Google Developer Expert - AI",
-        "ja": "APMIC / Google Developer Expert - AI"
-      },
-      "title": {
-        "zh": "MLOps Engineer",
-        "en": "MLOps Engineer",
-        "ja": "MLOps Engineer"
-      },
-      "topic_category": {
-        "zh": "第二屆 AI 生成大賽",
-        "en": "The 2nd AI Generative Contest",
-        "ja": "第2回 AI 生成コンテスト"
-      },
-      "bio": {
-        "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
-        "en": "Hello everyone, I am Simon Liu Yu-Wei. I previously worked as a Senior Engineer in the telecommunications industry and as a Customer Technical Success Engineer in the software industry, where I helped well-known major enterprises discuss and plan AI architecture for topics such as Machine Learning, Deep Learning, and Large Language Models. I have currently published over a hundred technical articles on Medium. My goal is to experiment with AI applications to help clients solve pain points using AI.",
-        "ja": "皆様、こんにちは。Simon 劉育維です。以前は通信業界でシニアエンジニアとして、またソフトウェア業界でカスタマーテクニカルサクセスエンジニアとして勤務し、大手有名企業に対し、機械学習、深層学習、大規模言語モデルなどの人工知能（AI）に関するAI アーキテクチャ計画の策定を支援してきました。現在、Medium には100本以上の技術記事を公開しています。私の目標は、AI を活用したアプリケーションを試行し、クライアントが AI を使って課題を解決できるように支援することです。"
-      },
-      "session": {
-        "name": {
-          "zh": "從 Google Stitch 到 Google Firebase Studio - AI-First Coding 平台撰寫",
-          "en": "From Google Stitch to Google Firebase Studio - Writing the AI-First Coding Platform",
-          "ja": "Google Stitch から Google Firebase Studio へ - AI-First コーディングプラットフォームを記述する"
-        },
-        "abstract": {
-          "zh": "透過 Google 一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：<br>1. 透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. 透過 Google Firebase Studio 來進行平台建置，並且說明如何進行修改<br><br>Hope you enjoy the workshop!",
-          "en": "Through a series of platform tools from Google, we can transform past visions into current reality. In this session, you will learn:<br>1. How to use Google Stitch for UI/UX planning.<br>2. How to build a platform using Google Firebase Studio and how to make modifications.<br><br>Hope you enjoy the workshop!",
-          "ja": "Google の一連のプラットフォームツールを通じて、過去の構想を現在の実際の形へと変える方法をご紹介します。このセッションでは、以下の点について学べます：<br>1. Google Stitch を通じて、UI/UX のプランニングをどのように行うか。<br>2. Google Firebase Studio を使ってプラットフォームを構築する方法、および変更を行う方法について。<br><br>ワークショップを楽しんでください！"
-        }
-      },
-      "schedule": {
-        "day": 2,
-        "time": "12:30 - 14:00",
-        "track": "track2",
-        "session_id": "d2_t4_s2_title"
-      },
-      "tags": [
-        "中文議程",
-        "Firebase",
-        "Stitch",
-        "AI"
-      ],
-      "photo": "images/speak-simon_liu.png",
-      "social": {
-        "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
-        "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
-        "GitHub": "https://github.com/LiuYuWei",
-        "Medium": "https://medium.com/@simon3458"
-      }
-    },
-    {
       "id": "matthias_geisler",
       "name": {
         "zh": "Matthias Geisler",
@@ -386,60 +327,6 @@
         "time": "14:30 - 15:10",
         "track": "track1",
         "session_id": "d1_t7_s2_title"
-      },
-      "tags": [
-        "中文議程",
-        "AI",
-        "Gemini",
-        "Android"
-      ],
-      "photo": "images/speak-kevin_chiu.png",
-      "social": {}
-    },
-    {
-      "id": "kevin_chiu_2",
-      "name": {
-        "zh": "邱哲綸 / Kevin Chiu",
-        "en": "Kevin Chiu",
-        "ja": "Kevin Chiu"
-      },
-      "org": {
-        "zh": "GDG 台北 / Google 開發者專家 - AI",
-        "en": "GDG Taipei / Google Developer Expert - AI",
-        "ja": "GDG Taipei / Google Developer Expert - AI"
-      },
-      "title": {
-        "zh": "GDG 台北 組織者 / AI GDE",
-        "en": "GDG Taipei Organizer / AI GDE",
-        "ja": "GDG Taipei Organizer / AI GDE"
-      },
-      "topic_category": {
-        "zh": "第二屆 AI 生成大賽",
-        "en": "The 2nd AI Generative Contest",
-        "ja": "第2回 AI 生成コンテスト"
-      },
-      "bio": {
-        "zh": "AI GDE / GDG 台北 組織者 / Android 工程師<br>致力於將 AI 導到在 edge 端上使用",
-        "en": "AI GDE / GDG Taipei Organizer / Android Engineer<br>Committed to bringing AI for use on the edge.",
-        "ja": "AI GDE / GDG Taipei オーガナイザー / Android エンジニア<br>エッジでの AI 利用の実現に尽力。"
-      },
-      "session": {
-        "name": {
-          "zh": "Vertex AI 多媒體：用 Veo 3 和 Image 4，與您『1314』共創視覺未來",
-          "en": "【The 2nd AI Generative Contest】Vertex AI Multimedia: Creating the Visual Future with Imagen 4 and Veo 3, Hand-in-Hand ('1314')",
-          "ja": "【第2回 AI 生成コンテスト】Vertex AI マルチメディア：Veo 3 および Imagen 4 と共に『1314』ビジュアルの未来を共創"
-        },
-        "abstract": {
-          "zh": "。什麼是 Vertex AI 上的 Imagen / Veo？<br>。深入了解 Imagen 4：功能與實例<br>。探索 Veo 3 ：強大的創作力",
-          "en": "• What are Imagen and Veo on Vertex AI?<br>• Deep Dive into Imagen 4: Features and Examples<br>• Exploring Veo 3: Powerful Creative Capability",
-          "ja": "• Vertex AI の Imagen / Veo とは何ですか？<br>• Imagen 4 の詳細：機能と実例<br>• Veo 3 の探求：強力な創造力<br><br>(注:『1314』は中国語のネット文化で「一生一世（永遠に）」を意味する発音の語呂合わせであり、長期的な共創を表しています。)"
-        }
-      },
-      "schedule": {
-        "day": 2,
-        "time": "14:30 - 16:00",
-        "track": "track2",
-        "session_id": "d2_t5_s2_title"
       },
       "tags": [
         "中文議程",
@@ -562,6 +449,119 @@
       "social": {
         "Homepage": "https://ithelp.ithome.com.tw/users/20141615/ironman/8135"
       }
+    },
+    {
+      "id": "simon_liu_2",
+      "name": {
+        "zh": "劉育維 / Simon Liu",
+        "en": "Simon Liu",
+        "ja": "Simon Liu"
+      },
+      "org": {
+        "zh": "APMIC / Google 開發者專家 - AI",
+        "en": "APMIC / Google Developer Expert - AI",
+        "ja": "APMIC / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "MLOps Engineer",
+        "en": "MLOps Engineer",
+        "ja": "MLOps Engineer"
+      },
+      "topic_category": {
+        "zh": "第二屆 AI 生成大賽",
+        "en": "The 2nd AI Generative Contest",
+        "ja": "第2回 AI 生成コンテスト"
+      },
+      "bio": {
+        "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
+        "en": "Hello everyone, I am Simon Liu Yu-Wei. I previously worked as a Senior Engineer in the telecommunications industry and as a Customer Technical Success Engineer in the software industry, where I helped well-known major enterprises discuss and plan AI architecture for topics such as Machine Learning, Deep Learning, and Large Language Models. I have currently published over a hundred technical articles on Medium. My goal is to experiment with AI applications to help clients solve pain points using AI.",
+        "ja": "皆様、こんにちは。Simon 劉育維です。以前は通信業界でシニアエンジニアとして、またソフトウェア業界でカスタマーテクニカルサクセスエンジニアとして勤務し、大手有名企業に対し、機械学習、深層学習、大規模言語モデルなどの人工知能（AI）に関するAI アーキテクチャ計画の策定を支援してきました。現在、Medium には100本以上の技術記事を公開しています。私の目標は、AI を活用したアプリケーションを試行し、クライアントが AI を使って課題を解決できるように支援することです。"
+      },
+      "session": {
+        "name": {
+          "zh": "從 Google Stitch 到 Google Firebase Studio - AI-First Coding 平台撰寫",
+          "en": "From Google Stitch to Google Firebase Studio - Writing the AI-First Coding Platform",
+          "ja": "Google Stitch から Google Firebase Studio へ - AI-First コーディングプラットフォームを記述する"
+        },
+        "abstract": {
+          "zh": "透過 Google 一系列的平台工具，讓大家可以從過去的想像，變成現在實際的樣貌，你可以在這個議程中了解到：<br>1. 透過 Google Stitch 了解到如何進行 UI/UX 的規劃<br>2. 透過 Google Firebase Studio 來進行平台建置，並且說明如何進行修改<br><br>Hope you enjoy the workshop!",
+          "en": "Through a series of platform tools from Google, we can transform past visions into current reality. In this session, you will learn:<br>1. How to use Google Stitch for UI/UX planning.<br>2. How to build a platform using Google Firebase Studio and how to make modifications.<br><br>Hope you enjoy the workshop!",
+          "ja": "Google の一連のプラットフォームツールを通じて、過去の構想を現在の実際の形へと変える方法をご紹介します。このセッションでは、以下の点について学べます：<br>1. Google Stitch を通じて、UI/UX のプランニングをどのように行うか。<br>2. Google Firebase Studio を使ってプラットフォームを構築する方法、および変更を行う方法について。<br><br>ワークショップを楽しんでください！"
+        }
+      },
+      "schedule": {
+        "day": 2,
+        "time": "12:30 - 14:00",
+        "track": "track2",
+        "session_id": "d2_t4_s2_title"
+      },
+      "tags": [
+        "中文議程",
+        "Firebase",
+        "Stitch",
+        "AI"
+      ],
+      "photo": "images/speak-simon_liu.png",
+      "social": {
+        "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
+        "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
+        "GitHub": "https://github.com/LiuYuWei",
+        "Medium": "https://medium.com/@simon3458"
+      }
+    },
+    {
+      "id": "kevin_chiu_2",
+      "name": {
+        "zh": "邱哲綸 / Kevin Chiu",
+        "en": "Kevin Chiu",
+        "ja": "Kevin Chiu"
+      },
+      "org": {
+        "zh": "GDG 台北 / Google 開發者專家 - AI",
+        "en": "GDG Taipei / Google Developer Expert - AI",
+        "ja": "GDG Taipei / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "GDG 台北 組織者 / AI GDE",
+        "en": "GDG Taipei Organizer / AI GDE",
+        "ja": "GDG Taipei Organizer / AI GDE"
+      },
+      "topic_category": {
+        "zh": "第二屆 AI 生成大賽",
+        "en": "The 2nd AI Generative Contest",
+        "ja": "第2回 AI 生成コンテスト"
+      },
+      "bio": {
+        "zh": "AI GDE / GDG 台北 組織者 / Android 工程師<br>致力於將 AI 導到在 edge 端上使用",
+        "en": "AI GDE / GDG Taipei Organizer / Android Engineer<br>Committed to bringing AI for use on the edge.",
+        "ja": "AI GDE / GDG Taipei オーガナイザー / Android エンジニア<br>エッジでの AI 利用の実現に尽力。"
+      },
+      "session": {
+        "name": {
+          "zh": "Vertex AI 多媒體：用 Veo 3 和 Image 4，與您『1314』共創視覺未來",
+          "en": "【The 2nd AI Generative Contest】Vertex AI Multimedia: Creating the Visual Future with Imagen 4 and Veo 3, Hand-in-Hand ('1314')",
+          "ja": "【第2回 AI 生成コンテスト】Vertex AI マルチメディア：Veo 3 および Imagen 4 と共に『1314』ビジュアルの未来を共創"
+        },
+        "abstract": {
+          "zh": "。什麼是 Vertex AI 上的 Imagen / Veo？<br>。深入了解 Imagen 4：功能與實例<br>。探索 Veo 3 ：強大的創作力",
+          "en": "• What are Imagen and Veo on Vertex AI?<br>• Deep Dive into Imagen 4: Features and Examples<br>• Exploring Veo 3: Powerful Creative Capability",
+          "ja": "• Vertex AI の Imagen / Veo とは何ですか？<br>• Imagen 4 の詳細：機能と実例<br>• Veo 3 の探求：強力な創造力<br><br>(注:『1314』は中国語のネット文化で「一生一世（永遠に）」を意味する発音の語呂合わせであり、長期的な共創を表しています。)"
+        }
+      },
+      "schedule": {
+        "day": 2,
+        "time": "14:30 - 16:00",
+        "track": "track2",
+        "session_id": "d2_t5_s2_title"
+      },
+      "tags": [
+        "中文議程",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
+      "photo": "images/speak-kevin_chiu.png",
+      "social": {}
     }
   ]
 }
