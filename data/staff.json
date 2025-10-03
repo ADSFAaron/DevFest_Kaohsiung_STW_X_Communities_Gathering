@@ -64,6 +64,30 @@
       },
       "photo": "images/staff-mac.png",
       "social": {}
+    },
+    {
+      "id": "ADSFAaron",
+      "name": {
+        "zh": "章魚燒",
+        "en": "Takoyaki",
+        "ja": "たこ焼き"
+      },
+      "description": {
+        "zh": "全端工程師👨‍💻",
+        "en": "Full Stack Engineer👨‍💻",
+        "ja": "フルスタック開発者"
+      },
+      "category": {
+        "zh": "第一天志工",
+        "en": "Day 1 Staff",
+        "ja": "1 日目ボランティア"
+      },
+      "photo": "images/staff-default-man.png",
+      "social": {
+        "Homepage": "https://blog.haoder.dev/",
+        "Linkedin": "https://www.linkedin.com/in/aaron-chuang/",
+        "GitHub": "https://github.com/ADSFAaron"
+      }
     }
   ]
 }
