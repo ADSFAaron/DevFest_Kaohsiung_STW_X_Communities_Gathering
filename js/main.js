@@ -862,4 +862,145 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize new hero features
     initCountdownTimer();
     initSlidesCarousel();
+
+    // --- Desk Items Interaction ---
+    function initDeskItemsInteraction() {
+        // Keyboard - glow and key press effect
+        const keyboard = document.querySelector('.desk-item.keyboard');
+        if (keyboard) {
+            keyboard.addEventListener('click', () => {
+                keyboard.classList.add('clicked');
+                setTimeout(() => {
+                    keyboard.classList.remove('clicked');
+                }, 500);
+            });
+        }
+
+        // Mouse - fly away effect
+        const mouse = document.querySelector('.desk-item.mouse');
+        if (mouse) {
+            mouse.addEventListener('click', () => {
+                mouse.classList.add('flying');
+                setTimeout(() => {
+                    // Reset position after animation
+                    mouse.style.visibility = 'hidden';
+                    setTimeout(() => {
+                        mouse.classList.remove('flying');
+                        mouse.style.visibility = 'visible';
+                    }, 2000);
+                }, 1000);
+            });
+        }
+
+        // Duck - bounce effect
+        const duck = document.querySelector('.desk-item.duck');
+        if (duck) {
+            duck.addEventListener('click', () => {
+                duck.classList.add('clicked');
+                setTimeout(() => {
+                    duck.classList.remove('clicked');
+                }, 600);
+            });
+        }
+
+        // Bubble Tea - shake and bubble float
+        const bubbleTea = document.querySelector('.desk-item.bubble-tea');
+        if (bubbleTea) {
+            bubbleTea.addEventListener('click', () => {
+                bubbleTea.classList.add('clicked');
+                setTimeout(() => {
+                    bubbleTea.classList.remove('clicked');
+                }, 800);
+            });
+        }
+
+        // Polaroid - enlarge to view photo and change colors
+        const polaroid = document.querySelector('.desk-item.polaroid');
+        if (polaroid) {
+            let isEnlarged = false;
+            const colors = ['yellow', 'pink', 'green', 'blue'];
+            let currentColorIndex = 0;
+
+            polaroid.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (!isEnlarged) {
+                    // Enlarge polaroid
+                    polaroid.classList.add('enlarged');
+                    isEnlarged = true;
+
+                    // Change color
+                    // Remove all color classes
+                    colors.forEach(color => {
+                        polaroid.classList.remove(`color-${color}`);
+                    });
+                    // Add new color class
+                    polaroid.classList.add(`color-${colors[currentColorIndex]}`);
+                    currentColorIndex = (currentColorIndex + 1) % colors.length;
+
+                    // Click anywhere to close
+                    const closeHandler = (e) => {
+                        if (!polaroid.contains(e.target) || e.target === polaroid) {
+                            polaroid.classList.remove('enlarged');
+                            isEnlarged = false;
+                            document.removeEventListener('click', closeHandler);
+                        }
+                    };
+
+                    setTimeout(() => {
+                        document.addEventListener('click', closeHandler);
+                    }, 100);
+                }
+            });
+        }
+
+        // Sticky Note - flutter effect and color change
+        const stickyNote = document.querySelector('.desk-item.sticky-note');
+        if (stickyNote) {
+            // Color rotation: yellow -> green -> blue -> pink -> yellow
+            const colors = ['yellow', 'green', 'blue', 'pink'];
+            let currentColorIndex = 0;
+
+            stickyNote.addEventListener('click', () => {
+                stickyNote.classList.add('clicked');
+
+                // Change color
+                colors.forEach(color => {
+                    stickyNote.classList.remove(`color-${color}`);
+                });
+
+                // Move to next color
+                currentColorIndex = (currentColorIndex + 1) % colors.length;
+                stickyNote.classList.add(`color-${colors[currentColorIndex]}`);
+
+                setTimeout(() => {
+                    stickyNote.classList.remove('clicked');
+                }, 400);
+            });
+        }
+
+        // Pizza - spin effect
+        const pizza = document.querySelector('.desk-item.pizza');
+        if (pizza) {
+            pizza.addEventListener('click', () => {
+                pizza.classList.add('clicked');
+                setTimeout(() => {
+                    pizza.classList.remove('clicked');
+                }, 800);
+            });
+        }
+
+        // Countdown Clock - flip number effect
+        const countdownClock = document.querySelector('.desk-item.countdown-clock');
+        if (countdownClock) {
+            countdownClock.addEventListener('click', () => {
+                countdownClock.classList.add('clicked');
+                setTimeout(() => {
+                    countdownClock.classList.remove('clicked');
+                }, 600);
+            });
+        }
+    }
+
+    // Initialize desk items interaction
+    initDeskItemsInteraction();
 });

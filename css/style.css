@@ -604,10 +604,187 @@ main {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .desk-item:hover {
     transform: translateY(-5px) scale(1.05);
+}
+
+/* Interactive animations */
+@keyframes key-press {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(2px); }
+}
+
+@keyframes key-glow {
+    0%, 100% { filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1)); }
+    50% { filter: drop-shadow(0 0 20px rgba(66, 133, 244, 0.8)); }
+}
+
+.desk-item.keyboard.clicked {
+    animation: key-glow 0.5s ease;
+}
+
+.desk-item.keyboard.clicked .keys rect {
+    animation: key-press 0.1s ease;
+}
+
+@keyframes mouse-fly {
+    0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+    100% { transform: translate(300px, -500px) rotate(45deg); opacity: 0; }
+}
+
+.desk-item.mouse.flying {
+    animation: mouse-fly 1s ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes duck-bounce {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-15px) rotate(-5deg); }
+    75% { transform: translateY(-15px) rotate(5deg); }
+}
+
+@keyframes duck-blink {
+    0%, 90%, 100% { opacity: 1; }
+    95% { opacity: 0; }
+}
+
+.desk-item.duck.clicked {
+    animation: duck-bounce 0.6s ease;
+}
+
+@keyframes tea-shake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+}
+
+@keyframes bubble-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
+.desk-item.bubble-tea.clicked {
+    animation: tea-shake 0.5s ease;
+}
+
+.desk-item.bubble-tea.clicked circle {
+    animation: bubble-float 0.8s ease infinite;
+}
+
+@keyframes polaroid-enlarge {
+    0% {
+        transform: scale(1) rotate(0deg);
+        z-index: 1;
+    }
+    100% {
+        transform: scale(3.5) rotate(0deg) translateY(-20px);
+        z-index: 1000;
+    }
+}
+
+.desk-item.polaroid.enlarged {
+    animation: polaroid-enlarge 0.4s ease forwards;
+    position: relative;
+    z-index: 1000;
+}
+
+.desk-item.polaroid.enlarged svg {
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4));
+}
+
+/* Polaroid color transitions */
+.desk-item.polaroid svg rect:first-child {
+    transition: fill 0.3s ease;
+}
+
+.desk-item.polaroid.color-yellow svg rect:first-child {
+    fill: #ffd427;
+}
+
+.desk-item.polaroid.color-pink svg rect:first-child {
+    fill: #ff7daf;
+}
+
+.desk-item.polaroid.color-green svg rect:first-child {
+    fill: #5cdb6d;
+}
+
+.desk-item.polaroid.color-blue svg rect:first-child {
+    fill: #57caff;
+}
+
+@keyframes sticky-flutter {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-8deg); }
+    75% { transform: rotate(8deg); }
+}
+
+.desk-item.sticky-note.clicked {
+    animation: sticky-flutter 0.4s ease;
+}
+
+/* Sticky Note color transitions */
+.desk-item.sticky-note svg rect {
+    transition: fill 0.3s ease;
+}
+
+.desk-item.sticky-note.color-yellow svg rect {
+    fill: #ffd427;
+}
+
+.desk-item.sticky-note.color-green svg rect {
+    fill: #5cdb6d;
+}
+
+.desk-item.sticky-note.color-blue svg rect {
+    fill: #57caff;
+}
+
+.desk-item.sticky-note.color-pink svg rect {
+    fill: #ff7daf;
+}
+
+@keyframes pizza-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.desk-item.pizza.clicked {
+    animation: pizza-spin 0.8s ease;
+}
+
+/* Countdown Clock flip effect */
+@keyframes flip-number {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes clock-glow {
+    0%, 100% {
+        box-shadow: 0 0 0px rgba(66, 133, 244, 0);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(66, 133, 244, 0.6);
+    }
+}
+
+.desk-item.countdown-clock.clicked .countdown-number {
+    animation: flip-number 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.desk-item.countdown-clock.clicked .clock-screen {
+    animation: clock-glow 0.6s ease;
 }
 
 .desk-item svg {
