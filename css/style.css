@@ -508,6 +508,96 @@ main {
     padding: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     border: 8px solid #3C4043;
+    transition: background 0.5s ease;
+}
+
+/* Monitor Power Button */
+.monitor-power-button {
+    position: absolute;
+    bottom: 4px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    background: #3C4043;
+    border: 2px solid #5F6368;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    padding: 0;
+}
+
+.monitor-power-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(66, 133, 244, 0.5);
+}
+
+.power-led {
+    width: 12px;
+    height: 12px;
+    background: #34a853;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #34a853, inset 0 2px 4px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.monitor-screen.screen-off .power-led {
+    background: #ea4335;
+    box-shadow: 0 0 8px #ea4335, inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Screen off state */
+.monitor-screen.screen-off {
+    background: #000;
+}
+
+.monitor-screen.screen-off .slides-carousel,
+.monitor-screen.screen-off .slide-indicators {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Screen power transition animations */
+@keyframes screen-power-off {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+        transform: scaleY(0.02) scaleX(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scaleY(0) scaleX(1);
+    }
+}
+
+@keyframes screen-power-on {
+    0% {
+        opacity: 0;
+        transform: scaleY(0) scaleX(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scaleY(0.02) scaleX(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleY(1) scaleX(1);
+    }
+}
+
+.monitor-screen.powering-off .slides-carousel,
+.monitor-screen.powering-off .slide-indicators {
+    animation: screen-power-off 0.5s ease-out forwards;
+}
+
+.monitor-screen.powering-on .slides-carousel,
+.monitor-screen.powering-on .slide-indicators {
+    animation: screen-power-on 0.5s ease-out forwards;
 }
 
 .monitor-stand {
@@ -968,6 +1058,18 @@ main {
     .monitor-screen {
         padding: 12px;
         border: 4px solid #3C4043;
+    }
+
+    .monitor-power-button {
+        bottom: 2px;
+        right: 15px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .power-led {
+        width: 10px;
+        height: 10px;
     }
 
     .monitor-stand::before {

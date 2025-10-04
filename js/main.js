@@ -1003,4 +1003,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize desk items interaction
     initDeskItemsInteraction();
+
+    // --- Monitor Power Button ---
+    function initMonitorPowerButton() {
+        const powerButton = document.getElementById('monitor-power-button');
+        const monitorScreen = document.querySelector('.monitor-screen');
+
+        if (!powerButton || !monitorScreen) return;
+
+        let isScreenOn = true;
+
+        powerButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            if (isScreenOn) {
+                // Turn off screen
+                monitorScreen.classList.add('powering-off');
+
+                setTimeout(() => {
+                    monitorScreen.classList.remove('powering-off');
+                    monitorScreen.classList.add('screen-off');
+                    isScreenOn = false;
+                }, 500);
+            } else {
+                // Turn on screen
+                monitorScreen.classList.remove('screen-off');
+                monitorScreen.classList.add('powering-on');
+
+                setTimeout(() => {
+                    monitorScreen.classList.remove('powering-on');
+                    isScreenOn = true;
+                }, 500);
+            }
+        });
+    }
+
+    // Initialize monitor power button
+    initMonitorPowerButton();
 });
