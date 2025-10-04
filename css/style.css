@@ -103,15 +103,15 @@ nav {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 12px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--md-sys-color-on-surface);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    padding: 12px 20px;
+    padding: 10px 14px;
     border-radius: 24px;
     transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
     position: relative;
@@ -1868,7 +1868,7 @@ main {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
     /* Breakpoint for tablet and smaller - Material 3 Expressive */
     .nav-links {
         display: none; /* Hide the horizontal nav links */
@@ -2001,7 +2001,7 @@ main {
 }
 
 /* Mobile navigation active state */
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
     .nav-link.active::after {
         display: none;
     }
