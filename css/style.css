@@ -71,6 +71,17 @@ html {
     --md-sys-elevation-5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
+/* Utility Classes */
+.break-on-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .break-on-mobile {
+        display: block;
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
