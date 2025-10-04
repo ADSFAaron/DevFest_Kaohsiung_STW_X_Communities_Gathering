@@ -459,6 +459,17 @@ const translations = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+    // 延遲 3.7 秒後隱藏 loading 遮罩
+    setTimeout(() => {
+        const loadingOverlay = document.querySelector('.loading-overlay');
+        if (loadingOverlay) {
+            loadingOverlay.classList.add('hide');
+            setTimeout(() => {
+                loadingOverlay.style.display = 'none';
+            } , 1000); // 等待淡出動畫完成後完全隱藏
+        }
+    }, 3700);
+
     const speakerCards = document.querySelectorAll('.speaker-card');
 
     speakerCards.forEach(card => {
