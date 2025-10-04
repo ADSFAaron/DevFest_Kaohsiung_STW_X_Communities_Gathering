@@ -41,9 +41,9 @@
       },
       "schedule": {
         "day": 1,
-        "time": "13:30 - 14:10",
+        "time": "15:30 - 16:10",
         "track": "track1",
-        "session_id": "d1_t7_s1_title"
+        "session_id": "d1_t9_s1_title"
       },
       "tags": [
         "中文議程",
@@ -155,9 +155,9 @@
       },
       "schedule": {
         "day": 1,
-        "time": "15:30 - 16:10",
-        "track": "track2",
-        "session_id": "d1_t9_s2_title"
+        "time": "14:30 - 15:10",
+        "track": "track1",
+        "session_id": "d1_t7_s2_title"
       },
       "tags": [
         "中文議程",
@@ -324,9 +324,9 @@
       },
       "schedule": {
         "day": 1,
-        "time": "14:30 - 15:10",
-        "track": "track1",
-        "session_id": "d1_t7_s2_title"
+        "time": "15:30 - 16:10",
+        "track": "track2",
+        "session_id": "d1_t9_s2_title"
       },
       "tags": [
         "中文議程",
@@ -378,9 +378,9 @@
       },
       "schedule": {
         "day": 1,
-        "time": "15:30 - 16:10",
+        "time": "13:30 - 14:10",
         "track": "track1",
-        "session_id": "d1_t9_s1_title"
+        "session_id": "d1_t7_s1_title"
       },
       "tags": [
         "中文議程",
@@ -447,7 +447,8 @@
       ],
       "photo": "images/speak-ray_yuan_liu.png",
       "social": {
-        "Homepage": "https://ithelp.ithome.com.tw/users/20141615/ironman/8135"
+        "Homepage": "https://louis383.medium.com/",
+        "IT 鐵人賽": "https://ithelp.ithome.com.tw/users/20141615/ironman/8135"
       }
     },
     {
