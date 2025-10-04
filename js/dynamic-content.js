@@ -400,6 +400,10 @@ class DynamicContentManager {
 
         const socialLinks = this.createSocialLinks(staff.social);
 
+        // 組織和職稱（如果有的話）
+        const orgHTML = staff.org ? `<p class="staff-org">${this.getText(staff.org)}</p>` : '';
+        const titleHTML = staff.title ? `<p class="staff-title-position">${this.getText(staff.title)}</p>` : '';
+
         card.innerHTML = `
             <img alt="${this.getText(staff.name)} Photo"
                  class="staff-image"
@@ -407,6 +411,8 @@ class DynamicContentManager {
                  style="cursor: pointer;">
             <div class="staff-info">
                 <h3 class="staff-title">${this.getText(staff.name)}</h3>
+                ${orgHTML}
+                ${titleHTML}
                 <div class="staff-category">${this.getText(staff.category)}</div>
                 <div class="staff-description">${this.getText(staff.description)}</div>
                 ${socialLinks}

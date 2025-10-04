@@ -7,6 +7,16 @@
         "en": "Andy",
         "ja": "Andy"
       },
+      "org": {
+        "zh": "GDG 高雄",
+        "en": "GDG Kaohsiung",
+        "ja": "GDG 高雄"
+      },
+      "title": {
+        "zh": "組織者 / Android 工程師",
+        "en": "Organizer / Android Engineer",
+        "ja": "オーガナイザー / Android エンジニア"
+      },
       "description": {
         "zh": "GDG 高雄組織者、Android 工程師",
         "en": "GDG Kaohsiung Organizer, Android Engineer",
@@ -32,6 +42,16 @@
         "en": "Leigh",
         "ja": "Leigh"
       },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
       "description": {
         "zh": "喜歡上山也喜歡下海，旅行與寫作。",
         "en": "Enjoys mountaineering and deep-sea activities, traveling and writing.",
@@ -52,6 +72,16 @@
         "en": "Mac",
         "ja": "Mac"
       },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "工程師",
+        "en": "Engineer",
+        "ja": "エンジニア"
+      },
       "description": {
         "zh": "Just an Engineer",
         "en": "Just an Engineer",
@@ -71,6 +101,16 @@
         "zh": "章魚燒",
         "en": "Takoyaki",
         "ja": "たこ焼き"
+      },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "全端工程師",
+        "en": "Full Stack Engineer",
+        "ja": "フルスタック開発者"
       },
       "description": {
         "zh": "全端工程師👨‍💻",
