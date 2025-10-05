@@ -88,8 +88,8 @@
 ```javascript
 // 新增講者
 const newSpeaker = {
-  id: "speaker-id",
-  name: { zh: "中文名", en: "English Name" },
+  id: 'speaker-id',
+  name: { zh: '中文名', en: 'English Name' },
   // ... 其他資料
 };
 await window.dynamicContentManager.addSpeaker(newSpeaker);

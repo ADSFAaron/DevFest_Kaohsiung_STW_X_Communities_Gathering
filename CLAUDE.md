@@ -61,28 +61,28 @@ npx serve .
 ### Key Systems
 
 1. **Navigation System** (`js/main.js:400+`):
-    - Page switching via `data-page` attributes without actual navigation
-    - Mobile hamburger menu with overlay
-    - Active state management across pages
+   - Page switching via `data-page` attributes without actual navigation
+   - Mobile hamburger menu with overlay
+   - Active state management across pages
 
 2. **Internationalization System** (`js/main.js:1-200`):
-    - Translation objects with nested language keys
-    - Dynamic text replacement using `data-i18n-key` attributes
-    - Language switcher with localStorage persistence
-    - Support for zh-Hant, en, and ja languages
+   - Translation objects with nested language keys
+   - Dynamic text replacement using `data-i18n-key` attributes
+   - Language switcher with localStorage persistence
+   - Support for zh-Hant, en, and ja languages
 
 3. **Dynamic Content Management** (`js/dynamic-content.js`):
-    - `DynamicContentManager` class handles all dynamic content
-    - JSON-based data loading from `/data` directory
-    - Multi-language content support in JSON files
-    - Automatic rendering of speakers, sponsors, community booths, etc.
-    - Content validation and error handling
+   - `DynamicContentManager` class handles all dynamic content
+   - JSON-based data loading from `/data` directory
+   - Multi-language content support in JSON files
+   - Automatic rendering of speakers, sponsors, community booths, etc.
+   - Content validation and error handling
 
 4. **Event Information Structure**:
-    - Multi-day schedule with track-based organization
-    - Speaker cards with expandable bio sections
-    - Sponsor tier system (gold/silver/bronze)
-    - Tech creation market booth displays
+   - Multi-day schedule with track-based organization
+   - Speaker cards with expandable bio sections
+   - Sponsor tier system (gold/silver/bronze)
+   - Tech creation market booth displays
 
 ### Content Management Architecture
 

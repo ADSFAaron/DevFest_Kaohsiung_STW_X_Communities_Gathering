@@ -32,8 +32,8 @@ export default [
       'prefer-template': 'warn',
 
       // Code Style (defer to Prettier for most formatting)
-      'eqeqeq': ['error', 'always'],
-      'curly': ['error', 'all'],
+      eqeqeq: ['error', 'always'],
+      curly: ['error', 'all'],
       'no-multi-spaces': 'error',
       'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
 

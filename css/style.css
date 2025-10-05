@@ -29,12 +29,12 @@ html {
 
   /* Material 3 Expressive Color System */
   --md-sys-color-primary: var(--color-blue);
-  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-on-primary: #ffffff;
   --md-sys-color-primary-container: var(--color-pastel-blue);
   --md-sys-color-on-primary-container: var(--color-dark-gray);
 
   --md-sys-color-secondary: var(--color-green);
-  --md-sys-color-on-secondary: #FFFFFF;
+  --md-sys-color-on-secondary: #ffffff;
   --md-sys-color-secondary-container: var(--color-pastel-green);
   --md-sys-color-on-secondary-container: var(--color-dark-gray);
 
@@ -44,11 +44,11 @@ html {
   --md-sys-color-on-tertiary-container: var(--color-dark-gray);
 
   --md-sys-color-error: var(--color-red);
-  --md-sys-color-on-error: #FFFFFF;
+  --md-sys-color-on-error: #ffffff;
   --md-sys-color-error-container: var(--color-pastel-pink);
   --md-sys-color-on-error-container: var(--color-dark-gray);
 
-  --md-sys-color-surface: #FFFFFF;
+  --md-sys-color-surface: #ffffff;
   --md-sys-color-on-surface: var(--color-dark-gray);
   --md-sys-color-surface-variant: var(--color-light-gray);
   --md-sys-color-on-surface-variant: #525252;
@@ -57,7 +57,7 @@ html {
   --md-sys-color-outline-variant: #e0e0e0;
 
   /* Surface containers */
-  --md-sys-color-surface-container-lowest: #FFFFFF;
+  --md-sys-color-surface-container-lowest: #ffffff;
   --md-sys-color-surface-container-low: #fcfcfc;
   --md-sys-color-surface-container: #f6f6f6;
   --md-sys-color-surface-container-high: var(--color-light-gray);
@@ -68,7 +68,7 @@ html {
   --md-sys-elevation-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   --md-sys-elevation-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   --md-sys-elevation-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  --md-sys-elevation-5: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  --md-sys-elevation-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 /* Utility Classes */
@@ -210,7 +210,7 @@ nav {
   box-shadow: var(--md-sys-elevation-1);
 }
 
-.language-dropdown-trigger[aria-expanded="true"] .dropdown-icon {
+.language-dropdown-trigger[aria-expanded='true'] .dropdown-icon {
   transform: rotate(180deg);
 }
 
@@ -364,7 +364,12 @@ nav {
   justify-content: center;
   gap: 12px;
   padding: 20px 40px;
-  background: linear-gradient(135deg, var(--md-sys-color-primary), var(--color-halftone-blue), var(--md-sys-color-secondary));
+  background: linear-gradient(
+    135deg,
+    var(--md-sys-color-primary),
+    var(--color-halftone-blue),
+    var(--md-sys-color-secondary)
+  );
   color: var(--md-sys-color-on-primary);
   text-decoration: none;
   font-weight: 700;
@@ -479,7 +484,7 @@ main {
 /* === New Hero Section: Engineer's Desk Scene === */
 .hero {
   position: relative;
-  background: linear-gradient(135deg, #E8F0FE 0%, #FFF8E1 100%);
+  background: linear-gradient(135deg, #e8f0fe 0%, #fff8e1 100%);
   padding: 40px 40px 40px;
   border-radius: 32px;
   box-shadow: var(--md-sys-elevation-3);
@@ -518,7 +523,7 @@ main {
   border-radius: 16px 16px 0 0;
   padding: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  border: 8px solid #3C4043;
+  border: 8px solid #3c4043;
   transition: background 0.5s ease;
 }
 
@@ -529,8 +534,8 @@ main {
   right: 25px;
   width: 30px;
   height: 30px;
-  background: #3C4043;
-  border: 2px solid #5F6368;
+  background: #3c4043;
+  border: 2px solid #5f6368;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -551,13 +556,17 @@ main {
   height: 12px;
   background: #34a853;
   border-radius: 50%;
-  box-shadow: 0 0 8px #34a853, inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 0 8px #34a853,
+    inset 0 2px 4px rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
 }
 
 .monitor-screen.screen-off .power-led {
   background: #ea4335;
-  box-shadow: 0 0 8px #ea4335, inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 0 8px #ea4335,
+    inset 0 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 /* Screen off state */
@@ -614,7 +623,7 @@ main {
 .monitor-stand {
   width: 200px;
   height: 20px;
-  background: linear-gradient(to bottom, #5F6368 0%, #3C4043 100%);
+  background: linear-gradient(to bottom, #5f6368 0%, #3c4043 100%);
   margin: 0 auto;
   border-radius: 0 0 8px 8px;
   position: relative;
@@ -628,7 +637,7 @@ main {
   transform: translateX(-50%);
   width: 300px;
   height: 30px;
-  background: #DADCE0;
+  background: #dadce0;
   border-radius: 8px;
 }
 
@@ -675,13 +684,13 @@ main {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #5F6368;
+  background: #5f6368;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .slide-indicators .indicator.active {
-  background: #4285F4;
+  background: #4285f4;
   width: 24px;
   border-radius: 4px;
 }
@@ -691,11 +700,11 @@ main {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(80px, 1fr)) [ auto-fit ];
+  -ms-grid-columns: (minmax(80px, 1fr)) [ auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 24px;
   padding: 40px 20px;
-  background: linear-gradient(180deg, #F1F3F4 0%, #E8EAED 100%);
+  background: linear-gradient(180deg, #f1f3f4 0%, #e8eaed 100%);
   border-radius: 16px;
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -714,7 +723,8 @@ main {
 
 /* Interactive animations */
 @keyframes key-press {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -723,7 +733,8 @@ main {
 }
 
 @keyframes key-glow {
-  0%, 100% {
+  0%,
+  100% {
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
   }
   50% {
@@ -756,7 +767,8 @@ main {
 }
 
 @keyframes duck-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   25% {
@@ -768,7 +780,9 @@ main {
 }
 
 @keyframes duck-blink {
-  0%, 90%, 100% {
+  0%,
+  90%,
+  100% {
     opacity: 1;
   }
   95% {
@@ -781,7 +795,8 @@ main {
 }
 
 @keyframes tea-shake {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0deg);
   }
   25% {
@@ -793,7 +808,8 @@ main {
 }
 
 @keyframes bubble-float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -852,7 +868,8 @@ main {
 }
 
 @keyframes sticky-flutter {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0deg);
   }
   25% {
@@ -915,7 +932,8 @@ main {
 }
 
 @keyframes clock-glow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 0px rgba(66, 133, 244, 0);
   }
   50% {
@@ -968,11 +986,13 @@ main {
 }
 
 .clock-display {
-  background: linear-gradient(135deg, #202124 0%, #3C4043 100%);
+  background: linear-gradient(135deg, #202124 0%, #3c4043 100%);
   border-radius: 12px;
   padding: 16px 24px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.1);
-  border: 2px solid #5F6368;
+  box-shadow:
+    0 8px 16px rgba(0, 0, 0, 0.3),
+    inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  border: 2px solid #5f6368;
 }
 
 .clock-screen {
@@ -999,7 +1019,7 @@ main {
 .countdown-number {
   font-size: 24px;
   font-weight: bold;
-  color: #4285F4;
+  color: #4285f4;
   text-shadow: 0 0 10px rgba(66, 133, 244, 0.8);
   min-width: 40px;
   text-align: center;
@@ -1007,22 +1027,24 @@ main {
 
 .countdown-separator {
   font-size: 24px;
-  color: #4285F4;
+  color: #4285f4;
   font-weight: bold;
   animation: blink 1s infinite;
 }
 
 .countdown-label {
   font-size: 10px;
-  color: #BDC1C6;
+  color: #bdc1c6;
   text-transform: uppercase;
 }
 
 @keyframes blink {
-  0%, 49% {
+  0%,
+  49% {
     opacity: 1;
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 0.3;
   }
 }
@@ -1042,7 +1064,7 @@ main {
   font-weight: 700;
   line-height: 1.3;
   margin: 0 0 24px;
-  background: linear-gradient(135deg, #4285F4 0%, #34A853 50%, #FBBC04 75%, #EA4335 100%);
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 50%, #fbbc04 75%, #ea4335 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1059,7 +1081,7 @@ main {
 
 .event-date {
   font-size: 20px;
-  color: #5F6368;
+  color: #5f6368;
   margin: 0;
 }
 
@@ -1067,7 +1089,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  color: #4285F4;
+  color: #4285f4;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -1082,7 +1104,7 @@ main {
 .cta-button {
   display: inline-block;
   padding: 16px 48px;
-  background: linear-gradient(135deg, #4285F4 0%, #1a73e8 100%);
+  background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%);
   color: #fff;
   text-decoration: none;
   font-size: 18px;
@@ -1116,7 +1138,7 @@ main {
 
   .monitor-screen {
     padding: 12px;
-    border: 4px solid #3C4043;
+    border: 4px solid #3c4043;
   }
 
   .monitor-power-button {
@@ -1386,7 +1408,6 @@ main {
     z-index: 1;
   }
 
-
   .carousel-indicators {
     bottom: 12px;
   }
@@ -1412,7 +1433,6 @@ main {
     position: relative;
     z-index: 1;
   }
-
 }
 
 /* Content Section Styles */
@@ -1523,7 +1543,6 @@ main {
   border-left-color: var(--color-blue);
 }
 
-
 .session.single-track {
   border-left-color: var(--color-yellow);
 }
@@ -1539,17 +1558,17 @@ main {
 }
 
 /* 桌面版：為不同類型的休息時間添加特殊樣式 */
-.session.break[data-break-type="registration"] {
+.session.break[data-break-type='registration'] {
   background: linear-gradient(135deg, var(--color-pastel-blue), #e3f2fd);
   border-left-color: var(--color-blue);
 }
 
-.session.break[data-break-type="lunch"] {
+.session.break[data-break-type='lunch'] {
   background: linear-gradient(135deg, var(--color-pastel-yellow), #fff3e0);
   border-left-color: var(--color-yellow);
 }
 
-.session.break[data-break-type="networking"] {
+.session.break[data-break-type='networking'] {
   background: linear-gradient(135deg, var(--color-pastel-green), #e8f5e8);
   border-left-color: var(--color-green);
 }
@@ -1617,7 +1636,10 @@ main {
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s,
+    border 0.3s;
   overflow: hidden;
   border: 2px solid transparent;
 }
@@ -1653,7 +1675,8 @@ main {
   margin: 0 0 4px 0;
 }
 
-.speaker-org, .speaker-title {
+.speaker-org,
+.speaker-title {
   font-size: 14px;
   margin: 0 0 4px 0;
   color: #5f6368;
@@ -1773,7 +1796,9 @@ main {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -1849,7 +1874,9 @@ main {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -1923,7 +1950,6 @@ main {
   color: var(--md-sys-color-on-surface-variant);
 }
 
-
 /* Tickets Section */
 .tickets-grid {
   display: grid;
@@ -1937,7 +1963,9 @@ main {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   display: flex;
   flex-direction: column;
   padding: 24px;
@@ -2010,7 +2038,9 @@ main {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   overflow: hidden;
 }
 
@@ -2449,37 +2479,37 @@ html.page-switching {
 }
 
 /* 藍色類別卡片 hover 外框 */
-.info-card:has(.info-title[data-i18n-key="about_event_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="devfest_what_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="stw_what_title"]):hover {
+.info-card:has(.info-title[data-i18n-key='about_event_title']):hover,
+.info-card:has(.info-title[data-i18n-key='devfest_what_title']):hover,
+.info-card:has(.info-title[data-i18n-key='stw_what_title']):hover {
   border-color: #4285f4;
 }
 
 /* 綠色類別卡片 hover 外框 */
-.info-card:has(.info-title[data-i18n-key="devfest_section_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="day1_theme_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="day2_theme_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="polaroid_fest_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="pizza_time_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="after_buffet_title"]):hover {
+.info-card:has(.info-title[data-i18n-key='devfest_section_title']):hover,
+.info-card:has(.info-title[data-i18n-key='day1_theme_title']):hover,
+.info-card:has(.info-title[data-i18n-key='day2_theme_title']):hover,
+.info-card:has(.info-title[data-i18n-key='polaroid_fest_title']):hover,
+.info-card:has(.info-title[data-i18n-key='pizza_time_title']):hover,
+.info-card:has(.info-title[data-i18n-key='after_buffet_title']):hover {
   border-color: #34a853;
 }
 
 /* 黃色類別卡片 hover 外框 */
-.info-card:has(.info-title[data-i18n-key="stw_section_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="networking_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="tech_market_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="meeting_room_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="food_drinks_title"]):hover {
+.info-card:has(.info-title[data-i18n-key='stw_section_title']):hover,
+.info-card:has(.info-title[data-i18n-key='networking_title']):hover,
+.info-card:has(.info-title[data-i18n-key='tech_market_title']):hover,
+.info-card:has(.info-title[data-i18n-key='meeting_room_title']):hover,
+.info-card:has(.info-title[data-i18n-key='food_drinks_title']):hover {
   border-color: #f9ab00;
 }
 
 /* 紅色類別卡片 hover 外框 */
-.info-card:has(.info-title[data-i18n-key="event_tips_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="transport_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="eco_friendly_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="code_conduct_title"]):hover,
-.info-card:has(.info-title[data-i18n-key="privacy_title"]):hover {
+.info-card:has(.info-title[data-i18n-key='event_tips_title']):hover,
+.info-card:has(.info-title[data-i18n-key='transport_title']):hover,
+.info-card:has(.info-title[data-i18n-key='eco_friendly_title']):hover,
+.info-card:has(.info-title[data-i18n-key='code_conduct_title']):hover,
+.info-card:has(.info-title[data-i18n-key='privacy_title']):hover {
   border-color: #ea4335;
 }
 
@@ -2487,7 +2517,8 @@ html.page-switching {
   opacity: 0.3;
 }
 
-.info-title, .info-description {
+.info-title,
+.info-description {
   position: relative;
   z-index: 1;
 }
@@ -2518,122 +2549,121 @@ html.page-switching {
 
 /* Blue category - #c3ecf6 */
 /* 關於活動 */
-.info-card:has(.info-title[data-i18n-key="about_event_title"])::before,
+.info-card:has(.info-title[data-i18n-key='about_event_title'])::before,
 .info-layer:nth-child(1) .info-card::before {
   background-color: #c3ecf6;
 }
 
 /* DevFest 高雄場 是什麼？ */
-.info-card:has(.info-title[data-i18n-key="devfest_what_title"])::before,
+.info-card:has(.info-title[data-i18n-key='devfest_what_title'])::before,
 .info-layer:nth-child(2) .info-card:nth-child(1)::before {
   background-color: #c3ecf6;
 }
 
 /* 南臺灣技術社群大聚 是什麼？ */
-.info-card:has(.info-title[data-i18n-key="stw_what_title"])::before,
+.info-card:has(.info-title[data-i18n-key='stw_what_title'])::before,
 .info-layer:nth-child(2) .info-card:nth-child(2)::before {
   background-color: #c3ecf6;
 }
 
 /* Green category - #ccf6c5 */
 /* DevFest 2025 高雄場 */
-.info-card:has(.info-title[data-i18n-key="devfest_section_title"])::before,
+.info-card:has(.info-title[data-i18n-key='devfest_section_title'])::before,
 .info-layer:nth-child(3) .info-card::before {
   background-color: #ccf6c5;
 }
 
 /* 第一日議程主題：實作 (Implements) */
-.info-card:has(.info-title[data-i18n-key="day1_theme_title"])::before,
+.info-card:has(.info-title[data-i18n-key='day1_theme_title'])::before,
 .info-layer:nth-child(4) .info-card:nth-child(1)::before {
   background-color: #ccf6c5;
 }
 
 /* 第二日工作坊主題：第二屆 AI 生成大賽 */
-.info-card:has(.info-title[data-i18n-key="day2_theme_title"])::before,
+.info-card:has(.info-title[data-i18n-key='day2_theme_title'])::before,
 .info-layer:nth-child(4) .info-card:nth-child(2)::before {
   background-color: #ccf6c5;
 }
 
 /* 拍立得 Fest */
-.info-card:has(.info-title[data-i18n-key="polaroid_fest_title"])::before,
+.info-card:has(.info-title[data-i18n-key='polaroid_fest_title'])::before,
 .info-layer-three .info-card:nth-child(1)::before {
   background-color: #ccf6c5;
 }
 
 /* Pizza Time */
-.info-card:has(.info-title[data-i18n-key="pizza_time_title"])::before,
+.info-card:has(.info-title[data-i18n-key='pizza_time_title'])::before,
 .info-layer-three .info-card:nth-child(2)::before {
   background-color: #ccf6c5;
 }
 
 /* After Buffet */
-.info-card:has(.info-title[data-i18n-key="after_buffet_title"])::before,
+.info-card:has(.info-title[data-i18n-key='after_buffet_title'])::before,
 .info-layer-three .info-card:nth-child(3)::before {
   background-color: #ccf6c5;
 }
 
 /* Yellow category - #ffe7a5 */
 /* 南臺灣技術社群大聚 */
-.info-card:has(.info-title[data-i18n-key="stw_section_title"])::before,
+.info-card:has(.info-title[data-i18n-key='stw_section_title'])::before,
 .info-layer:nth-child(6) .info-card::before {
   background-color: #ffe7a5;
 }
 
 /* 眾多技術人的聊天交流或 Lightning Talk */
-.info-card:has(.info-title[data-i18n-key="networking_title"])::before,
+.info-card:has(.info-title[data-i18n-key='networking_title'])::before,
 .info-layer:nth-child(7) .info-card:nth-child(1)::before {
   background-color: #ffe7a5;
 }
 
 /* 首次引入南臺灣的技術創作市集 */
-.info-card:has(.info-title[data-i18n-key="tech_market_title"])::before,
+.info-card:has(.info-title[data-i18n-key='tech_market_title'])::before,
 .info-layer:nth-child(7) .info-card:nth-child(2)::before {
   background-color: #ffe7a5;
 }
 
 /* 主題討論會議室 */
-.info-card:has(.info-title[data-i18n-key="meeting_room_title"])::before,
+.info-card:has(.info-title[data-i18n-key='meeting_room_title'])::before,
 .info-layer:nth-child(8) .info-card:nth-child(1)::before {
   background-color: #ffe7a5;
 }
 
 /* 食物、點心、飲料 */
-.info-card:has(.info-title[data-i18n-key="food_drinks_title"])::before,
+.info-card:has(.info-title[data-i18n-key='food_drinks_title'])::before,
 .info-layer:nth-child(8) .info-card:nth-child(2)::before {
   background-color: #ffe7a5;
 }
 
 /* Pink category - #f8d8d8 */
 /* 活動小撇步 */
-.info-card:has(.info-title[data-i18n-key="event_tips_title"])::before,
+.info-card:has(.info-title[data-i18n-key='event_tips_title'])::before,
 .info-layer:nth-child(9) .info-card::before {
   background-color: #f8d8d8;
 }
 
 /* 離捷運站最近的場地 */
-.info-card:has(.info-title[data-i18n-key="transport_title"])::before,
+.info-card:has(.info-title[data-i18n-key='transport_title'])::before,
 .info-layer:nth-child(10) .info-card:nth-child(1)::before {
   background-color: #f8d8d8;
 }
 
 /* 請記得自備容器 */
-.info-card:has(.info-title[data-i18n-key="eco_friendly_title"])::before,
+.info-card:has(.info-title[data-i18n-key='eco_friendly_title'])::before,
 .info-layer:nth-child(10) .info-card:nth-child(2)::before {
   background-color: #f8d8d8;
 }
 
 /* GDG 活動行為準則 (Code of Conduct) */
-.info-card:has(.info-title[data-i18n-key="code_conduct_title"])::before,
+.info-card:has(.info-title[data-i18n-key='code_conduct_title'])::before,
 .info-layer:nth-child(11) .info-card:nth-child(1)::before {
   background-color: #f8d8d8;
 }
 
 /* 蒐集個人資料告知事項暨個人資料提供同意聲明 */
-.info-card:has(.info-title[data-i18n-key="privacy_title"])::before,
+.info-card:has(.info-title[data-i18n-key='privacy_title'])::before,
 .info-layer:nth-child(11) .info-card:nth-child(2)::before {
   background-color: #f8d8d8;
 }
-
 
 .info-title {
   font-size: 22px;
@@ -2645,70 +2675,71 @@ html.page-switching {
 }
 
 /* 第1層：關於活動 - 藍色 */
-[data-i18n-key="about_event_title"] {
+[data-i18n-key='about_event_title'] {
   color: #4285f4;
 }
 
 /* 第2層：DevFest、STW問題 - 藍色 */
-[data-i18n-key="devfest_what_title"],
-[data-i18n-key="stw_what_title"] {
+[data-i18n-key='devfest_what_title'],
+[data-i18n-key='stw_what_title'] {
   color: #4285f4;
 }
 
 /* 第3層：DevFest Kaohsiung - 綠色 */
-[data-i18n-key="devfest_section_title"] {
+[data-i18n-key='devfest_section_title'] {
   color: #34a853;
 }
 
 /* 第4層：主題 - 綠色 */
-[data-i18n-key="day1_theme_title"],
-[data-i18n-key="day2_theme_title"] {
+[data-i18n-key='day1_theme_title'],
+[data-i18n-key='day2_theme_title'] {
   color: #34a853;
 }
 
 /* 第5層：三個項目 - 綠色 */
-[data-i18n-key="polaroid_fest_title"],
-[data-i18n-key="pizza_time_title"],
-[data-i18n-key="after_buffet_title"] {
+[data-i18n-key='polaroid_fest_title'],
+[data-i18n-key='pizza_time_title'],
+[data-i18n-key='after_buffet_title'] {
   color: #34a853;
 }
 
 /* 第6層：南臺灣技術社群大聚 - 黃色 */
-[data-i18n-key="stw_section_title"] {
+[data-i18n-key='stw_section_title'] {
   color: #f9ab00;
 }
 
 /* 第7層：交流和市集 - 黃色 */
-[data-i18n-key="networking_title"],
-[data-i18n-key="tech_market_title"] {
+[data-i18n-key='networking_title'],
+[data-i18n-key='tech_market_title'] {
   color: #f9ab00;
 }
 
 /* 第8層：會議室和食物 - 黃色 */
-[data-i18n-key="meeting_room_title"],
-[data-i18n-key="food_drinks_title"] {
+[data-i18n-key='meeting_room_title'],
+[data-i18n-key='food_drinks_title'] {
   color: #f9ab00;
 }
 
 /* 第9層：活動小撇步 - 紅色 */
-[data-i18n-key="event_tips_title"] {
+[data-i18n-key='event_tips_title'] {
   color: #ea4335;
 }
 
 /* 第10層：交通和環保 - 紅色 */
-[data-i18n-key="transport_title"],
-[data-i18n-key="eco_friendly_title"] {
+[data-i18n-key='transport_title'],
+[data-i18n-key='eco_friendly_title'] {
   color: #ea4335;
 }
 
 /* 第11層：行為準則和隱私 - 紅色 */
-[data-i18n-key="code_conduct_title"],
-[data-i18n-key="privacy_title"] {
+[data-i18n-key='code_conduct_title'],
+[data-i18n-key='privacy_title'] {
   color: #ea4335;
 }
 
 @keyframes gradientShift {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -2717,7 +2748,8 @@ html.page-switching {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -2843,7 +2875,9 @@ html.page-switching {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   overflow: hidden;
 }
 
@@ -2930,7 +2964,9 @@ html.page-switching {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -3207,7 +3243,13 @@ html.page-switching {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, var(--color-blue), var(--color-green), var(--color-yellow), var(--color-red));
+    background: linear-gradient(
+      to bottom,
+      var(--color-blue),
+      var(--color-green),
+      var(--color-yellow),
+      var(--color-red)
+    );
     opacity: 0.3;
   }
 
@@ -3363,17 +3405,17 @@ html.page-switching {
   }
 
   /* 為不同類型的休息時間添加特殊樣式 */
-  .session.break[data-break-type="registration"] {
+  .session.break[data-break-type='registration'] {
     background: linear-gradient(135deg, var(--color-pastel-blue), #e3f2fd);
     border-left-color: var(--color-blue);
   }
 
-  .session.break[data-break-type="lunch"] {
+  .session.break[data-break-type='lunch'] {
     background: linear-gradient(135deg, var(--color-pastel-yellow), #fff3e0);
     border-left-color: var(--color-yellow);
   }
 
-  .session.break[data-break-type="networking"] {
+  .session.break[data-break-type='networking'] {
     background: linear-gradient(135deg, var(--color-pastel-green), #e8f5e8);
     border-left-color: var(--color-green);
   }
@@ -3519,7 +3561,9 @@ html.page-switching {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -3583,7 +3627,9 @@ html.page-switching {
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -3620,7 +3666,8 @@ html.page-switching {
   color: var(--md-sys-color-on-surface);
 }
 
-.staff-org, .staff-title-position {
+.staff-org,
+.staff-title-position {
   font-size: 14px;
   margin: 0 0 4px 0;
   color: #5f6368;
@@ -3642,7 +3689,7 @@ html.page-switching {
 
 /* 🔍 線索2：樣式也能藏秘密！看看這個神秘的類別... */
 .treasure-hunt-clue-2::before {
-  content: "AATRFMRJ9H"; /* 第一日免費票 2（官網解謎活動）邀請碼隱藏在這裡 */
+  content: 'AATRFMRJ9H'; /* 第一日免費票 2（官網解謎活動）邀請碼隱藏在這裡 */
   display: none;
   /* 這個選擇器不會被任何HTML元素使用，純粹是為了解謎活動 */
 }

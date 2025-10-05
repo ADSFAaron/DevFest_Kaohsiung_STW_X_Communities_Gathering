@@ -74,73 +74,73 @@ The editor provides six tabs corresponding to different content types:
 - **Function**: Manage event speaker information
 - **Data File**: `data/speakers.json`
 - **Supported Fields**:
-    - Speaker name (trilingual)
-    - Job title (trilingual)
-    - Bio (trilingual)
-    - Session information (trilingual)
-    - Photo filename
-    - Social links
+  - Speaker name (trilingual)
+  - Job title (trilingual)
+  - Bio (trilingual)
+  - Session information (trilingual)
+  - Photo filename
+  - Social links
 
 ##### 2. 🤝 Sponsor Management (Sponsors)
 
 - **Function**: Manage event sponsor information
 - **Data File**: `data/sponsors.json`
 - **Supported Fields**:
-    - Sponsor name (trilingual)
-    - Sponsorship level (Gold/Silver/Bronze)
-    - Company description (trilingual)
-    - Logo filename
-    - Official website link
+  - Sponsor name (trilingual)
+  - Sponsorship level (Gold/Silver/Bronze)
+  - Company description (trilingual)
+  - Logo filename
+  - Official website link
 
 ##### 3. 🏘️ Community Management (Community)
 
 - **Function**: Manage participating community organizations
 - **Data File**: `data/community.json`
 - **Supported Fields**:
-    - Community name (trilingual)
-    - Community description (trilingual)
-    - Logo filename
-    - Official website link
+  - Community name (trilingual)
+  - Community description (trilingual)
+  - Logo filename
+  - Official website link
 
 ##### 4. 🛍️ Creator Market (Markets)
 
 - **Function**: Manage creator market booths
 - **Data File**: `data/markets.json`
 - **Supported Fields**:
-    - Booth name (trilingual)
-    - Booth description (trilingual)
-    - Creator bio (trilingual)
-    - Product image filename
-    - Contact information
+  - Booth name (trilingual)
+  - Booth description (trilingual)
+  - Creator bio (trilingual)
+  - Product image filename
+  - Contact information
 
 ##### 5. 👥 Staff Management (Staff)
 
 - **Function**: Manage staff and volunteer information
 - **Data File**: `data/staff.json`
 - **Supported Fields**:
-    - Name (trilingual)
-    - Position (trilingual)
-    - Department (trilingual)
-    - Photo filename
-    - Contact information
+  - Name (trilingual)
+  - Position (trilingual)
+  - Department (trilingual)
+  - Photo filename
+  - Contact information
 
 ##### 6. ℹ️ About Us (About)
 
 - **Function**: Manage organization and event information
 - **Data File**: `data/about.json`
 - **Supported Fields**:
-    - Organization information (trilingual)
-    - Event description (trilingual)
-    - Contact information
+  - Organization information (trilingual)
+  - Event description (trilingual)
+  - Contact information
 
 #### Editor Operation Steps
 
 1. **Select Tab**: Click on the tab above to choose the content type to edit
 2. **Load Existing Data**: Click the "Load File" button to upload existing JSON files
 3. **Edit Content**:
-    - Fill in or modify data in the form
-    - All text fields support Traditional Chinese, English, and Japanese
-    - For image fields, enter the filename (images should be placed in the `images/` folder)
+   - Fill in or modify data in the form
+   - All text fields support Traditional Chinese, English, and Japanese
+   - For image fields, enter the filename (images should be placed in the `images/` folder)
 4. **Preview Data**: Preview the JSON format below after editing
 5. **Download File**: Click "Download JSON" to download the edited data locally
 6. **Update Website**: Replace the corresponding files in the `data/` folder with the downloaded JSON files
@@ -231,9 +231,9 @@ All styles are centralized in `css/style.css`, using CSS custom properties for e
 
 ```css
 :root {
-    --color-primary: #667eea;
-    --color-secondary: #764ba2;
-    /* Other custom properties... */
+  --color-primary: #667eea;
+  --color-secondary: #764ba2;
+  /* Other custom properties... */
 }
 ```
 
