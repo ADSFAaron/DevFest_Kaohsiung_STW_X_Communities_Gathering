@@ -151,16 +151,19 @@ class ImageLoader {
     if (retryCount < this.retryAttempts) {
       // 重試載入
       console.log(`Retrying... Attempt ${retryCount + 1}/${this.retryAttempts}`);
-      setTimeout(() => {
-        img.src = originalSrc;
-        img.addEventListener(
-          'error',
-          () => {
-            this.handleImageError(container, img, originalSrc, retryCount + 1);
-          },
-          { once: true }
-        );
-      }, this.retryDelay * (retryCount + 1));
+      setTimeout(
+        () => {
+          img.src = originalSrc;
+          img.addEventListener(
+            'error',
+            () => {
+              this.handleImageError(container, img, originalSrc, retryCount + 1);
+            },
+            { once: true }
+          );
+        },
+        this.retryDelay * (retryCount + 1)
+      );
     } else {
       // 重試失敗，顯示錯誤訊息
       container.setAttribute('data-loading', 'false');
