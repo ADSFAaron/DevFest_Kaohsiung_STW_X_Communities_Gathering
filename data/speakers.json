@@ -1,11 +1,178 @@
 {
   "speakers": [
     {
-      "id": "steve_yeh",
+      "id": "ray_yuan_liu",
       "name": {
-        "zh": "史蒂夫•葉 / Steve Yeh",
-        "en": "Steve Yeh",
-        "ja": "Steve Yeh"
+        "zh": "劉瑞元 / RayYuan Liu",
+        "en": "RayYuan Liu",
+        "ja": "RayYuan Liu"
+      },
+      "org": {
+        "zh": "Yahoo!",
+        "en": "Yahoo!",
+        "ja": "Yahoo!"
+      },
+      "title": {
+        "zh": "Sr.Engineer",
+        "en": "Sr.Engineer",
+        "ja": "Sr.Engineer"
+      },
+      "topic_category": {
+        "zh": "Gemini AI 的生成式實踐",
+        "en": " Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "從 Android 2.3 時代開發到現在，Android 開發者。喜歡分享所學及技術，也喜歡摸索酷東西。",
+        "en": "An Android Developer who has been developing since the Android 2.3 era. Loves to share knowledge and technology, and enjoys exploring cool new things.",
+        "ja": "Android 2.3 時代から開発に携わっている Android 開発者。学んだことや技術を共有するのが好きで、クールなものを探求することも楽しんでいます。"
+      },
+      "session": {
+        "name": {
+          "zh": "Gemini in Android development",
+          "en": "",
+          "ja": ""
+        },
+        "abstract": {
+          "zh": "今年 Gemini 整合更多功能到 Android Studio 裡頭了，這些新功能如何增加工作的效率、改變工作的方式呢？Gemini 還能怎麼協助軟體開發？這個議程將會介紹 Gemini in Android Studio 的各種功能，以及用 Google 提供的工具來改善我們工作的每一天。",
+          "en": "Gemini has integrated more features into Android Studio this year. How do these new features increase work efficiency and change the way we work? How else can Gemini assist software development? This session will introduce the various functionalities of Gemini in Android Studio and demonstrate how to use tools provided by Google to improve our daily work.",
+          "ja": "今年、Gemini は Android Studio にさらに多くの機能を統合しました。これらの新機能は、どのように業務効率を高め、働き方を変えるのでしょうか？ Gemini はソフトウェア開発を他にどのように支援できるのでしょうか？ このセッションでは、Android Studio における Gemini の様々な機能と、Google が提供するツールを使って私たちの毎日の業務を改善する方法を紹介します。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "11:00 - 11:40",
+        "track": "track2",
+        "session_id": "d1_t5_s2_title"
+      },
+      "tags": [
+        "中文議程",
+        "Android",
+        "Gemini",
+        "AI"
+      ],
+      "photo": "images/speak-ray_yuan_liu.png",
+      "social": {
+        "Homepage": "https://louis383.medium.com/",
+        "IT 鐵人賽": "https://ithelp.ithome.com.tw/users/20141615/ironman/8135"
+      }
+    },
+    {
+      "id": "leo_he",
+      "name": {
+        "zh": "何崧宇 / LeoHe",
+        "en": "LeoHe",
+        "ja": "LeoHe"
+      },
+      "org": {
+        "zh": "國泰世華銀行",
+        "en": "Cathay United Bank",
+        "ja": "Cathay United Bank"
+      },
+      "title": {
+        "zh": "Cloud Architect",
+        "en": "Cloud Architect",
+        "ja": "Cloud Architect"
+      },
+      "topic_category": {
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "國泰世華銀行擔任雲端架構師<br>曾於補教業擔任講師，經歷橫跨科技業、軟體業、金融業跨國資訊專案<br>參與大型網頁軟體架構由單體式到現代化微服務演進架構規劃和設計<br>現主責系統上雲評估設計、策略制定和規劃，也從事內部技術講師，是一名方法論實踐者<br>具備多項專業證照 (TOGAF 、PMP、GCP-PCA 、AWS-SAA、CKA、CKS)",
+        "en": "Currently serving as a Cloud Architect at Cathay United Bank.<br>Previously worked as an instructor in the cram school industry, with experience spanning cross-border IT projects in the technology, software, and financial sectors.<br>Involved in the architectural planning and design for the evolution of large-scale web software from monolithic to modern microservices architecture.<br>Currently responsible for system cloud migration assessment and design, strategy formulation, and planning. Also works as an internal technical instructor and is a methodology practitioner.<br>Holds multiple professional certifications (TOGAF, PMP, GCP-PCA, AWS-SAA, CKA, CKS).",
+        "ja": "現在、Cathay United Bank（國泰世華銀行）でクラウドアーキテクトとして勤務。<br>過去には予備校業界で講師を務め、テクノロジー、ソフトウェア、金融業界における国際的なITプロジェクトの経験があります。<br>大規模なウェブソフトウェアのアーキテクチャを、モノリシックから現代的なマイクロサービスへの進化させる計画と設計に携わりました。<br>現在は、システムのクラウド移行評価、設計、戦略策定、および計画を主に担当し、社内技術講師としても活動する方法論の実践者です。<br>多数の専門資格（TOGAF、PMP、GCP-PCA、AWS-SAA、CKA、CKS）を保有しています。"
+      },
+      "session": {
+        "name": {
+          "zh": "生成式 AI 賦能日常辦公與決策：案例經驗談",
+          "en": "Generative AI Empowering Daily Office Work and Decision-Making: Case Studies and Experience Sharing",
+          "ja": "生成AI が実現する日常業務と意思決定の強化：事例と経験談"
+        },
+        "abstract": {
+          "zh": "「生成式 AI 賦能日常辦公與決策：案例經驗談」，將深入剖析生成式 AI 在企業日常辦公、協作與決策流程中的真實應用場景。<br><br>透過在金融產業實務案例，分享 AI 工具如何提升工作效率、優化團隊溝通，帶領聽眾了解從 AI 技術使用、流程整合到責任式 AI 的挑戰與解方，協助把握生成式 AI 驅動數位轉型的關鍵契機。",
+          "en": "\"Generative AI Empowering Daily Office Work and Decision-Making: Case Studies and Experience Sharing\" will deeply analyze real-world application scenarios of Generative AI in enterprise daily office work, collaboration, and decision-making processes.<br><br>Through practical case studies from the financial industry, the session will share how AI tools can boost work efficiency and optimize team communication. It will guide the audience through the challenges and solutions related to AI technology usage, process integration, and Responsible AI, helping participants grasp the key opportunity for digital transformation driven by Generative AI.",
+          "ja": "「生成AI が実現する日常業務と意思決定の強化：事例と経験談」では、企業の日々の業務、コラボレーション、および意思決定プロセスにおける生成 AI の実際の応用事例を深く分析します。金融業界での実務ケースを通じて、AI ツールがどのように業務効率を向上させ、チームコミュニケーションを最適化するかを共有します。<br><br>聴講者を AI 技術の活用、プロセスの統合、そして責任ある AI (Responsible AI) に関わる課題と解決策へと導き、生成 AI が推進するデジタルトランスフォーメーションの重要な機会を掴む支援をします。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "13:30 - 14:10",
+        "track": "track1",
+        "session_id": "d1_t6_s1_title"
+      },
+      "tags": [
+        "中文議程",
+        "生成式AI",
+        "AI知識庫",
+        "數位轉型"
+      ],
+      "photo": "images/speak-leo_he.png",
+      "social": {
+        "Linkedin": "https://www.linkedin.com/in/leo-he-392338173/"
+      }
+    },
+    {
+      "id": "matthias_geisler",
+      "name": {
+        "zh": "Matthias Geisler",
+        "en": "Matthias Geisler",
+        "ja": "Matthias Geisler"
+      },
+      "org": {
+        "zh": "Kotlin User Group 柏林 / Airalo",
+        "en": "Kotlin User Group Berlin / Airalo",
+        "ja": "Kotlin User Group ベルリン / Airalo"
+      },
+      "title": {
+        "zh": "Senior Software Engineer",
+        "en": "Senior Software Engineer",
+        "ja": "Senior Software Engineer"
+      },
+      "topic_category": {
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "Kotlin Multiplatform 的信眾，自 2019 年起便致力於相關工作。專門為 Android 構建解決方案。<br>KUG Berlin、GDG Android Berlin、XTC Berlin 等社群的組織者。",
+        "en": "True believer in (Kotlin) Multiplatform and working with it since 2019. Builds solutions for Android. <br>Organizer of KUG Berlin, GDG Android Berlin, XTC Berlin and more.",
+        "ja": "Kotlin Multiplatform の真の信奉者であり、2019年からその開発に携わっています。Android 向けソリューションを構築しています。<br>KUG Berlin、GDG Android Berlin、XTC Berlin などのコミュニティのオーガナイザー。"
+      },
+      "session": {
+        "name": {
+          "zh": "XP (極限開發) 遇上 AI？",
+          "en": "Let's speak about Accessibility",
+          "ja": "XP（エクストリーム・プログラミング）と AI？"
+        },
+        "abstract": {
+          "zh": "「AI 革命」的一大承諾是讓工程師的生活更輕鬆。但它真的能實現這個目標嗎？<br><br>另一方面，我們有主要屬於極限編程 (eXtreme Programming, XP) 範疇的技術，這些技術強調協作工作。這些實務經驗證實能夠提升軟體開發的生產力與穩定性。<br><br>AI 會讓你更快還是更慢？我們真的能靠「說」來產生程式碼嗎？這是一個好的組合嗎？你能擴展你的邊界上下文（Bounded Context） 嗎？它在程式碼審查 (Code Review) 方面表現如何？文件撰寫呢？它對團隊的影響是什麼？XP 是否有助於應對複雜性？這對我們行業的未來意味著什麼？<br><br>有這麼多疑問，請坐下來聊一聊吧！讓我們看看 Claude 和 Cursor 這樣的 AI 助理是否能提升開發工作流程，或者 XP 如何做出貢獻。以及軟體工程中 AI 的現況如何。",
+          "en": "Accessibility isn't separate from good Android development—it's part of it. When we build with accessibility in mind from the start, our apps become more robust and our product elevates to the next level.<br><br>Let's explore practical approaches of making Android apps accessible and how this work naturally improves your development practices. Also, with the European Accessibility Act (EAA) now in effect, understanding these principles isn't just good practice—it's becoming essential for many Android applications and the businesses behind them.",
+          "ja": "「AI 革命」が掲げる大きな約束の一つは、エンジニアとしての私たちの生活をより楽にすることです。しかし、それは本当に実現可能なのでしょうか？<br><br>一方で、私たちは主に**エクストリーム・プログラミング（eXtreme Programming, XP）**の領域に属する、協調作業を重視する手法を持っています。これらのプラクティスは確立されており、実際にソフトウェア開発の生産性と安定性の両方を向上させることが証明されています。<br><br>AI はあなたを速くするのか、それとも遅くするのか？私たちは話すだけでコードを生成できるのでしょうか？それは良い組み合わせでしょうか？**境界コンテキスト（Bounded Context）**を拡張できるでしょうか？コードレビューの能力はどれくらい高いでしょうか？ドキュメンテーションについてはどうでしょうか？チームへの影響は？XP は複雑さへの対応に役立つでしょうか？これは私たちの業界の未来にとって何を意味するのでしょうか？<br><br>多くの疑問があります。さあ、席について、お話ししましょう！Claude や Cursor のような AI アシスタントが開発ワークフローを強化できるのか、あるいは XP がどのように貢献できるのか。そして、ソフトウェアエンジニアリングにおける AI の現状はどうなっているのかを見ていきましょう。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "15:30 - 16:10",
+        "track": "track2",
+        "session_id": "d1_t6_s2_title"
+      },
+      "tags": [
+        "English Session",
+        "Android",
+        "AI",
+        "XP"
+      ],
+      "photo": "images/speak-matthias_geisler.png",
+      "social": {}
+    },
+    {
+      "id": "yung_chun",
+      "name": {
+        "zh": "瓦特老師 / CHENG, YUNG-CHUN",
+        "en": "CHENG, YUNG-CHUN",
+        "ja": "CHENG, YUNG-CHUN"
       },
       "org": {
         "zh": "",
@@ -18,38 +185,158 @@
         "ja": ""
       },
       "topic_category": {
-        "zh": "科技向善的實踐之路",
-        "en": "Goodness in Practice",
-        "ja": "テクノロジーで社会貢献を実現する道"
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
       },
       "bio": {
-        "zh": "現任精誠集團技術處長，致力於 UI/UX 設計與技術開發的整合與創新。2017 年創立 Able Studio，帶領團隊以人本設計為核心，成功為國內上市櫃企業、勞保局 e 化服務系統、零售通路、影音串流平台及矽谷新創企業等多領域客戶打造數位轉型解決方案，並於 2020 年榮獲德國國家設計獎優勝。曾任職於義美聯電與金色三麥餐飲集團，擔任數位內容與創意策劃部門經理，擁有豐富的跨領域產品開發及創新策劃經驗。相信透過深刻的使用者洞察與創新技術，能夠持續為企業創造成長與長遠價值。",
-        "en": "Currently serving as the Technology Director at SYSTEX, with a focus on integrating and innovating UI/UX design and technical development. Founded Able Studio in 2017, leading the team in delivering user-centered digital transformation solutions for diverse clients, including publicly listed companies, the Bureau of Labor Insurance’s digital service system, retail channels, video streaming platforms, and Silicon Valley startups. Also earned the German Design Award in 2020. Previous roles include managing digital content and creative planning at I-Mei and Lebledor, with extensive experience in cross-industry product development and innovation. Committed to leveraging deep user insights and cutting-edge technology to drive sustainable business growth.",
-        "ja": "現任は SYSTEX Group (精誠集團) の技術部門ディレクターであり、UI/UX デザインと技術開発の統合と革新に尽力しています。2017年に Able Studio を設立し、人間中心の設計を核として、国内の上場企業、労働保険局のe-サービスシステム、小売チャネル、動画ストリーミングプラットフォーム、シリコンバレーのスタートアップなど、多岐にわたるクライアント向けにデジタルトランスフォーメーションソリューションを成功裏に構築しました。2020年にはドイツ国家デザイン賞を受賞しています。以前は IMC および Le Blé d'Or (金色三麥餐飲集團) でデジタルコンテンツおよびクリエイティブ企画部門のマネージャーを務め、クロスドメインな製品開発と革新的な企画において豊富な経験を持っています。深いユーザーインサイトと革新技術を通じて、企業に持続的な成長と長期的価値を創造できると信じています。"
+        "zh": "桃園市大勇國小教師<br>桃園市LDS科技藝術社群<br>親子天下創新100教師",
+        "en": "Teacher at Dayong Elementary School, Taoyuan City<br>LDS Tech Arts Community, Taoyuan City<br>CommonWealth Magazine Parenting & Education Innovation 100 Teacher",
+        "ja": "桃園市大勇小学校 教師<br>桃園市 LDS テクノロジー・アートコミュニティ<br>親子天下イノベーション100 教師"
       },
       "session": {
         "name": {
-          "zh": "當設計遇到現實世界 — 荔枝到了，但她沒笑",
-          "en": "When Design Meets the Real World — The Lychee Arrived, But She Didn't Smile",
-          "ja": "デザインが現実世界に出会う時 — ライチは届いたが、彼女は笑わなかった"
+          "zh": "老師，我覺得 AI 生圖不是我的作品。",
+          "en": "Teacher, I feel that the image generated by AI is not my own work.",
+          "ja": "先生、AI が生成した画像は私の作品ではないように感じます。"
         },
         "abstract": {
-          "zh": "設計的理想，美得如詩句般優雅：「千里送荔枝，只為博君一笑。」<br>但在真實的專案裡，荔枝送到了，卻沒人笑，甚至沒人發現它來過。<br>煞費苦心打造的無障礙設計、自助服務平台、國際等級的體驗，最終的成果往往是「平順無聲」，就像氧氣一樣重要卻不被察覺。<br><br>本場分享延續 WebConf 2024《人月鬼話》的觀察視角，談設計落地時的各種現實困境與心理落差，從 UI/UX 實作、無障礙體驗到科技向善的內功修煉，邀請大家一起思考：<br>• 設計被看不見，是做對了，還是做錯了？<br>• 當「沒抱怨」成為唯一的回饋，我們還剩下什麼驕傲？<br>• 如何讓科技真正落實「善」，而非淪為漂亮的標籤？<br><br>這不是一場談夢想的演講，而是一場關於「把理想送出去後，它能否真的被接受」的真實練習。",
-          "en": "From UI/UX implementation and accessibility experience to the internal cultivation of Tech for Good, we invite everyone to consider:<br><br>• Is design invisible because it was done right, or because it was done wrong?<br>• When \"no complaints\" becomes the only feedback, what pride do we have left?<br>• How can we make technology truly embody \"good,\" rather than just becoming a pretty label?<br><br>This is not a talk about dreams, but a real-world practice on \"whether an ideal can truly be accepted after it's been sent out.\"",
-          "ja": "UI/UX の実装、アクセシビリティ体験からテクノロジー・フォー・グッド（Tech for Good）の内功修練まで、皆さんと一緒に以下の点を考察したいと思います：<br><br>• デザインが見えないのは、正しく実行されたからでしょうか、それとも間違っているからでしょうか？<br>• 「苦情がない」ことが唯一のフィードバックになったとき、私たちに残る誇りとは何でしょうか？<br>• テクノロジーを単なるきれいなレッテルにせず、いかにして真に**「善」**として実現させるのでしょうか？<br><br>これは夢を語る講演ではなく、「理想を送り出した後、それが本当に受け入れられるかどうか」についての現実的な演習です。"
+          "zh": "1.一個在電腦教室教藝術的老師；了解當小智說：「皮卡丘，就是你了！」皮卡丘的心情<br>2.對一切好奇的小學生：求學歷程中，學生從動物變植物最後變成礦物的台灣教育<br>3.老師我覺得 AI 生出來的圖，不是我的作品<br>4.最好的有感方式就是 - 創作<br>5.創作來自於生活中的點滴<br>6.Gemini AI輔助生成式藝術（Generative Art）創作<br>7.PBL是AI時代教育的好方法",
+          "en": "1.　A teacher who teaches art in a computer lab; understands how Pikachu feels when Ash says, \"Pikachu, I choose you!\"<br>2.　Curious elementary school students: The Taiwanese education system where students transform from animals to plants and finally to minerals throughout their schooling (a humorous commentary on declining vitality).<br>3.　Teacher, I feel that the image generated by AI is not my own work.<br>4.　The best way to truly feel something is through creation.<br>5.　Creation comes from the small moments in daily life.<br>6.　Gemini AI-Assisted Generative Art Creation<br>7.　PBL (Project-Based Learning) is an excellent method for education in the AI era.",
+          "ja": "1.　コンピューター教室で美術を教える教師； サトシが「ピカチュウ、きみにきめた！」と言う時のピカチュウの気持ちがわかる<br>2.　すべてに好奇心旺盛な小学生：生徒が学歴を重ねる中で、動物から植物、最終的に鉱物へと変化していく台湾の教育（活力が失われることへのユーモラスな批評）。<br>3.　先生、AI が生成した画像は私の作品ではないように感じます。<br>4.　最も良い「実感」する方法は、創造です。<br>5.　創造は、日常生活のささいな瞬間から生まれます。<br>6.　Gemini AI 支援によるジェネレーティブ・アート（Generative Art）創作<br>7.　PBL（プロジェクト・ベースド・ラーニング） は AI 時代の教育における良い方法である。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "13:30 - 14:10",
+        "track": "track1",
+        "session_id": "d1_t7_s1_title"
+      },
+      "tags": [
+        "中文議程",
+        "教育",
+        "Gemini",
+        "科技藝術"
+      ],
+      "photo": "images/speak-yung_chun.png",
+      "social": {
+        "Linkedin": "https://www.linkedin.com/in/%E7%89%B9-%E7%93%A6-7a345224b/",
+        "Facebook": "https://www.facebook.com/blurwater64/"
+      }
+    },
+    {
+      "id": "kevin_chiu_1",
+      "name": {
+        "zh": "邱哲綸 / Kevin Chiu",
+        "en": "Kevin Chiu",
+        "ja": "Kevin Chiu"
+      },
+      "org": {
+        "zh": "GDG 台北 / Google 開發者專家 - AI",
+        "en": "GDG Taipei / Google Developer Expert - AI",
+        "ja": "GDG Taipei / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "GDG 台北 組織者 / AI GDE",
+        "en": "GDG Taipei Organizer / AI GDE",
+        "ja": "GDG Taipei Organizer / AI GDE"
+      },
+      "topic_category": {
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "AI GDE / GDG 台北 組織者 / Android 工程師<br>致力於將 AI 導到在 edge 端上使用",
+        "en": "AI GDE / GDG Taipei Organizer / Android Engineer<br>Committed to bringing AI for use on the edge.",
+        "ja": "AI GDE / GDG Taipei オーガナイザー / Android エンジニア<br>エッジでの AI 利用の実現に尽力。"
+      },
+      "session": {
+        "name": {
+          "zh": "Gemini CLI 如何賦能 Android 開發者：從智能助手到應用創新",
+          "en": "How Gemini CLI Empowers Android Developers: From Intelligent Assistants to Application Innovation",
+          "ja": "Gemini CLI が Android 開発者をどのように強化するか：インテリジェントアシスタントからアプリケーションの革新まで"
+        },
+        "abstract": {
+          "zh": "Gemini CLI（命令列介面）是一個開源的 AI 代理，它將 Gemini 的強大功能直接帶到您的終端機 (Terminal)，尤其適合習慣在命令列環境中工作的開發人員。<br><br>雖然許多 Android 專屬的 AI 功能集成在 Android Studio 中的 Gemini，但 Gemini CLI 提供了底層的 AI 能力和自動化潛力，涵蓋從程式碼到 DevOps 的整個開發生命週期。",
+          "en": "Gemini CLI (Command Line Interface) is an open-source AI agent that brings the power of Gemini directly to your Terminal, making it particularly suitable for developers accustomed to working in a command-line environment. While many Android-specific AI features are integrated into Gemini within Android Studio, the Gemini CLI offers underlying AI capabilities and automation potential, covering the entire development lifecycle from code to DevOps.",
+          "ja": "Gemini CLI（コマンドラインインターフェース）は、Gemini の強力な機能を直接ターミナル（Terminal）にもたらすオープンソースの AI エージェントであり、特にコマンドライン環境での作業に慣れている開発者に適しています。多くの Android 専用 AI 機能は Android Studio 内の Gemini に統合されていますが、Gemini CLI は、コードから DevOps に至るまでの開発ライフサイクル全体をカバーする、基盤となる AI 能力と自動化の可能性を提供します。"
         }
       },
       "schedule": {
         "day": 1,
         "time": "15:30 - 16:10",
-        "track": "track1",
-        "session_id": "d1_t9_s1_title"
+        "track": "track2",
+        "session_id": "d1_t9_s2_title"
       },
-      "tags": ["中文議程", "UI", "UX", "設計工程"],
-      "photo": "images/speak-steve_yeh.png",
+      "tags": [
+        "中文議程",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
+      "photo": "images/speak-kevin_chiu.png",
       "social": {
-        "Facebook": "https://www.facebook.com/steven.yeh",
-        "Medium": "https://medium.com/@stevenyeh"
+        "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
+      }
+    },
+    {
+      "id": "simon_liu_1",
+      "name": {
+        "zh": "劉育維 / Simon Liu",
+        "en": "Simon Liu",
+        "ja": "Simon Liu"
+      },
+      "org": {
+        "zh": "APMIC / Google 開發者專家 - AI",
+        "en": "APMIC / Google Developer Expert - AI",
+        "ja": "APMIC / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "MLOps Engineer",
+        "en": "MLOps Engineer",
+        "ja": "MLOps Engineer"
+      },
+      "topic_category": {
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
+        "en": "Hello everyone, I am Simon Liu Yu-Wei. I previously worked as a Senior Engineer in the telecommunications industry and as a Customer Technical Success Engineer in the software industry, where I helped well-known major enterprises discuss and plan AI architecture for topics such as Machine Learning, Deep Learning, and Large Language Models. I have currently published over a hundred technical articles on Medium. My goal is to experiment with AI applications to help clients solve pain points using AI.",
+        "ja": "皆様、こんにちは。Simon 劉育維です。以前は通信業界でシニアエンジニアとして、またソフトウェア業界でカスタマーテクニカルサクセスエンジニアとして勤務し、大手有名企業に対し、機械学習、深層学習、大規模言語モデルなどの人工知能（AI）に関するAI アーキテクチャ計画の策定を支援してきました。現在、Medium には100本以上の技術記事を公開しています。私の目標は、AI を活用したアプリケーションを試行し、クライアントが AI を使って課題を解決できるように支援することです。"
+      },
+      "session": {
+        "name": {
+          "zh": "建構 AI Agent：結合 Google Gemini 與 ADK 工具來解放企業生產力",
+          "en": "Building an AI Agent: Combining Google Gemini with ADK Tools to Unleash Enterprise Productivity",
+          "ja": "本番環境でのKubernetes ベストプラクティス"
+        },
+        "abstract": {
+          "zh": "在生成式 AI 與多模態技術快速演進的浪潮下，企業正面臨如何有效導入 AI Agent 以提升生產力的關鍵課題。Google Gemini Model 提供強大的理解與推理能力，而 ADK（Agent Developer Kit）則提供開發者可延展、可整合的工具鏈。<br><br>兩者結合，讓企業能夠從單純的任務自動化，邁向智慧化決策與流程優化。這不僅能釋放人力資源，專注於更高價值的創新活動，同時也能在市場競爭中保持敏捷與領先。建構 AI Agent，不再只是技術實驗，而是推動數位轉型的核心引擎。",
+          "en": "Amidst the rapidly evolving wave of Generative AI and multimodal technology, enterprises are facing the critical challenge of how to effectively integrate AI Agents to boost productivity. The Google Gemini Model provides powerful understanding and reasoning capabilities, while the ADK (Agent Developer Kit) offers developers an extendable and integrable toolchain. The combination of the two enables businesses to move beyond simple task automation towards intelligent decision-making and process optimization. This not only frees up human resources to focus on higher-value innovation activities but also allows the enterprise to remain agile and maintain a market lead. Building an AI Agent is no longer just a technological experiment; it is the core engine driving digital transformation.",
+          "ja": "生成AIとマルチモーダル技術が急速に進展する波の中で、企業はAI エージェントをいかに効果的に導入して生産性を向上させるかという重要な課題に直面しています。Google Gemini Model は強力な理解力と推論能力を提供し、一方、**ADK（Agent Developer Kit）**は開発者に拡張可能で統合可能なツールチェーンを提供します。この二つを組み合わせることで、企業は単純なタスク自動化から、インテリジェントな意思決定とプロセス最適化へと移行できます。これは、人的資源を解放し、より価値の高いイノベーション活動に集中させるだけでなく、市場競争において機敏性と優位性を維持することにも繋がります。AI エージェントの構築は、もはや単なる技術実験ではなく、デジタルトランスフォーメーションを推進する中核エンジンなのです。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "16:30 - 17:10",
+        "track": "track1",
+        "session_id": "d1_t10_s1_title"
+      },
+      "tags": [
+        "中文議程",
+        "ADK",
+        "Gemini",
+        "Agent"
+      ],
+      "photo": "images/speak-simon_liu.png",
+      "social": {
+        "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
+        "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
+        "GitHub": "https://github.com/LiuYuWei",
+        "Medium": "https://medium.com/@simon3458"
       }
     },
     {
@@ -97,7 +384,12 @@
         "track": "track1",
         "session_id": "d1_t5_s1_title"
       },
-      "tags": ["English Session", "Robotics", "Firebase", "Google Cloud"],
+      "tags": [
+        "English Session",
+        "Robotics",
+        "Firebase",
+        "Google Cloud"
+      ],
       "photo": "images/speak-arturs_vancans.png",
       "social": {
         "Homepage": "https://www.secondspace.dev/kubi-robot",
@@ -149,165 +441,72 @@
         "track": "track1",
         "session_id": "d1_t7_s2_title"
       },
-      "tags": ["中文議程", "零知識證明", "數位身分", "Google Wallet"],
+      "tags": [
+        "中文議程",
+        "零知識證明",
+        "數位身分",
+        "Google Wallet"
+      ],
       "photo": "images/speak-denken_chen.png",
       "social": {
         "Homepage": "https://denkeni.org"
       }
     },
     {
-      "id": "simon_liu_1",
+      "id": "steve_yeh",
       "name": {
-        "zh": "劉育維 / Simon Liu",
-        "en": "Simon Liu",
-        "ja": "Simon Liu"
+        "zh": "史蒂夫•葉 / Steve Yeh",
+        "en": "Steve Yeh",
+        "ja": "Steve Yeh"
       },
       "org": {
-        "zh": "APMIC / Google 開發者專家 - AI",
-        "en": "APMIC / Google Developer Expert - AI",
-        "ja": "APMIC / Google Developer Expert - AI"
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "title": {
-        "zh": "MLOps Engineer",
-        "en": "MLOps Engineer",
-        "ja": "MLOps Engineer"
+        "zh": "",
+        "en": "",
+        "ja": ""
       },
       "topic_category": {
-        "zh": "Gemini AI 的生成式實踐",
-        "en": "Gemini AI in Practice",
-        "ja": "Gemini AI の生成AI実践"
+        "zh": "科技向善的實踐之路",
+        "en": "Goodness in Practice",
+        "ja": "テクノロジーで社会貢献を実現する道"
       },
       "bio": {
-        "zh": "大家好，我是 Simon 劉育維，過去曾擔任過電信業的資深工程師和 在軟體業擔任客戶技術成功工程師，幫助各大知名企業進行機器學習、深度學習、大型語言模型等人工智慧議題進行人工智慧架構規劃的討論，目前在 Medium 上已經公開超過百篇技術文章，我希望能夠嘗試使用 AI 做應用，幫助客戶用 AI 解決痛點。",
-        "en": "Hello everyone, I am Simon Liu Yu-Wei. I previously worked as a Senior Engineer in the telecommunications industry and as a Customer Technical Success Engineer in the software industry, where I helped well-known major enterprises discuss and plan AI architecture for topics such as Machine Learning, Deep Learning, and Large Language Models. I have currently published over a hundred technical articles on Medium. My goal is to experiment with AI applications to help clients solve pain points using AI.",
-        "ja": "皆様、こんにちは。Simon 劉育維です。以前は通信業界でシニアエンジニアとして、またソフトウェア業界でカスタマーテクニカルサクセスエンジニアとして勤務し、大手有名企業に対し、機械学習、深層学習、大規模言語モデルなどの人工知能（AI）に関するAI アーキテクチャ計画の策定を支援してきました。現在、Medium には100本以上の技術記事を公開しています。私の目標は、AI を活用したアプリケーションを試行し、クライアントが AI を使って課題を解決できるように支援することです。"
+        "zh": "現任精誠集團技術處長，致力於 UI/UX 設計與技術開發的整合與創新。2017 年創立 Able Studio，帶領團隊以人本設計為核心，成功為國內上市櫃企業、勞保局 e 化服務系統、零售通路、影音串流平台及矽谷新創企業等多領域客戶打造數位轉型解決方案，並於 2020 年榮獲德國國家設計獎優勝。曾任職於義美聯電與金色三麥餐飲集團，擔任數位內容與創意策劃部門經理，擁有豐富的跨領域產品開發及創新策劃經驗。相信透過深刻的使用者洞察與創新技術，能夠持續為企業創造成長與長遠價值。",
+        "en": "Currently serving as the Technology Director at SYSTEX, with a focus on integrating and innovating UI/UX design and technical development. Founded Able Studio in 2017, leading the team in delivering user-centered digital transformation solutions for diverse clients, including publicly listed companies, the Bureau of Labor Insurance’s digital service system, retail channels, video streaming platforms, and Silicon Valley startups. Also earned the German Design Award in 2020. Previous roles include managing digital content and creative planning at I-Mei and Lebledor, with extensive experience in cross-industry product development and innovation. Committed to leveraging deep user insights and cutting-edge technology to drive sustainable business growth.",
+        "ja": "現任は SYSTEX Group (精誠集團) の技術部門ディレクターであり、UI/UX デザインと技術開発の統合と革新に尽力しています。2017年に Able Studio を設立し、人間中心の設計を核として、国内の上場企業、労働保険局のe-サービスシステム、小売チャネル、動画ストリーミングプラットフォーム、シリコンバレーのスタートアップなど、多岐にわたるクライアント向けにデジタルトランスフォーメーションソリューションを成功裏に構築しました。2020年にはドイツ国家デザイン賞を受賞しています。以前は IMC および Le Blé d'Or (金色三麥餐飲集團) でデジタルコンテンツおよびクリエイティブ企画部門のマネージャーを務め、クロスドメインな製品開発と革新的な企画において豊富な経験を持っています。深いユーザーインサイトと革新技術を通じて、企業に持続的な成長と長期的価値を創造できると信じています。"
       },
       "session": {
         "name": {
-          "zh": "建構 AI Agent：結合 Google Gemini 與 ADK 工具來解放企業生產力",
-          "en": "Building an AI Agent: Combining Google Gemini with ADK Tools to Unleash Enterprise Productivity",
-          "ja": "本番環境でのKubernetes ベストプラクティス"
+          "zh": "當設計遇到現實世界 — 荔枝到了，但她沒笑",
+          "en": "When Design Meets the Real World — The Lychee Arrived, But She Didn't Smile",
+          "ja": "デザインが現実世界に出会う時 — ライチは届いたが、彼女は笑わなかった"
         },
         "abstract": {
-          "zh": "在生成式 AI 與多模態技術快速演進的浪潮下，企業正面臨如何有效導入 AI Agent 以提升生產力的關鍵課題。Google Gemini Model 提供強大的理解與推理能力，而 ADK（Agent Developer Kit）則提供開發者可延展、可整合的工具鏈。<br><br>兩者結合，讓企業能夠從單純的任務自動化，邁向智慧化決策與流程優化。這不僅能釋放人力資源，專注於更高價值的創新活動，同時也能在市場競爭中保持敏捷與領先。建構 AI Agent，不再只是技術實驗，而是推動數位轉型的核心引擎。",
-          "en": "Amidst the rapidly evolving wave of Generative AI and multimodal technology, enterprises are facing the critical challenge of how to effectively integrate AI Agents to boost productivity. The Google Gemini Model provides powerful understanding and reasoning capabilities, while the ADK (Agent Developer Kit) offers developers an extendable and integrable toolchain. The combination of the two enables businesses to move beyond simple task automation towards intelligent decision-making and process optimization. This not only frees up human resources to focus on higher-value innovation activities but also allows the enterprise to remain agile and maintain a market lead. Building an AI Agent is no longer just a technological experiment; it is the core engine driving digital transformation.",
-          "ja": "生成AIとマルチモーダル技術が急速に進展する波の中で、企業はAI エージェントをいかに効果的に導入して生産性を向上させるかという重要な課題に直面しています。Google Gemini Model は強力な理解力と推論能力を提供し、一方、**ADK（Agent Developer Kit）**は開発者に拡張可能で統合可能なツールチェーンを提供します。この二つを組み合わせることで、企業は単純なタスク自動化から、インテリジェントな意思決定とプロセス最適化へと移行できます。これは、人的資源を解放し、より価値の高いイノベーション活動に集中させるだけでなく、市場競争において機敏性と優位性を維持することにも繋がります。AI エージェントの構築は、もはや単なる技術実験ではなく、デジタルトランスフォーメーションを推進する中核エンジンなのです。"
-        }
-      },
-      "schedule": {
-        "day": 1,
-        "time": "16:30 - 17:10",
-        "track": "track1",
-        "session_id": "d1_t10_s1_title"
-      },
-      "tags": ["中文議程", "ADK", "Gemini", "Agent"],
-      "photo": "images/speak-simon_liu.png",
-      "social": {
-        "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
-        "Linkedin": "https://www.linkedin.com/in/simonliuyuwei/",
-        "GitHub": "https://github.com/LiuYuWei",
-        "Medium": "https://medium.com/@simon3458"
-      }
-    },
-    {
-      "id": "matthias_geisler",
-      "name": {
-        "zh": "Matthias Geisler",
-        "en": "Matthias Geisler",
-        "ja": "Matthias Geisler"
-      },
-      "org": {
-        "zh": "Kotlin User Group 柏林 / Airalo",
-        "en": "Kotlin User Group Berlin / Airalo",
-        "ja": "Kotlin User Group ベルリン / Airalo"
-      },
-      "title": {
-        "zh": "Senior Software Engineer",
-        "en": "Senior Software Engineer",
-        "ja": "Senior Software Engineer"
-      },
-      "topic_category": {
-        "zh": "Gemini AI 的生成式實踐",
-        "en": "Gemini AI in Practice",
-        "ja": "Gemini AI の生成AI実践"
-      },
-      "bio": {
-        "zh": "Kotlin Multiplatform 的信眾，自 2019 年起便致力於相關工作。專門為 Android 構建解決方案。<br>KUG Berlin、GDG Android Berlin、XTC Berlin 等社群的組織者。",
-        "en": "True believer in (Kotlin) Multiplatform and working with it since 2019. Builds solutions for Android. <br>Organizer of KUG Berlin, GDG Android Berlin, XTC Berlin and more.",
-        "ja": "Kotlin Multiplatform の真の信奉者であり、2019年からその開発に携わっています。Android 向けソリューションを構築しています。<br>KUG Berlin、GDG Android Berlin、XTC Berlin などのコミュニティのオーガナイザー。"
-      },
-      "session": {
-        "name": {
-          "zh": "XP (極限開發) 遇上 AI？",
-          "en": "Let's speak about Accessibility",
-          "ja": "XP（エクストリーム・プログラミング）と AI？"
-        },
-        "abstract": {
-          "zh": "「AI 革命」的一大承諾是讓工程師的生活更輕鬆。但它真的能實現這個目標嗎？<br><br>另一方面，我們有主要屬於極限編程 (eXtreme Programming, XP) 範疇的技術，這些技術強調協作工作。這些實務經驗證實能夠提升軟體開發的生產力與穩定性。<br><br>AI 會讓你更快還是更慢？我們真的能靠「說」來產生程式碼嗎？這是一個好的組合嗎？你能擴展你的邊界上下文（Bounded Context） 嗎？它在程式碼審查 (Code Review) 方面表現如何？文件撰寫呢？它對團隊的影響是什麼？XP 是否有助於應對複雜性？這對我們行業的未來意味著什麼？<br><br>有這麼多疑問，請坐下來聊一聊吧！讓我們看看 Claude 和 Cursor 這樣的 AI 助理是否能提升開發工作流程，或者 XP 如何做出貢獻。以及軟體工程中 AI 的現況如何。",
-          "en": "Accessibility isn't separate from good Android development—it's part of it. When we build with accessibility in mind from the start, our apps become more robust and our product elevates to the next level.<br><br>Let's explore practical approaches of making Android apps accessible and how this work naturally improves your development practices. Also, with the European Accessibility Act (EAA) now in effect, understanding these principles isn't just good practice—it's becoming essential for many Android applications and the businesses behind them.",
-          "ja": "「AI 革命」が掲げる大きな約束の一つは、エンジニアとしての私たちの生活をより楽にすることです。しかし、それは本当に実現可能なのでしょうか？<br><br>一方で、私たちは主に**エクストリーム・プログラミング（eXtreme Programming, XP）**の領域に属する、協調作業を重視する手法を持っています。これらのプラクティスは確立されており、実際にソフトウェア開発の生産性と安定性の両方を向上させることが証明されています。<br><br>AI はあなたを速くするのか、それとも遅くするのか？私たちは話すだけでコードを生成できるのでしょうか？それは良い組み合わせでしょうか？**境界コンテキスト（Bounded Context）**を拡張できるでしょうか？コードレビューの能力はどれくらい高いでしょうか？ドキュメンテーションについてはどうでしょうか？チームへの影響は？XP は複雑さへの対応に役立つでしょうか？これは私たちの業界の未来にとって何を意味するのでしょうか？<br><br>多くの疑問があります。さあ、席について、お話ししましょう！Claude や Cursor のような AI アシスタントが開発ワークフローを強化できるのか、あるいは XP がどのように貢献できるのか。そして、ソフトウェアエンジニアリングにおける AI の現状はどうなっているのかを見ていきましょう。"
+          "zh": "設計的理想，美得如詩句般優雅：「千里送荔枝，只為博君一笑。」<br>但在真實的專案裡，荔枝送到了，卻沒人笑，甚至沒人發現它來過。<br>煞費苦心打造的無障礙設計、自助服務平台、國際等級的體驗，最終的成果往往是「平順無聲」，就像氧氣一樣重要卻不被察覺。<br><br>本場分享延續 WebConf 2024《人月鬼話》的觀察視角，談設計落地時的各種現實困境與心理落差，從 UI/UX 實作、無障礙體驗到科技向善的內功修煉，邀請大家一起思考：<br>• 設計被看不見，是做對了，還是做錯了？<br>• 當「沒抱怨」成為唯一的回饋，我們還剩下什麼驕傲？<br>• 如何讓科技真正落實「善」，而非淪為漂亮的標籤？<br><br>這不是一場談夢想的演講，而是一場關於「把理想送出去後，它能否真的被接受」的真實練習。",
+          "en": "From UI/UX implementation and accessibility experience to the internal cultivation of Tech for Good, we invite everyone to consider:<br><br>• Is design invisible because it was done right, or because it was done wrong?<br>• When \"no complaints\" becomes the only feedback, what pride do we have left?<br>• How can we make technology truly embody \"good,\" rather than just becoming a pretty label?<br><br>This is not a talk about dreams, but a real-world practice on \"whether an ideal can truly be accepted after it's been sent out.\"",
+          "ja": "UI/UX の実装、アクセシビリティ体験からテクノロジー・フォー・グッド（Tech for Good）の内功修練まで、皆さんと一緒に以下の点を考察したいと思います：<br><br>• デザインが見えないのは、正しく実行されたからでしょうか、それとも間違っているからでしょうか？<br>• 「苦情がない」ことが唯一のフィードバックになったとき、私たちに残る誇りとは何でしょうか？<br>• テクノロジーを単なるきれいなレッテルにせず、いかにして真に**「善」**として実現させるのでしょうか？<br><br>これは夢を語る講演ではなく、「理想を送り出した後、それが本当に受け入れられるかどうか」についての現実的な演習です。"
         }
       },
       "schedule": {
         "day": 1,
         "time": "15:30 - 16:10",
-        "track": "track2",
-        "session_id": "d1_t6_s2_title"
-      },
-      "tags": ["English Session", "Android", "AI", "XP"],
-      "photo": "images/speak-matthias_geisler.png",
-      "social": {}
-    },
-    {
-      "id": "yung_chun",
-      "name": {
-        "zh": "瓦特老師 / CHENG, YUNG-CHUN",
-        "en": "CHENG, YUNG-CHUN",
-        "ja": "CHENG, YUNG-CHUN"
-      },
-      "org": {
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "title": {
-        "zh": "",
-        "en": "",
-        "ja": ""
-      },
-      "topic_category": {
-        "zh": "Gemini AI 的生成式實踐",
-        "en": "Gemini AI in Practice",
-        "ja": "Gemini AI の生成AI実践"
-      },
-      "bio": {
-        "zh": "桃園市大勇國小教師<br>桃園市LDS科技藝術社群<br>親子天下創新100教師",
-        "en": "Teacher at Dayong Elementary School, Taoyuan City<br>LDS Tech Arts Community, Taoyuan City<br>CommonWealth Magazine Parenting & Education Innovation 100 Teacher",
-        "ja": "桃園市大勇小学校 教師<br>桃園市 LDS テクノロジー・アートコミュニティ<br>親子天下イノベーション100 教師"
-      },
-      "session": {
-        "name": {
-          "zh": "老師，我覺得 AI 生圖不是我的作品。",
-          "en": "Teacher, I feel that the image generated by AI is not my own work.",
-          "ja": "先生、AI が生成した画像は私の作品ではないように感じます。"
-        },
-        "abstract": {
-          "zh": "1.一個在電腦教室教藝術的老師；了解當小智說：「皮卡丘，就是你了！」皮卡丘的心情<br>2.對一切好奇的小學生：求學歷程中，學生從動物變植物最後變成礦物的台灣教育<br>3.老師我覺得 AI 生出來的圖，不是我的作品<br>4.最好的有感方式就是 - 創作<br>5.創作來自於生活中的點滴<br>6.Gemini AI輔助生成式藝術（Generative Art）創作<br>7.PBL是AI時代教育的好方法",
-          "en": "1.　A teacher who teaches art in a computer lab; understands how Pikachu feels when Ash says, \"Pikachu, I choose you!\"<br>2.　Curious elementary school students: The Taiwanese education system where students transform from animals to plants and finally to minerals throughout their schooling (a humorous commentary on declining vitality).<br>3.　Teacher, I feel that the image generated by AI is not my own work.<br>4.　The best way to truly feel something is through creation.<br>5.　Creation comes from the small moments in daily life.<br>6.　Gemini AI-Assisted Generative Art Creation<br>7.　PBL (Project-Based Learning) is an excellent method for education in the AI era.",
-          "ja": "1.　コンピューター教室で美術を教える教師； サトシが「ピカチュウ、きみにきめた！」と言う時のピカチュウの気持ちがわかる<br>2.　すべてに好奇心旺盛な小学生：生徒が学歴を重ねる中で、動物から植物、最終的に鉱物へと変化していく台湾の教育（活力が失われることへのユーモラスな批評）。<br>3.　先生、AI が生成した画像は私の作品ではないように感じます。<br>4.　最も良い「実感」する方法は、創造です。<br>5.　創造は、日常生活のささいな瞬間から生まれます。<br>6.　Gemini AI 支援によるジェネレーティブ・アート（Generative Art）創作<br>7.　PBL（プロジェクト・ベースド・ラーニング） は AI 時代の教育における良い方法である。"
-        }
-      },
-      "schedule": {
-        "day": 1,
-        "time": "13:30 - 14:10",
         "track": "track1",
-        "session_id": "d1_t7_s1_title"
+        "session_id": "d1_t9_s1_title"
       },
-      "tags": ["中文議程", "教育", "Gemini", "科技藝術"],
-      "photo": "images/speak-yung_chun.png",
+      "tags": [
+        "中文議程",
+        "UI",
+        "UX",
+        "設計工程"
+      ],
+      "photo": "images/speak-steve_yeh.png",
       "social": {
-        "Linkedin": "https://www.linkedin.com/in/%E7%89%B9-%E7%93%A6-7a345224b/",
-        "Facebook": "https://www.facebook.com/blurwater64/"
+        "Facebook": "https://www.facebook.com/steven.yeh",
+        "Medium": "https://medium.com/@stevenyeh"
       }
     },
     {
@@ -355,7 +554,12 @@
         "track": "track2",
         "session_id": "d2_t4_s2_title"
       },
-      "tags": ["中文議程", "Firebase", "Stitch", "AI"],
+      "tags": [
+        "中文議程",
+        "Firebase",
+        "Stitch",
+        "AI"
+      ],
       "photo": "images/speak-simon_liu.png",
       "social": {
         "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
@@ -409,112 +613,15 @@
         "track": "track2",
         "session_id": "d2_t5_s2_title"
       },
-      "tags": ["中文議程", "AI", "Gemini", "Android"],
+      "tags": [
+        "中文議程",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
       "photo": "images/speak-kevin_chiu.png",
       "social": {
         "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
-      }
-    },
-    {
-      "id": "kevin_chiu_1",
-      "name": {
-        "zh": "邱哲綸 / Kevin Chiu",
-        "en": "Kevin Chiu",
-        "ja": "Kevin Chiu"
-      },
-      "org": {
-        "zh": "GDG 台北 / Google 開發者專家 - AI",
-        "en": "GDG Taipei / Google Developer Expert - AI",
-        "ja": "GDG Taipei / Google Developer Expert - AI"
-      },
-      "title": {
-        "zh": "GDG 台北 組織者 / AI GDE",
-        "en": "GDG Taipei Organizer / AI GDE",
-        "ja": "GDG Taipei Organizer / AI GDE"
-      },
-      "topic_category": {
-        "zh": "Gemini AI 的生成式實踐",
-        "en": "Gemini AI in Practice",
-        "ja": "Gemini AI の生成AI実践"
-      },
-      "bio": {
-        "zh": "AI GDE / GDG 台北 組織者 / Android 工程師<br>致力於將 AI 導到在 edge 端上使用",
-        "en": "AI GDE / GDG Taipei Organizer / Android Engineer<br>Committed to bringing AI for use on the edge.",
-        "ja": "AI GDE / GDG Taipei オーガナイザー / Android エンジニア<br>エッジでの AI 利用の実現に尽力。"
-      },
-      "session": {
-        "name": {
-          "zh": "Gemini CLI 如何賦能 Android 開發者：從智能助手到應用創新",
-          "en": "How Gemini CLI Empowers Android Developers: From Intelligent Assistants to Application Innovation",
-          "ja": "Gemini CLI が Android 開発者をどのように強化するか：インテリジェントアシスタントからアプリケーションの革新まで"
-        },
-        "abstract": {
-          "zh": "Gemini CLI（命令列介面）是一個開源的 AI 代理，它將 Gemini 的強大功能直接帶到您的終端機 (Terminal)，尤其適合習慣在命令列環境中工作的開發人員。<br><br>雖然許多 Android 專屬的 AI 功能集成在 Android Studio 中的 Gemini，但 Gemini CLI 提供了底層的 AI 能力和自動化潛力，涵蓋從程式碼到 DevOps 的整個開發生命週期。",
-          "en": "Gemini CLI (Command Line Interface) is an open-source AI agent that brings the power of Gemini directly to your Terminal, making it particularly suitable for developers accustomed to working in a command-line environment. While many Android-specific AI features are integrated into Gemini within Android Studio, the Gemini CLI offers underlying AI capabilities and automation potential, covering the entire development lifecycle from code to DevOps.",
-          "ja": "Gemini CLI（コマンドラインインターフェース）は、Gemini の強力な機能を直接ターミナル（Terminal）にもたらすオープンソースの AI エージェントであり、特にコマンドライン環境での作業に慣れている開発者に適しています。多くの Android 専用 AI 機能は Android Studio 内の Gemini に統合されていますが、Gemini CLI は、コードから DevOps に至るまでの開発ライフサイクル全体をカバーする、基盤となる AI 能力と自動化の可能性を提供します。"
-        }
-      },
-      "schedule": {
-        "day": 1,
-        "time": "15:30 - 16:10",
-        "track": "track2",
-        "session_id": "d1_t9_s2_title"
-      },
-      "tags": ["中文議程", "AI", "Gemini", "Android"],
-      "photo": "images/speak-kevin_chiu.png",
-      "social": {
-        "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
-      }
-    },
-    {
-      "id": "leo_he",
-      "name": {
-        "zh": "何崧宇 / LeoHe",
-        "en": "LeoHe",
-        "ja": "LeoHe"
-      },
-      "org": {
-        "zh": "國泰世華銀行",
-        "en": "Cathay United Bank",
-        "ja": "Cathay United Bank"
-      },
-      "title": {
-        "zh": "Cloud Architect",
-        "en": "Cloud Architect",
-        "ja": "Cloud Architect"
-      },
-      "topic_category": {
-        "zh": "Gemini AI 的生成式實踐",
-        "en": "Gemini AI in Practice",
-        "ja": "Gemini AI の生成AI実践"
-      },
-      "bio": {
-        "zh": "國泰世華銀行擔任雲端架構師<br>曾於補教業擔任講師，經歷橫跨科技業、軟體業、金融業跨國資訊專案<br>參與大型網頁軟體架構由單體式到現代化微服務演進架構規劃和設計<br>現主責系統上雲評估設計、策略制定和規劃，也從事內部技術講師，是一名方法論實踐者<br>具備多項專業證照 (TOGAF 、PMP、GCP-PCA 、AWS-SAA、CKA、CKS)",
-        "en": "Currently serving as a Cloud Architect at Cathay United Bank.<br>Previously worked as an instructor in the cram school industry, with experience spanning cross-border IT projects in the technology, software, and financial sectors.<br>Involved in the architectural planning and design for the evolution of large-scale web software from monolithic to modern microservices architecture.<br>Currently responsible for system cloud migration assessment and design, strategy formulation, and planning. Also works as an internal technical instructor and is a methodology practitioner.<br>Holds multiple professional certifications (TOGAF, PMP, GCP-PCA, AWS-SAA, CKA, CKS).",
-        "ja": "現在、Cathay United Bank（國泰世華銀行）でクラウドアーキテクトとして勤務。<br>過去には予備校業界で講師を務め、テクノロジー、ソフトウェア、金融業界における国際的なITプロジェクトの経験があります。<br>大規模なウェブソフトウェアのアーキテクチャを、モノリシックから現代的なマイクロサービスへの進化させる計画と設計に携わりました。<br>現在は、システムのクラウド移行評価、設計、戦略策定、および計画を主に担当し、社内技術講師としても活動する方法論の実践者です。<br>多数の専門資格（TOGAF、PMP、GCP-PCA、AWS-SAA、CKA、CKS）を保有しています。"
-      },
-      "session": {
-        "name": {
-          "zh": "生成式 AI 賦能日常辦公與決策：案例經驗談",
-          "en": "Generative AI Empowering Daily Office Work and Decision-Making: Case Studies and Experience Sharing",
-          "ja": "生成AI が実現する日常業務と意思決定の強化：事例と経験談"
-        },
-        "abstract": {
-          "zh": "「生成式 AI 賦能日常辦公與決策：案例經驗談」，將深入剖析生成式 AI 在企業日常辦公、協作與決策流程中的真實應用場景。<br><br>透過在金融產業實務案例，分享 AI 工具如何提升工作效率、優化團隊溝通，帶領聽眾了解從 AI 技術使用、流程整合到責任式 AI 的挑戰與解方，協助把握生成式 AI 驅動數位轉型的關鍵契機。",
-          "en": "\"Generative AI Empowering Daily Office Work and Decision-Making: Case Studies and Experience Sharing\" will deeply analyze real-world application scenarios of Generative AI in enterprise daily office work, collaboration, and decision-making processes.<br><br>Through practical case studies from the financial industry, the session will share how AI tools can boost work efficiency and optimize team communication. It will guide the audience through the challenges and solutions related to AI technology usage, process integration, and Responsible AI, helping participants grasp the key opportunity for digital transformation driven by Generative AI.",
-          "ja": "「生成AI が実現する日常業務と意思決定の強化：事例と経験談」では、企業の日々の業務、コラボレーション、および意思決定プロセスにおける生成 AI の実際の応用事例を深く分析します。金融業界での実務ケースを通じて、AI ツールがどのように業務効率を向上させ、チームコミュニケーションを最適化するかを共有します。<br><br>聴講者を AI 技術の活用、プロセスの統合、そして責任ある AI (Responsible AI) に関わる課題と解決策へと導き、生成 AI が推進するデジタルトランスフォーメーションの重要な機会を掴む支援をします。"
-        }
-      },
-      "schedule": {
-        "day": 1,
-        "time": "13:30 - 14:10",
-        "track": "track1",
-        "session_id": "d1_t6_s1_title"
-      },
-      "tags": ["中文議程", "生成式AI", "AI知識庫", "數位轉型"],
-      "photo": "images/speak-leo_he.png",
-      "social": {
-        "Linkedin": "https://www.linkedin.com/in/leo-he-392338173/"
       }
     }
   ]
