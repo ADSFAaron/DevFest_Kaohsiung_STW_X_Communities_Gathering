@@ -528,12 +528,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // 檢查是否為首次載入
   const hasVisited = localStorage.getItem('hasVisited');
   const loadingOverlay = document.querySelector('.loading-overlay');
+  const homePage = document.getElementById('home');
+
+  // 確保首頁正確顯示的函數
+  const ensureHomePageVisible = () => {
+    if (homePage) {
+      homePage.classList.add('active');
+      homePage.style.opacity = '1';
+      homePage.style.display = 'block';
+    }
+  };
 
   if (hasVisited) {
-    // 非首次載入，立即隱藏動畫
+    // 非首次載入，立即隱藏動畫並確保首頁顯示
     if (loadingOverlay) {
       loadingOverlay.style.display = 'none';
     }
+    ensureHomePageVisible();
   } else {
     // 首次載入，顯示動畫並標記為已訪問
     localStorage.setItem('hasVisited', 'true');
@@ -544,6 +555,8 @@ document.addEventListener('DOMContentLoaded', () => {
         loadingOverlay.classList.add('hide');
         setTimeout(() => {
           loadingOverlay.style.display = 'none';
+          // 確保首頁在動畫結束後正確顯示
+          ensureHomePageVisible();
         }, 1000); // 等待淡出動畫完成後完全隱藏
       }
     }, 3700);
