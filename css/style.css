@@ -871,6 +871,17 @@ main {
   }
 }
 
+@keyframes polaroid-enlarge-mobile {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    z-index: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3.5) rotate(0deg);
+    z-index: 1000;
+  }
+}
+
 .desk-item.polaroid.enlarged {
   animation: polaroid-enlarge 0.4s ease forwards;
   position: relative;
@@ -879,6 +890,16 @@ main {
 
 .desk-item.polaroid.enlarged svg {
   filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4));
+}
+
+@media (max-width: 768px) {
+  .desk-item.polaroid.enlarged {
+    animation: polaroid-enlarge-mobile 0.4s ease forwards;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform-origin: center center;
+  }
 }
 
 /* Polaroid color transitions */
