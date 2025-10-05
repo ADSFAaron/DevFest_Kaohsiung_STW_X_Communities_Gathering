@@ -1113,7 +1113,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!monitorAnimation) return;
 
     // Hide slides (not the carousel container) and indicators
-    slides.forEach(slide => {
+    slides.forEach((slide) => {
       slide.style.opacity = '0';
       slide.style.pointerEvents = 'none';
     });
@@ -1140,7 +1140,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // After animation completes, show slides carousel
         setTimeout(() => {
           monitorAnimation.style.display = 'none';
-          slides.forEach(slide => {
+          slides.forEach((slide) => {
             slide.style.opacity = '';
             slide.style.pointerEvents = '';
           });
@@ -1149,7 +1149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             slideIndicators.style.pointerEvents = '';
           }
         }, 500);
-      }
+      },
     });
 
     // Animate lines
@@ -1160,29 +1160,41 @@ document.addEventListener('DOMContentLoaded', () => {
         duration: 250,
         delay: anime.stagger(50),
       })
-      .add({
-        targets: monitorAnimation.querySelectorAll('.text-devfest-kaohsiung .line'),
-        fill: ['transparent', '#57caff'],
-        duration: 400,
-        delay: anime.stagger(15),
-      }, '-=200')
-      .add({
-        targets: monitorAnimation.querySelectorAll('.text-x .line'),
-        fill: ['transparent', '#5cdb6d'],
-        duration: 400,
-      }, '-=200')
-      .add({
-        targets: monitorAnimation.querySelectorAll('.text-stw-communities .line'),
-        fill: ['transparent', '#ffd427'],
-        duration: 400,
-        delay: anime.stagger(15),
-      }, '-=200')
-      .add({
-        targets: monitorAnimation.querySelectorAll('.text-2025 .line'),
-        fill: ['transparent', '#ff7daf'],
-        duration: 400,
-        delay: anime.stagger(15),
-      }, '-=200');
+      .add(
+        {
+          targets: monitorAnimation.querySelectorAll('.text-devfest-kaohsiung .line'),
+          fill: ['transparent', '#57caff'],
+          duration: 400,
+          delay: anime.stagger(15),
+        },
+        '-=200'
+      )
+      .add(
+        {
+          targets: monitorAnimation.querySelectorAll('.text-x .line'),
+          fill: ['transparent', '#5cdb6d'],
+          duration: 400,
+        },
+        '-=200'
+      )
+      .add(
+        {
+          targets: monitorAnimation.querySelectorAll('.text-stw-communities .line'),
+          fill: ['transparent', '#ffd427'],
+          duration: 400,
+          delay: anime.stagger(15),
+        },
+        '-=200'
+      )
+      .add(
+        {
+          targets: monitorAnimation.querySelectorAll('.text-2025 .line'),
+          fill: ['transparent', '#ff7daf'],
+          duration: 400,
+          delay: anime.stagger(15),
+        },
+        '-=200'
+      );
   }
 
   // --- Monitor Power Button ---
