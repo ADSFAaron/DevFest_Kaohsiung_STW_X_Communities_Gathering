@@ -522,16 +522,29 @@ const translations = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 延遲 3.7 秒後隱藏 loading 遮罩
-  setTimeout(() => {
-    const loadingOverlay = document.querySelector('.loading-overlay');
+  // 檢查是否為首次載入
+  const hasVisited = localStorage.getItem('hasVisited');
+  const loadingOverlay = document.querySelector('.loading-overlay');
+
+  if (hasVisited) {
+    // 非首次載入，立即隱藏動畫
     if (loadingOverlay) {
-      loadingOverlay.classList.add('hide');
-      setTimeout(() => {
-        loadingOverlay.style.display = 'none';
-      }, 1000); // 等待淡出動畫完成後完全隱藏
+      loadingOverlay.style.display = 'none';
     }
-  }, 3700);
+  } else {
+    // 首次載入，顯示動畫並標記為已訪問
+    localStorage.setItem('hasVisited', 'true');
+
+    // 延遲 3.7 秒後隱藏 loading 遮罩
+    setTimeout(() => {
+      if (loadingOverlay) {
+        loadingOverlay.classList.add('hide');
+        setTimeout(() => {
+          loadingOverlay.style.display = 'none';
+        }, 1000); // 等待淡出動畫完成後完全隱藏
+      }
+    }, 3700);
+  }
 
   const speakerCards = document.querySelectorAll('.speaker-card');
 

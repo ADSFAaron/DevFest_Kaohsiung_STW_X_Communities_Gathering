@@ -156,6 +156,31 @@
   }
 }
 
+/* SVG 文字顏色 */
+.text-devfest-kaohsiung .line {
+  stroke: #4285f4;
+  fill: #57caff;
+  stroke-width: 2;
+}
+
+.text-x .line {
+  stroke: #34a853;
+  fill: #5cdb6d;
+  stroke-width: 2;
+}
+
+.text-stw-communities .line {
+  stroke: #f9ab00;
+  fill: #ffd427;
+  stroke-width: 2;
+}
+
+.text-2025 .line {
+  stroke: #ea4335;
+  fill: #ff7daf;
+  stroke-width: 2;
+}
+
 /* 移動裝置優化 */
 @media screen and (max-width: 768px) {
   .loading-overlay {
