@@ -958,14 +958,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Desk Items Interaction ---
   function initDeskItemsInteraction() {
-    // Keyboard - glow and key press effect
+    // Keyboard - glow and key press effect + trigger monitor animation
     const keyboard = document.querySelector('.desk-item.keyboard');
+    const monitorScreen = document.querySelector('.monitor-screen');
+
     if (keyboard) {
       keyboard.addEventListener('click', () => {
         keyboard.classList.add('clicked');
         setTimeout(() => {
           keyboard.classList.remove('clicked');
         }, 500);
+
+        // Trigger monitor animation if screen is on
+        if (monitorScreen && !monitorScreen.classList.contains('screen-off')) {
+          playMonitorAnimation();
+        }
       });
     }
 
@@ -1096,6 +1103,87 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize desk items interaction
   initDeskItemsInteraction();
+
+  // --- Monitor Animation ---
+  function playMonitorAnimation() {
+    const monitorAnimation = document.getElementById('monitor-animation');
+    const slides = document.querySelectorAll('.slides-carousel .slide');
+    const slideIndicators = document.querySelector('.slide-indicators');
+
+    if (!monitorAnimation) return;
+
+    // Hide slides (not the carousel container) and indicators
+    slides.forEach(slide => {
+      slide.style.opacity = '0';
+      slide.style.pointerEvents = 'none';
+    });
+    if (slideIndicators) {
+      slideIndicators.style.opacity = '0';
+      slideIndicators.style.pointerEvents = 'none';
+    }
+
+    // Show animation container
+    monitorAnimation.style.display = 'flex';
+
+    // Play the animation using anime.js
+    const paths = monitorAnimation.querySelectorAll('.line');
+    paths.forEach((path) => {
+      path.style.fill = 'transparent';
+      path.style.stroke = '#202124';
+      path.style.strokeWidth = '1';
+    });
+
+    const timeline = anime.timeline({
+      easing: 'easeInOutQuad',
+      loop: false,
+      complete: () => {
+        // After animation completes, show slides carousel
+        setTimeout(() => {
+          monitorAnimation.style.display = 'none';
+          slides.forEach(slide => {
+            slide.style.opacity = '';
+            slide.style.pointerEvents = '';
+          });
+          if (slideIndicators) {
+            slideIndicators.style.opacity = '';
+            slideIndicators.style.pointerEvents = '';
+          }
+        }, 500);
+      }
+    });
+
+    // Animate lines
+    timeline
+      .add({
+        targets: monitorAnimation.querySelectorAll('.line'),
+        strokeDashoffset: [anime.setDashoffset, 0],
+        duration: 250,
+        delay: anime.stagger(50),
+      })
+      .add({
+        targets: monitorAnimation.querySelectorAll('.text-devfest-kaohsiung .line'),
+        fill: ['transparent', '#57caff'],
+        duration: 400,
+        delay: anime.stagger(15),
+      }, '-=200')
+      .add({
+        targets: monitorAnimation.querySelectorAll('.text-x .line'),
+        fill: ['transparent', '#5cdb6d'],
+        duration: 400,
+      }, '-=200')
+      .add({
+        targets: monitorAnimation.querySelectorAll('.text-stw-communities .line'),
+        fill: ['transparent', '#ffd427'],
+        duration: 400,
+        delay: anime.stagger(15),
+      }, '-=200')
+      .add({
+        targets: monitorAnimation.querySelectorAll('.text-2025 .line'),
+        fill: ['transparent', '#ff7daf'],
+        duration: 400,
+        delay: anime.stagger(15),
+      }, '-=200');
+  }
 
   // --- Monitor Power Button ---
   function initMonitorPowerButton() {
