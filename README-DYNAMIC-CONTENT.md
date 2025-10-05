@@ -3,6 +3,7 @@
 ## 🎯 系統概述
 
 這個靜態網站現在支援透過 JSON 檔案動態管理以下內容：
+
 - 👨‍🏫 **講者介紹**
 - 🛍️ **技術創作市集**
 - 🤝 **贊助夥伴**
@@ -29,6 +30,7 @@
 ### 方法1：直接編輯 JSON 檔案（推薦）
 
 1. **新增講者**：編輯 `data/speakers.json`
+
 ```json
 {
   "speakers": [
@@ -105,6 +107,7 @@ await window.dynamicContentManager.addMarketBooth(boothData);
 ## 📄 資料格式說明
 
 ### 講者 (speakers.json)
+
 ```json
 {
   "id": "唯一識別碼",
@@ -123,6 +126,7 @@ await window.dynamicContentManager.addMarketBooth(boothData);
 ```
 
 ### 贊助商 (sponsors.json)
+
 ```json
 {
   "id": "唯一識別碼",
@@ -140,6 +144,7 @@ await window.dynamicContentManager.addMarketBooth(boothData);
 ```
 
 ### 關於我們 (about.json)
+
 ```json
 {
   "id": "唯一識別碼",
@@ -159,6 +164,7 @@ await window.dynamicContentManager.addMarketBooth(boothData);
 ```
 
 ### 技術創作市集 (markets.json)
+
 ```json
 {
   "id": "唯一識別碼",
@@ -177,6 +183,7 @@ await window.dynamicContentManager.addMarketBooth(boothData);
 ## 🔧 系統功能
 
 ### 自動功能
+
 - ✅ 多語言支援（繁體中文/英文）
 - ✅ 響應式設計
 - ✅ 自動載入 JSON 資料
@@ -184,6 +191,7 @@ await window.dynamicContentManager.addMarketBooth(boothData);
 - ✅ 講者卡片點擊展開功能
 
 ### 管理功能
+
 - ✅ 動態新增/載入內容
 - ✅ JSON 檔案結構驗證
 - ✅ 錯誤處理
@@ -200,6 +208,7 @@ await window.dynamicContentManager.addMarketBooth(boothData);
 ## 🛠️ 開發建議
 
 ### 本地開發
+
 ```bash
 # 使用簡單的 HTTP 伺服器
 python -m http.server 8000
@@ -208,6 +217,7 @@ npx serve .
 ```
 
 ### 生產部署
+
 1. 確保所有 JSON 檔案可被存取
 2. 設定正確的 CORS 標頭（如果需要）
 3. 考慮使用 CDN 來加速圖片載入
@@ -215,6 +225,7 @@ npx serve .
 ## 📞 支援
 
 如有問題，請檢查：
+
 1. 瀏覽器開發者工具的 Console
 2. Network 面板是否有載入錯誤
 3. JSON 檔案格式是否正確

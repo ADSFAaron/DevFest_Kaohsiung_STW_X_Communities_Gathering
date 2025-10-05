@@ -1,182 +1,182 @@
 .loading-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    height: 100dvh;
-    /* 支援動態視口高度 */
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 200ms;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.6, 1);
-    padding: 20px;
-    box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  /* 支援動態視口高度 */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 200ms;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.6, 1);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .loading-overlay.hide {
-    opacity: 0;
-    transform: translateY(-100%);
-    pointer-events: none;
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
 }
 
 .loading-content {
-    text-align: center;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(0) scale(1);
-    opacity: 1;
-    max-width: 100%;
-    margin: 10vh;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  max-width: 100%;
+  margin: 10vh;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .loading-overlay.hide .loading-content {
-    transform: translateY(-40px) scale(0.9);
-    opacity: 0;
+  transform: translateY(-40px) scale(0.9);
+  opacity: 0;
 }
 
 .loading-text {
-    font-size: clamp(24px, 5vw, 32px);
-    /* 響應式字體大小 */
-    margin-top: 20px;
-    font-weight: bold;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  font-size: clamp(24px, 5vw, 32px);
+  /* 響應式字體大小 */
+  margin-top: 20px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .loading-text .letter {
-    display: inline-block;
-    transform-origin: 50% 100%;
-    opacity: 0;
-    transform: translateY(20px);
+  display: inline-block;
+  transform-origin: 50% 100%;
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .loading-overlay.hide {
-    transform: translateY(-30px) scale(0.95);
-    opacity: 0;
+  transform: translateY(-30px) scale(0.95);
+  opacity: 0;
 }
 
 .spinner-orbit {
-    opacity: 0.2;
-    transform-box: fill-box;
-    transform-origin: center;
+  opacity: 0.2;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 .spinner-progress {
-    stroke-dasharray: 130;
-    stroke-dashoffset: 130;
-    transform-origin: center;
-    transform-box: fill-box;
-    animation: spinner-stroke-rotate 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  stroke-dasharray: 130;
+  stroke-dashoffset: 130;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: spinner-stroke-rotate 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .spinner-dots {
-    animation: spinner-dots-rotate 1.5s linear infinite;
-    transform-origin: center;
-    transform-box: fill-box;
-    will-change: transform;
+  animation: spinner-dots-rotate 1.5s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+  will-change: transform;
 }
 
 .dot {
-    transform-origin: center;
-    animation: dot-scale 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  transform-origin: center;
+  animation: dot-scale 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 .dot-blue {
-    animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .dot-red {
-    animation-delay: 0.375s;
+  animation-delay: 0.375s;
 }
 
 .dot-yellow {
-    animation-delay: 0.75s;
+  animation-delay: 0.75s;
 }
 
 .dot-green {
-    animation-delay: 1.125s;
+  animation-delay: 1.125s;
 }
 
 @keyframes spinner-container-rotate {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spinner-stroke-rotate {
-    0% {
-        stroke-dashoffset: 130;
-        transform: rotate(0);
-    }
+  0% {
+    stroke-dashoffset: 130;
+    transform: rotate(0);
+  }
 
-    50% {
-        stroke-dashoffset: 32.5;
-        transform: rotate(135deg);
-    }
+  50% {
+    stroke-dashoffset: 32.5;
+    transform: rotate(135deg);
+  }
 
-    100% {
-        stroke-dashoffset: 130;
-        transform: rotate(360deg);
-    }
+  100% {
+    stroke-dashoffset: 130;
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes spinner-dots-rotate {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes dot-scale {
 
-    0%,
-    100% {
-        transform: scale(0.7);
-    }
+  0%,
+  100% {
+    transform: scale(0.7);
+  }
 
-    25% {
-        transform: scale(1);
-    }
+  25% {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(0.7);
-    }
+  50% {
+    transform: scale(0.7);
+  }
 
-    75% {
-        transform: scale(0.7);
-    }
+  75% {
+    transform: scale(0.7);
+  }
 }
 
 /* 移動裝置優化 */
 @media screen and (max-width: 768px) {
-    .loading-overlay {
-        padding: 16px;
-    }
+  .loading-overlay {
+    padding: 16px;
+  }
 
-    .loading-content {
-        width: 90%;
-        margin: 0 auto;
-        transform: scale(0.9);
-    }
+  .loading-content {
+    width: 90%;
+    margin: 0 auto;
+    transform: scale(0.9);
+  }
 
-    .loading-text {
-        margin-top: 16px;
-        font-size: clamp(20px, 4vw, 28px);
-    }
+  .loading-text {
+    margin-top: 16px;
+    font-size: clamp(20px, 4vw, 28px);
+  }
 
-    .dot {
-        transform-origin: center;
-        r: 2.5;
-        /* 稍微縮小圓點大小 */
-    }
+  .dot {
+    transform-origin: center;
+    r: 2.5;
+    /* 稍微縮小圓點大小 */
+  }
 }
