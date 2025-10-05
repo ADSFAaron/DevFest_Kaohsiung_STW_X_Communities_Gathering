@@ -525,8 +525,14 @@ const translations = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 檢查是否為首次載入
-  const hasVisited = localStorage.getItem('hasVisited');
+  // 檢查是否為首次載入（使用 try-catch 處理無痕模式）
+  let hasVisited = false;
+  try {
+    hasVisited = localStorage.getItem('hasVisited') === 'true';
+  } catch (e) {
+    // 無痕模式下 localStorage 可能無法使用，視為已訪問
+    hasVisited = true;
+  }
   const loadingOverlay = document.querySelector('.loading-overlay');
   const homePage = document.getElementById('home');
 
@@ -534,8 +540,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const ensureHomePageVisible = () => {
     if (homePage) {
       homePage.classList.add('active');
-      homePage.style.opacity = '1';
-      homePage.style.display = 'block';
+      // 不設定內聯樣式，讓 CSS 的 .page-section.active 來控制
+      homePage.style.opacity = '';
+      homePage.style.display = '';
     }
   };
 
@@ -547,7 +554,11 @@ document.addEventListener('DOMContentLoaded', () => {
     ensureHomePageVisible();
   } else {
     // 首次載入，顯示動畫並標記為已訪問
-    localStorage.setItem('hasVisited', 'true');
+    try {
+      localStorage.setItem('hasVisited', 'true');
+    } catch (e) {
+      // 無痕模式下忽略錯誤
+    }
 
     // 延遲 3.7 秒後隱藏 loading 遮罩
     setTimeout(() => {
