@@ -1,0 +1,38 @@
+{
+  "slides": [
+    {
+      "id": "devfest-2025",
+      "image": "images/image_banner_devfest.webp",
+      "alt": {
+        "zh": "DevFest 2025 高雄場",
+        "en": "DevFest Kaohsiung 2025",
+        "ja": "DevFest Kaohsiung 2025"
+      },
+      "title": {
+        "zh": "🖼️ 線索5：圖片也有秘密！檢查這張圖片的所有屬性，可以獲得第一日免費票 5（官網解謎活動）邀請碼...",
+        "en": "🖼️ Clue 5: The image holds secrets! Check all attributes of this image to get the Day 1 Free Ticket 5 (Website Puzzle Event) invitation code...",
+        "ja": "🖼️ ヒント5：画像にも秘密がある！この画像のすべての属性をチェックして、1日目無料チケット5（ウェブサイトパズルイベント）の招待コードを取得..."
+      },
+      "dataAttributes": {
+        "event": "devfest2025",
+        "secret-key": "AMF7JG73TC"
+      },
+      "loading": "eager"
+    },
+    {
+      "id": "stw-communities-gathering-2025",
+      "image": "images/image_banner_stw.webp",
+      "alt": {
+        "zh": "S. TW Communities Gathering 2025",
+        "en": "S. TW Communities Gathering 2025",
+        "ja": "S. TW Communities Gathering 2025"
+      },
+      "title": {
+        "zh": "南臺灣技術社群大聚 2025",
+        "en": "S. TW Communities Gathering 2025",
+        "ja": "南台湾技術コミュニティ大交流会 2025"
+      },
+      "loading": "eager"
+    }
+  ]
+}

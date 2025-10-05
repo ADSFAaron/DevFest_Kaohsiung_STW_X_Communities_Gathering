@@ -11,6 +11,7 @@ class DynamicContentManager {
       community: [],
       staff: [],
       about: [],
+      carousel: [],
     };
   }
 
@@ -35,13 +36,14 @@ class DynamicContentManager {
   // 載入所有資料
   async loadAllData() {
     try {
-      const [speakers, markets, sponsors, community, staff, about] = await Promise.all([
+      const [speakers, markets, sponsors, community, staff, about, carousel] = await Promise.all([
         this.loadJSON('data/speakers.json'),
         this.loadJSON('data/markets.json'),
         this.loadJSON('data/sponsors.json'),
         this.loadJSON('data/community.json'),
         this.loadJSON('data/staff.json'),
         this.loadJSON('data/about.json'),
+        this.loadJSON('data/carousel.json'),
       ]);
 
       this.data.speakers = speakers.speakers || [];
@@ -50,6 +52,7 @@ class DynamicContentManager {
       this.data.community = community.community || [];
       this.data.staff = staff.staff || [];
       this.data.about = about.about || [];
+      this.data.carousel = carousel.slides || [];
 
       this.renderAllContent();
       this.enhanceScheduleWithSpeakers();
@@ -69,12 +72,128 @@ class DynamicContentManager {
 
   // 渲染所有內容
   renderAllContent() {
+    this.renderCarousel();
     this.renderSpeakers();
     this.renderMarkets();
     this.renderSponsors();
     this.renderCommunity();
     this.renderStaff();
     this.renderAbout();
+  }
+
+  // 渲染輪播圖
+  renderCarousel() {
+    const container = document.querySelector('.slides-carousel');
+    const indicatorsContainer = document.querySelector('.slide-indicators');
+    if (!container) return;
+
+    // 保存 Monitor Animation 容器（如果存在）
+    const monitorAnimation = container.querySelector('.monitor-animation');
+
+    // 清空現有內容
+    container.innerHTML = '';
+
+    // 創建輪播圖片
+    this.data.carousel.forEach((slide, index) => {
+      const slideElement = this.createCarouselSlide(slide, index === 0);
+      container.appendChild(slideElement);
+    });
+
+    // 恢復 Monitor Animation 容器
+    if (monitorAnimation) {
+      container.appendChild(monitorAnimation);
+    }
+
+    // 渲染指示器（如果指示器容器存在）
+    if (indicatorsContainer && this.data.carousel.length > 1) {
+      indicatorsContainer.innerHTML = '';
+      this.data.carousel.forEach((slide, index) => {
+        const indicator = document.createElement('span');
+        indicator.className = index === 0 ? 'indicator active' : 'indicator';
+        indicatorsContainer.appendChild(indicator);
+      });
+    }
+
+    // 重新初始化輪播圖功能
+    this.initCarouselAutoplay();
+  }
+
+  // 初始化輪播圖自動播放
+  initCarouselAutoplay() {
+    const slides = document.querySelectorAll('.slides-carousel .slide');
+    const indicators = document.querySelectorAll('.slide-indicators .indicator');
+
+    if (slides.length === 0 || indicators.length === 0) return;
+
+    let currentSlide = 0;
+    let autoplayInterval = null;
+
+    const showSlide = (index) => {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+      indicators.forEach((indicator, i) => {
+        indicator.classList.toggle('active', i === index);
+      });
+      currentSlide = index;
+    };
+
+    const nextSlide = () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    };
+
+    // 自動播放每 5 秒切換一次
+    autoplayInterval = setInterval(nextSlide, 5000);
+
+    // 指示器點擊事件
+    indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        clearInterval(autoplayInterval);
+        showSlide(index);
+        autoplayInterval = setInterval(nextSlide, 5000);
+      });
+    });
+
+    // 滑鼠懸停時暫停
+    const carousel = document.querySelector('.slides-carousel');
+    if (carousel) {
+      carousel.addEventListener('mouseenter', () => {
+        if (autoplayInterval) {
+          clearInterval(autoplayInterval);
+        }
+      });
+
+      carousel.addEventListener('mouseleave', () => {
+        autoplayInterval = setInterval(nextSlide, 5000);
+      });
+    }
+  }
+
+  // 建立輪播圖片元素
+  createCarouselSlide(slide, isActive = false) {
+    const slideDiv = document.createElement('div');
+    slideDiv.className = isActive ? 'slide active' : 'slide';
+
+    const img = document.createElement('img');
+    img.src = slide.image;
+    img.alt = this.getText(slide.alt);
+    img.loading = slide.loading || 'eager';
+
+    // 設定 title 屬性（如果有）
+    if (slide.title) {
+      img.title = this.getText(slide.title);
+    }
+
+    // 設定自定義 data 屬性（如果有）
+    if (slide.dataAttributes) {
+      Object.entries(slide.dataAttributes).forEach(([key, value]) => {
+        img.setAttribute(`data-${key}`, value);
+      });
+    }
+
+    slideDiv.appendChild(img);
+    return slideDiv;
   }
 
   // 渲染講者
