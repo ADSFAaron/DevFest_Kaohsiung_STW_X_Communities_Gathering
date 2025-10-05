@@ -175,24 +175,37 @@ class DynamicContentManager {
     const slideDiv = document.createElement('div');
     slideDiv.className = isActive ? 'slide active' : 'slide';
 
-    const img = document.createElement('img');
-    img.src = slide.image;
-    img.alt = this.getText(slide.alt);
-    img.loading = slide.loading || 'eager';
+    // 使用 ImageLoader 創建優化的圖片
+    const imageContainer = window.imageLoader?.createOptimizedImage(slide.image, this.getText(slide.alt), {
+      className: '',
+      loading: slide.loading || 'eager',
+      placeholder: true,
+      title: slide.title ? this.getText(slide.title) : '',
+      dataAttributes: slide.dataAttributes || {},
+    });
 
-    // 設定 title 屬性（如果有）
-    if (slide.title) {
-      img.title = this.getText(slide.title);
+    // 如果 ImageLoader 不可用，使用傳統方式
+    if (!imageContainer) {
+      const img = document.createElement('img');
+      img.src = slide.image;
+      img.alt = this.getText(slide.alt);
+      img.loading = slide.loading || 'eager';
+
+      if (slide.title) {
+        img.title = this.getText(slide.title);
+      }
+
+      if (slide.dataAttributes) {
+        Object.entries(slide.dataAttributes).forEach(([key, value]) => {
+          img.setAttribute(`data-${key}`, value);
+        });
+      }
+
+      slideDiv.appendChild(img);
+    } else {
+      slideDiv.appendChild(imageContainer);
     }
 
-    // 設定自定義 data 屬性（如果有）
-    if (slide.dataAttributes) {
-      Object.entries(slide.dataAttributes).forEach(([key, value]) => {
-        img.setAttribute(`data-${key}`, value);
-      });
-    }
-
-    slideDiv.appendChild(img);
     return slideDiv;
   }
 
@@ -299,8 +312,14 @@ class DynamicContentManager {
       sessionAbstractLabel = '概要：<br>';
     }
 
+    // 創建講者照片容器
+    const photoContainer = window.imageLoader?.createOptimizedImage(speaker.photo, `Photo of ${this.getText(speaker.name)}`, {
+      className: 'speaker-photo',
+      loading: 'lazy',
+      placeholder: true,
+    });
+
     card.innerHTML = `
-            <img alt="Photo of ${this.getText(speaker.name)}" class="speaker-photo" src="${speaker.photo}">
             <div class="speaker-info">
                 <h3 class="speaker-name">${this.getText(speaker.name)}</h3>
                 <p class="speaker-org">${this.getText(speaker.org)}</p>
@@ -329,6 +348,19 @@ class DynamicContentManager {
             </div>
         `;
 
+    // 在卡片最前面插入照片
+    if (photoContainer) {
+      card.insertBefore(photoContainer, card.firstChild);
+    } else {
+      // Fallback：如果 ImageLoader 不可用
+      const img = document.createElement('img');
+      img.className = 'speaker-photo';
+      img.src = speaker.photo;
+      img.alt = `Photo of ${this.getText(speaker.name)}`;
+      img.loading = 'lazy';
+      card.insertBefore(img, card.firstChild);
+    }
+
     return card;
   }
 
@@ -352,14 +384,32 @@ class DynamicContentManager {
 
     const socialLinks = this.createSocialLinks(booth.social);
 
+    // 創建優化的圖片
+    const imageContainer = window.imageLoader?.createOptimizedImage(booth.logo, `${this.getText(booth.name)} Logo`, {
+      className: 'market-booth-image',
+      loading: 'lazy',
+      placeholder: true,
+    });
+
     card.innerHTML = `
-            <img alt="${this.getText(booth.name)} Logo" class="market-booth-image" src="${booth.logo}">
             <div class="market-booth-info">
                 <h3 class="market-booth-title">${this.getText(booth.name)}</h3>
                 <div class="market-booth-description">${this.getText(booth.description)}</div>
                 ${socialLinks}
             </div>
         `;
+
+    // 在卡片最前面插入圖片
+    if (imageContainer) {
+      card.insertBefore(imageContainer, card.firstChild);
+    } else {
+      const img = document.createElement('img');
+      img.className = 'market-booth-image';
+      img.src = booth.logo;
+      img.alt = `${this.getText(booth.name)} Logo`;
+      img.loading = 'lazy';
+      card.insertBefore(img, card.firstChild);
+    }
 
     return card;
   }
@@ -388,12 +438,15 @@ class DynamicContentManager {
     const sponsorType = sponsor.type || 'company'; // 預設為公司
     const categoryText = this.getText(sponsor.category);
 
+    // 創建優化的圖片
+    const imageContainer = window.imageLoader?.createOptimizedImage(sponsor.logo, `${this.getText(sponsor.name)} Logo`, {
+      className: 'sponsor-image',
+      loading: 'lazy',
+      placeholder: true,
+      onClick: () => window.open(sponsor.website, '_blank'),
+    });
+
     card.innerHTML = `
-            <img alt="${this.getText(sponsor.name)} Logo"
-                 class="sponsor-image"
-                 src="${sponsor.logo}"
-                 onclick="window.open('${sponsor.website}', '_blank')"
-                 style="cursor: pointer;">
             <div class="sponsor-info">
                 <div class="sponsor-type ${sponsorType}">${categoryText}</div>
                 <h3 class="sponsor-title">${this.getText(sponsor.name)}</h3>
@@ -401,6 +454,20 @@ class DynamicContentManager {
                 ${socialLinks}
             </div>
         `;
+
+    // 在卡片最前面插入圖片
+    if (imageContainer) {
+      card.insertBefore(imageContainer, card.firstChild);
+    } else {
+      const img = document.createElement('img');
+      img.className = 'sponsor-image';
+      img.src = sponsor.logo;
+      img.alt = `${this.getText(sponsor.name)} Logo`;
+      img.loading = 'lazy';
+      img.style.cursor = 'pointer';
+      img.onclick = () => window.open(sponsor.website, '_blank');
+      card.insertBefore(img, card.firstChild);
+    }
 
     return card;
   }
@@ -425,12 +492,15 @@ class DynamicContentManager {
 
     const socialLinks = this.createSocialLinks(community.social);
 
+    // 創建優化的圖片
+    const imageContainer = window.imageLoader?.createOptimizedImage(community.logo, `${this.getText(community.name)} Logo`, {
+      className: 'community-image',
+      loading: 'lazy',
+      placeholder: true,
+      onClick: () => window.open(community.website, '_blank'),
+    });
+
     card.innerHTML = `
-            <img alt="${this.getText(community.name)} Logo"
-                 class="community-image"
-                 src="${community.logo}"
-                 onclick="window.open('${community.website}', '_blank')"
-                 style="cursor: pointer;">
             <div class="community-info">
                 <h3 class="community-title">${this.getText(community.name)}</h3>
                 <div class="community-category">${this.getText(community.category)}</div>
@@ -438,6 +508,20 @@ class DynamicContentManager {
                 ${socialLinks}
             </div>
         `;
+
+    // 在卡片最前面插入圖片
+    if (imageContainer) {
+      card.insertBefore(imageContainer, card.firstChild);
+    } else {
+      const img = document.createElement('img');
+      img.className = 'community-image';
+      img.src = community.logo;
+      img.alt = `${this.getText(community.name)} Logo`;
+      img.loading = 'lazy';
+      img.style.cursor = 'pointer';
+      img.onclick = () => window.open(community.website, '_blank');
+      card.insertBefore(img, card.firstChild);
+    }
 
     return card;
   }
@@ -462,14 +546,32 @@ class DynamicContentManager {
 
     const socialLinks = this.createSocialLinks(booth.social);
 
+    // 創建優化的圖片
+    const imageContainer = window.imageLoader?.createOptimizedImage(booth.logo, `${this.getText(booth.name)} Logo`, {
+      className: 'about-image',
+      loading: 'lazy',
+      placeholder: true,
+    });
+
     card.innerHTML = `
-            <img alt="${this.getText(booth.name)} Logo" class="about-image" src="${booth.logo}">
             <div class="about-info-new">
                 <h3 class="about-title">${this.getText(booth.name)}</h3>
                 <div class="about-description-new">${this.getText(booth.description)}</div>
                 ${socialLinks}
             </div>
         `;
+
+    // 在卡片最前面插入圖片
+    if (imageContainer) {
+      card.insertBefore(imageContainer, card.firstChild);
+    } else {
+      const img = document.createElement('img');
+      img.className = 'about-image';
+      img.src = booth.logo;
+      img.alt = `${this.getText(booth.name)} Logo`;
+      img.loading = 'lazy';
+      card.insertBefore(img, card.firstChild);
+    }
 
     return card;
   }
@@ -561,11 +663,14 @@ class DynamicContentManager {
     const orgHTML = staff.org ? `<p class="staff-org">${this.getText(staff.org)}</p>` : '';
     const titleHTML = staff.title ? `<p class="staff-title-position">${this.getText(staff.title)}</p>` : '';
 
+    // 創建優化的圖片
+    const imageContainer = window.imageLoader?.createOptimizedImage(staff.photo, `${this.getText(staff.name)} Photo`, {
+      className: 'staff-image',
+      loading: 'lazy',
+      placeholder: true,
+    });
+
     card.innerHTML = `
-            <img alt="${this.getText(staff.name)} Photo"
-                 class="staff-image"
-                 src="${staff.photo}"
-                 style="cursor: pointer;">
             <div class="staff-info">
                 <h3 class="staff-title">${this.getText(staff.name)}</h3>
                 ${orgHTML}
@@ -575,6 +680,19 @@ class DynamicContentManager {
                 ${socialLinks}
             </div>
         `;
+
+    // 在卡片最前面插入圖片
+    if (imageContainer) {
+      card.insertBefore(imageContainer, card.firstChild);
+    } else {
+      const img = document.createElement('img');
+      img.className = 'staff-image';
+      img.src = staff.photo;
+      img.alt = `${this.getText(staff.name)} Photo`;
+      img.loading = 'lazy';
+      img.style.cursor = 'pointer';
+      card.insertBefore(img, card.firstChild);
+    }
 
     return card;
   }
@@ -700,15 +818,38 @@ class DynamicContentManager {
     const speakerInfo = document.createElement('div');
     speakerInfo.className = 'speaker-info-inline';
 
-    speakerInfo.innerHTML = `
-            <div class="speaker-avatar">
-                <img src="${speaker.photo}" alt="${this.getText(speaker.name)}" class="speaker-photo-small">
-            </div>
-            <div class="speaker-details-inline">
-                <div class="speaker-name-small">${this.getText(speaker.name)}</div>
-                <div class="speaker-org-small">${this.getText(speaker.org)}</div>
-            </div>
+    // 創建講者詳情
+    const speakerDetails = document.createElement('div');
+    speakerDetails.className = 'speaker-details-inline';
+    speakerDetails.innerHTML = `
+            <div class="speaker-name-small">${this.getText(speaker.name)}</div>
+            <div class="speaker-org-small">${this.getText(speaker.org)}</div>
         `;
+
+    // 創建講者頭像容器
+    const avatarDiv = document.createElement('div');
+    avatarDiv.className = 'speaker-avatar';
+
+    // 創建優化的圖片
+    const imageContainer = window.imageLoader?.createOptimizedImage(speaker.photo, this.getText(speaker.name), {
+      className: 'speaker-photo-small',
+      loading: 'lazy',
+      placeholder: true,
+    });
+
+    if (imageContainer) {
+      avatarDiv.appendChild(imageContainer);
+    } else {
+      const img = document.createElement('img');
+      img.className = 'speaker-photo-small';
+      img.src = speaker.photo;
+      img.alt = this.getText(speaker.name);
+      img.loading = 'lazy';
+      avatarDiv.appendChild(img);
+    }
+
+    speakerInfo.appendChild(avatarDiv);
+    speakerInfo.appendChild(speakerDetails);
 
     return speakerInfo;
   }
