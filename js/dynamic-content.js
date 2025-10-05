@@ -313,11 +313,15 @@ class DynamicContentManager {
     }
 
     // 創建講者照片容器
-    const photoContainer = window.imageLoader?.createOptimizedImage(speaker.photo, `Photo of ${this.getText(speaker.name)}`, {
-      className: 'speaker-photo',
-      loading: 'lazy',
-      placeholder: true,
-    });
+    const photoContainer = window.imageLoader?.createOptimizedImage(
+      speaker.photo,
+      `Photo of ${this.getText(speaker.name)}`,
+      {
+        className: 'speaker-photo',
+        loading: 'lazy',
+        placeholder: true,
+      }
+    );
 
     card.innerHTML = `
             <div class="speaker-info">
@@ -439,12 +443,16 @@ class DynamicContentManager {
     const categoryText = this.getText(sponsor.category);
 
     // 創建優化的圖片
-    const imageContainer = window.imageLoader?.createOptimizedImage(sponsor.logo, `${this.getText(sponsor.name)} Logo`, {
-      className: 'sponsor-image',
-      loading: 'lazy',
-      placeholder: true,
-      onClick: () => window.open(sponsor.website, '_blank'),
-    });
+    const imageContainer = window.imageLoader?.createOptimizedImage(
+      sponsor.logo,
+      `${this.getText(sponsor.name)} Logo`,
+      {
+        className: 'sponsor-image',
+        loading: 'lazy',
+        placeholder: true,
+        onClick: () => window.open(sponsor.website, '_blank'),
+      }
+    );
 
     card.innerHTML = `
             <div class="sponsor-info">
@@ -493,12 +501,16 @@ class DynamicContentManager {
     const socialLinks = this.createSocialLinks(community.social);
 
     // 創建優化的圖片
-    const imageContainer = window.imageLoader?.createOptimizedImage(community.logo, `${this.getText(community.name)} Logo`, {
-      className: 'community-image',
-      loading: 'lazy',
-      placeholder: true,
-      onClick: () => window.open(community.website, '_blank'),
-    });
+    const imageContainer = window.imageLoader?.createOptimizedImage(
+      community.logo,
+      `${this.getText(community.name)} Logo`,
+      {
+        className: 'community-image',
+        loading: 'lazy',
+        placeholder: true,
+        onClick: () => window.open(community.website, '_blank'),
+      }
+    );
 
     card.innerHTML = `
             <div class="community-info">
