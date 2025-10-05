@@ -975,6 +975,42 @@
             </div>
 
             <div class="form-group">
+              <label>組織/公司</label>
+              <div class="lang-tabs">
+                <div class="lang-tab active" onclick="switchLang('staff-org', 'zh')">中文</div>
+                <div class="lang-tab" onclick="switchLang('staff-org', 'en')">English</div>
+                <div class="lang-tab" onclick="switchLang('staff-org', 'ja')">日本語</div>
+              </div>
+              <div class="lang-content active" data-lang="zh">
+                <input id="staff-org-zh" placeholder="組織/公司名稱" type="text" />
+              </div>
+              <div class="lang-content" data-lang="en">
+                <input id="staff-org-en" placeholder="Organization/Company" type="text" />
+              </div>
+              <div class="lang-content" data-lang="ja">
+                <input id="staff-org-ja" placeholder="組織/会社" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>職稱</label>
+              <div class="lang-tabs">
+                <div class="lang-tab active" onclick="switchLang('staff-title', 'zh')">中文</div>
+                <div class="lang-tab" onclick="switchLang('staff-title', 'en')">English</div>
+                <div class="lang-tab" onclick="switchLang('staff-title', 'ja')">日本語</div>
+              </div>
+              <div class="lang-content active" data-lang="zh">
+                <input id="staff-title-zh" placeholder="職稱" type="text" />
+              </div>
+              <div class="lang-content" data-lang="en">
+                <input id="staff-title-en" placeholder="Job Title" type="text" />
+              </div>
+              <div class="lang-content" data-lang="ja">
+                <input id="staff-title-ja" placeholder="職業" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
               <label>工作描述</label>
               <div class="lang-tabs">
                 <div class="lang-tab active" onclick="switchLang('staff-desc', 'zh')">中文</div>
@@ -2121,6 +2157,16 @@
             en: document.getElementById('staff-name-en').value.trim(),
             ja: document.getElementById('staff-name-ja').value.trim(),
           },
+          org: {
+            zh: document.getElementById('staff-org-zh').value.trim(),
+            en: document.getElementById('staff-org-en').value.trim(),
+            ja: document.getElementById('staff-org-ja').value.trim(),
+          },
+          title: {
+            zh: document.getElementById('staff-title-zh').value.trim(),
+            en: document.getElementById('staff-title-en').value.trim(),
+            ja: document.getElementById('staff-title-ja').value.trim(),
+          },
           description: {
             zh: document.getElementById('staff-desc-zh').value.trim(),
             en: document.getElementById('staff-desc-en').value.trim(),
@@ -2178,6 +2224,8 @@
                     <span class="item-id">${staffMember.id}</span>
                 </div>
                 <div class="item-name"><strong>${staffMember.name.zh || staffMember.name.en}</strong></div>
+                <div style="color: #666; margin: 5px 0;">🏢 ${staffMember.org?.zh || staffMember.org?.en || ''}</div>
+                <div style="color: #666; margin: 5px 0;">💼 ${staffMember.title?.zh || staffMember.title?.en || ''}</div>
                 <div style="color: #666; margin: 5px 0;">🏷️ ${staffMember.category.zh || staffMember.category.en}</div>
                 <div class="item-actions">
                     <button class="btn btn-secondary" onclick="editStaff(${index})">✏️ 編輯</button>
@@ -2203,6 +2251,12 @@
         document.getElementById('staff-name-zh').value = staffMember.name.zh || '';
         document.getElementById('staff-name-en').value = staffMember.name.en || '';
         document.getElementById('staff-name-ja').value = staffMember.name.ja || '';
+        document.getElementById('staff-org-zh').value = staffMember.org?.zh || '';
+        document.getElementById('staff-org-en').value = staffMember.org?.en || '';
+        document.getElementById('staff-org-ja').value = staffMember.org?.ja || '';
+        document.getElementById('staff-title-zh').value = staffMember.title?.zh || '';
+        document.getElementById('staff-title-en').value = staffMember.title?.en || '';
+        document.getElementById('staff-title-ja').value = staffMember.title?.ja || '';
         document.getElementById('staff-desc-zh').value = staffMember.description.zh || '';
         document.getElementById('staff-desc-en').value = staffMember.description.en || '';
         document.getElementById('staff-desc-ja').value = staffMember.description.ja || '';
