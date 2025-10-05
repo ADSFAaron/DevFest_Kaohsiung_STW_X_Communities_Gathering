@@ -58,7 +58,7 @@
         "ja": "Just an Engineer"
       },
       "category": {
-        "zh": "第一天 & 第二天志工",
+        "zh": "第一天志工 & 第二天主辦",
         "en": "Day 1 & Day 2 Staff",
         "ja": "1日目・2日目 日目ボランティア"
       },
@@ -90,9 +90,9 @@
         "ja": "フロントエンドエンジニア であり、開発者ビュッフェ（Developer Buffet）のメンバー。人と交流するのは好きですが、顔を覚えるのが苦手です。現在は、いかに省力でイベントを運営するかを研究しています。"
       },
       "category": {
-        "zh": "第一天志工",
-        "en": "Day 1 Staff",
-        "ja": "1 日目ボランティア"
+        "zh": "第一天志工 & 第二天主辦",
+        "en": "Day 1 & Day 2 Staff",
+        "ja": "1日目・2日目 日目ボランティア"
       },
       "photo": "images/staff-brook.png",
       "social": {}
@@ -257,7 +257,38 @@
         "Linkedin": "https://www.linkedin.com/in/laysdragon"
       }
     },
-
+    {
+      "id": "kai",
+      "name": {
+        "zh": "Kai",
+        "en": "Kai",
+        "ja": "Kai"
+      },
+      "org": {
+        "zh": "GDG on campus 國立中山大學",
+        "en": "GDG on campus NSYSU",
+        "ja": "GDG on campus NSYSU"
+      },
+      "title": {
+        "zh": "學生",
+        "en": "Student",
+        "ja": "学生"
+      },
+      "description": {
+        "zh": "大家好～我是前中山 GDG on Campus organizer Kai, 因為喜歡社群活動所以又又出現拉～ 希望可以在這裡遇到大神，了解最新技術趨勢！！！",
+        "en": "Hello everyone! I'm Kai, the former GDG on Campus Organizer at National Sun Yat-sen University (NSYSU). I love community events, so here I am again! I hope to meet experts here and learn about the latest technology trends!!!",
+        "ja": "皆様、こんにちは！元中山（國立中山大學）の GDG on Campus オーガナイザーの Kai です。コミュニティ活動が好きで、またまた参加しました！ここで、偉大な専門家（大神）の方々にお会いし、最新の技術トレンドを理解できることを願っています！！！"
+      },
+      "category": {
+        "zh": "第一天志工",
+        "en": "Day 1 Staff",
+        "ja": "1 日目ボランティア"
+      },
+      "photo": "images/staff-kai.png",
+      "social": {
+        "Facebook NSYSU": "https://www.facebook.com/NSYSUGDSC"
+      }
+    },
     {
       "id": "ace",
       "name": {
@@ -288,7 +319,6 @@
       "photo": "images/staff-ace.png",
       "social": {}
     },
-
     {
       "id": "melody",
       "name": {
