@@ -1623,11 +1623,36 @@ main {
 
 /* Speakers Section - FINAL FIX using max-height */
 .speakers-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.speaker-category-title {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.speaker-category-title:first-child {
+  margin-top: 0;
+}
+
+.speaker-category-title h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-blue);
+  margin: 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--color-blue);
+  text-align: center;
+}
+
+.speaker-category-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 24px;
-  max-width: 1200px;
-  margin: 0 auto;
   align-items: start; /* 防止講者卡片被拉伸到相同高度 */
 }
 

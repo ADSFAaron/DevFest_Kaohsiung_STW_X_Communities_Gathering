@@ -84,9 +84,64 @@ class DynamicContentManager {
 
     container.innerHTML = '';
 
-    this.data.speakers.forEach((speaker) => {
-      const speakerCard = this.createSpeakerCard(speaker);
-      container.appendChild(speakerCard);
+    // 定義分類順序
+    const categoryOrder = [
+      {
+        zh: 'Gemini AI 的生成式實踐',
+        en: 'Gemini AI in Practice',
+        ja: 'Gemini AI の生成AI実践',
+        color: '#4285f4'
+      },
+      {
+        zh: 'Google Cloud 的雲端實踐',
+        en: 'Google Cloud in Practice',
+        ja: 'Google Cloud のクラウド実践',
+        color: '#34a853'
+      },
+      {
+        zh: '科技向善的實踐之路',
+        en: 'Goodness in Practice',
+        ja: 'テクノロジーで社会貢献を実現する道',
+        color: '#f9ab00'
+      },
+      {
+        zh: '第二屆 AI 生成大賽',
+        en: 'The 2nd AI Generative Contest',
+        ja: '第2回 AI 生成コンテスト',
+        color: '#ea4335'
+      }
+    ];
+
+    // 依照分類分組講者
+    categoryOrder.forEach((category) => {
+      // 篩選出該分類的講者
+      const categorySpeakers = this.data.speakers.filter((speaker) => {
+        const speakerCategoryZh = speaker.topic_category ? this.getText(speaker.topic_category) : '';
+        const categoryZh = category.zh;
+        return speakerCategoryZh === categoryZh ||
+               (speaker.topic_category && speaker.topic_category.zh === categoryZh);
+      });
+
+      // 如果該分類有講者，則創建分類標題和講者卡片
+      if (categorySpeakers.length > 0) {
+        // 創建分類標題
+        const categoryTitle = document.createElement('div');
+        categoryTitle.className = 'speaker-category-title';
+        categoryTitle.innerHTML = `<h3 style="color: ${category.color}; border-bottom-color: ${category.color};">${this.getText(category)}</h3>`;
+        container.appendChild(categoryTitle);
+
+        // 創建分類容器
+        const categoryContainer = document.createElement('div');
+        categoryContainer.className = 'speaker-category-container';
+
+        // 添加該分類的講者卡片
+        categorySpeakers.forEach((speaker) => {
+          const speakerCard = this.createSpeakerCard(speaker);
+          categoryContainer.appendChild(speakerCard);
+        });
+
+        container.appendChild(categoryContainer);
+      }
     });
 
     // 重新綁定點擊事件
