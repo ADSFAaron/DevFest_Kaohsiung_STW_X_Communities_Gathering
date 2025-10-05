@@ -31,7 +31,7 @@
         "ja": "SITCON"
       },
       "description": {
-        "zh": "SITCON 學生計算機年會是台灣最大的學生資訊社群之一，自 2012 年發起，完全由學生自發籌辦與執行。我們的核心宗旨在於建立一個屬於學生的資訊技術交流平台，透過舉辦年會、夏令營與工作坊，促進跨校、跨領域的知識共享與經驗傳承。\n\nSITCON 2026 將於 2026 年 3 月 28 日，在中央研究院人文社會科學館盛大舉行。",
+        "zh": "SITCON 學生計算機年會是台灣最大的學生資訊社群之一，自 2012 年發起，完全由學生自發籌辦與執行。我們的核心宗旨在於建立一個屬於學生的資訊技術交流平台，透過舉辦年會、夏令營與工作坊，促進跨校、跨領域的知識共享與經驗傳承。<br><br>SITCON 2026 將於 2026 年 3 月 28 日，在中央研究院人文社會科學館盛大舉行。",
         "en": "",
         "ja": ""
       },
@@ -44,6 +44,75 @@
       "website": "https://sitcon.org/",
       "social": {
         "Homepage": "https://sitcon.org/"
+      }
+    },
+    {
+      "id": "kalug",
+      "name": {
+        "zh": "KaLUG 高雄 Linux User Group",
+        "en": "KaLUG Kaohsiung Linux User Group",
+        "ja": "KaLUG Kaohsiung Linux User Group"
+      },
+      "description": {
+        "zh": "KaLUG 活動大多舉辦在 Second Space (中央公園站 3 號出口) 活動時間為每月第三週週六下午 (實際依講者狀況微調，偶爾線上) 偶爾雙語，主要討論 Linux & opensource 相關主題，以演說與討論並重形式進行。",
+        "en": "KaLUG (Kaohsiung Linux User Group) events are mostly held at Second Space (Exit 3 of Central Park Station). Event times are usually on the third Saturday afternoon of every month (actual time is slightly adjusted based on the speaker's availability; occasionally held online). Events are sometimes bilingual and primarily focus on topics related to Linux & Open Source, conducted in a format that emphasizes both presentations and discussions.",
+        "ja": "KaLUG (高雄 Linux ユーザーグループ) のイベントは、主に **Second Space（中央公園駅 3番出口）**で開催されます。開催時間は、毎月第3土曜日の午後です（実際は登壇者の都合により微調整があり、時々オンライン開催もあります）。イベントは時々バイリンガルで行われ、主に Linux とオープンソースに関連するテーマについて、講演と議論を両立させる形式で進行されます。"
+      },
+      "category": {
+        "zh": "第一天 擺攤社群",
+        "en": "Day 1 Community Participation",
+        "ja": "1日目 コミュニティへの参加"
+      },
+      "logo": "images/community-logo-kalug.png",
+      "website": "https://kalug.tw/",
+      "social": {
+        "Homepage": "https://kalug.tw/"
+      }
+    },
+    {
+      "id": "kaohsiung_wordpress",
+      "name": {
+        "zh": "Kaohsiung WordPress Meetup",
+        "en": "Kaohsiung WordPress Meetup",
+        "ja": "Kaohsiung WordPress Meetup"
+      },
+      "description": {
+        "zh": "我們是一群位於高雄的 WordPress 愛好者，我們之中包含了開發者、設計師、內容產製者以及各式各樣與 WordPress 相關的人。藉由這個社群，我們希望能夠與同樣對 WordPress 有興趣的你，分享我們的想法與經驗。這個 WordPress Meetup Group 竭誠歡迎所有喜愛 WordPress 的人們加入",
+        "en": "We are a group of WordPress enthusiasts based in Kaohsiung. We include developers, designers, content creators, and all sorts of other people related to WordPress. Through this community, we hope to share our ideas and experiences with anyone else who is interested in WordPress. This WordPress Meetup Group warmly welcomes everyone who loves WordPress to join us!",
+        "ja": "私たちは、高雄を拠点とするWordPress 愛好家のグループです。開発者、デザイナー、コンテンツ制作者、その他様々な WordPress 関連のメンバーが参加しています。このコミュニティを通じて、同じく WordPress に興味を持つ皆様と、私たちのアイデアや経験を共有したいと考えています。この WordPress ミートアップグループは、WordPress を愛するすべての人々の参加を心より歓迎します。"
+      },
+      "category": {
+        "zh": "第一天 擺攤社群",
+        "en": "Day 1 Community Participation",
+        "ja": "1日目 コミュニティへの参加"
+      },
+      "logo": "images/community-logo-kaohsiung_wordpress.png",
+      "website": "https://www.meetup.com/kaohsiung-wordpress-meetup/",
+      "social": {
+        "Meetup": "https://www.meetup.com/kaohsiung-wordpress-meetup/"
+      }
+    },
+    {
+      "id": "dddtw",
+      "name": {
+        "zh": "DDDTW",
+        "en": "DDDTW",
+        "ja": "DDDTW"
+      },
+      "description": {
+        "zh": "我們是一群熱愛軟體開發的開發人員，我們主要是推廣領域驅動設計(Domain-Driven Design)的社群，除此之外，對於敏捷開發和軟體架構設計以及商業組織轉型方面都有涉獵。<br>我們喜歡與各個社群一起協同推廣軟體開發，希望台灣軟體實力能夠在世界被看見。",
+        "en": "We are a group of developers passionate about software development. Our main focus is promoting the Domain-Driven Design (DDD) community. In addition, we are also involved in Agile development, software architecture design, and business organizational transformation.<br><br>We enjoy collaborating with other communities to promote software development, with the hope that Taiwan's software capabilities can gain global recognition.",
+        "ja": "私たちは、ソフトウェア開発を愛する開発者のグループです。主にドメイン駆動設計（Domain-Driven Design, DDD）の普及を推進しており、そのほかにも、アジャイル開発やソフトウェアアーキテクチャ設計、ビジネス組織の変革といった分野も手掛けています。<br>私たちは、様々なコミュニティと協力してソフトウェア開発を推進することを重視しており、台湾のソフトウェア実力が世界で認められることを願っています。"
+      },
+      "category": {
+        "zh": "第一天 擺攤社群",
+        "en": "Day 1 Community Participation",
+        "ja": "1日目 コミュニティへの参加"
+      },
+      "logo": "images/community-logo-ddd_tw.png",
+      "website": "https://www.facebook.com/groups/dddesigntw",
+      "social": {
+        "Facebook": "https://www.facebook.com/groups/dddesigntw"
       }
     }
   ]
