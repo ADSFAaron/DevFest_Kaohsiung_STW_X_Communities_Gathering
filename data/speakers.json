@@ -86,9 +86,9 @@
           "ja": "Firebase を使って AI ロボットバリスタを構築した方法をご紹介します！"
         },
         "abstract": {
-          "zh": "我使用了 Firebase 和 Google Cloud 服務，將我們的 AI 機器人咖啡師 與跨越多個 IoT 設備（臉部掃描儀、機器人本身和我們的行動應用程式）的即時數據流連接起來。訂單、身份驗證和即時狀態更新全部透過 Firebase 的即時資料庫（Real-time Database） 和 雲端函式（Cloud Functions） 瞬間同步。",
+          "zh": "我使用了 Firebase 和 Google Cloud 服務，將我們的 AI 機器人咖啡師 與跨越多個 IoT 設備（臉部掃描儀、機器人本身和我們的行動應用程式）的即時數據流連接起來。<br><br>訂單、身份驗證和即時狀態更新全部透過 Firebase 的即時資料庫（Real-time Database）和 雲端函式（Cloud Functions）瞬間同步。",
           "en": "I used Firebase and Google Cloud services to connect our AI Robot Barista with real-time data flow across IoT devices—face scanners, the robot itself, and our mobile app. Orders, authentication, and live status updates all sync instantly through Firebase’s real-time database and cloud functions.",
-          "ja": "私は Firebase と Google Cloud サービスを利用し、当社の AI ロボットバリスタ を、IoT デバイス（顔スキャナー、ロボット本体、モバイルアプリ）を跨るリアルタイムデータフローに接続しました。注文、認証、ライブステータスの更新はすべて、Firebase のリアルタイムデータベースとクラウドファンクション（Cloud Functions） を通じて瞬時に同期されます。"
+          "ja": "私は Firebase と Google Cloud サービスを利用し、当社の AI ロボットバリスタ を、IoT デバイス（顔スキャナー、ロボット本体、モバイルアプリ）を跨るリアルタイムデータフローに接続しました。注文、認証、ライブステータスの更新はすべて、Firebase のリアルタイムデータベースとクラウドファンクション（Cloud Functions）を通じて瞬時に同期されます。"
         }
       },
       "schedule": {
@@ -189,7 +189,7 @@
           "ja": "本番環境でのKubernetes ベストプラクティス"
         },
         "abstract": {
-          "zh": "在生成式 AI 與多模態技術快速演進的浪潮下，企業正面臨如何有效導入 AI Agent 以提升生產力的關鍵課題。Google Gemini Model 提供強大的理解與推理能力，而 ADK（Agent Developer Kit）則提供開發者可延展、可整合的工具鏈。兩者結合，讓企業能夠從單純的任務自動化，邁向智慧化決策與流程優化。這不僅能釋放人力資源，專注於更高價值的創新活動，同時也能在市場競爭中保持敏捷與領先。建構 AI Agent，不再只是技術實驗，而是推動數位轉型的核心引擎。",
+          "zh": "在生成式 AI 與多模態技術快速演進的浪潮下，企業正面臨如何有效導入 AI Agent 以提升生產力的關鍵課題。Google Gemini Model 提供強大的理解與推理能力，而 ADK（Agent Developer Kit）則提供開發者可延展、可整合的工具鏈。<br><br>兩者結合，讓企業能夠從單純的任務自動化，邁向智慧化決策與流程優化。這不僅能釋放人力資源，專注於更高價值的創新活動，同時也能在市場競爭中保持敏捷與領先。建構 AI Agent，不再只是技術實驗，而是推動數位轉型的核心引擎。",
           "en": "Amidst the rapidly evolving wave of Generative AI and multimodal technology, enterprises are facing the critical challenge of how to effectively integrate AI Agents to boost productivity. The Google Gemini Model provides powerful understanding and reasoning capabilities, while the ADK (Agent Developer Kit) offers developers an extendable and integrable toolchain. The combination of the two enables businesses to move beyond simple task automation towards intelligent decision-making and process optimization. This not only frees up human resources to focus on higher-value innovation activities but also allows the enterprise to remain agile and maintain a market lead. Building an AI Agent is no longer just a technological experiment; it is the core engine driving digital transformation.",
           "ja": "生成AIとマルチモーダル技術が急速に進展する波の中で、企業はAI エージェントをいかに効果的に導入して生産性を向上させるかという重要な課題に直面しています。Google Gemini Model は強力な理解力と推論能力を提供し、一方、**ADK（Agent Developer Kit）**は開発者に拡張可能で統合可能なツールチェーンを提供します。この二つを組み合わせることで、企業は単純なタスク自動化から、インテリジェントな意思決定とプロセス最適化へと移行できます。これは、人的資源を解放し、より価値の高いイノベーション活動に集中させるだけでなく、市場競争において機敏性と優位性を維持することにも繋がります。AI エージェントの構築は、もはや単なる技術実験ではなく、デジタルトランスフォーメーションを推進する中核エンジンなのです。"
         }
@@ -449,7 +449,7 @@
           "ja": "Gemini CLI が Android 開発者をどのように強化するか：インテリジェントアシスタントからアプリケーションの革新まで"
         },
         "abstract": {
-          "zh": "Gemini CLI（命令列介面）是一個開源的 AI 代理，它將 Gemini 的強大功能直接帶到您的終端機 (Terminal)，尤其適合習慣在命令列環境中工作的開發人員。雖然許多 Android 專屬的 AI 功能集成在 Android Studio 中的 Gemini，但 Gemini CLI 提供了底層的 AI 能力和自動化潛力，涵蓋從程式碼到 DevOps 的整個開發生命週期。",
+          "zh": "Gemini CLI（命令列介面）是一個開源的 AI 代理，它將 Gemini 的強大功能直接帶到您的終端機 (Terminal)，尤其適合習慣在命令列環境中工作的開發人員。<br><br>雖然許多 Android 專屬的 AI 功能集成在 Android Studio 中的 Gemini，但 Gemini CLI 提供了底層的 AI 能力和自動化潛力，涵蓋從程式碼到 DevOps 的整個開發生命週期。",
           "en": "Gemini CLI (Command Line Interface) is an open-source AI agent that brings the power of Gemini directly to your Terminal, making it particularly suitable for developers accustomed to working in a command-line environment. While many Android-specific AI features are integrated into Gemini within Android Studio, the Gemini CLI offers underlying AI capabilities and automation potential, covering the entire development lifecycle from code to DevOps.",
           "ja": "Gemini CLI（コマンドラインインターフェース）は、Gemini の強力な機能を直接ターミナル（Terminal）にもたらすオープンソースの AI エージェントであり、特にコマンドライン環境での作業に慣れている開発者に適しています。多くの Android 専用 AI 機能は Android Studio 内の Gemini に統合されていますが、Gemini CLI は、コードから DevOps に至るまでの開発ライフサイクル全体をカバーする、基盤となる AI 能力と自動化の可能性を提供します。"
         }
@@ -489,7 +489,7 @@
         "ja": "Gemini AI の生成AI実践"
       },
       "bio": {
-        "zh": "國泰世華銀行擔任雲端架構師<br>曾於補教業擔任講師，經歷橫跨科技業、軟體業、金融業跨國資訊專案<br>參與大型網頁軟體架構由單體式到現代化微服務演進架構規劃和設計<br>現主責系統上雲評估設計、策略制定和規劃，也從事內部技術講師，是一名方法論實踐者<br>具備多項專業證照(TOGAF 、PMP、GCP-PCA 、AWS-SAA、CKA、CKS)",
+        "zh": "國泰世華銀行擔任雲端架構師<br>曾於補教業擔任講師，經歷橫跨科技業、軟體業、金融業跨國資訊專案<br>參與大型網頁軟體架構由單體式到現代化微服務演進架構規劃和設計<br>現主責系統上雲評估設計、策略制定和規劃，也從事內部技術講師，是一名方法論實踐者<br>具備多項專業證照 (TOGAF 、PMP、GCP-PCA 、AWS-SAA、CKA、CKS)",
         "en": "Currently serving as a Cloud Architect at Cathay United Bank.<br>Previously worked as an instructor in the cram school industry, with experience spanning cross-border IT projects in the technology, software, and financial sectors.<br>Involved in the architectural planning and design for the evolution of large-scale web software from monolithic to modern microservices architecture.<br>Currently responsible for system cloud migration assessment and design, strategy formulation, and planning. Also works as an internal technical instructor and is a methodology practitioner.<br>Holds multiple professional certifications (TOGAF, PMP, GCP-PCA, AWS-SAA, CKA, CKS).",
         "ja": "現在、Cathay United Bank（國泰世華銀行）でクラウドアーキテクトとして勤務。<br>過去には予備校業界で講師を務め、テクノロジー、ソフトウェア、金融業界における国際的なITプロジェクトの経験があります。<br>大規模なウェブソフトウェアのアーキテクチャを、モノリシックから現代的なマイクロサービスへの進化させる計画と設計に携わりました。<br>現在は、システムのクラウド移行評価、設計、戦略策定、および計画を主に担当し、社内技術講師としても活動する方法論の実践者です。<br>多数の専門資格（TOGAF、PMP、GCP-PCA、AWS-SAA、CKA、CKS）を保有しています。"
       },
@@ -500,9 +500,9 @@
           "ja": "生成AI が実現する日常業務と意思決定の強化：事例と経験談"
         },
         "abstract": {
-          "zh": "",
-          "en": "\"Generative AI Empowering Daily Office Work and Decision-Making: Case Studies and Experience Sharing\" will deeply analyze real-world application scenarios of Generative AI in enterprise daily office work, collaboration, and decision-making processes. Through practical case studies from the financial industry, the session will share how AI tools can boost work efficiency and optimize team communication. It will guide the audience through the challenges and solutions related to AI technology usage, process integration, and Responsible AI, helping participants grasp the key opportunity for digital transformation driven by Generative AI.",
-          "ja": "「生成AI が実現する日常業務と意思決定の強化：事例と経験談」では、企業の日々の業務、コラボレーション、および意思決定プロセスにおける生成 AI の実際の応用事例を深く分析します。金融業界での実務ケースを通じて、AI ツールがどのように業務効率を向上させ、チームコミュニケーションを最適化するかを共有します。聴講者を AI 技術の活用、プロセスの統合、そして責任ある AI (Responsible AI) に関わる課題と解決策へと導き、生成 AI が推進するデジタルトランスフォーメーションの重要な機会を掴む支援をします。"
+          "zh": "「生成式 AI 賦能日常辦公與決策：案例經驗談」，將深入剖析生成式 AI 在企業日常辦公、協作與決策流程中的真實應用場景。<br><br>透過在金融產業實務案例，分享 AI 工具如何提升工作效率、優化團隊溝通，帶領聽眾了解從 AI 技術使用、流程整合到責任式 AI 的挑戰與解方，協助把握生成式 AI 驅動數位轉型的關鍵契機。",
+          "en": "\"Generative AI Empowering Daily Office Work and Decision-Making: Case Studies and Experience Sharing\" will deeply analyze real-world application scenarios of Generative AI in enterprise daily office work, collaboration, and decision-making processes.<br><br>Through practical case studies from the financial industry, the session will share how AI tools can boost work efficiency and optimize team communication. It will guide the audience through the challenges and solutions related to AI technology usage, process integration, and Responsible AI, helping participants grasp the key opportunity for digital transformation driven by Generative AI.",
+          "ja": "「生成AI が実現する日常業務と意思決定の強化：事例と経験談」では、企業の日々の業務、コラボレーション、および意思決定プロセスにおける生成 AI の実際の応用事例を深く分析します。金融業界での実務ケースを通じて、AI ツールがどのように業務効率を向上させ、チームコミュニケーションを最適化するかを共有します。<br><br>聴講者を AI 技術の活用、プロセスの統合、そして責任ある AI (Responsible AI) に関わる課題と解決策へと導き、生成 AI が推進するデジタルトランスフォーメーションの重要な機会を掴む支援をします。"
         }
       },
       "schedule": {
