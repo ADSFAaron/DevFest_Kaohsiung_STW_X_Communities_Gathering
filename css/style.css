@@ -3208,6 +3208,8 @@ html.page-switching {
   display: flex;
   align-items: center;
   align-self: center;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .speaker-photo-small {
