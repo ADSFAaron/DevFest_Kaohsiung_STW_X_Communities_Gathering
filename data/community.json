@@ -70,6 +70,29 @@
       }
     },
     {
+      "id": "kimu",
+      "name": {
+        "zh": "KIMU - 高雄獨立遊戲開發者聚會",
+        "en": "KIMU - Kaohsiung Indies Meet Up",
+        "ja": "KIMU - 高雄インディーゲーム開発者ミートアップ"
+      },
+      "description": {
+        "zh": "大家好，我們是以高雄為中心，想要聚集南部的遊戲開發者們交流的社群。",
+        "en": "Hello everyone! We are a community centered in Kaohsiung, aiming to gather game developers from Southern Taiwan for networking and exchange.",
+        "ja": "皆様、こんにちは！私たちは高雄を中心として活動しており、南台湾のゲーム開発者を集めて交流することを目的とするコミュニティです。"
+      },
+      "category": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "logo": "images/community-logo-kimu.png",
+      "website": "",
+      "social": {
+        "Facebook": "https://www.facebook.com/groups/109004249259586"
+      }
+    },
+    {
       "id": "kaohsiung_wordpress",
       "name": {
         "zh": "Kaohsiung WordPress Meetup",
