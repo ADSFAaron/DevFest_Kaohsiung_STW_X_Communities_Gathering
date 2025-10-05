@@ -45,7 +45,12 @@
         "track": "track1",
         "session_id": "d1_t9_s1_title"
       },
-      "tags": ["中文議程", "UI", "UX", "設計工程"],
+      "tags": [
+        "中文議程",
+        "UI",
+        "UX",
+        "設計工程"
+      ],
       "photo": "images/speak-steve_yeh.png",
       "social": {
         "Facebook": "https://www.facebook.com/steven.yeh",
@@ -97,7 +102,12 @@
         "track": "track1",
         "session_id": "d1_t5_s1_title"
       },
-      "tags": ["English Agenda", "Robotics", "Firebase", "Google Cloud"],
+      "tags": [
+        "English Session",
+        "Robotics",
+        "Firebase",
+        "Google Cloud"
+      ],
       "photo": "images/speak-arturs_vancans.png",
       "social": {
         "Homepage": "https://www.secondspace.dev/kubi-robot",
@@ -149,7 +159,12 @@
         "track": "track1",
         "session_id": "d1_t7_s2_title"
       },
-      "tags": ["中文議程", "零知識證明", "數位身分", "Google Wallet"],
+      "tags": [
+        "中文議程",
+        "零知識證明",
+        "數位身分",
+        "Google Wallet"
+      ],
       "photo": "images/speak-denken_chen.png",
       "social": {
         "Homepage": "https://denkeni.org"
@@ -200,7 +215,12 @@
         "track": "track1",
         "session_id": "d1_t10_s1_title"
       },
-      "tags": ["中文議程", "ADK", "Gemini", "Agent"],
+      "tags": [
+        "中文議程",
+        "ADK",
+        "Gemini",
+        "Agent"
+      ],
       "photo": "images/speak-simon_liu.png",
       "social": {
         "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
@@ -254,57 +274,13 @@
         "track": "track2",
         "session_id": "d1_t6_s2_title"
       },
-      "tags": ["English Agenda", "Android", "AI", "XP"],
+      "tags": [
+        "English Session",
+        "Android",
+        "AI",
+        "XP"
+      ],
       "photo": "images/speak-matthias_geisler.png",
-      "social": {}
-    },
-    {
-      "id": "kevin_chiu_1",
-      "name": {
-        "zh": "邱哲綸 / Kevin Chiu",
-        "en": "Kevin Chiu",
-        "ja": "Kevin Chiu"
-      },
-      "org": {
-        "zh": "GDG 台北 / Google 開發者專家 - AI",
-        "en": "GDG Taipei / Google Developer Expert - AI",
-        "ja": "GDG Taipei / Google Developer Expert - AI"
-      },
-      "title": {
-        "zh": "GDG 台北 組織者 / AI GDE",
-        "en": "GDG Taipei Organizer / AI GDE",
-        "ja": "GDG Taipei Organizer / AI GDE"
-      },
-      "topic_category": {
-        "zh": "Gemini AI 的生成式實踐",
-        "en": "Gemini AI in Practice",
-        "ja": "Gemini AI の生成AI実践"
-      },
-      "bio": {
-        "zh": "AI GDE / GDG 台北 組織者 / Android 工程師<br>致力於將 AI 導到在 edge 端上使用",
-        "en": "AI GDE / GDG Taipei Organizer / Android Engineer<br>Committed to bringing AI for use on the edge.",
-        "ja": "AI GDE / GDG Taipei オーガナイザー / Android エンジニア<br>エッジでの AI 利用の実現に尽力。"
-      },
-      "session": {
-        "name": {
-          "zh": "Gemini CLI 如何賦能 Android 開發者：從智能助手到應用創新",
-          "en": "How Gemini CLI Empowers Android Developers: From Intelligent Assistants to Application Innovation",
-          "ja": "Gemini CLI が Android 開発者をどのように強化するか：インテリジェントアシスタントからアプリケーションの革新まで"
-        },
-        "abstract": {
-          "zh": "如何使用 Gemini CLI 開發 Android，從 UI 到 Commit 和 DevOps",
-          "en": "How to Use Gemini CLI for Android Development, from UI to Commit and DevOps",
-          "ja": "UI からコミット、DevOps まで、Gemini CLI を活用した Android 開発手法"
-        }
-      },
-      "schedule": {
-        "day": 1,
-        "time": "15:30 - 16:10",
-        "track": "track2",
-        "session_id": "d1_t9_s2_title"
-      },
-      "tags": ["中文議程", "AI", "Gemini", "Android"],
-      "photo": "images/speak-kevin_chiu.png",
       "social": {}
     },
     {
@@ -352,63 +328,16 @@
         "track": "track1",
         "session_id": "d1_t7_s1_title"
       },
-      "tags": ["中文議程", "教育", "Gemini", "科技藝術"],
+      "tags": [
+        "中文議程",
+        "教育",
+        "Gemini",
+        "科技藝術"
+      ],
       "photo": "images/speak-yung_chun.png",
       "social": {
         "Linkedin": "https://www.linkedin.com/in/%E7%89%B9-%E7%93%A6-7a345224b/",
         "Facebook": "https://www.facebook.com/blurwater64/"
-      }
-    },
-    {
-      "id": "ray_yuan_liu",
-      "name": {
-        "zh": "劉瑞元 / RayYuan Liu",
-        "en": "RayYuan Liu",
-        "ja": "RayYuan Liu"
-      },
-      "org": {
-        "zh": "Yahoo!",
-        "en": "Yahoo!",
-        "ja": "Yahoo!"
-      },
-      "title": {
-        "zh": "Sr.Engineer",
-        "en": "Sr.Engineer",
-        "ja": "Sr.Engineer"
-      },
-      "topic_category": {
-        "zh": "Gemini AI 的生成式實踐",
-        "en": " Gemini AI in Practice",
-        "ja": "Gemini AI の生成AI実践"
-      },
-      "bio": {
-        "zh": "從 Android 2.3 時代開發到現在，Android 開發者。喜歡分享所學及技術，也喜歡摸索酷東西。",
-        "en": "An Android Developer who has been developing since the Android 2.3 era. Loves to share knowledge and technology, and enjoys exploring cool new things.",
-        "ja": "Android 2.3 時代から開発に携わっている Android 開発者。学んだことや技術を共有するのが好きで、クールなものを探求することも楽しんでいます。"
-      },
-      "session": {
-        "name": {
-          "zh": "Gemini in Android development",
-          "en": "",
-          "ja": ""
-        },
-        "abstract": {
-          "zh": "今年 Gemini 整合更多功能到 Android Studio 裡頭了，這些新功能如何增加工作的效率、改變工作的方式呢？Gemini 還能怎麼協助軟體開發？這個議程將會介紹 Gemini in Android Studio 的各種功能，以及用 Google 提供的工具來改善我們工作的每一天。",
-          "en": "Gemini has integrated more features into Android Studio this year. How do these new features increase work efficiency and change the way we work? How else can Gemini assist software development? This session will introduce the various functionalities of Gemini in Android Studio and demonstrate how to use tools provided by Google to improve our daily work.",
-          "ja": "今年、Gemini は Android Studio にさらに多くの機能を統合しました。これらの新機能は、どのように業務効率を高め、働き方を変えるのでしょうか？ Gemini はソフトウェア開発を他にどのように支援できるのでしょうか？ このセッションでは、Android Studio における Gemini の様々な機能と、Google が提供するツールを使って私たちの毎日の業務を改善する方法を紹介します。"
-        }
-      },
-      "schedule": {
-        "day": 1,
-        "time": "11:00 - 11:40",
-        "track": "track2",
-        "session_id": "d1_t5_s2_title"
-      },
-      "tags": ["中文議程", "Android", "Gemini", "AI"],
-      "photo": "images/speak-ray_yuan_liu.png",
-      "social": {
-        "Homepage": "https://louis383.medium.com/",
-        "IT 鐵人賽": "https://ithelp.ithome.com.tw/users/20141615/ironman/8135"
       }
     },
     {
@@ -456,7 +385,12 @@
         "track": "track2",
         "session_id": "d2_t4_s2_title"
       },
-      "tags": ["中文議程", "Firebase", "Stitch", "AI"],
+      "tags": [
+        "中文議程",
+        "Firebase",
+        "Stitch",
+        "AI"
+      ],
       "photo": "images/speak-simon_liu.png",
       "social": {
         "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
@@ -510,9 +444,128 @@
         "track": "track2",
         "session_id": "d2_t5_s2_title"
       },
-      "tags": ["中文議程", "AI", "Gemini", "Android"],
+      "tags": [
+        "中文議程",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
       "photo": "images/speak-kevin_chiu.png",
-      "social": {}
+      "social": {
+        "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
+      }
+    },
+    {
+      "id": "kevin_chiu_1",
+      "name": {
+        "zh": "邱哲綸 / Kevin Chiu",
+        "en": "Kevin Chiu",
+        "ja": "Kevin Chiu"
+      },
+      "org": {
+        "zh": "GDG 台北 / Google 開發者專家 - AI",
+        "en": "GDG Taipei / Google Developer Expert - AI",
+        "ja": "GDG Taipei / Google Developer Expert - AI"
+      },
+      "title": {
+        "zh": "GDG 台北 組織者 / AI GDE",
+        "en": "GDG Taipei Organizer / AI GDE",
+        "ja": "GDG Taipei Organizer / AI GDE"
+      },
+      "topic_category": {
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "AI GDE / GDG 台北 組織者 / Android 工程師<br>致力於將 AI 導到在 edge 端上使用",
+        "en": "AI GDE / GDG Taipei Organizer / Android Engineer<br>Committed to bringing AI for use on the edge.",
+        "ja": "AI GDE / GDG Taipei オーガナイザー / Android エンジニア<br>エッジでの AI 利用の実現に尽力。"
+      },
+      "session": {
+        "name": {
+          "zh": "Gemini CLI 如何賦能 Android 開發者：從智能助手到應用創新",
+          "en": "How Gemini CLI Empowers Android Developers: From Intelligent Assistants to Application Innovation",
+          "ja": "Gemini CLI が Android 開発者をどのように強化するか：インテリジェントアシスタントからアプリケーションの革新まで"
+        },
+        "abstract": {
+          "zh": "Gemini CLI（命令列介面）是一個開源的 AI 代理，它將 Gemini 的強大功能直接帶到您的終端機 (Terminal)，尤其適合習慣在命令列環境中工作的開發人員。雖然許多 Android 專屬的 AI 功能集成在 Android Studio 中的 Gemini，但 Gemini CLI 提供了底層的 AI 能力和自動化潛力，涵蓋從程式碼到 DevOps 的整個開發生命週期。",
+          "en": "Gemini CLI (Command Line Interface) is an open-source AI agent that brings the power of Gemini directly to your Terminal, making it particularly suitable for developers accustomed to working in a command-line environment. While many Android-specific AI features are integrated into Gemini within Android Studio, the Gemini CLI offers underlying AI capabilities and automation potential, covering the entire development lifecycle from code to DevOps.",
+          "ja": "Gemini CLI（コマンドラインインターフェース）は、Gemini の強力な機能を直接ターミナル（Terminal）にもたらすオープンソースの AI エージェントであり、特にコマンドライン環境での作業に慣れている開発者に適しています。多くの Android 専用 AI 機能は Android Studio 内の Gemini に統合されていますが、Gemini CLI は、コードから DevOps に至るまでの開発ライフサイクル全体をカバーする、基盤となる AI 能力と自動化の可能性を提供します。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "15:30 - 16:10",
+        "track": "track2",
+        "session_id": "d1_t9_s2_title"
+      },
+      "tags": [
+        "中文議程",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
+      "photo": "images/speak-kevin_chiu.png",
+      "social": {
+        "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
+      }
+    },
+    {
+      "id": "leo_he",
+      "name": {
+        "zh": "何崧宇 / LeoHe",
+        "en": "LeoHe",
+        "ja": "LeoHe"
+      },
+      "org": {
+        "zh": "國泰世華銀行",
+        "en": "Cathay United Bank",
+        "ja": "Cathay United Bank"
+      },
+      "title": {
+        "zh": "Cloud Architect",
+        "en": "Cloud Architect",
+        "ja": "Cloud Architect"
+      },
+      "topic_category": {
+        "zh": "Gemini AI 的生成式實踐",
+        "en": "Gemini AI in Practice",
+        "ja": "Gemini AI の生成AI実践"
+      },
+      "bio": {
+        "zh": "國泰世華銀行擔任雲端架構師<br>曾於補教業擔任講師，經歷橫跨科技業、軟體業、金融業跨國資訊專案<br>參與大型網頁軟體架構由單體式到現代化微服務演進架構規劃和設計<br>現主責系統上雲評估設計、策略制定和規劃，也從事內部技術講師，是一名方法論實踐者<br>具備多項專業證照(TOGAF 、PMP、GCP-PCA 、AWS-SAA、CKA、CKS)",
+        "en": "Currently serving as a Cloud Architect at Cathay United Bank.<br>Previously worked as an instructor in the cram school industry, with experience spanning cross-border IT projects in the technology, software, and financial sectors.<br>Involved in the architectural planning and design for the evolution of large-scale web software from monolithic to modern microservices architecture.<br>Currently responsible for system cloud migration assessment and design, strategy formulation, and planning. Also works as an internal technical instructor and is a methodology practitioner.<br>Holds multiple professional certifications (TOGAF, PMP, GCP-PCA, AWS-SAA, CKA, CKS).",
+        "ja": "現在、Cathay United Bank（國泰世華銀行）でクラウドアーキテクトとして勤務。<br>過去には予備校業界で講師を務め、テクノロジー、ソフトウェア、金融業界における国際的なITプロジェクトの経験があります。<br>大規模なウェブソフトウェアのアーキテクチャを、モノリシックから現代的なマイクロサービスへの進化させる計画と設計に携わりました。<br>現在は、システムのクラウド移行評価、設計、戦略策定、および計画を主に担当し、社内技術講師としても活動する方法論の実践者です。<br>多数の専門資格（TOGAF、PMP、GCP-PCA、AWS-SAA、CKA、CKS）を保有しています。"
+      },
+      "session": {
+        "name": {
+          "zh": "生成式 AI 賦能日常辦公與決策：案例經驗談",
+          "en": "Generative AI Empowering Daily Office Work and Decision-Making: Case Studies and Experience Sharing",
+          "ja": "生成AI が実現する日常業務と意思決定の強化：事例と経験談"
+        },
+        "abstract": {
+          "zh": "",
+          "en": "\"Generative AI Empowering Daily Office Work and Decision-Making: Case Studies and Experience Sharing\" will deeply analyze real-world application scenarios of Generative AI in enterprise daily office work, collaboration, and decision-making processes. Through practical case studies from the financial industry, the session will share how AI tools can boost work efficiency and optimize team communication. It will guide the audience through the challenges and solutions related to AI technology usage, process integration, and Responsible AI, helping participants grasp the key opportunity for digital transformation driven by Generative AI.",
+          "ja": "「生成AI が実現する日常業務と意思決定の強化：事例と経験談」では、企業の日々の業務、コラボレーション、および意思決定プロセスにおける生成 AI の実際の応用事例を深く分析します。金融業界での実務ケースを通じて、AI ツールがどのように業務効率を向上させ、チームコミュニケーションを最適化するかを共有します。聴講者を AI 技術の活用、プロセスの統合、そして責任ある AI (Responsible AI) に関わる課題と解決策へと導き、生成 AI が推進するデジタルトランスフォーメーションの重要な機会を掴む支援をします。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "13:30 - 14:10",
+        "track": "track1",
+        "session_id": "d1_t6_s1_title"
+      },
+      "tags": [
+        "中文議程",
+        "生成式AI",
+        "AI知識庫",
+        "數位轉型"
+      ],
+      "photo": "images/speak-leo_he.png",
+      "social": {
+        "Linkedin": "https://www.linkedin.com/in/leo-he-392338173/"
+      }
     }
   ]
 }
