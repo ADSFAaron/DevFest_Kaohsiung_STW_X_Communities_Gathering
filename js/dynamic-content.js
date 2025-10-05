@@ -211,26 +211,9 @@ class DynamicContentManager {
 
     const socialLinks = this.createSocialLinks(sponsor.social);
 
-    // 判斷贊助類型 (公司 or 個人)
+    // 使用 category 作為贊助類型 (partner 或其他類型)
     const sponsorType = sponsor.type || 'company'; // 預設為公司
-    let typeText;
-    if (sponsorType === 'company') {
-      if (this.currentLanguage === 'zh') {
-        typeText = '公司贊助';
-      } else if (this.currentLanguage === 'ja') {
-        typeText = '企業スポンサー';
-      } else {
-        typeText = 'Corporate Sponsor';
-      }
-    } else {
-      if (this.currentLanguage === 'zh') {
-        typeText = '個人贊助';
-      } else if (this.currentLanguage === 'ja') {
-        typeText = '個人スポンサー';
-      } else {
-        typeText = 'Individual Sponsor';
-      }
-    }
+    const categoryText = this.getText(sponsor.category);
 
     card.innerHTML = `
             <img alt="${this.getText(sponsor.name)} Logo"
@@ -239,9 +222,8 @@ class DynamicContentManager {
                  onclick="window.open('${sponsor.website}', '_blank')"
                  style="cursor: pointer;">
             <div class="sponsor-info">
-                <div class="sponsor-type ${sponsorType}">${typeText}</div>
+                <div class="sponsor-type ${sponsorType}">${categoryText}</div>
                 <h3 class="sponsor-title">${this.getText(sponsor.name)}</h3>
-                <div class="sponsor-category">${this.getText(sponsor.category)}</div>
                 <div class="sponsor-description">${this.getText(sponsor.description)}</div>
                 ${socialLinks}
             </div>

@@ -618,6 +618,7 @@
             <div class="form-group">
               <label>類型</label>
               <select id="sponsor-type">
+                <option value="partner">合作夥伴</option>
                 <option value="company">公司</option>
                 <option value="community">社群</option>
                 <option value="organization">組織</option>
@@ -655,26 +656,6 @@
                   id="sponsor-desc-ja"
                   placeholder="日本語の説明を入力してください"
                 ></textarea>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label>分類</label>
-              <div class="lang-tabs">
-                <div class="lang-tab active" onclick="switchLang('sponsor-category', 'zh')">
-                  中文
-                </div>
-                <div class="lang-tab" onclick="switchLang('sponsor-category', 'en')">English</div>
-                <div class="lang-tab" onclick="switchLang('sponsor-category', 'ja')">日本語</div>
-              </div>
-              <div class="lang-content active" data-lang="zh">
-                <input id="sponsor-category-zh" placeholder="分類" type="text" />
-              </div>
-              <div class="lang-content" data-lang="en">
-                <input id="sponsor-category-en" placeholder="Category" type="text" />
-              </div>
-              <div class="lang-content" data-lang="ja">
-                <input id="sponsor-category-ja" placeholder="カテゴリ" type="text" />
               </div>
             </div>
 
@@ -1594,6 +1575,30 @@
           return;
         }
 
+        const sponsorType = document.getElementById('sponsor-type').value;
+
+        // 根據類型自動生成 category
+        let category = {};
+        if (sponsorType === 'partner') {
+          category = {
+            zh: '合作夥伴',
+            en: 'Partners',
+            ja: 'パートナー',
+          };
+        } else if (sponsorType === 'company') {
+          category = {
+            zh: '公司贊助',
+            en: 'Company Sponsorship',
+            ja: '企業スポンサー',
+          };
+        } else {
+          category = {
+            zh: '個人贊助',
+            en: 'Individual Sponsorship',
+            ja: '個人スポンサー',
+          };
+        }
+
         const sponsor = {
           id: id,
           name: {
@@ -1601,18 +1606,14 @@
             en: document.getElementById('sponsor-name-en').value.trim(),
             ja: document.getElementById('sponsor-name-ja').value.trim(),
           },
-          type: document.getElementById('sponsor-type').value,
+          type: sponsorType,
           tier: document.getElementById('sponsor-tier').value,
           description: {
             zh: document.getElementById('sponsor-desc-zh').value.trim(),
             en: document.getElementById('sponsor-desc-en').value.trim(),
             ja: document.getElementById('sponsor-desc-ja').value.trim(),
           },
-          category: {
-            zh: document.getElementById('sponsor-category-zh').value.trim(),
-            en: document.getElementById('sponsor-category-en').value.trim(),
-            ja: document.getElementById('sponsor-category-ja').value.trim(),
-          },
+          category: category,
           logo: document.getElementById('sponsor-logo').value.trim(),
           website: document.getElementById('sponsor-website').value.trim(),
           social: {},
@@ -1690,9 +1691,6 @@
         document.getElementById('sponsor-desc-zh').value = sponsor.description.zh || '';
         document.getElementById('sponsor-desc-en').value = sponsor.description.en || '';
         document.getElementById('sponsor-desc-ja').value = sponsor.description.ja || '';
-        document.getElementById('sponsor-category-zh').value = sponsor.category.zh || '';
-        document.getElementById('sponsor-category-en').value = sponsor.category.en || '';
-        document.getElementById('sponsor-category-ja').value = sponsor.category.ja || '';
         document.getElementById('sponsor-logo').value = sponsor.logo || '';
         document.getElementById('sponsor-website').value = sponsor.website || '';
 
@@ -1706,7 +1704,7 @@
         updateSponsorsList();
         generateSponsorsJSON();
         window.scrollTo(0, 0);
-        showAlert('success', '贊助商資料已載入表單，請修改後重新添加');
+        showAlert('success', '贊助商資料已載入表單,請修改後重新添加');
       }
 
       function generateSponsorsJSON() {
