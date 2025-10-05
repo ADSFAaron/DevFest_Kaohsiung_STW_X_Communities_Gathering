@@ -1589,6 +1589,7 @@ main {
   padding: 16px;
   flex: 1;
   border-left: 4px solid var(--color-blue);
+  transition: all 0.3s ease-out;
 }
 
 .sessions.multi-track .session {
@@ -3399,13 +3400,16 @@ html.page-switching {
   }
 
   .session:not(.expanded) .session-expandable {
-    display: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
   }
 
   /* 展開狀態的議程卡片 */
   .session.expanded {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transform: translateX(4px);
+    transition: all 0.3s ease-out;
   }
 
   /* 議程標題優化 */
@@ -3451,6 +3455,7 @@ html.page-switching {
     font-size: 12px;
     color: var(--color-blue);
     opacity: 0.7;
+    transition: transform 0.3s ease-out, opacity 0.2s ease-out;
   }
 
   .session.expanded::after {
@@ -3460,7 +3465,8 @@ html.page-switching {
     top: 12px;
     font-size: 12px;
     color: var(--color-blue);
-    opacity: 0.7;
+    opacity: 1;
+    transition: transform 0.3s ease-in, opacity 0.2s ease-in;
   }
 
   /* 休息時間使用統一卡片佈局 - 移除特殊的 margin-left，讓它跟其他議程一樣對齊 */
@@ -3533,13 +3539,14 @@ html.page-switching {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3s ease-out;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease-out, margin-top 0.3s ease-out;
   }
 
   .session.expanded .session-expandable {
     opacity: 1;
-    max-height: 500px;
+    max-height: 1000px;
     overflow-y: auto;
+    transition: max-height 0.5s ease-in, opacity 0.4s ease-in, margin-top 0.3s ease-in;
   }
 
   .session-details-expanded {

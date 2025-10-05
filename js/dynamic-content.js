@@ -628,6 +628,17 @@ class DynamicContentManager {
       const newTitleEl = titleEl.cloneNode(true);
       titleEl.parentNode.replaceChild(newTitleEl, titleEl);
     });
+
+    // 移除議程項目上的點擊事件處理器
+    const sessions = document.querySelectorAll('.session:not(.break)');
+    sessions.forEach((sessionEl) => {
+      if (sessionEl._clickHandler) {
+        sessionEl.removeEventListener('click', sessionEl._clickHandler);
+        delete sessionEl._clickHandler;
+      }
+      sessionEl.style.cursor = '';
+      sessionEl.classList.remove('expanded');
+    });
   }
 
   // 增強議程頁面，加入講者資訊
@@ -752,7 +763,8 @@ class DynamicContentManager {
   addToggleExpandFunctionality(sessionEl, speakerId) {
     sessionEl.style.cursor = 'pointer';
 
-    sessionEl.addEventListener('click', (e) => {
+    // 使用命名函數來確保可以移除舊的事件監聽器
+    const clickHandler = (e) => {
       // 檢查是否為手機版 (寬度小於768px)
       if (window.innerWidth <= 768) {
         e.stopPropagation();
@@ -761,7 +773,13 @@ class DynamicContentManager {
         // 桌面版直接跳轉到講者頁面
         this.navigateToSpeaker(speakerId);
       }
-    });
+    };
+
+    // 儲存事件處理器的引用,以便之後可以移除
+    if (!sessionEl._clickHandler) {
+      sessionEl._clickHandler = clickHandler;
+      sessionEl.addEventListener('click', clickHandler);
+    }
   }
 
   // 切換議程展開/收合狀態
