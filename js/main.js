@@ -20,7 +20,7 @@ const translations = {
     nav_about: '關於我們',
     nav_tickets: '票種介紹',
     event_title: 'DevFest 高雄場 X 南臺灣技術社群大聚 2025',
-    event_date_location: '11/22（六）- 23（日）<br class="break-on-mobile">in KO-IN 智高點',
+    event_date_location: '📆 11/22 (六) — 11/23 (日) <br class="break-on-mobile">in KO-IN 智高點',
     day1_schedule: '22 - DevFest 2025 高雄場',
     day1_time: '🕣 08:30 ~ 18:00',
     day2_schedule: '23 - 南臺灣技術社群大聚 2025',
@@ -66,19 +66,13 @@ const translations = {
     d2_t6_title: '活動閉幕',
     d2_t6_track: '會場 1',
     speakers_title: '講者介紹',
+    speakers_intro_text:
+      '主題：實作 (Implements)<br><br>實作 (Implements) 在軟體開發中，指的是將一個抽象的定義或計畫，轉化為具體的、可執行程式碼的過程或結果。<br><br>AI 浪潮第三年，你是否覺得每天打開手機，都是某個模型出現新版本、某個跑分又推向新高。我們驚訝於技術的突飛猛進，但夜深人靜時，會思考這些資訊跟我的生活有什麼關係呢？這些冰冷的數字如何改善你我生活的真實溫度？<br><br>因此，第一日議程我們探討如何將抽象的 AI 轉化成實際運用，改變生活，所以我們邀請業界的朋友們，有工程師、學校老師、技術長和創業家等，他們將分享如何運用 Gemini AI 與 Google 相關技術解決了什麼生活或職場的難題。<br><br>第二日的 AI 生成大賽，我們用工作坊的形式讓您動手完成實作。在 Google 開發者專家的教學下使用 Google Stitch 進行 UI/UX 設計，並駕馭 Vertex AI 強大的多媒體生成能力，創作出屬於您的圖片與影片。優秀的創作者將能贏得我們準備的精美獎品！<br><br>期望今年的 DevFest 2025 高雄場，不只是研討會，而是一場專為問題解決者設計的遊樂場。期待與您一同探索 AI 的無限可能，解答心中的疑惑！',
+    ticket_intro_text:
+      '符合以下條件，填寫表單後人工審核完成，會寄送第一日免費邀請碼到填表信箱<br><br>1. 有 GDG 高雄社群名牌卡<br>2. 曾經是 GDG 高雄活動的講者<br>3. 當過 GDG 高雄的志工<br>4. 有 OSCVPass 開源貢獻者快速通關<br><br>填寫表單：<a href="https://forms.gle/oLwHREeqwhJLewf17" target="_blank" rel="noopener noreferrer">https://forms.gle/oLwHREeqwhJLewf17</a>',
     tech_creation_market_title: '技術創作市集',
-    tech_creation_market_p1:
-      '今年的 DevFest 高雄場 X 南臺灣技術社群大聚 2025 將有一個技術創作市集，這是一個專為技術社群打造的創作展示平台。透過實體攤位，創作者可以直接與會眾互動，展示並販售自己的技術創作作品，讓知識與創意在社群中流動交流。',
-    tech_creation_market_p2:
-      '媒介主要是透過製作書本為主，一本書的頁數大約在 15-30 頁左右 (僅為參考，實際並無限制)。我們歡迎所有與資訊技術相關的創作內容，涵蓋領域包括但不限於：',
-    tech_creation_market_li1: '前端開發 / 後端開發 / DevOps',
-    tech_creation_market_li2: 'UI/UX 設計 / 系統設計',
-    tech_creation_market_li3: '硬體開發 / 韌體開發',
-    tech_creation_market_li4: '軟體工程 / 開發流程與方法論',
-    tech_creation_market_li5: '技術管理 / 職涯發展等相關議題',
-    tech_creation_market_p3:
-      '考量攤位空間限制，我們將優先錄取非商業出版的個人創作作品，讓更多獨立創作者有機會與社群分享他們的技術見解與經驗。',
-    tech_creation_market_p4: '報名擺攤：',
+    tech_creation_market_content:
+      '今年的 DevFest 高雄場 X 南臺灣技術社群大聚 2025 將有一個技術創作市集，這是一個專為技術社群打造的創作展示平台。透過實體攤位，創作者可以直接與會眾互動，展示並販售自己的技術創作作品，讓知識與創意在社群中流動交流。<br><br>媒介主要是透過製作書本為主，一本書的頁數大約在 15-30 頁左右 (僅為參考，實際並無限制)。我們歡迎所有與資訊技術相關的創作內容，涵蓋領域包括但不限於：<br><br>1. 前端開發 / 後端開發 / DevOps<br>2. UI/UX 設計 / 系統設計<br>3. 硬體開發 / 韌體開發<br>4. 軟體工程 / 開發流程與方法論<br>5. 技術管理 / 職涯發展等相關議題<br><br>考量攤位空間限制，我們將優先錄取非商業出版的個人創作作品，讓更多獨立創作者有機會與社群分享他們的技術見解與經驗。<br><br>報名擺攤：<a href="https://forms.gle/ZpXHk8VbA7q9bsWQ9" target="_blank" rel="noopener noreferrer">https://forms.gle/ZpXHk8VbA7q9bsWQ9</a>',
     sponsors_title: '特別感謝',
     community_title: '參與社群',
     staff_title: '志工介紹',
@@ -181,14 +175,15 @@ const translations = {
     nav_home: 'Home',
     nav_schedule: 'Schedule',
     nav_speakers: 'Speakers',
-    nav_tech_creation_market: 'Tech Creation Market',
+    nav_tech_creation_market: 'Tech Works Market',
     nav_sponsors: 'Special Thanks',
     nav_community: 'Community',
     nav_staff: 'Volunteers',
     nav_about: 'About',
     nav_tickets: 'Tickets',
     event_title: 'DevFest Kaohsiung X S. TW Communities Gathering 2025',
-    event_date_location: 'Nov 22 (Sat) - 23 (Sun)<br class="break-on-mobile">at KO-IN Smart Point',
+    event_date_location:
+      '📆 Nov 22 (Sat) - 23 (Sun) <br class="break-on-mobile">at Kaohsiung Intelligence Navigator (KO-IN)',
     day1_schedule: '22 - DevFest 2025 Kaohsiung',
     day1_time: '🕣 08:30 ~ 18:00',
     day2_schedule: '23 - S. TW Communities Gathering 2025',
@@ -234,19 +229,13 @@ const translations = {
     d2_t6_title: 'Closing',
     d2_t6_track: 'Track 1',
     speakers_title: 'Speakers',
-    tech_creation_market_title: 'Tech Creation Market',
-    tech_creation_market_p1:
-      "This year's DevFest Kaohsiung X S. TW Communities Gathering 2025 will feature a Tech Creation Market, a creative showcase platform designed specifically for the tech community. Through physical booths, creators can directly interact with attendees, showcasing and selling their technical creations, allowing knowledge and creativity to flow and exchange within the community.",
-    tech_creation_market_p2:
-      'The primary medium is through book creation, with each book being approximately 15-30 pages (reference only, no actual restrictions). We welcome all creative content related to information technology, covering but not limited to:',
-    tech_creation_market_li1: 'Frontend Development / Backend Development / DevOps',
-    tech_creation_market_li2: 'UI/UX Design / System Design',
-    tech_creation_market_li3: 'Hardware Development / Firmware Development',
-    tech_creation_market_li4: 'Software Engineering / Development Processes and Methodologies',
-    tech_creation_market_li5: 'Technical Management / Career Development and related topics',
-    tech_creation_market_p3:
-      'Considering booth space limitations, we will prioritize non-commercially published individual creative works, giving more independent creators the opportunity to share their technical insights and experiences with the community.',
-    tech_creation_market_p4: 'Apply for booth:',
+    speakers_intro_text:
+      'Theme: Implements<br><br>In software development, "Implements" refers to the process or result of transforming an abstract definition or plan into concrete, executable code.<br><br>Now in the third year of the AI wave, do you feel that every day you open your phone, you\'re greeted with a new model version or a new record-high benchmark score? We are amazed by the rapid advancements in technology, but in the quiet of the night, we might wonder: what does all this information have to do with my life? How can these cold numbers genuinely improve the warmth of our daily lives?<br><br>Therefore, on the first day of our agenda, we will explore how to transform abstract AI into practical applications that change our lives. We have invited friends from the industry—engineers, school teachers, CTOs, and entrepreneurs—who will share how they have leveraged Gemini AI and related Google technologies to solve real-world problems in life and the workplace.<br><br>On the second day, our AI Generation Contest will take the form of a hands-on workshop. Under the guidance of Google Developer Experts, you will use Google Stitch for UI/UX design and harness the powerful multimedia generation capabilities of Vertex AI to create your own images and videos. Outstanding creators will have the chance to win exquisite prizes we have prepared!<br><br>We hope that this year\'s DevFest Kaohsiung 2025 will be more than just a conference; we envision it as a playground designed for problem-solvers. We look forward to exploring the infinite possibilities of AI with you and answering the questions in your heart!<br><br>',
+    ticket_intro_text:
+      'After filling out the form and completing the manual review, a free invitation code for the first day will be sent to the email address provided in the form if you meet the following conditions:<br><br>1. Have a GDG Kaohsiung community name badge<br>2. Have been a speaker at a GDG Kaohsiung event<br>3. Have been a volunteer for GDG Kaohsiung<br>4. Have an OSCVPass for open-source contributors<br><br>Fill out the form: <a href="https://forms.gle/oLwHREeqwhJLewf17" target="_blank" rel="noopener noreferrer">https://forms.gle/oLwHREeqwhJLewf17</a>',
+    tech_creation_market_title: 'Tech Works Market',
+    tech_creation_market_content:
+      'This year\'s DevFest Kaohsiung X S. TW Communities Gathering 2025 will feature a Tech Works Market, a creative showcase platform built for the tech community. Through physical booths, creators can interact directly with attendees, display and sell their own tech-related creative works, allowing knowledge and creativity to flow and be exchanged within the community.<br><br>The primary medium is books, with each book being around 15-30 pages (this is for reference only, there are no actual restrictions). We welcome all creative content related to information technology, covering areas including but not limited to:<br><br>1. Frontend Development / Backend Development / DevOps<br>2. UI/UX Design / System Design<br>3. Hardware Development / Firmware Development<br>4. Software Engineering / Development Processes and Methodologies<br>5. Topics related to Technical Management / Career Development<br><br>Considering the limited booth space, we will give priority to personal, non-commercially published creative works to give more independent creators the opportunity to share their technical insights and experiences with the community.<br><br>Register for a booth: <a href="https://forms.gle/ZpXHk8VbA7q9bsWQ9" target="_blank" rel="noopener noreferrer">https://forms.gle/ZpXHk8VbA7q9bsWQ9</a>\n',
     sponsors_title: 'Special Thanks',
     community_title: 'Community',
     staff_title: 'Volunteers',
@@ -325,7 +314,7 @@ const translations = {
     networking_title: '⭐ Numerous tech people chatting, networking, or Lightning Talks',
     networking_content:
       'This event aims to gather numerous tech community organizers and tech workers (including but not limited to: Mobile, Frontend, Backend, AI, Agile, Systems, DevOps, Design, PM, Marketing Tech, etc.). In this event, you can have opportunities to chat and network with participants from different fields, discuss technology, exchange event organizing ideas, and definitely have great gains.<br><br>If you have a small topic or project you want to share with everyone, this event has a time slot and open stage (with projection equipment) for lightning talk registration, approximately 3-5 minutes, which you can use to expose your topic or project sharing.',
-    tech_market_title: '⭐ First-time introduction of Tech Creation Market to Southern Taiwan',
+    tech_market_title: '⭐ First-time introduction of Tech Works Market to Southern Taiwan',
     tech_market_content:
       'Inspired by Japan\'s "Gijutsu-shoten", this is a creative showcase platform designed specifically for the tech community. Through physical booths, creators can directly interact with attendees, showcasing and selling their technical creations, allowing knowledge and creativity to flow within the community.<br><br><a href="https://forms.gle/ZpXHk8VbA7q9bsWQ9" target="_blank" rel="noopener noreferrer">Apply for Booth</a>',
     meeting_room_title: '⭐ Themed Discussion Meeting Rooms',
@@ -338,7 +327,7 @@ const translations = {
     event_tips_content: 'Some tips and suggestions to help you better enjoy this event.',
     transport_title: '🚇 Venue Closest to MRT Station',
     transport_content:
-      'This year we\'re again at the more conveniently located "KO-IN Smart Point", just 1 minute walk from Exit 3 of Xinyi Elementary School Station on the Orange Line, arrive immediately upon exit!<br><br>Google Map: <a href="https://maps.app.goo.gl/NSmtz1yTWxeH5LQi7" target="_blank" rel="noopener noreferrer">View Map</a>',
+      'This year we\'re again at the more conveniently located "Kaohsiung Intelligence Navigator (KO-IN)", just 1 minute walk from Exit 3 of Xinyi Elementary School Station on the Orange Line, arrive immediately upon exit!<br><br>Google Map: <a href="https://maps.app.goo.gl/NSmtz1yTWxeH5LQi7" target="_blank" rel="noopener noreferrer">View Map</a>',
     eco_friendly_title: '🥤 Please Remember to Bring Your Own Container',
     eco_friendly_content:
       "Like previous years, we regularly refill beverages for you to recharge anytime! Don't forget to bring your eco-friendly cup, as disposable containers are not provided on-site. Let's do our part for the planet together.",
@@ -361,7 +350,7 @@ const translations = {
     nav_about: 'について',
     nav_tickets: 'チケット',
     event_title: 'DevFest Kaohsiung X S. TW Communities Gathering 2025',
-    event_date_location: '11月22日（土）- 23日（日）<br class="break-on-mobile">KO-IN スマートポイント',
+    event_date_location: '📆 11月22日（土）- 23日（日）<br class="break-on-mobile">KO-IN スマートポイント',
     day1_schedule: '22日 - DevFest 2025 高雄',
     day1_time: '🕣 08:30 ~ 18:00',
     day2_schedule: '23日 - 南台湾技術コミュニティ大集合 2025',
@@ -407,9 +396,13 @@ const translations = {
     d2_t6_title: '閉会式',
     d2_t6_track: '会場1',
     speakers_title: 'スピーカー紹介',
+    speakers_intro_text:
+      'ンテーマ：実装 (Implements)<br><br>ソフトウェア開発における「実装」とは、抽象的な定義や計画を、具体的で実行可能なコードに変換するプロセスまたはその結果を指します。<br><br>AIの波が訪れて三年目、スマートフォンを開くたびに、新しいモデルのバージョンが登場したり、ベンチマークスコアが過去最高を更新したりするニュースばかりが目に飛び込んでくるように感じませんか。私たちは技術の急激な進歩に驚嘆する一方で、夜深くに静かに考えると、「これらの情報は自分の生活とどう関係があるのだろう？」、「これらの冷たい数字は、私たちの生活の温かみをどう改善してくれるのだろう？」といった疑問が浮かびます。<br><br>そこで、初日のセッションでは、抽象的なAIを具体的な応用へと転換し、生活を変える方法について探求します。私たちは業界からエンジニア、学校の先生、CTO、起業家といった方々を招待しました。彼らがGemini AIとGoogleの関連技術をどのように活用し、日常生活や職場での難題を解決したのかを共有していただきます。<br><br>二日目のAI生成コンテストは、ワークショップ形式で実際に手を動かして実装を体験していただきます。Google Developer Expertsの指導のもと、Google Stitchを用いてUI/UXデザインを行い、Vertex AIの強力なマルチメディア生成能力を駆使して、あなただけの画像や動画を創作します。優秀なクリエイターには、私たちが用意した素敵な賞品が贈られます！<br><br>今年のDevFest Kaohsiung 2025が、単なるカンファレンスではなく、問題解決者たちのために設計された遊び場となることを願っています。皆様と共にAIの無限の可能性を探求し、心の中の疑問に答えを見つけ出すことを楽しみにしています！',
+    ticket_intro_text:
+      '以下の条件を満たし、フォームに記入後、手動での審査が完了すると、フォームに記入されたメールアドレスに初日の無料招待コードが送信されます。<br><br>1. GDG高雄コミュニティの名札をお持ちの方<br>2. GDG高雄のイベントで講演したことがある方<br>3. GDG高雄のボランティアを経験したことがある方<br>4. OSCVPassオープンソース貢献者パスをお持ちの方<br><br>フォームに記入：<a href="https://forms.gle/oLwHREeqwhJLewf17" target="_blank" rel="noopener noreferrer">https://forms.gle/oLwHREeqwhJLewf17</a>',
     tech_creation_market_title: 'テック創作マーケット',
-    tech_creation_market_p1:
-      '今年のDevFest高雄 X 南台湾技術コミュニティ大集合2025では、技術コミュニティ専用の創作展示プラットフォームであるテック創作マーケットを開催します。物理的なブースを通じて、創作者は参加者と直接交流し、自身の技術創作作品を展示・販売することで、知識と創造性がコミュニティ内で流動し交流できます。',
+    tech_creation_market_content:
+      '今年の DevFest Kaohsiung x 南台湾技術コミュニティミートアップ 2025 では、「技術創作マーケット」が開催されます。これは技術コミュニティのために特別に作られた創作展示プラットフォームです。物理的なブースを通じて、クリエイターは参加者と直接対話し、自身の技術創作作品を展示・販売することで、知識と創造性がコミュニティ内で流動し、交流することを可能にします。<br><br>主な媒体は書籍で、1冊あたり約15～30ページです（これは参考であり、実際には制限はありません）。情報技術に関連するすべての創作コンテンツを歓迎し、対象分野は以下の通りですが、これに限定されません：<br><br>1. フロントエンド開発 / バックエンド開発 / DevOps<br>2. UI/UXデザイン / システム設計<br>3. ハードウェア開発 / ファームウェア開発<br>4. ソフトウェアエンジニアリング / 開発プロセスと方法論<br>5. 技術管理 / キャリア開発などの関連トピック<br><br>ブースのスペースに限りがあるため、商業出版されていない個人の創作作品を優先的に受け付け、より多くの独立したクリエイターがコミュニティと技術的な知見や経験を共有できる機会を提供します。<br><br>ブース登録：<a href="https://forms.gle/ZpXHk8VbA7q9bsWQ9" target="_blank" rel="noopener noreferrer">https://forms.gle/ZpXHk8VbA7q9bsWQ9</a>',
     tech_creation_market_p2:
       '主要媒体は書籍制作で、1冊のページ数は約15-30ページ程度（参考のみ、実際の制限はありません）。情報技術に関連するすべての創作内容を歓迎し、以下の分野を含みますが、これらに限定されません：',
     tech_creation_market_li1: 'フロントエンド開発 / バックエンド開発 / DevOps',
@@ -1257,4 +1250,97 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize monitor power button
   initMonitorPowerButton();
+
+  // --- Glass Crack Effect ---
+  function initGlassCrackEffect() {
+    const homePage = document.getElementById('home');
+    if (!homePage) return;
+
+    homePage.addEventListener('click', (e) => {
+      createGlassCrack(e.clientX, e.clientY);
+    });
+  }
+
+  function createGlassCrack(x, y) {
+    // 建立裂痕容器
+    const crackContainer = document.createElement('div');
+    crackContainer.className = 'glass-crack';
+    crackContainer.style.left = `${x}px`;
+    crackContainer.style.top = `${y}px`;
+
+    // 建立 SVG 元素
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('width', '300');
+    svg.setAttribute('height', '300');
+    svg.style.marginLeft = '-150px';
+    svg.style.marginTop = '-150px';
+
+    // 生成多條裂痕線
+    const numCracks = 6 + Math.floor(Math.random() * 4); // 6-9 條裂痕
+    for (let i = 0; i < numCracks; i++) {
+      const angle = (Math.PI * 2 * i) / numCracks + (Math.random() - 0.5) * 0.5;
+      const length = 80 + Math.random() * 70; // 裂痕長度 80-150px
+      const endX = 150 + Math.cos(angle) * length;
+      const endY = 150 + Math.sin(angle) * length;
+
+      // 建立主裂痕
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      const pathData = `M 150 150 Q ${150 + Math.cos(angle) * length * 0.5 + (Math.random() - 0.5) * 30} ${150 + Math.sin(angle) * length * 0.5 + (Math.random() - 0.5) * 30} ${endX} ${endY}`;
+      path.setAttribute('d', pathData);
+      path.setAttribute('class', 'crack-line');
+      svg.appendChild(path);
+
+      // 建立分支裂痕
+      if (Math.random() > 0.5) {
+        const branchAngle = angle + (Math.random() - 0.5) * 1.2;
+        const branchLength = length * (0.3 + Math.random() * 0.4);
+        const branchStartX = 150 + Math.cos(angle) * length * 0.6;
+        const branchStartY = 150 + Math.sin(angle) * length * 0.6;
+        const branchEndX = branchStartX + Math.cos(branchAngle) * branchLength;
+        const branchEndY = branchStartY + Math.sin(branchAngle) * branchLength;
+
+        const branchPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        branchPath.setAttribute('d', `M ${branchStartX} ${branchStartY} L ${branchEndX} ${branchEndY}`);
+        branchPath.setAttribute('class', 'crack-line');
+        svg.appendChild(branchPath);
+      }
+    }
+
+    crackContainer.appendChild(svg);
+    document.body.appendChild(crackContainer);
+
+    // 生成玻璃碎片
+    const numShards = 8 + Math.floor(Math.random() * 5); // 8-12 個碎片
+    for (let i = 0; i < numShards; i++) {
+      const shard = document.createElement('div');
+      shard.className = 'glass-shard';
+
+      const size = 10 + Math.random() * 20;
+      const angle = Math.random() * Math.PI * 2;
+      const distance = 50 + Math.random() * 100;
+
+      shard.style.width = `${size}px`;
+      shard.style.height = `${size}px`;
+      shard.style.left = `${x}px`;
+      shard.style.top = `${y}px`;
+      shard.style.setProperty('--tx', `${Math.cos(angle) * distance}px`);
+      shard.style.setProperty('--ty', `${Math.sin(angle) * distance + 80}px`); // 加入重力效果
+      shard.style.setProperty('--rotate', `${Math.random() * 720 - 360}deg`);
+
+      document.body.appendChild(shard);
+
+      // 動畫結束後移除碎片
+      setTimeout(() => {
+        shard.remove();
+      }, 800);
+    }
+
+    // 1 秒後移除裂痕
+    setTimeout(() => {
+      crackContainer.remove();
+    }, 1000);
+  }
+
+  // 初始化玻璃裂開效果
+  initGlassCrackEffect();
 });
