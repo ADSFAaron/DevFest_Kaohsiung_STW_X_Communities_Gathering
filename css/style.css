@@ -2249,19 +2249,19 @@ main {
 }
 
 /* Improved RWD: Add intermediate breakpoints for better layout control */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   /* Large tablets and small laptops - reduce nav link spacing */
   .nav-links {
-    gap: 16px;
+    gap: 8px;
   }
 
   .nav-links a {
-    padding: 10px 16px;
+    padding: 10px 8px;
     font-size: 15px;
   }
 
   .nav-actions {
-    gap: 12px;
+    gap: 8px;
   }
 
   .language-dropdown-trigger {
@@ -2273,45 +2273,6 @@ main {
   .register-button {
     padding: 10px 16px;
     font-size: 14px;
-  }
-}
-
-@media (max-width: 1024px) {
-  /* Medium tablets - further reduce spacing and font sizes */
-  .nav-links {
-    gap: 12px;
-  }
-
-  .nav-links a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-
-  .language-dropdown-trigger {
-    min-width: 120px;
-    padding: 8px 12px;
-    font-size: 12px;
-  }
-
-  .register-button {
-    padding: 8px 12px;
-    font-size: 13px;
-  }
-
-  /* Ensure nav doesn't wrap by forcing flex-wrap: nowrap */
-  nav {
-    flex-wrap: nowrap;
-  }
-
-  .nav-links {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
-  }
-
-  .nav-links::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
   }
 }
 
