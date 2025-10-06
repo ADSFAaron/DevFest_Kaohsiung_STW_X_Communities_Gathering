@@ -1295,9 +1295,7 @@
 
       <!-- Schedule Section -->
       <section class="content-section page-section" id="schedule">
-        <p data-i18n-key="page_test"></p>
         <h2 data-i18n-key="schedule_title">議程時間表</h2>
-
         <div class="schedule-tabs">
           <button class="tab-button active" data-day="day1" data-i18n-key="schedule_day1">
             11/22 (星期六)
@@ -1625,8 +1623,11 @@
 
       <!-- Speakers Section -->
       <section class="content-section page-section" id="speakers">
-        <p data-i18n-key="page_test"></p>
+        <!-- Speakers Introduction Banner -->
         <h2 data-i18n-key="speakers_title">講者介紹</h2>
+        <div class="section-intro">
+          <p data-i18n-key="speakers_intro_text"></p>
+        </div>
         <div class="speakers-grid">
           <!-- 動態載入的講者內容會在這裡顯示 -->
           <!-- Dynamic speaker content will be loaded here -->
@@ -1638,33 +1639,7 @@
         <h2 data-i18n-key="tech_creation_market_title">技術創作市集</h2>
         <div class="tech-creation-market-grid">
           <div class="section-intro">
-            <p data-i18n-key="tech_creation_market_p1">
-              今年的 DevFest 高雄場 X 南臺灣技術社群大聚 2025
-              將有一個技術創作市集，這是一個專為技術社群打造的創作展示平台。透過實體攤位，創作者可以直接與會眾互動，展示並販售自己的技術創作作品，讓知識與創意在社群中流動交流。
-            </p>
-            <p data-i18n-key="tech_creation_market_p2">
-              媒介主要是透過製作書本為主，一本書的頁數大約在 15-30 頁左右
-              (僅為參考，實際並無限制)。我們歡迎所有與資訊技術相關的創作內容，涵蓋領域包括但不限於：
-            </p>
-            <ul>
-              <li data-i18n-key="tech_creation_market_li1">前端開發 / 後端開發 / DevOps</li>
-              <li data-i18n-key="tech_creation_market_li2">UI/UX 設計 / 系統設計</li>
-              <li data-i18n-key="tech_creation_market_li3">硬體開發 / 韌體開發</li>
-              <li data-i18n-key="tech_creation_market_li4">軟體工程 / 開發流程與方法論</li>
-              <li data-i18n-key="tech_creation_market_li5">技術管理 / 職涯發展等相關議題</li>
-            </ul>
-            <p data-i18n-key="tech_creation_market_p3">
-              考量攤位空間限制，我們將優先錄取非商業出版的個人創作作品，讓更多獨立創作者有機會與社群分享他們的技術見解與經驗。
-            </p>
-            <p>
-              <span data-i18n-key="tech_creation_market_p4">報名擺攤：</span
-              ><a
-                href="https://forms.gle/ZpXHk8VbA7q9bsWQ9"
-                rel="noopener noreferrer"
-                target="_blank"
-                >https://forms.gle/ZpXHk8VbA7q9bsWQ9</a
-              >
-            </p>
+            <p data-i18n-key="tech_creation_market_content"></p>
           </div>
 
           <div class="market-grid" style="margin-top: 2rem">
@@ -1676,7 +1651,6 @@
 
       <!-- Sponsors Section -->
       <section class="content-section page-section" id="sponsors">
-        <p data-i18n-key="page_test"></p>
         <h2 data-i18n-key="sponsors_title">贊助夥伴</h2>
         <div class="sponsors-grid">
           <!-- 動態載入的贊助夥伴內容會在這裡顯示 -->
@@ -1686,7 +1660,6 @@
 
       <!-- Community Section -->
       <section class="content-section page-section" id="community">
-        <p data-i18n-key="page_test"></p>
         <h2 data-i18n-key="community_title">參與社群</h2>
         <div class="community-grid">
           <!-- 動態載入的社群內容會在這裡顯示 -->
@@ -1696,7 +1669,6 @@
 
       <!-- Staff Section -->
       <section class="content-section page-section" id="staff">
-        <p data-i18n-key="page_test"></p>
         <h2 data-i18n-key="staff_title">志工介紹</h2>
         <div class="staff-grid">
           <!-- 動態載入的志工內容會在這裡顯示 -->
@@ -1707,7 +1679,9 @@
       <!-- Tickets Section -->
       <section class="content-section page-section" id="tickets">
         <h2 data-i18n-key="tickets_title">票種介紹</h2>
-
+        <div class="section-intro">
+          <p data-i18n-key="ticket_intro_text"></p>
+        </div>
         <!-- Paid Tickets -->
         <h3 class="subsection-title" data-i18n-key="tickets_paid_title">付費門票</h3>
         <div class="tickets-grid">
