@@ -188,7 +188,8 @@ const translations = {
     nav_about: 'About',
     nav_tickets: 'Tickets',
     event_title: 'DevFest Kaohsiung X S. TW Communities Gathering 2025',
-    event_date_location: '📆 Nov 22 (Sat) - 23 (Sun) <br class="break-on-mobile">at Kaohsiung Intelligence Navigator (KO-IN)',
+    event_date_location:
+      '📆 Nov 22 (Sat) - 23 (Sun) <br class="break-on-mobile">at Kaohsiung Intelligence Navigator (KO-IN)',
     day1_schedule: '22 - DevFest 2025 Kaohsiung',
     day1_time: '🕣 08:30 ~ 18:00',
     day2_schedule: '23 - S. TW Communities Gathering 2025',
