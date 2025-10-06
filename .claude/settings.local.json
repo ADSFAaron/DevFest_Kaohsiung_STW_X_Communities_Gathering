@@ -14,7 +14,8 @@
       "Bash(git mv:*)",
       "Bash(python:*)",
       "Bash(code:*)",
-      "Bash(dir)"
+      "Bash(dir)",
+      "Bash(timeout:*)"
     ],
     "deny": [],
     "ask": []

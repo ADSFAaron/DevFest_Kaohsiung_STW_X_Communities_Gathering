@@ -74,7 +74,10 @@ const translations = {
     tech_creation_market_content:
       '今年的 DevFest 高雄場 X 南臺灣技術社群大聚 2025 將有一個技術創作市集，這是一個專為技術社群打造的創作展示平台。透過實體攤位，創作者可以直接與會眾互動，展示並販售自己的技術創作作品，讓知識與創意在社群中流動交流。<br><br>媒介主要是透過製作書本為主，一本書的頁數大約在 15-30 頁左右 (僅為參考，實際並無限制)。我們歡迎所有與資訊技術相關的創作內容，涵蓋領域包括但不限於：<br><br>1. 前端開發 / 後端開發 / DevOps<br>2. UI/UX 設計 / 系統設計<br>3. 硬體開發 / 韌體開發<br>4. 軟體工程 / 開發流程與方法論<br>5. 技術管理 / 職涯發展等相關議題<br><br>考量攤位空間限制，我們將優先錄取非商業出版的個人創作作品，讓更多獨立創作者有機會與社群分享他們的技術見解與經驗。<br><br>報名擺攤：<a href="https://forms.gle/ZpXHk8VbA7q9bsWQ9" target="_blank" rel="noopener noreferrer">https://forms.gle/ZpXHk8VbA7q9bsWQ9</a>',
     sponsors_title: '特別感謝',
+    sponsors_intro_text: '',
     community_title: '參與社群',
+    community_intro_text:
+      '第一天社群擺攤報名截止日期：10/18（六），歡迎任何與軟體有關的社群團體來擺攤交朋友<br><br>提供：<br>1. 11/22 星期六門票 X 2<br>2. 長桌 X 1 or 0.5（視報名情況調整）<br>3. 椅子 X 1 or 0.5（視報名情況調整）<br>4. 午餐 X 2<br>5. 官網和社群媒體宣傳<br><br>報名表單：<a href="https://forms.gle/TCd3jiQonXJ2EBgn6" target="_blank" rel="noopener noreferrer">https://forms.gle/TCd3jiQonXJ2EBgn6</a>',
     staff_title: '志工介紹',
     about_title: '關於我們',
     tickets_title: '票種介紹',
@@ -237,7 +240,10 @@ const translations = {
     tech_creation_market_content:
       'This year\'s DevFest Kaohsiung X S. TW Communities Gathering 2025 will feature a Tech Works Market, a creative showcase platform built for the tech community. Through physical booths, creators can interact directly with attendees, display and sell their own tech-related creative works, allowing knowledge and creativity to flow and be exchanged within the community.<br><br>The primary medium is books, with each book being around 15-30 pages (this is for reference only, there are no actual restrictions). We welcome all creative content related to information technology, covering areas including but not limited to:<br><br>1. Frontend Development / Backend Development / DevOps<br>2. UI/UX Design / System Design<br>3. Hardware Development / Firmware Development<br>4. Software Engineering / Development Processes and Methodologies<br>5. Topics related to Technical Management / Career Development<br><br>Considering the limited booth space, we will give priority to personal, non-commercially published creative works to give more independent creators the opportunity to share their technical insights and experiences with the community.<br><br>Register for a booth: <a href="https://forms.gle/ZpXHk8VbA7q9bsWQ9" target="_blank" rel="noopener noreferrer">https://forms.gle/ZpXHk8VbA7q9bsWQ9</a>\n',
     sponsors_title: 'Special Thanks',
+    sponsors_intro_text: '',
     community_title: 'Community',
+    community_intro_text:
+      'Community booth registration deadline for day one: 10/18 (Sat). We welcome any software-related community groups to set up a booth and make friends.<br><br>Provided:<br>1. Two tickets for Saturday, 11/22<br>2. 1 or 0.5 long table (adjustable based on registration numbers)<br>3. 1 or 0.5 chair (adjustable based on registration numbers)<br>4. Two lunches<br>5. Promotion on the official website and social media<br><br>Registration Form: <a href="https://forms.gle/TCd3jiQonXJ2EBgn6" target="_blank" rel="noopener noreferrer">https://forms.gle/TCd3jiQonXJ2EBgn6</a>',
     staff_title: 'Volunteers',
     about_title: 'About',
     tickets_title: 'Tickets',
@@ -414,7 +420,10 @@ const translations = {
       'ブーススペースの制限を考慮し、商業出版されていない個人創作作品を優先的に採用し、より多くの独立創作者がコミュニティと技術的洞察や経験を共有する機会を提供します。',
     tech_creation_market_p4: 'ブース出店申込：',
     sponsors_title: '特別感謝',
+    sponsors_intro_text: '',
     community_title: '参加コミュニティ',
+    community_intro_text:
+      '第一日コミュニティブースの申し込み締め切り：10/18（土）。ソフトウェアに関連するコミュニティ団体のご参加をお待ちしております。<br><br>提供：<br>1. 11/22（土）のチケット2枚<br>2. 長机1台または0.5台（申し込み状況に応じて調整）<br>3. 椅子1脚または0.5脚（申し込み状況に応じて調整）<br>4. 昼食2食分<br>5. 公式サイトおよびソーシャルメディアでの宣伝<br><br>申し込みフォーム：<a href="https://forms.gle/TCd3jiQonXJ2EBgn6" target="_blank" rel="noopener noreferrer">https://forms.gle/TCd3jiQonXJ2EBgn6</a>',
     staff_title: 'ボランティア紹介',
     about_title: '私たちについて',
     tickets_title: 'チケット紹介',
