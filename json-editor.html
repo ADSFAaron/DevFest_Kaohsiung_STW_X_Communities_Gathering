@@ -759,7 +759,7 @@
             </div>
 
             <div class="form-group">
-              <label>分類</label>
+              <label>分類(可輸入多個, 請使用 `,` 分隔)</label>
               <div class="lang-tabs">
                 <div class="lang-tab active" onclick="switchLang('community-category', 'zh')">
                   中文
@@ -1796,9 +1796,9 @@
             ja: document.getElementById('community-desc-ja').value.trim(),
           },
           category: {
-            zh: document.getElementById('community-category-zh').value.trim(),
-            en: document.getElementById('community-category-en').value.trim(),
-            ja: document.getElementById('community-category-ja').value.trim(),
+            zh: document.getElementById('community-category-zh').value.trim().split(',').filter((c) => c.trim()),
+            en: document.getElementById('community-category-en').value.trim().split(',').filter((c) => c.trim()),
+            ja: document.getElementById('community-category-ja').value.trim().split(',').filter((c) => c.trim()),
           },
           logo: document.getElementById('community-logo').value.trim(),
           website: document.getElementById('community-website').value.trim(),
@@ -1819,6 +1819,8 @@
             community.social[key] = value;
           }
         });
+
+        console.log(community);
 
         communities.push(community);
         updateCommunityList();
@@ -1877,9 +1879,9 @@
         document.getElementById('community-desc-zh').value = community.description.zh || '';
         document.getElementById('community-desc-en').value = community.description.en || '';
         document.getElementById('community-desc-ja').value = community.description.ja || '';
-        document.getElementById('community-category-zh').value = community.category.zh || '';
-        document.getElementById('community-category-en').value = community.category.en || '';
-        document.getElementById('community-category-ja').value = community.category.ja || '';
+        document.getElementById('community-category-zh').value = community.category.zh.join(',') || '';
+        document.getElementById('community-category-en').value = community.category.en.join(',') || '';
+        document.getElementById('community-category-ja').value = community.category.ja.join(',') || '';
         document.getElementById('community-logo').value = community.logo || '';
         document.getElementById('community-website').value = community.website || '';
 

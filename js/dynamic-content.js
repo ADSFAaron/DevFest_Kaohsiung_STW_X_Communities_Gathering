@@ -515,7 +515,7 @@ class DynamicContentManager {
     card.innerHTML = `
             <div class="community-info">
                 <h3 class="community-title">${this.getText(community.name)}</h3>
-                <div class="community-category">${this.getText(community.category)}</div>
+                <div class="community-category">${this.getText(community.category).join(', ')}</div>
                 <div class="community-description">${this.getText(community.description)}</div>
                 ${socialLinks}
             </div>
