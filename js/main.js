@@ -1265,8 +1265,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // 建立裂痕容器
     const crackContainer = document.createElement('div');
     crackContainer.className = 'glass-crack';
-    crackContainer.style.left = x + 'px';
-    crackContainer.style.top = y + 'px';
+    crackContainer.style.left = `${x}px`;
+    crackContainer.style.top = `${y}px`;
 
     // 建立 SVG 元素
     const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -1319,13 +1319,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const angle = Math.random() * Math.PI * 2;
       const distance = 50 + Math.random() * 100;
 
-      shard.style.width = size + 'px';
-      shard.style.height = size + 'px';
-      shard.style.left = x + 'px';
-      shard.style.top = y + 'px';
-      shard.style.setProperty('--tx', Math.cos(angle) * distance + 'px');
-      shard.style.setProperty('--ty', Math.sin(angle) * distance + 80 + 'px'); // 加入重力效果
-      shard.style.setProperty('--rotate', Math.random() * 720 - 360 + 'deg');
+      shard.style.width = `${size}px`;
+      shard.style.height = `${size}px`;
+      shard.style.left = `${x}px`;
+      shard.style.top = `${y}px`;
+      shard.style.setProperty('--tx', `${Math.cos(angle) * distance}px`);
+      shard.style.setProperty('--ty', `${Math.sin(angle) * distance + 80}px`); // 加入重力效果
+      shard.style.setProperty('--rotate', `${Math.random() * 720 - 360}deg`);
 
       document.body.appendChild(shard);
 

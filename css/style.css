@@ -735,7 +735,7 @@ main {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(80px, 1fr))[auto-fit];
+  -ms-grid-columns: (minmax(80px, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 24px;
   padding: 40px 20px;
@@ -1691,7 +1691,9 @@ main {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .speakers-intro-banner:hover {
