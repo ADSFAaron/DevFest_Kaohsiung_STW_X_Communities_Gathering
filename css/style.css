@@ -735,7 +735,7 @@ main {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(80px, 1fr);) [auto-fit];
+  -ms-grid-columns: (minmax(80px, 1fr) ;) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 24px;
   padding: 40px 20px;
