@@ -9,13 +9,13 @@
         "ja": "DevFest Kaohsiung 2025"
       },
       "title": {
-        "zh": "🖼️ 線索5：圖片也有秘密！檢查這張圖片的所有屬性，可以獲得第一日免費票 5（官網解謎活動）邀請碼...",
-        "en": "🖼️ Clue 5: The image holds secrets! Check all attributes of this image to get the Day 1 Free Ticket 5 (Website Puzzle Event) invitation code...",
-        "ja": "🖼️ ヒント5：画像にも秘密がある！この画像のすべての属性をチェックして、1日目無料チケット5（ウェブサイトパズルイベント）の招待コードを取得..."
+        "zh": "🖼️ 線索5：圖片也有秘密！檢查這張圖片的所有屬性，可以獲得第一日免費票 5（官網解謎活動）邀請碼...https://gdg-kaohsiung.kktix.cc/events/devfest2025",
+        "en": "🖼️ Clue 5: The image holds secrets! Check all attributes of this image to get the Day 1 Free Ticket 5 (Website Puzzle Event) invitation code...https://gdg-kaohsiung.kktix.cc/events/devfest2025",
+        "ja": "🖼️ ヒント5：画像にも秘密がある！この画像のすべての属性をチェックして、1日目無料チケット5（ウェブサイトパズルイベント）の招待コードを取得...https://gdg-kaohsiung.kktix.cc/events/devfest2025"
       },
       "dataAttributes": {
         "event": "devfest2025",
-        "secret-key": "AMF7JG73TC"
+        "secret-key": "99LDNYEGED"
       },
       "loading": "eager"
     },

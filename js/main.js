@@ -1,7 +1,7 @@
 // --- Data Definitions ---
 
-// 💻 線索3：程式碼中的寶藏！解碼這個神秘字串 "HBWDKm3B7R" (提示：這不是Base64...)
-const mysteryCode = 'LDX876KCX7'.split('').reverse().join('');
+// 💻 線索3：程式碼中的寶藏！解碼這個神秘字串 "HBWDKm3B7R" (提示：這不是Base64...https://gdg-kaohsiung.kktix.cc/events/devfest2025)
+const mysteryCode = 'G8EWCMDCCH'.split('').reverse().join('');
 /*
    解謎提示：這個字串需要反向才是真正的邀請碼！
    聰明的你一定能看出來這是什麼編碼方式 😉
