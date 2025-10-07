@@ -237,10 +237,16 @@ class DynamicContentManager {
         color: '#f9ab00',
       },
       {
+        zh: '中午說書人',
+        en: 'Midday Storyteller',
+        ja: '昼の語り手',
+        color: '#ea4335',
+      },
+      {
         zh: '第二屆 AI 生成大賽',
         en: 'The 2nd AI Generative Contest',
         ja: '第2回 AI 生成コンテスト',
-        color: '#ea4335',
+        color: '#1e1e1e',
       },
     ];
 

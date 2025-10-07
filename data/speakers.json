@@ -568,6 +568,58 @@
       "social": {
         "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
       }
+    },
+    {
+      "id": "aaron_ng",
+      "name": {
+        "zh": "黃立仁 / Aaron Ng",
+        "en": "Aaron Ng",
+        "ja": "Aaron Ng"
+      },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "topic_category": {
+        "zh": "中午說書人",
+        "en": "Midday Storyteller",
+        "ja": "昼の語り手"
+      },
+      "bio": {
+        "zh": "AI 研發工程師",
+        "en": "AI R&D Engineer",
+        "ja": "AI 研究開発エンジニア"
+      },
+      "session": {
+        "name": {
+          "zh": "Multi-agent 協作時代：Agent2Agent Protocol 初探與實作",
+          "en": "The Era of Multi-Agent Collaboration: An Initial Exploration and Implementation of the Agent2Agent Protocol",
+          "ja": "マルチエージェント協調時代：Agent2Agentプロトコルの初探と実装"
+        },
+        "abstract": {
+          "zh": "在我們看不到的 AI Agent 背後，每一次的任務都宛如多個 Agent 組成的智慧團隊在幫我們工作，Agent 與 Agent 之間協作的重要性將越來越重要，Agentic AI 應用也正式來到了 Multi-agent 協作的時代。<br><br>Google 今年推出的 Agent2Agent(A2A) Protocol 在當中扮演什麼樣的角色呢？讓我們呼應這一次 DevFest 主題 — 實作（Implements），初探其應用。MCP (Model Context Protocol) 讓 Agent 使用工具的方式標準化，A2A 讓 Agent 間用同樣的語言溝通，這次的分享將實作並初探目前主流架構之間如何協作，如：Pydantic AI, LangChain, LangGraph 等。",
+          "en": "Behind the scenes of the AI Agents we don't see, every task is like a smart team of multiple agents working for us. The importance of collaboration between agents is becoming increasingly critical, and Agentic AI applications have officially entered the era of multi-agent collaboration.<br><br>So, what role does Google's Agent2Agent (A2A) Protocol, introduced this year, play in this new era? Echoing this DevFest's theme—\"Implements\"—let's take a preliminary dive into its applications. The MCP (Model Context Protocol) standardizes how agents use tools, while A2A allows agents to communicate in the same language. This session will implement and explore how current mainstream frameworks, such as Pydantic AI, LangChain, and LangGraph, can collaborate using these protocols.",
+          "ja": "私たちが目にすることのないAIエージェントの背後では、一つ一つのタスクがまるで複数のエージェントから成る知的チームによって処理されています。エージェント間の協調の重要性はますます高まっており、Agentic AIアプリケーションは本格的にマルチエージェント協調の時代を迎えました。<br><br>今年Googleが発表したAgent2Agent (A2A) プロトコルは、その中でどのような役割を果たすのでしょうか？今回のDevFestのテーマである「実装（Implements）」に呼応し、その応用を初探的に見ていきましょう。MCP (Model Context Protocol) がエージェントのツール使用方法を標準化し、A2Aがエージェント間のコミュニケーション言語を統一します。このセッションでは、Pydantic AI、LangChain、LangGraphといった現在の主要なフレームワークが、これらのプロトコルを用いてどのように連携できるかを実装し、探求していきます。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "12:30 - 13:15",
+        "track": "track1",
+        "session_id": "d1_t11_s1_title"
+      },
+      "tags": ["AI", "Agent", "A2A"],
+      "photo": "images/speak-aaron_ng.png",
+      "social": {
+        "Linkedin": "https://www.linkedin.com/in/liren0907",
+        "Facebook": "https://www.facebook.com/liren0907"
+      }
     }
   ]
 }
