@@ -45,7 +45,12 @@
         "track": "track2",
         "session_id": "d1_t5_s2_title"
       },
-      "tags": ["中文議程", "Android", "Gemini", "AI"],
+      "tags": [
+        "中文議程",
+        "Android",
+        "Gemini",
+        "AI"
+      ],
       "photo": "images/speak-ray_yuan_liu.png",
       "social": {
         "Homepage": "https://louis383.medium.com/",
@@ -97,7 +102,12 @@
         "track": "track1",
         "session_id": "d1_t6_s1_title"
       },
-      "tags": ["中文議程", "生成式AI", "AI知識庫", "數位轉型"],
+      "tags": [
+        "中文議程",
+        "生成式AI",
+        "AI知識庫",
+        "數位轉型"
+      ],
       "photo": "images/speak-leo_he.png",
       "social": {
         "Linkedin": "https://www.linkedin.com/in/leo-he-392338173/"
@@ -148,7 +158,12 @@
         "track": "track2",
         "session_id": "d1_t6_s2_title"
       },
-      "tags": ["English Session", "Android", "AI", "XP"],
+      "tags": [
+        "English Session",
+        "Android",
+        "AI",
+        "XP"
+      ],
       "photo": "images/speak-matthias_geisler.png",
       "social": {}
     },
@@ -197,7 +212,12 @@
         "track": "track1",
         "session_id": "d1_t7_s1_title"
       },
-      "tags": ["中文議程", "教育", "Gemini", "科技藝術"],
+      "tags": [
+        "中文議程",
+        "教育",
+        "Gemini",
+        "科技藝術"
+      ],
       "photo": "images/speak-yung_chun.png",
       "social": {
         "Linkedin": "https://www.linkedin.com/in/%E7%89%B9-%E7%93%A6-7a345224b/",
@@ -249,7 +269,12 @@
         "track": "track2",
         "session_id": "d1_t9_s2_title"
       },
-      "tags": ["中文議程", "AI", "Gemini", "Android"],
+      "tags": [
+        "中文議程",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
       "photo": "images/speak-kevin_chiu.png",
       "social": {
         "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
@@ -300,7 +325,12 @@
         "track": "track1",
         "session_id": "d1_t10_s1_title"
       },
-      "tags": ["中文議程", "ADK", "Gemini", "Agent"],
+      "tags": [
+        "中文議程",
+        "ADK",
+        "Gemini",
+        "Agent"
+      ],
       "photo": "images/speak-simon_liu.png",
       "social": {
         "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
@@ -354,7 +384,12 @@
         "track": "track1",
         "session_id": "d1_t5_s1_title"
       },
-      "tags": ["English Session", "Robotics", "Firebase", "Google Cloud"],
+      "tags": [
+        "English Session",
+        "Robotics",
+        "Firebase",
+        "Google Cloud"
+      ],
       "photo": "images/speak-arturs_vancans.png",
       "social": {
         "Homepage": "https://www.secondspace.dev/kubi-robot",
@@ -406,7 +441,12 @@
         "track": "track1",
         "session_id": "d1_t7_s2_title"
       },
-      "tags": ["中文議程", "零知識證明", "數位身分", "Google Wallet"],
+      "tags": [
+        "中文議程",
+        "零知識證明",
+        "數位身分",
+        "Google Wallet"
+      ],
       "photo": "images/speak-denken_chen.png",
       "social": {
         "Homepage": "https://denkeni.org"
@@ -457,7 +497,12 @@
         "track": "track1",
         "session_id": "d1_t9_s1_title"
       },
-      "tags": ["中文議程", "UI", "UX", "設計工程"],
+      "tags": [
+        "中文議程",
+        "UI",
+        "UX",
+        "設計工程"
+      ],
       "photo": "images/speak-steve_yeh.png",
       "social": {
         "Facebook": "https://www.facebook.com/steven.yeh",
@@ -509,7 +554,12 @@
         "track": "track2",
         "session_id": "d2_t4_s2_title"
       },
-      "tags": ["中文議程", "Firebase", "Stitch", "AI"],
+      "tags": [
+        "中文議程",
+        "Firebase",
+        "Stitch",
+        "AI"
+      ],
       "photo": "images/speak-simon_liu.png",
       "social": {
         "Homepage": "https://simonliuyuwei.my.canva.site/link-in-bio",
@@ -563,10 +613,71 @@
         "track": "track2",
         "session_id": "d2_t5_s2_title"
       },
-      "tags": ["中文議程", "AI", "Gemini", "Android"],
+      "tags": [
+        "中文議程",
+        "AI",
+        "Gemini",
+        "Android"
+      ],
       "photo": "images/speak-kevin_chiu.png",
       "social": {
         "Linkedin": "www.linkedin.com/in/kevin-chiu-612a61189"
+      }
+    },
+    {
+      "id": "aaron_ng",
+      "name": {
+        "zh": "黃立仁 / Aaron Ng",
+        "en": "Aaron Ng",
+        "ja": "Aaron Ng"
+      },
+      "org": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "title": {
+        "zh": "",
+        "en": "",
+        "ja": ""
+      },
+      "topic_category": {
+        "zh": "中午說書人",
+        "en": "Midday Storyteller",
+        "ja": "昼の語り手"
+      },
+      "bio": {
+        "zh": "AI 研發工程師",
+        "en": "AI R&D Engineer",
+        "ja": "AI 研究開発エンジニア"
+      },
+      "session": {
+        "name": {
+          "zh": "Multi-agent 協作時代：Agent2Agent Protocol 初探與實作",
+          "en": "The Era of Multi-Agent Collaboration: An Initial Exploration and Implementation of the Agent2Agent Protocol",
+          "ja": "マルチエージェント協調時代：Agent2Agentプロトコルの初探と実装"
+        },
+        "abstract": {
+          "zh": "在我們看不到的 AI Agent 背後，每一次的任務都宛如多個 Agent 組成的智慧團隊在幫我們工作，Agent 與 Agent 之間協作的重要性將越來越重要，Agentic AI 應用也正式來到了 Multi-agent 協作的時代。<br><br>Google 今年推出的 Agent2Agent(A2A) Protocol 在當中扮演什麼樣的角色呢？讓我們呼應這一次 DevFest 主題 — 實作（Implements），初探其應用。MCP (Model Context Protocol) 讓 Agent 使用工具的方式標準化，A2A 讓 Agent 間用同樣的語言溝通，這次的分享將實作並初探目前主流架構之間如何協作，如：Pydantic AI, LangChain, LangGraph 等。",
+          "en": "Behind the scenes of the AI Agents we don't see, every task is like a smart team of multiple agents working for us. The importance of collaboration between agents is becoming increasingly critical, and Agentic AI applications have officially entered the era of multi-agent collaboration.<br><br>So, what role does Google's Agent2Agent (A2A) Protocol, introduced this year, play in this new era? Echoing this DevFest's theme—\"Implements\"—let's take a preliminary dive into its applications. The MCP (Model Context Protocol) standardizes how agents use tools, while A2A allows agents to communicate in the same language. This session will implement and explore how current mainstream frameworks, such as Pydantic AI, LangChain, and LangGraph, can collaborate using these protocols.",
+          "ja": "私たちが目にすることのないAIエージェントの背後では、一つ一つのタスクがまるで複数のエージェントから成る知的チームによって処理されています。エージェント間の協調の重要性はますます高まっており、Agentic AIアプリケーションは本格的にマルチエージェント協調の時代を迎えました。<br><br>今年Googleが発表したAgent2Agent (A2A) プロトコルは、その中でどのような役割を果たすのでしょうか？今回のDevFestのテーマである「実装（Implements）」に呼応し、その応用を初探的に見ていきましょう。MCP (Model Context Protocol) がエージェントのツール使用方法を標準化し、A2Aがエージェント間のコミュニケーション言語を統一します。このセッションでは、Pydantic AI、LangChain、LangGraphといった現在の主要なフレームワークが、これらのプロトコルを用いてどのように連携できるかを実装し、探求していきます。"
+        }
+      },
+      "schedule": {
+        "day": 1,
+        "time": "12:30 - 13:15",
+        "track": "track1",
+        "session_id": "d1_t11_s1_title"
+      },
+      "tags": [
+        "AI",
+        "Agent",
+        "A2A"
+      ],
+      "photo": "images/speak-aaron_ng.png",
+      "social": {
+        "Linkedin": "https://www.linkedin.com/in/liren0907",
+        "Facebook": "https://www.facebook.com/liren0907"
       }
     }
   ]
