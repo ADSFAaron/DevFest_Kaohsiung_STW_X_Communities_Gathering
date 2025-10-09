@@ -56,6 +56,7 @@ class DynamicContentManager {
 
       this.renderAllContent();
       this.enhanceScheduleWithSpeakers();
+      this.initHashNavigation(); // 初始化 hash 導航功能
     } catch (error) {
       console.error('載入資料時發生錯誤:', error);
     }
@@ -290,6 +291,7 @@ class DynamicContentManager {
     const card = document.createElement('div');
     card.className = 'speaker-card';
     card.setAttribute('data-speaker-id', speaker.id);
+    card.id = speaker.id; // 設定 ID 以支援 URL hash 導航
 
     const tagsHTML = speaker.tags.map((tag) => `<span>#${tag}</span>`).join('');
     const socialLinks = this.createSocialLinks(speaker.social);
@@ -391,6 +393,8 @@ class DynamicContentManager {
   createMarketCard(booth) {
     const card = document.createElement('div');
     card.className = 'market-booth-card';
+    card.setAttribute('data-booth-id', booth.id);
+    card.id = booth.id; // 設定 ID 以支援 URL hash 導航
 
     const socialLinks = this.createSocialLinks(booth.social);
 
@@ -441,6 +445,8 @@ class DynamicContentManager {
   createSponsorCard(sponsor) {
     const card = document.createElement('div');
     card.className = 'sponsor-card';
+    card.setAttribute('data-sponsor-id', sponsor.id);
+    card.id = sponsor.id; // 設定 ID 以支援 URL hash 導航
 
     const socialLinks = this.createSocialLinks(sponsor.social);
 
@@ -503,6 +509,8 @@ class DynamicContentManager {
   createCommunityCard(community) {
     const card = document.createElement('div');
     card.className = 'community-card';
+    card.setAttribute('data-community-id', community.id);
+    card.id = community.id; // 設定 ID 以支援 URL hash 導航
 
     const socialLinks = this.createSocialLinks(community.social);
 
@@ -674,6 +682,8 @@ class DynamicContentManager {
   createStaffCard(staff) {
     const card = document.createElement('div');
     card.className = 'staff-card';
+    card.setAttribute('data-staff-id', staff.id);
+    card.id = staff.id; // 設定 ID 以支援 URL hash 導航
 
     const socialLinks = this.createSocialLinks(staff.social);
 
@@ -972,25 +982,102 @@ class DynamicContentManager {
 
   // 導航到講者詳細頁面
   navigateToSpeaker(speakerId) {
-    // 切換到講者頁面
-    const speakersTab = document.querySelector('[data-page="speakers"]');
-    if (speakersTab) {
-      speakersTab.click();
+    this.navigateToItem(speakerId, 'speakers');
+  }
+
+  // 通用導航函數
+  navigateToItem(itemId, pageType) {
+    // 更新 URL hash（不會觸發頁面重新載入）
+    if (window.location.hash !== `#${itemId}`) {
+      window.history.pushState(null, '', `#${itemId}`);
     }
 
-    // 等待頁面切換完成後，滾動到對應講者
+    // 頁面類型對應表
+    const pageMapping = {
+      speakers: 'speakers',
+      markets: 'tech-creation-market',
+      sponsors: 'sponsors',
+      community: 'community',
+      staff: 'staff',
+    };
+
+    // 切換到對應頁面
+    const targetPage = pageMapping[pageType];
+    const pageTab = document.querySelector(`[data-page="${targetPage}"]`);
+    if (pageTab) {
+      pageTab.click();
+    }
+
+    // 等待頁面切換完成後，滾動到對應項目
     setTimeout(() => {
-      const speakerCard = document.querySelector(`[data-speaker-id="${speakerId}"]`);
-      if (speakerCard) {
-        speakerCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        speakerCard.classList.add('highlighted');
+      const itemCard = document.getElementById(itemId);
+      if (itemCard) {
+        itemCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        itemCard.classList.add('highlighted');
 
         // 2秒後移除高亮效果
         setTimeout(() => {
-          speakerCard.classList.remove('highlighted');
+          itemCard.classList.remove('highlighted');
         }, 2000);
       }
     }, 300);
+  }
+
+  // 處理 URL hash 變化
+  handleHashChange() {
+    const hash = window.location.hash.slice(1); // 移除 # 符號
+    if (!hash) return;
+
+    // 檢查是否為講者 ID
+    const speaker = this.data.speakers.find((s) => s.id === hash);
+    if (speaker) {
+      this.navigateToItem(hash, 'speakers');
+      return;
+    }
+
+    // 檢查是否為技術市集 ID
+    const booth = this.data.markets.find((m) => m.id === hash);
+    if (booth) {
+      this.navigateToItem(hash, 'markets');
+      return;
+    }
+
+    // 檢查是否為贊助商 ID
+    const sponsor = this.data.sponsors.find((s) => s.id === hash);
+    if (sponsor) {
+      this.navigateToItem(hash, 'sponsors');
+      return;
+    }
+
+    // 檢查是否為社群 ID
+    const community = this.data.community.find((c) => c.id === hash);
+    if (community) {
+      this.navigateToItem(hash, 'community');
+      return;
+    }
+
+    // 檢查是否為志工 ID
+    const staff = this.data.staff.find((s) => s.id === hash);
+    if (staff) {
+      this.navigateToItem(hash, 'staff');
+      return;
+    }
+  }
+
+  // 初始化 hash 導航
+  initHashNavigation() {
+    // 監聽 hash 變化
+    window.addEventListener('hashchange', () => {
+      this.handleHashChange();
+    });
+
+    // 頁面載入時處理 hash
+    if (window.location.hash) {
+      // 延遲處理，確保數據已載入
+      setTimeout(() => {
+        this.handleHashChange();
+      }, 500);
+    }
   }
 }
 
