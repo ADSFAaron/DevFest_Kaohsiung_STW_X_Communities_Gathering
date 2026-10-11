@@ -29,8 +29,8 @@
         },
         "body": {
           "zh-Hant": "DevFest 高雄場是 GDG Kaohsiung 舉辦的軟體技術年會。我們致力邀請外地的技術大神，讓高雄的開發者不用舟車勞頓就能與頂尖講者交流；我們更希望能打造一個專屬「高雄」的技術年會，讓高雄的講者、社群、和社群友善企業有更多交流的機會！",
-          "en": "DevFest Kaohsiung is the annual software conference hosted by the GDG Kaohsiung community. We're committed to bringing top-tier tech speakers to Kaohsiung so local developers can connect with world-class experts without having to travel. We also want to build a tech conference that truly belongs to Kaohsiung — inviting local Kaohsiung speakers to the stage and giving them greater visibility!",
-          "ja": "DevFest 高雄は GDG Kaohsiung コミュニティが主催するソフトウェア年次カンファレンスです。各地のトップエンジニアを高雄にお招きし、高雄のデベロッパーが遠出することなく一流のスピーカーと交流できる機会を提供することを目指しています。さらに、「高雄」ならではのテックカンファレンスを作り、高雄在住のスピーカーに登壇の場を提供し、より多くの露出機会を届けたいと願っています！"
+          "en": "DevFest Kaohsiung is the annual software conference hosted by the GDG Kaohsiung community. We're committed to bringing top-tier tech speakers to Kaohsiung so local developers can connect with world-class experts without having to travel. We also hope to build a tech conference that truly belongs to Kaohsiung, creating more opportunities for local speakers, communities, and community-friendly companies to connect!",
+          "ja": "DevFest 高雄は GDG Kaohsiung コミュニティが主催するソフトウェア年次カンファレンスです。各地のトップエンジニアを高雄にお招きし、高雄のデベロッパーが遠出することなく一流のスピーカーと交流できる機会を提供することを目指しています。さらに、「高雄」ならではのテックカンファレンスを作り、高雄のスピーカー、コミュニティ、そしてコミュニティフレンドリーな企業がより多く交流できる機会を届けたいと願っています！"
         },
         "order": 2,
         "links": [],
@@ -151,8 +151,8 @@
         },
         "body": {
           "zh-Hant": "去年我們在「DevFest 高雄場 X 南臺灣技術社群大聚 2025」成功舉辦「第一屆技術創作市集 TWM #1」，今年我們將再次舉辦「第二屆技術創作市集 TWM #2」\n\n「技術創作市集」發想自日本的「技術書典」，這是一個專為技術社群打造的創作展示平台。透過實體攤位，創作者可以直接與會眾互動，展示並販售自己的技術創作作品，讓知識與創意在社群中流動。\n\n這是一個專為技術社群打造的創作展示平台，透過實體攤位，創作者可以直接與會眾互動，展示並販售自己的技術創作作品，讓知識與創意在社群中流動交流。\n\n媒介主要是透過製作書本為主，一本書的頁數大約在 15-30 頁左右 (僅為參考，實際並無限制)。我們歡迎所有與資訊技術相關的創作內容",
-          "en": "Inspired by Japan's \"TechBookFest\", this is a creative showcase platform designed specifically for the tech community. Through physical booths, creators can directly interact with attendees to display and sell their technical publications and creations, letting knowledge and creativity flow across the community.\n\nFollowing our successful inaugural edition at \"DevFest Kaohsiung X S. TW Communities Gathering 2025\", we are proud to host it once again this year!",
-          "ja": "日本の「技術書典」に着想を得た、技術コミュニティのための創作展示・頒布プラットフォームです。実際のブースを通じて、クリエイターは参加者と直接交流しながら自身の技術創作物を展示・販売し、知識と創造性をコミュニティ内で循環させます。\n\n昨年の「DevFest 高雄 X 南台湾技術コミュニティ大集合 2025」における第 1 回の成功を受け、今年も再び開催いたします！"
+          "en": "Inspired by Japan's \"TechBookFest\", this is a creative showcase platform designed specifically for the tech community. Through physical booths, creators can directly interact with attendees to display and sell their technical publications and creations, letting knowledge and creativity flow across the community.\n\nThe main medium is self-published books, typically around 15–30 pages each (for reference only; there is no actual limit). We welcome all creative works related to information technology.\n\nFollowing our successful inaugural edition at \"DevFest Kaohsiung X S. TW Communities Gathering 2025\", we are proud to host it once again this year!",
+          "ja": "日本の「技術書典」に着想を得た、技術コミュニティのための創作展示・頒布プラットフォームです。実際のブースを通じて、クリエイターは参加者と直接交流しながら自身の技術創作物を展示・販売し、知識と創造性をコミュニティ内で循環させます。\n\n主な媒体は本の制作で、1 冊あたり 15〜30 ページ程度が目安です（あくまで参考であり、実際の制限はありません）。情報技術に関するあらゆる創作物を歓迎します。\n\n昨年の「DevFest 高雄 X 南台湾技術コミュニティ大集合 2025」における第 1 回の成功を受け、今年も再び開催いたします！"
         },
         "order": 8,
         "links": [],
@@ -231,7 +231,7 @@
           "ja": "アフタービュッフェ（自己負担）"
         },
         "body": {
-          "zh-Hant": "議程結束，Buffet 開始！讓我們一起到「高雄商旅 Urban Café 都會美饌」享用美味的 After Buffet，邊吃邊聊邊交流",
+          "zh-Hant": "議程結束，Buffet 開始！讓我們一起到「高雄商旅 Urban Café 都會美饌」享用美味的 After Buffet，邊吃邊聊邊交流\n\n註：報名 DevFest 高雄場 + After Buffet（現場收取 NT$1,200）的朋友，請於報到時在報到台現場付費。",
           "en": "Sessions wrap up, buffet begins! Let's head to \"Urban Café at Kaohsiung Business Hotel\" to enjoy a delicious After Buffet dinner — eating, chatting, and connecting together!\n\nNote: For attendees who registered for \"DevFest Kaohsiung + After Buffet (NT$1,200 collected on-site)\", please pay at the check-in desk upon arrival.",
           "ja": "セッション終了後はビュッフェの始まりです！「高雄商旅 Urban Café 都会美饌」に集まり、美味しいアフタービュッフェを堪能しながら、食事と会話と交流を楽しみましょう！\n\n注：「DevFest 高雄およびアフタービュッフェに参加（現地支払い 1,200 台湾元）」をお申し込みの方は、当日の受付時に現地にてお支払いください。"
         },
@@ -261,7 +261,7 @@
         "body": {
           "zh-Hant": "今年我們一樣在交通更便利的「KO-IN 智高點」，距離捷運橘線信義國小站 3 號出口僅需 1 分鐘步程，出站即達！",
           "en": "This year, we are once again hosting at the highly accessible \"KO-IN Smart Innovation Hub\", just a 1-minute walk from Exit 3 of the MRT Orange Line Sinyi Elementary School Station — right outside the exit!",
-          "ja": "今年も交通アクセスの良い「KO-IN 智高点」で開催します。高雄メトロ（MRT）オレンジ線「信義國小駅」3 番出口から徒歩わずか 1 分、駅を出てすぐの好立地です！"
+          "ja": "今年も交通アクセスの良い「KO-IN 智高点」で開催します。高雄メトロ（MRT）オレンジ線「信義国小駅」3 番出口から徒歩わずか 1 分、駅を出てすぐの好立地です！"
         },
         "order": 13,
         "links": [
@@ -1366,12 +1366,12 @@
       "title": {
         "zh-Hant": "當設計遇到 AI — 末日崛起",
         "en": "When Design Meets AI: Rise of Doomsday",
-        "ja": "デザインがAIに出会う時：終末の台頭"
+        "ja": "デザインがAIに出会う時：終末の幕開け"
       },
       "abstract": {
         "zh-Hant": "座談由饅頭、設計師勞哥、史蒂夫•葉共同帶來「當設計遇到 AI — 末日崛起」探討。",
         "en": "Panel discussion by Mantou, maylogger, and Steve Yeh on \"When Design Meets AI: Rise of Doomsday\".",
-        "ja": "饅頭、設計師勞哥、Steve Yehによる「デザインがAIに出会う時：終末の台頭」についてのパネルディスカッション。"
+        "ja": "Mantou、maylogger、Steve Yehによる「デザインがAIに出会う時：終末の幕開け」についてのパネルディスカッション。"
       },
       "tags": ["AI", "設計", "FDE", "座談"],
       "speakerIds": ["mantou", "maylogger", "steve_yeh"],
@@ -1392,7 +1392,7 @@
       "abstract": {
         "zh-Hant": "活動結束感謝。",
         "en": "Closing remarks and acknowledgments.",
-        "ja": "終わりの挨拶と感謝。"
+        "ja": "閉会の挨拶と謝辞。"
       },
       "tags": ["Closing"],
       "speakerIds": [],
@@ -1411,10 +1411,14 @@
         "ja": "Andy"
       },
       "role": {
-        "zh-Hant": "總召"
+        "zh-Hant": "總召",
+        "en": "Lead Organizer",
+        "ja": "リードオーガナイザー"
       },
       "bio": {
-        "zh-Hant": "GDG Kaohsiung 組織者\n目前應該還是個安卓工程師...吧"
+        "zh-Hant": "GDG Kaohsiung 組織者\n目前應該還是個安卓工程師...吧",
+        "en": "GDG Kaohsiung Organizer\nProbably still an Android engineer... I think?",
+        "ja": "GDG Kaohsiung オーガナイザー\nたぶん今もまだ Android エンジニア……のはず"
       },
       "links": [
         {
