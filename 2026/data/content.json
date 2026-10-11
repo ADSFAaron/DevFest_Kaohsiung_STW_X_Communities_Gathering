@@ -96,8 +96,8 @@
         },
         "body": {
           "zh-Hant": "為了讓活動辦得更好，我們徵求贊助夥伴，有以下四種贊助方案\n\n1. 一心路贊助方案：$5,000 金額贊助（可以打統編）\n2. 二聖路贊助方案：$5,000 等值贈品贊助\n3. 三多路贊助方案：帆布輸出一面（約三千台幣，可以打統編）\n4. 四維路贊助方案：贈品贊助（我們再討論）",
-          "en": "To make the event even better, we are seeking sponsorship partners with the following four sponsorship tiers:\n\n1. Yixin Tier: NT$5,000 monetary sponsorship (official tax invoice provided)\n2. Ercheng Tier: NT$5,000 equivalent in swag/giveaway sponsorship\n3. Sanduo Tier: One canvas banner print (approx. NT$3,000, official tax invoice provided)\n4. Siwei Tier: Custom swag/gift sponsorship (details open for discussion)\n\nSponsor Application Link:\nhttps://forms.gle/VG2BVe9nW8PntyvF6",
-          "ja": "イベントをより素晴らしいものにするため、協賛パートナーを募集しております。以下の4つの協賛プランをご用意しています：\n\n1. 一心（イーシン）プラン：5,000 台湾元の資金協賛（統一編號・公式領収書対応可）\n2. 二聖（アーシェン）プラン：5,000 台湾元相当のノベルティ協賛\n3. 三多（サンドゥオ）プラン：横断幕出力1面（約 3,000 台湾元、統一編號・公式領収書対応可）\n4. 四維（スーウェイ）プラン：ノベルティ協賛（個別相談）\n\n協賛パートナー募集リンク：\nhttps://forms.gle/VG2BVe9nW8PntyvF6"
+          "en": "To make the event even better, we are seeking sponsorship partners with the following four sponsorship tiers:\n\n1. Yixin Tier: NT$5,000 monetary sponsorship (official tax invoice provided)\n2. Ercheng Tier: NT$5,000 equivalent in swag/giveaway sponsorship\n3. Sanduo Tier: One canvas banner print (approx. NT$3,000, official tax invoice provided)\n4. Siwei Tier: Custom swag/gift sponsorship (details open for discussion)",
+          "ja": "イベントをより素晴らしいものにするため、協賛パートナーを募集しております。以下の4つの協賛プランをご用意しています：\n\n1. 一心（イーシン）プラン：5,000 台湾元の資金協賛（統一編號・公式領収書対応可）\n2. 二聖（アーシェン）プラン：5,000 台湾元相当のノベルティ協賛\n3. 三多（サンドゥオ）プラン：横断幕出力1面（約 3,000 台湾元、統一編號・公式領収書対応可）\n4. 四維（スーウェイ）プラン：ノベルティ協賛（個別相談）"
         },
         "order": 6,
         "links": [
@@ -105,7 +105,9 @@
             "platform": "website",
             "url": "https://forms.gle/VG2BVe9nW8PntyvF6",
             "label": {
-              "zh-Hant": "徵求贊助夥伴連結"
+              "zh-Hant": "徵求贊助夥伴連結",
+              "en": "Sponsor Application Link",
+              "ja": "協賛パートナー募集リンク"
             }
           }
         ],
@@ -121,8 +123,8 @@
         },
         "body": {
           "zh-Hant": "今年我們一樣邀請社群共襄盛舉，如果您有意願參與「第二屆技術創作市集」販售您的技術書典，歡迎填表",
-          "en": "This year, we once again invite tech communities to join us! If you are interested in participating in the \"2nd Tech Creation Market\" to sell your technical publications or zines, please fill out the form.\n\nBooth Application Link:\nhttps://forms.gle/nSMiMj7dP32PjCrM8",
-          "ja": "今年もコミュニティの皆様のご参加をお待ちしております。「第 2 回技術創作マーケット」に出展し、技術書典・同人誌を販売したい方は、ぜひフォームよりお申し込みください。\n\n出展応募リンク：\nhttps://forms.gle/nSMiMj7dP32PjCrM8"
+          "en": "This year, we once again invite tech communities to join us! If you are interested in participating in the \"2nd Tech Creation Market\" to sell your technical publications or zines, please fill out the form.",
+          "ja": "今年もコミュニティの皆様のご参加をお待ちしております。「第 2 回技術創作マーケット」に出展し、技術書典・同人誌を販売したい方は、ぜひフォームよりお申し込みください。"
         },
         "order": 7,
         "links": [
@@ -130,7 +132,9 @@
             "platform": "website",
             "url": "https://forms.gle/nSMiMj7dP32PjCrM8",
             "label": {
-              "zh-Hant": "邀請擺攤連結"
+              "zh-Hant": "邀請擺攤連結",
+              "en": "Booth Application Link",
+              "ja": "出展応募リンク"
             }
           }
         ],
@@ -210,7 +214,9 @@
             "platform": "website",
             "url": "https://www.gachago.net/zh-tw",
             "label": {
-              "zh-Hant": "搶先體驗 GACHAGO"
+              "zh-Hant": "搶先體驗 GACHAGO",
+              "en": "Try GACHAGO Now",
+              "ja": "GACHAGO を体験する"
             }
           }
         ],
@@ -236,7 +242,9 @@
             "platform": "website",
             "url": "https://gdg.community.dev/events/details/google-gdg-kaohsiung-presents-devfest-kaohsiung-2026-after-buffet/",
             "label": {
-              "zh-Hant": "點我報名"
+              "zh-Hant": "點我報名",
+              "en": "Register",
+              "ja": "申し込む"
             }
           }
         ],
@@ -251,9 +259,9 @@
           "ja": "地下鉄駅から徒歩すぐの会場"
         },
         "body": {
-          "zh-Hant": "今年我們一樣在交通更便利的「KO-IN 智高點」，距離捷運橘線信義國小站 3 號出口僅需 1 分鐘步程，出站即達！\n\n",
-          "en": "This year, we are once again hosting at the highly accessible \"KO-IN Smart Innovation Hub\", just a 1-minute walk from Exit 3 of the MRT Orange Line Sinyi Elementary School Station — right outside the exit!\n\nGoogle Maps: https://maps.app.goo.gl/NSmtz1yTWxeH5LQi7",
-          "ja": "今年も交通アクセスの良い「KO-IN 智高点」で開催します。高雄メトロ（MRT）オレンジ線「信義國小駅」3 番出口から徒歩わずか 1 分、駅を出てすぐの好立地です！\n\nGoogle マップ：https://maps.app.goo.gl/NSmtz1yTWxeH5LQi7"
+          "zh-Hant": "今年我們一樣在交通更便利的「KO-IN 智高點」，距離捷運橘線信義國小站 3 號出口僅需 1 分鐘步程，出站即達！",
+          "en": "This year, we are once again hosting at the highly accessible \"KO-IN Smart Innovation Hub\", just a 1-minute walk from Exit 3 of the MRT Orange Line Sinyi Elementary School Station — right outside the exit!",
+          "ja": "今年も交通アクセスの良い「KO-IN 智高点」で開催します。高雄メトロ（MRT）オレンジ線「信義國小駅」3 番出口から徒歩わずか 1 分、駅を出てすぐの好立地です！"
         },
         "order": 13,
         "links": [
@@ -261,7 +269,9 @@
             "platform": "website",
             "url": "https://maps.app.goo.gl/NSmtz1yTWxeH5LQi7",
             "label": {
-              "zh-Hant": "Google Map"
+              "zh-Hant": "Google Map",
+              "en": "Google Maps",
+              "ja": "Google マップ"
             }
           }
         ],
@@ -277,8 +287,8 @@
         },
         "body": {
           "zh-Hant": "所有參與者皆需遵守 GDG 活動行為準則，以確保所有人都能在一個安全友善的環境中學習與交流。",
-          "en": "All participants are required to adhere to the GDG Code of Conduct to ensure a safe, welcoming, and inclusive environment for everyone to learn and connect.\n\nFor details, please visit: https://gdg.tw/code_of_conduct/",
-          "ja": "すべての参加者は、誰もが安心・安全で心地よい環境で学び交流できるよう、GDG 行動規範（Code of Conduct）を遵守する必要があります。\n\n詳細はこちらをご参照ください：https://gdg.tw/code_of_conduct/"
+          "en": "All participants are required to adhere to the GDG Code of Conduct to ensure a safe, welcoming, and inclusive environment for everyone to learn and connect.",
+          "ja": "すべての参加者は、誰もが安心・安全で心地よい環境で学び交流できるよう、GDG 行動規範（Code of Conduct）を遵守する必要があります。"
         },
         "order": 14,
         "links": [
@@ -286,7 +296,9 @@
             "platform": "website",
             "url": "https://gdg.tw/code_of_conduct/",
             "label": {
-              "zh-Hant": "行為準則"
+              "zh-Hant": "行為準則",
+              "en": "Code of Conduct",
+              "ja": "行動規範"
             }
           }
         ],
@@ -302,8 +314,8 @@
         },
         "body": {
           "zh-Hant": "我們尊重並保護您的個人隱私，詳細內容請參閱",
-          "en": "We respect and protect your personal privacy.\n\nFor details, please refer to: https://docs.google.com/document/d/1_rTlfAkLMl5ZfFwxZrNPhwzGQ5xU8g96bXyKZ3siW-4",
-          "ja": "私たちは皆様のプライバシーを尊重し、適切に保護いたします。\n\n詳細はこちらをご参照ください：https://docs.google.com/document/d/1_rTlfAkLMl5ZfFwxZrNPhwzGQ5xU8g96bXyKZ3siW-4"
+          "en": "We respect and protect your personal privacy. For details, please refer to the link below.",
+          "ja": "私たちは皆様のプライバシーを尊重し、適切に保護いたします。詳細は下記リンクをご参照ください。"
         },
         "order": 15,
         "links": [
@@ -311,7 +323,9 @@
             "platform": "website",
             "url": "https://docs.google.com/document/d/1_rTlfAkLMl5ZfFwxZrNPhwzGQ5xU8g96bXyKZ3siW-4",
             "label": {
-              "zh-Hant": "蒐集個人資料告知事項暨個人資料提供同意聲明"
+              "zh-Hant": "蒐集個人資料告知事項暨個人資料提供同意聲明",
+              "en": "Personal Data Collection Notice and Privacy Consent Statement",
+              "ja": "個人情報の収集に関する告知および同意書"
             }
           }
         ],
