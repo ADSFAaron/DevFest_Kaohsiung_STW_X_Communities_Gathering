@@ -231,9 +231,9 @@
           "ja": "アフタービュッフェ（自己負担）"
         },
         "body": {
-          "zh-Hant": "議程結束，Buffet 開始！讓我們一起到「高雄商旅 Urban Café 都會美饌」享用美味的 After Buffet，邊吃邊聊邊交流\n\n註：報名 DevFest 高雄場 + After Buffet（現場收取 NT$1,200）的朋友，請於報到時在報到台現場付費。",
-          "en": "Sessions wrap up, buffet begins! Let's head to \"Urban Café at Kaohsiung Business Hotel\" to enjoy a delicious After Buffet dinner — eating, chatting, and connecting together!\n\nNote: For attendees who registered for \"DevFest Kaohsiung + After Buffet (NT$1,200 collected on-site)\", please pay at the check-in desk upon arrival.",
-          "ja": "セッション終了後はビュッフェの始まりです！「高雄商旅 Urban Café 都会美饌」に集まり、美味しいアフタービュッフェを堪能しながら、食事と会話と交流を楽しみましょう！\n\n注：「DevFest 高雄およびアフタービュッフェに参加（現地支払い 1,200 台湾元）」をお申し込みの方は、当日の受付時に現地にてお支払いください。"
+          "zh-Hant": "議程結束，Buffet 開始！讓我們一起到「高雄商旅 Urban Café 都會美饌」享用美味的 After Buffet，邊吃邊聊邊交流\n\n註：After Buffet 需另外報名，報名後請於報到時現場付費。",
+          "en": "Sessions wrap up, buffet begins! Let's head to \"Urban Café at Kaohsiung Business Hotel\" to enjoy a delicious After Buffet dinner — eating, chatting, and connecting together!\n\nNote: The After Buffet requires a separate registration (the registration page is in Chinese). After registering, please pay on-site at check-in.",
+          "ja": "セッション終了後はビュッフェの始まりです！「高雄商旅 Urban Café 都会美饌」に集まり、美味しいアフタービュッフェを堪能しながら、食事と会話と交流を楽しみましょう！\n\n注：アフタービュッフェは別途お申し込みが必要です（申し込みページは中国語です）。お申し込み後、当日の受付にて現地でお支払いください。"
         },
         "order": 12,
         "image": "images/about/after_buffet.jpg",
